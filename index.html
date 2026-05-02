@@ -149,14 +149,15 @@
   <div class="container">
     <h2><span class="kicker">Interactive map</span>The 70 stuck projects, where they sit, and who represents them</h2>
     <p style="max-width:760px">
-      Each circle is a generation project with an executed PJM Generation Interconnection Agreement. <strong>Click or tap any project</strong> for full details, including the state senator whose district contains it. Use the slider to see which projects HB 502 would cover at different MW thresholds.
+      Each circle is one of the 70 GIA-posted projects, sized by MW and colored by fuel. Use the controls to filter by fuel, status, or senator party — or to preview HB&nbsp;502's eligibility threshold (the <a href="#threshold">Policy section below</a> walks through that analysis in detail). <strong>Click a project on the map to see details, including the state senator whose district contains it.</strong>
     </p>
 
     <div class="map-wrap">
       <div id="map"></div>
       <div class="map-side">
-        <div class="map-controls">
-          <h4>HB 502 threshold simulator</h4>
+        <div class="map-controls map-controls-threshold">
+          <h4>HB 502 threshold preview</h4>
+          <p class="map-controls-help">Drag to see which projects HB&nbsp;502 would cover at each MW threshold. Markers below the threshold appear dimmed.</p>
           <div class="threshold-slider-wrap">
             <div class="threshold-display">
               <span class="threshold-label">Capacity threshold</span>
@@ -188,15 +189,11 @@
             </label>
           </div>
         </div>
-
-        <div class="proj-card" id="proj-card">
-          <div class="empty">Click a project on the map to see details, including the state senator whose district contains it.</div>
-        </div>
       </div>
     </div>
 
     <div class="note">
-      <strong>How to read the map:</strong> Marker size scales with project MW. Markers below the current threshold appear at reduced opacity to show what HB 502 <em>would not</em> cover at that setting. Drag the slider down to 5 MW to see the maximum coverage scenario; up to 25 MW to see how much HB 502 misses as currently drafted.
+      <strong>How to read the map:</strong> Marker size scales with project MW. Markers below the current threshold appear at reduced opacity to show what HB&nbsp;502 <em>would not</em> cover at that setting. Drag the slider down to 5&nbsp;MW to see the maximum coverage scenario; up to 25&nbsp;MW to see how much HB&nbsp;502 misses as currently drafted.
     </div>
   </div>
 </section>

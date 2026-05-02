@@ -29,6 +29,7 @@ let houseGeojson = null;
 let cosponsorData = null;
 let map = null;
 let markers = [];
+let activeProjectPopup = null;
 let chamberMap = null;
 const CHAMBER_STATE = { chamber: 'senate', view: 'capacity', selected: null };
 
@@ -185,10 +186,13 @@ function renderMarkers() {
       box-shadow: 0 1px 3px rgba(0,0,0,0.25);
       opacity: ${opacity};
       cursor: pointer;
-      transition: transform 100ms ease;
+      transition: scale 100ms ease;
     `;
-    el.addEventListener('mouseenter', () => el.style.transform = 'scale(1.15)');
-    el.addEventListener('mouseleave', () => el.style.transform = 'scale(1)');
+    // Use CSS `scale` property (composes with MapLibre's positional transform)
+    // rather than `transform` (which would overwrite the translate that pins
+    // the marker to its lat/lon).
+    el.addEventListener('mouseenter', () => { el.style.scale = '1.18'; el.style.zIndex = '5'; });
+    el.addEventListener('mouseleave', () => { el.style.scale = '1';    el.style.zIndex = ''; });
     el.addEventListener('click', () => showProjectCard(p));
 
     const m = new maplibregl.Marker({ element: el })
@@ -212,10 +216,7 @@ function legRow(district, name, party, overlap_pct, chamber) {
   return `<li class="dist-item">${pill}<span class="dist-name"><strong>${name}</strong></span><span class="dist-num">${prefix}-${String(district).padStart(pad,'0')}</span>${pct}</li>`;
 }
 
-function showProjectCard(p) {
-  const el = document.getElementById('proj-card');
-  if (!el) return;
-
+function buildProjectCardHTML(p) {
   const cliffMark = p.cliff_exposed
     ? '<span style="color:var(--bpn-red);font-weight:600">Yes</span>'
     : '<span style="color:var(--bpn-muted)">No</span>';
@@ -231,25 +232,46 @@ function showProjectCard(p) {
   const districtsBlock = (sens || reps)
     ? `<div class="districts-block">
          <div class="districts-label">Regional representatives</div>
-         <div class="districts-sub">All state legislators whose districts cover ${p.county} County. Percentages show share of county area in each district.</div>
+         <div class="districts-sub">State legislators whose districts cover ${p.county} County.</div>
          ${sens ? `<div class="districts-section"><div class="districts-section-h">State Senate</div><ul class="dist-list">${sens}</ul></div>` : ''}
          ${reps ? `<div class="districts-section"><div class="districts-section-h">State House</div><ul class="dist-list">${reps}</ul></div>` : ''}
        </div>`
     : '';
 
-  el.innerHTML = `
-    <h3>${p.name}</h3>
-    <div class="proj-meta">${p.county} County · PJM ID ${p.id}</div>
-    <div class="proj-stat"><span class="proj-stat-label">Fuel</span><span class="proj-stat-value">${p.fuel}</span></div>
-    <div class="proj-stat"><span class="proj-stat-label">Capacity (summer)</span><span class="proj-stat-value">${fmt1(p.mw_capacity)} MW</span></div>
-    <div class="proj-stat"><span class="proj-stat-label">Energy (winter)</span><span class="proj-stat-value">${fmt1(p.mw_energy)} MW</span></div>
-    <div class="proj-stat"><span class="proj-stat-label">Status</span><span class="proj-stat-value">${p.status}</span></div>
-    <div class="proj-stat"><span class="proj-stat-label">Submitted to PJM</span><span class="proj-stat-value">${submitted}</span></div>
-    <div class="proj-stat"><span class="proj-stat-label">Federal cliff exposed</span><span class="proj-stat-value">${cliffMark}</span></div>
-    <div class="proj-stat"><span class="proj-stat-label">CSA executed</span><span class="proj-stat-value">${p.csa_posted ? 'Yes' : 'No'}</span></div>
-    ${districtsBlock}
-    ${giaLink}
+  return `
+    <div class="proj-card-popup">
+      <h3>${p.name}</h3>
+      <div class="proj-meta">${p.county} County · PJM ID ${p.id}</div>
+      <div class="proj-stat"><span class="proj-stat-label">Fuel</span><span class="proj-stat-value">${p.fuel}</span></div>
+      <div class="proj-stat"><span class="proj-stat-label">Capacity (summer)</span><span class="proj-stat-value">${fmt1(p.mw_capacity)} MW</span></div>
+      <div class="proj-stat"><span class="proj-stat-label">Energy (winter)</span><span class="proj-stat-value">${fmt1(p.mw_energy)} MW</span></div>
+      <div class="proj-stat"><span class="proj-stat-label">Status</span><span class="proj-stat-value">${p.status}</span></div>
+      <div class="proj-stat"><span class="proj-stat-label">Submitted to PJM</span><span class="proj-stat-value">${submitted}</span></div>
+      <div class="proj-stat"><span class="proj-stat-label">Federal cliff exposed</span><span class="proj-stat-value">${cliffMark}</span></div>
+      <div class="proj-stat"><span class="proj-stat-label">CSA executed</span><span class="proj-stat-value">${p.csa_posted ? 'Yes' : 'No'}</span></div>
+      ${districtsBlock}
+      ${giaLink}
+    </div>
   `;
+}
+
+function showProjectCard(p) {
+  if (!map) return;
+  if (activeProjectPopup) {
+    activeProjectPopup.remove();
+    activeProjectPopup = null;
+  }
+  activeProjectPopup = new maplibregl.Popup({
+    closeButton: true,
+    closeOnClick: true,
+    closeOnMove: false,
+    offset: 14,
+    maxWidth: '340px',
+    className: 'proj-popup',
+  })
+    .setLngLat([p.lon, p.lat])
+    .setHTML(buildProjectCardHTML(p))
+    .addTo(map);
 }
 
 function buildFuelFilters() {

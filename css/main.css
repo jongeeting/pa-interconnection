@@ -756,6 +756,73 @@ footer a { color: var(--bpn-green); }
   cursor: not-allowed;
 }
 
+.map-controls-help {
+  font-size: 0.82rem;
+  color: var(--bpn-muted);
+  line-height: 1.45;
+  margin: 0 0 10px;
+}
+
+/* Project popup attached to bubble (replaces the side-panel proj-card) */
+.maplibregl-popup.proj-popup .maplibregl-popup-content {
+  background: var(--bpn-card);
+  border: 1px solid var(--bpn-border);
+  border-radius: 4px;
+  padding: 0;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+  max-width: 340px;
+  font-family: var(--font-body);
+}
+.maplibregl-popup.proj-popup .maplibregl-popup-close-button {
+  font-size: 1.4rem;
+  color: var(--bpn-muted);
+  padding: 4px 10px 0;
+}
+.maplibregl-popup.proj-popup .maplibregl-popup-tip {
+  border-top-color: var(--bpn-border);
+  border-bottom-color: var(--bpn-border);
+}
+.proj-card-popup {
+  padding: 16px 18px 14px;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+.proj-card-popup h3 {
+  font-size: 1.05rem; line-height: 1.2;
+  margin: 0 4px 4px 0;
+  padding-right: 24px; /* room for close button */
+}
+.proj-card-popup .proj-meta { font-size: 0.78rem; color: var(--bpn-muted); margin-bottom: 10px; }
+.proj-card-popup .proj-stat {
+  display: flex; justify-content: space-between;
+  padding: 5px 0; border-bottom: 1px solid var(--bpn-border);
+  font-size: 0.86rem;
+}
+.proj-card-popup .proj-stat:last-of-type { border-bottom: none; }
+.proj-card-popup .proj-stat-label { color: var(--bpn-muted); }
+.proj-card-popup .proj-stat-value { font-weight: 600; }
+.proj-card-popup .districts-block {
+  margin-top: 10px;
+  padding: 10px 12px 8px;
+  background: var(--bpn-bg);
+  border-radius: 3px;
+  border: 1px solid var(--bpn-border);
+}
+.proj-card-popup .districts-label { font-size: 0.7rem; }
+.proj-card-popup .districts-sub { font-size: 0.72rem; }
+.proj-card-popup .dist-item { font-size: 0.78rem; }
+.proj-card-popup .proj-doc-link {
+  display: inline-block; margin-top: 10px;
+  font-size: 0.82rem; font-weight: 600;
+  color: var(--bpn-green); text-decoration: none;
+  border-bottom: 1px solid var(--bpn-green);
+  padding-bottom: 1px;
+}
+.proj-card-popup .proj-doc-link:hover {
+  color: var(--bpn-green-dark, #006139);
+  border-bottom-color: var(--bpn-green-dark, #006139);
+}
+
 /* =====================================================================
    MEMO PAGE
    ===================================================================== */
