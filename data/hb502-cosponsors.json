@@ -1,0 +1,904 @@
+{
+  "bills": {
+    "HB502": {
+      "session": "2025",
+      "url": "https://www.palegis.us/legislation/bills/2025/HB502",
+      "prime_sponsor": {
+        "chamber": "house",
+        "district": 180,
+        "name": "Jose Giral",
+        "party": "D"
+      },
+      "cosponsors": [
+        {
+          "chamber": "house",
+          "district": 180,
+          "name": "Jose Giral",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 115,
+          "name": "Maureen Madden",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 182,
+          "name": "Ben Waxman",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 95,
+          "name": "Carol Hill-Evans",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 132,
+          "name": "Michael Schlossberg",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 53,
+          "name": "Steven Malagari",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 174,
+          "name": "Ed Neilson",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 153,
+          "name": "Benjamin Sanchez",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 194,
+          "name": "Tarik Khan",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 129,
+          "name": "Johanny Cepeda-Freytiz",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 195,
+          "name": "Keith Harris",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 113,
+          "name": "Kyle Donahue",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 133,
+          "name": "Jeanne McNeill",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 38,
+          "name": "John Inglis III",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 140,
+          "name": "Jim Prokopiak",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 34,
+          "name": "Abigail Salisbury",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 161,
+          "name": "Leanne Krueger",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 168,
+          "name": "Lisa Borowski",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 22,
+          "name": "Joshua Siegel",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 19,
+          "name": "Aerion Abney",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 20,
+          "name": "Emily Kinkead",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 163,
+          "name": "Heather Boyd",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 177,
+          "name": "Joseph Hohenstein",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 157,
+          "name": "Melissa Shusterman",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 121,
+          "name": "Eddie Pashinski",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 134,
+          "name": "Peter Schweyer",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 96,
+          "name": "Nikki Rivera",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 29,
+          "name": "Tim Brennan",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 188,
+          "name": "Rick Krajewski",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 10,
+          "name": "Amen Brown",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 172,
+          "name": "Sean Dougherty",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 61,
+          "name": "Liz Hanbidge",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 151,
+          "name": "Melissa Cerrato",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 54,
+          "name": "Greg Scott",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 152,
+          "name": "Nancy Guenst",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 198,
+          "name": "Darisha K. Parker",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 23,
+          "name": "Dan Frankel",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 166,
+          "name": "Greg Vitali",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 175,
+          "name": "MaryLouise Isaacson",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 33,
+          "name": "Mandy Steele",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 22,
+          "name": "Joshua Siegel",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 105,
+          "name": "Justin Fleming",
+          "party": "D"
+        }
+      ]
+    },
+    "SB502": {
+      "session": "2025",
+      "url": "https://www.palegis.us/legislation/bills/2025/sb502",
+      "prime_sponsor": {
+        "chamber": "senate",
+        "district": 10,
+        "name": "Steven Santarsiero",
+        "party": "D"
+      },
+      "cosponsors": [
+        {
+          "chamber": "senate",
+          "district": 10,
+          "name": "Steven Santarsiero",
+          "party": "D"
+        },
+        {
+          "chamber": "senate",
+          "district": 2,
+          "name": "Christine Tartaglione",
+          "party": "D"
+        },
+        {
+          "chamber": "senate",
+          "district": 3,
+          "name": "Sharif Street",
+          "party": "D"
+        },
+        {
+          "chamber": "senate",
+          "district": 19,
+          "name": "Carolyn Comitta",
+          "party": "D"
+        },
+        {
+          "chamber": "senate",
+          "district": 12,
+          "name": "Maria Collett",
+          "party": "D"
+        },
+        {
+          "chamber": "senate",
+          "district": 45,
+          "name": "Nick Pisciottano",
+          "party": "D"
+        },
+        {
+          "chamber": "senate",
+          "district": 43,
+          "name": "Jay Costa",
+          "party": "D"
+        },
+        {
+          "chamber": "senate",
+          "district": 11,
+          "name": "Judith Schwank",
+          "party": "D"
+        },
+        {
+          "chamber": "senate",
+          "district": 18,
+          "name": "Lisa Boscola",
+          "party": "D"
+        },
+        {
+          "chamber": "senate",
+          "district": 1,
+          "name": "Nikil Saval",
+          "party": "D"
+        },
+        {
+          "chamber": "senate",
+          "district": 17,
+          "name": "Amanda Cappelletti",
+          "party": "D"
+        },
+        {
+          "chamber": "senate",
+          "district": 7,
+          "name": "Vincent Hughes",
+          "party": "D"
+        },
+        {
+          "chamber": "senate",
+          "district": 4,
+          "name": "Art Haywood",
+          "party": "D"
+        },
+        {
+          "chamber": "senate",
+          "district": 15,
+          "name": "Patty Kim",
+          "party": "D"
+        },
+        {
+          "chamber": "senate",
+          "district": 14,
+          "name": "Nick Miller",
+          "party": "D"
+        },
+        {
+          "chamber": "senate",
+          "district": 36,
+          "name": "James Malone",
+          "party": "D"
+        },
+        {
+          "chamber": "senate",
+          "district": 33,
+          "name": "Doug Mastriano",
+          "party": "R"
+        },
+        {
+          "chamber": "senate",
+          "district": 17,
+          "name": "Amanda Cappelletti",
+          "party": "D"
+        },
+        {
+          "chamber": "senate",
+          "district": 4,
+          "name": "Art Haywood",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 166,
+          "name": "Greg Vitali",
+          "party": "D"
+        },
+        {
+          "chamber": "house",
+          "district": 33,
+          "name": "Mandy Steele",
+          "party": "D"
+        }
+      ]
+    }
+  },
+  "by_chamber_district": {
+    "senate": {
+      "10": {
+        "bills": [
+          {
+            "bill": "SB502",
+            "role": "prime"
+          },
+          {
+            "bill": "SB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "2": {
+        "bills": [
+          {
+            "bill": "SB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "3": {
+        "bills": [
+          {
+            "bill": "SB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "19": {
+        "bills": [
+          {
+            "bill": "SB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "12": {
+        "bills": [
+          {
+            "bill": "SB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "45": {
+        "bills": [
+          {
+            "bill": "SB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "43": {
+        "bills": [
+          {
+            "bill": "SB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "11": {
+        "bills": [
+          {
+            "bill": "SB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "18": {
+        "bills": [
+          {
+            "bill": "SB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "1": {
+        "bills": [
+          {
+            "bill": "SB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "17": {
+        "bills": [
+          {
+            "bill": "SB502",
+            "role": "cosponsor"
+          },
+          {
+            "bill": "SB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "7": {
+        "bills": [
+          {
+            "bill": "SB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "4": {
+        "bills": [
+          {
+            "bill": "SB502",
+            "role": "cosponsor"
+          },
+          {
+            "bill": "SB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "15": {
+        "bills": [
+          {
+            "bill": "SB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "14": {
+        "bills": [
+          {
+            "bill": "SB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "36": {
+        "bills": [
+          {
+            "bill": "SB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "33": {
+        "bills": [
+          {
+            "bill": "SB502",
+            "role": "cosponsor"
+          }
+        ]
+      }
+    },
+    "house": {
+      "180": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "prime"
+          },
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "115": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "182": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "95": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "132": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "53": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "174": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "153": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "194": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "129": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "195": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "113": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "133": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "38": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "140": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "34": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "161": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "168": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "22": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          },
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "19": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "20": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "163": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "177": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "157": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "121": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "134": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "96": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "29": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "188": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "10": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "172": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "61": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "151": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "54": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "152": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "198": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "23": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "166": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          },
+          {
+            "bill": "SB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "175": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "33": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          },
+          {
+            "bill": "SB502",
+            "role": "cosponsor"
+          }
+        ]
+      },
+      "105": {
+        "bills": [
+          {
+            "bill": "HB502",
+            "role": "cosponsor"
+          }
+        ]
+      }
+    }
+  }
+}

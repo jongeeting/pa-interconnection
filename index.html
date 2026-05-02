@@ -208,17 +208,25 @@
       Almost every county with a GIA-posted project is represented in the State Senate by a Republican. The State House split is more competitive — both parties have districts with stuck capacity. These are the legislators whose constituents stand to gain construction trades jobs, host-community PILOT revenue, and tax base if these projects break ground — and lose it if they don't.
     </p>
 
-    <h3 style="margin-top:32px;font-size:1.1rem;text-transform:uppercase;letter-spacing:0.08em">State Senate</h3>
-    <p style="max-width:760px;font-size:0.92rem;color:var(--bpn-muted)">
-      Each card shows a senator with at least one GIA-posted project in their district. Where a county is split across multiple senate districts, all senators are credited.
-    </p>
-    <div class="senator-targets" id="senator-targets"></div>
+    <div class="map-toolbar">
+      <div class="toggle-group" role="tablist" aria-label="Chamber">
+        <button class="toggle-btn active" data-chamber="senate" type="button">State Senate</button>
+        <button class="toggle-btn" data-chamber="house" type="button">State House</button>
+      </div>
+      <div class="toggle-group" role="tablist" aria-label="View">
+        <button class="toggle-btn active" data-view="capacity" type="button">Stuck capacity</button>
+        <button class="toggle-btn" data-view="cosponsors" type="button">HB 502 sponsors</button>
+      </div>
+    </div>
 
-    <h3 style="margin-top:48px;font-size:1.1rem;text-transform:uppercase;letter-spacing:0.08em">State House</h3>
-    <p style="max-width:760px;font-size:0.92rem;color:var(--bpn-muted)">
-      203 House districts; many are smaller than a single county, so most projects fall under multiple representatives' districts. Each card lists every House member whose district covers any portion of a county with at least one GIA-posted project.
-    </p>
-    <div class="senator-targets" id="house-targets"></div>
+    <div class="districts-map-wrap">
+      <div id="chamber-map"></div>
+      <div class="districts-map-legend" id="chamber-map-legend"></div>
+    </div>
+
+    <div id="district-detail" class="district-detail">
+      <div class="district-detail-empty">Hover or click any district above for details.</div>
+    </div>
   </div>
 </section>
 

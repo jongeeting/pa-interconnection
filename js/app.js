@@ -22,22 +22,34 @@ let thresholdData = null;
 let fuelMix = null;
 let countyData = null;
 let mixComparison = null;
+let senateGeojson = null;
+let houseGeojson = null;
+let cosponsorData = null;
 let map = null;
 let markers = [];
+let chamberMap = null;
+const CHAMBER_STATE = { chamber: 'senate', view: 'capacity', selected: null };
 
 async function init() {
-  const [p, t, f, c, mc] = await Promise.all([
+  const [p, t, f, c, mc, sg, hg, cs] = await Promise.all([
     fetch('data/projects.json').then(r => r.json()),
     fetch('data/threshold-analysis.json').then(r => r.json()),
     fetch('data/fuel-mix.json').then(r => r.json()),
     fetch('data/by-county.json').then(r => r.json()),
     fetch('data/queue-mix-comparison.json').then(r => r.json()),
+    fetch('data/pa-senate-districts.geojson').then(r => r.json()),
+    fetch('data/pa-house-districts.geojson').then(r => r.json()),
+    fetch('data/hb502-cosponsors.json').then(r => r.json()).catch(() => ({ senate: {}, house: {} })),
   ]);
   projects = p;
   thresholdData = t;
   fuelMix = f;
   countyData = c;
   mixComparison = mc;
+  senateGeojson = sg;
+  houseGeojson = hg;
+  cosponsorData = cs;
+  bakeCosponsorIntoGeoJson();
 
   // Initialize fuel filter set with all fuels present
   new Set(projects.map(p => p.fuel_group)).forEach(fg => STATE.showFuels.add(fg));
@@ -49,8 +61,7 @@ async function init() {
   buildThresholdSlider();
   buildThresholdTable();
   buildCharts();
-  buildSenatorTargets();
-  buildHouseTargets();
+  buildChamberMap();
   buildTopProjectsTable();
   refresh();
 }
@@ -609,6 +620,323 @@ function buildLegislatorTargets(el, chamber) {
       <div style="font-size:0.78rem;color:var(--bpn-muted);margin-top:8px">${[...s.counties].join(', ')}</div>
     </div>`;
   }).join('');
+}
+
+// Stuck-MW choropleth — sequential green palette
+const CAP_BUCKETS = [
+  { max: 0,    fill: '#eae7e4', label: 'No GIA-posted projects' },
+  { max: 50,   fill: '#d9e8df', label: '< 50 MW' },
+  { max: 100,  fill: '#9bc3a8', label: '50–100 MW' },
+  { max: 200,  fill: '#4f9c72', label: '100–200 MW' },
+  { max: 9e9,  fill: '#00844d', label: '200+ MW' },
+];
+
+const SPONSOR_COLORS = {
+  prime:        { fill: '#00844d', label: 'Prime sponsor (HB 502 / SB 502)' },
+  cosponsor:    { fill: '#9bc3a8', label: 'Cosponsor (HB 502 / SB 502)' },
+  not_signed:   { fill: '#eae7e4', label: 'Not on either bill' },
+  vacant:       { fill: '#cccccc', label: 'Vacant seat' },
+};
+
+function bakeCosponsorIntoGeoJson() {
+  if (!cosponsorData) return;
+  function tag(features, chamber) {
+    const map = (cosponsorData.by_chamber_district || {})[chamber] || {};
+    features.forEach(f => {
+      const d = String(f.properties.district);
+      const entry = map[d];
+      let status = 'not_signed';
+      if (f.properties.party === null || f.properties.name === 'Vacant') status = 'vacant';
+      else if (entry) {
+        // If they're prime on either bill, "prime"; otherwise "cosponsor"
+        const roles = (entry.bills || []).map(b => b.role);
+        status = roles.includes('prime') ? 'prime' : 'cosponsor';
+      }
+      f.properties.cosponsor_status = status;
+      f.properties.cosponsor_bills = entry ? entry.bills : [];
+    });
+  }
+  if (senateGeojson?.features) tag(senateGeojson.features, 'senate');
+  if (houseGeojson?.features) tag(houseGeojson.features, 'house');
+}
+
+function buildChamberMap() {
+  const container = document.getElementById('chamber-map');
+  if (!container || !senateGeojson || !houseGeojson || typeof maplibregl === 'undefined') return;
+
+  chamberMap = new maplibregl.Map({
+    container: 'chamber-map',
+    style: {
+      version: 8,
+      sources: {
+        'carto-light': {
+          type: 'raster',
+          tiles: ['https://cartodb-basemaps-a.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
+                  'https://cartodb-basemaps-b.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png'],
+          tileSize: 256,
+          attribution: '© OpenStreetMap © CARTO'
+        }
+      },
+      layers: [{ id: 'carto-light', type: 'raster', source: 'carto-light', paint: { 'raster-opacity': 0.5 } }]
+    },
+    center: [-77.7, 41.0],
+    zoom: 6.4,
+    attributionControl: { compact: true }
+  });
+  chamberMap.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
+
+  chamberMap.on('load', () => {
+    chamberMap.addSource('senate-districts', { type: 'geojson', data: senateGeojson });
+    chamberMap.addSource('house-districts',  { type: 'geojson', data: houseGeojson  });
+
+    addChamberLayers('senate', true);
+    addChamberLayers('house',  false);
+
+    setupChamberInteractions();
+    wireToggles();
+    refreshChamberStyling();
+    setInitialSelection();
+  });
+}
+
+function fillExpression(view) {
+  if (view === 'cosponsors') {
+    return [
+      'match', ['get', 'cosponsor_status'],
+      'prime',      SPONSOR_COLORS.prime.fill,
+      'cosponsor',  SPONSOR_COLORS.cosponsor.fill,
+      'vacant',     SPONSOR_COLORS.vacant.fill,
+      SPONSOR_COLORS.not_signed.fill,
+    ];
+  }
+  // capacity
+  return [
+    'step', ['get', 'mw_capacity'],
+    CAP_BUCKETS[0].fill, 0.001,
+    CAP_BUCKETS[1].fill, 50,
+    CAP_BUCKETS[2].fill, 100,
+    CAP_BUCKETS[3].fill, 200,
+    CAP_BUCKETS[4].fill,
+  ];
+}
+
+function addChamberLayers(chamber, visible) {
+  const src = `${chamber}-districts`;
+  const vis = visible ? 'visible' : 'none';
+  chamberMap.addLayer({
+    id: `${chamber}-fill`,
+    type: 'fill',
+    source: src,
+    layout: { visibility: vis },
+    paint: {
+      'fill-color': fillExpression(CHAMBER_STATE.view),
+      'fill-opacity': 0.85,
+    }
+  });
+  chamberMap.addLayer({
+    id: `${chamber}-line`,
+    type: 'line',
+    source: src,
+    layout: { visibility: vis },
+    paint: { 'line-color': '#1a1a1a', 'line-width': 0.5, 'line-opacity': 0.35 }
+  });
+  chamberMap.addLayer({
+    id: `${chamber}-hover`,
+    type: 'line',
+    source: src,
+    layout: { visibility: vis },
+    paint: { 'line-color': '#1a1a1a', 'line-width': 2.5 },
+    filter: ['==', ['get', 'district'], -1],
+  });
+  chamberMap.addLayer({
+    id: `${chamber}-selected`,
+    type: 'line',
+    source: src,
+    layout: { visibility: vis },
+    paint: { 'line-color': 'var(--bpn-green)'.replace('var(--bpn-green)','#00844d'), 'line-width': 3 },
+    filter: ['==', ['get', 'district'], -1],
+  });
+}
+
+function setupChamberInteractions() {
+  let tooltip = document.querySelector('.district-tooltip');
+  if (!tooltip) {
+    tooltip = document.createElement('div');
+    tooltip.className = 'district-tooltip';
+    document.body.appendChild(tooltip);
+  }
+
+  ['senate', 'house'].forEach(chamber => {
+    const fillId = `${chamber}-fill`;
+
+    chamberMap.on('mousemove', fillId, (e) => {
+      chamberMap.getCanvas().style.cursor = 'pointer';
+      const f = e.features[0];
+      if (!f) return;
+      chamberMap.setFilter(`${chamber}-hover`, ['==', ['get', 'district'], f.properties.district]);
+
+      const p = f.properties;
+      const counties = JSON.parse(p.counties || '[]');
+      const partyLabel = p.party === 'R' ? 'Republican' : p.party === 'D' ? 'Democrat' : 'Vacant';
+      const partyClass = p.party ? `party-${p.party}` : 'party-V';
+      const distLabel = chamber === 'senate'
+        ? `SD-${String(p.district).padStart(2,'0')}`
+        : `HD-${String(p.district).padStart(3,'0')}`;
+      tooltip.innerHTML = `
+        <div class="tt-name">${distLabel} · ${p.name}</div>
+        <div class="tt-meta"><span class="party-pill ${partyClass}">${p.party || 'V'}</span> ${partyLabel}</div>
+        <div class="tt-stat"><span>Projects</span><strong>${p.projects}</strong></div>
+        <div class="tt-stat"><span>MW at risk</span><strong>${fmt1(p.mw_capacity)}</strong></div>
+        ${counties.length ? `<div class="tt-stat" style="display:block;margin-top:6px"><span style="color:var(--bpn-muted);font-size:0.74rem">Counties: ${counties.join(', ')}</span></div>` : ''}
+      `;
+      tooltip.classList.add('visible');
+      tooltip.style.left = (e.originalEvent.clientX + 14) + 'px';
+      tooltip.style.top  = (e.originalEvent.clientY + 14) + 'px';
+    });
+
+    chamberMap.on('mouseleave', fillId, () => {
+      chamberMap.getCanvas().style.cursor = '';
+      chamberMap.setFilter(`${chamber}-hover`, ['==', ['get', 'district'], -1]);
+      tooltip.classList.remove('visible');
+    });
+
+    chamberMap.on('click', fillId, (e) => {
+      const f = e.features[0];
+      if (!f) return;
+      selectDistrict(chamber, f.properties.district);
+    });
+  });
+}
+
+function wireToggles() {
+  document.querySelectorAll('.toggle-btn[data-chamber]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const c = btn.dataset.chamber;
+      if (c === CHAMBER_STATE.chamber) return;
+      CHAMBER_STATE.chamber = c;
+      document.querySelectorAll('.toggle-btn[data-chamber]').forEach(b => b.classList.toggle('active', b === btn));
+      refreshChamberStyling();
+      setInitialSelection();
+    });
+  });
+  document.querySelectorAll('.toggle-btn[data-view]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const v = btn.dataset.view;
+      if (v === CHAMBER_STATE.view) return;
+      CHAMBER_STATE.view = v;
+      document.querySelectorAll('.toggle-btn[data-view]').forEach(b => b.classList.toggle('active', b === btn));
+      refreshChamberStyling();
+    });
+  });
+}
+
+function refreshChamberStyling() {
+  if (!chamberMap) return;
+  const c = CHAMBER_STATE.chamber;
+  const other = c === 'senate' ? 'house' : 'senate';
+  ['fill', 'line', 'hover', 'selected'].forEach(suf => {
+    chamberMap.setLayoutProperty(`${c}-${suf}`,     'visibility', 'visible');
+    chamberMap.setLayoutProperty(`${other}-${suf}`, 'visibility', 'none');
+  });
+  // Update fill paint expression for current view
+  ['senate', 'house'].forEach(ch => {
+    chamberMap.setPaintProperty(`${ch}-fill`, 'fill-color', fillExpression(CHAMBER_STATE.view));
+  });
+  refreshLegend();
+}
+
+function refreshLegend() {
+  const legend = document.getElementById('chamber-map-legend');
+  if (!legend) return;
+  const chamberLabel = CHAMBER_STATE.chamber === 'senate' ? 'Senate' : 'House';
+  if (CHAMBER_STATE.view === 'cosponsors') {
+    const rows = ['prime','cosponsor','not_signed','vacant'].map(k => {
+      const c = SPONSOR_COLORS[k];
+      return `<div class="legend-row"><span class="legend-swatch" style="background:${c.fill}"></span><span>${c.label}</span></div>`;
+    }).join('');
+    legend.innerHTML = `<div class="legend-title">${chamberLabel} sponsorship of HB 502 / SB 502</div>${rows}`;
+  } else {
+    const rows = CAP_BUCKETS.map(b => `<div class="legend-row"><span class="legend-swatch" style="background:${b.fill}"></span><span>${b.label}</span></div>`).join('');
+    legend.innerHTML = `<div class="legend-title">Stuck capacity by ${chamberLabel} district</div>${rows}`;
+  }
+}
+
+function setInitialSelection() {
+  const gj = CHAMBER_STATE.chamber === 'senate' ? senateGeojson : houseGeojson;
+  if (!gj) return;
+  const top = gj.features
+    .filter(f => f.properties.mw_capacity > 0)
+    .sort((a, b) => b.properties.mw_capacity - a.properties.mw_capacity)[0];
+  if (top) selectDistrict(CHAMBER_STATE.chamber, top.properties.district);
+}
+
+function selectDistrict(chamber, district) {
+  CHAMBER_STATE.selected = { chamber, district };
+  if (chamberMap) chamberMap.setFilter(`${chamber}-selected`, ['==', ['get', 'district'], district]);
+  renderDistrictDetail(chamber, district);
+}
+
+function renderDistrictDetail(chamber, district) {
+  const el = document.getElementById('district-detail');
+  if (!el) return;
+  const gj = chamber === 'senate' ? senateGeojson : houseGeojson;
+  const f = gj.features.find(ft => ft.properties.district === district);
+  if (!f) {
+    el.innerHTML = `<div class="district-detail-empty">District not found.</div>`;
+    return;
+  }
+  const p = f.properties;
+  const distLabel = chamber === 'senate'
+    ? `SD-${String(p.district).padStart(2, '0')}`
+    : `HD-${String(p.district).padStart(3, '0')}`;
+  const titlePrefix = chamber === 'senate' ? 'Sen.' : 'Rep.';
+  const partyClass = p.party ? `party-${p.party}` : 'party-V';
+  const partyLabel = p.party === 'R' ? 'Republican' : p.party === 'D' ? 'Democrat' : 'Vacant';
+
+  // Cosponsor tag
+  let coTag = '<span class="dd-cosponsor-tag not-signed">Not on HB 502 / SB 502</span>';
+  if (p.cosponsor_status === 'prime') {
+    const bills = (typeof p.cosponsor_bills === 'string' ? JSON.parse(p.cosponsor_bills) : p.cosponsor_bills) || [];
+    const primeOf = bills.filter(b => b.role === 'prime').map(b => b.bill).join(', ');
+    coTag = `<span class="dd-cosponsor-tag sponsor">Prime sponsor — ${primeOf}</span>`;
+  } else if (p.cosponsor_status === 'cosponsor') {
+    const bills = (typeof p.cosponsor_bills === 'string' ? JSON.parse(p.cosponsor_bills) : p.cosponsor_bills) || [];
+    const billStr = bills.map(b => b.bill).join(', ');
+    coTag = `<span class="dd-cosponsor-tag cosponsor">Cosponsor — ${billStr}</span>`;
+  }
+
+  // Projects in this district (lookup via senators[] or house_reps[] on each project)
+  const fieldName = chamber === 'senate' ? 'senators' : 'house_reps';
+  const projsInDist = projects.filter(pr => (pr[fieldName] || []).some(l => l.district === district));
+  projsInDist.sort((a, b) => b.mw_capacity - a.mw_capacity);
+
+  const counties = (typeof p.counties === 'string' ? JSON.parse(p.counties) : p.counties) || [];
+  const titleName = p.name === 'Vacant' ? `${distLabel} (Vacant seat)` : `${titlePrefix} ${p.name}`;
+
+  el.innerHTML = `
+    <div class="dd-header">
+      <div>
+        <h3 class="dd-title">${titleName}</h3>
+        <div class="dd-meta"><span class="party-pill ${partyClass}">${p.party || 'V'}</span>
+          ${distLabel} · ${partyLabel}${counties.length ? ' · Counties: ' + counties.join(', ') : ''}</div>
+      </div>
+      <div>${coTag}</div>
+    </div>
+    <div class="dd-stats">
+      <div><div class="dd-stat-num">${p.projects}</div><div class="dd-stat-label">Projects in district</div></div>
+      <div><div class="dd-stat-num">${fmt1(p.mw_capacity)}</div><div class="dd-stat-label">MW at risk</div></div>
+      <div><div class="dd-stat-num">${counties.length}</div><div class="dd-stat-label">Counties touched</div></div>
+    </div>
+    ${projsInDist.length ? `<ul class="dd-projects-list">
+      ${projsInDist.slice(0, 12).map(pr => `<li>
+        <span class="dd-fuel-dot" style="background:${FUEL_COLORS[pr.fuel_group] || '#888'}"></span>
+        <span class="dd-proj-name">${pr.name}</span>
+        <span class="dd-proj-county">${pr.county} · ${pr.fuel_group}</span>
+        <span class="dd-proj-mw">${fmt1(pr.mw_capacity)} MW</span>
+      </li>`).join('')}
+      ${projsInDist.length > 12 ? `<li><span></span><span style="color:var(--bpn-muted);font-style:italic">+ ${projsInDist.length - 12} more</span><span></span><span></span></li>` : ''}
+    </ul>` : ''}
+  `;
 }
 
 function buildTopProjectsTable() {
