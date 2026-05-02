@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pa-interconnection.netlify.app/sitemap.xml

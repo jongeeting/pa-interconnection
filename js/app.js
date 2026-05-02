@@ -12,8 +12,10 @@ const FUEL_COLORS = {
 };
 
 const STATE = {
-  threshold: 10,        // current MW threshold
-  showFuels: new Set(), // which fuel groups to show
+  threshold: 10,         // current MW threshold
+  showFuels: new Set(),  // which fuel groups to show
+  showStatus: new Set(), // which statuses to show
+  showParties: new Set(),// which senator parties (R/D) to show; empty = no filter
   cliffOnly: false,
 };
 
@@ -51,8 +53,11 @@ async function init() {
   cosponsorData = cs;
   bakeCosponsorIntoGeoJson();
 
-  // Initialize fuel filter set with all fuels present
+  // Initialize filter sets to all values present
   new Set(projects.map(p => p.fuel_group)).forEach(fg => STATE.showFuels.add(fg));
+  new Set(projects.map(p => p.status)).forEach(s => STATE.showStatus.add(s));
+  STATE.showParties.add('R');
+  STATE.showParties.add('D');
 
   buildHeroStats();
   buildBriefSection();
@@ -144,7 +149,14 @@ function clearMarkers() {
 
 function projectVisible(p) {
   if (!STATE.showFuels.has(p.fuel_group)) return false;
+  if (!STATE.showStatus.has(p.status)) return false;
   if (STATE.cliffOnly && !p.cliff_exposed) return false;
+  // Party: project passes if any of its senators is in the active party set
+  const sens = p.senators || [];
+  if (sens.length > 0) {
+    const anyParty = sens.some(s => STATE.showParties.has(s.party));
+    if (!anyParty) return false;
+  }
   return true;
 }
 
@@ -243,18 +255,19 @@ function showProjectCard(p) {
 function buildFuelFilters() {
   const el = document.getElementById('fuel-filters');
   if (!el) return;
-  const fuels = ['Solar', 'Solar+Storage', 'Wind', 'Storage', 'Nuclear'];
+  // Show every recognized fuel; disabled with (0) when not present in the GIA-posted set
+  const fuels = ['Solar', 'Solar+Storage', 'Wind', 'Storage', 'Nuclear', 'Natural Gas'];
   el.innerHTML = fuels.map(fg => {
     const count = projects.filter(p => p.fuel_group === fg).length;
-    if (count === 0) return '';
-    const color = FUEL_COLORS[fg];
-    return `<label>
-      <input type="checkbox" data-fuel="${fg}" checked>
-      <span style="display:inline-block;width:10px;height:10px;background:${color};border-radius:50%;margin-right:2px"></span>
+    const color = FUEL_COLORS[fg] || '#888';
+    const disabled = count === 0;
+    return `<label class="${disabled ? 'is-disabled' : ''}">
+      <input type="checkbox" data-fuel="${fg}" ${disabled ? 'disabled' : 'checked'}>
+      <span style="display:inline-block;width:10px;height:10px;background:${color};border-radius:50%;margin-right:2px;opacity:${disabled ? 0.4 : 1}"></span>
       ${fg} <span style="color:var(--bpn-muted);font-size:0.85rem">(${count})</span>
     </label>`;
   }).join('');
-  el.querySelectorAll('input[type=checkbox]').forEach(cb => {
+  el.querySelectorAll('input[type=checkbox]:not(:disabled)').forEach(cb => {
     cb.addEventListener('change', e => {
       const fg = e.target.dataset.fuel;
       if (e.target.checked) STATE.showFuels.add(fg);
@@ -270,6 +283,72 @@ function buildFuelFilters() {
       renderMarkers();
     });
   }
+
+  buildStatusFilters();
+  buildPartyFilters();
+}
+
+function buildStatusFilters() {
+  const el = document.getElementById('status-filters');
+  if (!el) return;
+  // Order with Suspended first since it's the most policy-relevant
+  const ordered = ['Suspended', 'Engineering and Procurement', 'Under Construction', 'Partially in Service - Under Construction', 'Partially in Service'];
+  const colors = {
+    'Suspended': '#b23a2f',
+    'Engineering and Procurement': '#c99b2e',
+    'Under Construction': '#00844d',
+    'Partially in Service - Under Construction': '#7e6dab',
+    'Partially in Service': '#7e6dab',
+  };
+  el.innerHTML = ordered.map(s => {
+    const count = projects.filter(p => p.status === s).length;
+    if (count === 0) return '';
+    const color = colors[s] || '#888';
+    return `<label>
+      <input type="checkbox" data-status="${s}" checked>
+      <span style="display:inline-block;width:10px;height:10px;background:${color};border-radius:2px;margin-right:2px"></span>
+      ${s} <span style="color:var(--bpn-muted);font-size:0.85rem">(${count})</span>
+    </label>`;
+  }).join('');
+  el.querySelectorAll('input[type=checkbox]').forEach(cb => {
+    cb.addEventListener('change', e => {
+      const s = e.target.dataset.status;
+      if (e.target.checked) STATE.showStatus.add(s);
+      else STATE.showStatus.delete(s);
+      renderMarkers();
+    });
+  });
+}
+
+function buildPartyFilters() {
+  const el = document.getElementById('party-filters');
+  if (!el) return;
+  const counts = { R: 0, D: 0 };
+  projects.forEach(p => {
+    const sens = p.senators || [];
+    const parties = new Set(sens.map(s => s.party));
+    if (parties.has('R')) counts.R++;
+    if (parties.has('D')) counts.D++;
+  });
+  const items = [
+    { key: 'R', label: 'Republican senators', color: '#b23a2f' },
+    { key: 'D', label: 'Democratic senators', color: '#1e5f9c' },
+  ];
+  el.innerHTML = items.map(it => `
+    <label>
+      <input type="checkbox" data-party="${it.key}" checked>
+      <span style="display:inline-block;width:10px;height:10px;background:${it.color};border-radius:50%;margin-right:2px"></span>
+      ${it.label} <span style="color:var(--bpn-muted);font-size:0.85rem">(${counts[it.key]})</span>
+    </label>
+  `).join('');
+  el.querySelectorAll('input[type=checkbox]').forEach(cb => {
+    cb.addEventListener('change', e => {
+      const p = e.target.dataset.party;
+      if (e.target.checked) STATE.showParties.add(p);
+      else STATE.showParties.delete(p);
+      renderMarkers();
+    });
+  });
 }
 
 function buildThresholdSlider() {

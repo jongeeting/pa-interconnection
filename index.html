@@ -7,8 +7,19 @@
   <meta name="description" content="70 PA generation projects have cleared PJM engineering review and are stuck on permitting. Federal tax credits expire in 14 months. The case for amending HB 502.">
 
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+  <meta property="og:title" content="Federal Tax Cliff Threatens Pennsylvania's Energy Generation Pipeline">
+  <meta property="og:description" content="70 PA generation projects have cleared PJM engineering review and are stuck on permitting. Federal tax credits expire in 14 months. The case for amending HB 502.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://pa-interconnection.netlify.app/">
+  <meta property="og:image" content="https://pa-interconnection.netlify.app/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Federal Tax Cliff Threatens Pennsylvania's Energy Generation Pipeline">
+  <meta name="twitter:description" content="70 PA generation projects, 1,583 MW of summer-peak capacity, stuck on state and local permitting with the federal tax credit cliff 14 months out.">
+  <meta name="twitter:image" content="https://pa-interconnection.netlify.app/assets/og-image.png">
+
   <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
-  <link rel="stylesheet" href="css/main.css?v=2">
+  <link rel="stylesheet" href="css/main.css?v=3">
 </head>
 <body>
 
@@ -23,6 +34,7 @@
       <a href="#brief" data-nav="projects">Projects</a>
       <a href="#threshold" data-nav="policy">Policy</a>
       <a href="#districts" data-nav="politics">Politics</a>
+      <a href="memo.html" data-nav="memo">Memo</a>
       <a href="#downloads" data-nav="downloads">Downloads</a>
     </div>
   </div>
@@ -158,6 +170,17 @@
         <div class="map-controls">
           <h4>Filter by fuel</h4>
           <div class="filter-group" id="fuel-filters"></div>
+          <div class="filter-note">Natural gas is not shown — there are 0 GIA-posted natural-gas projects in PA's queue. The 5 active gas projects are at the pre-GIA stage.</div>
+        </div>
+
+        <div class="map-controls">
+          <h4>Filter by status</h4>
+          <div class="filter-group" id="status-filters"></div>
+        </div>
+
+        <div class="map-controls">
+          <h4>Filter by senator party</h4>
+          <div class="filter-group" id="party-filters"></div>
           <div class="filter-group" style="border-top:1px solid var(--bpn-border);padding-top:12px;margin-top:14px">
             <label>
               <input type="checkbox" id="cliff-only">

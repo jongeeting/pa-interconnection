@@ -742,6 +742,130 @@ footer a { color: var(--bpn-green); }
 }
 .popup-stat-label { color: var(--bpn-muted); }
 
+.filter-note {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--bpn-border);
+  font-size: 0.78rem;
+  color: var(--bpn-muted);
+  line-height: 1.4;
+}
+.filter-group label.is-disabled {
+  color: var(--bpn-muted);
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* =====================================================================
+   MEMO PAGE
+   ===================================================================== */
+.memo-page { max-width: 780px; margin: 0 auto; padding: 48px 24px 80px; }
+.memo-page h1 { font-size: 2.2rem; line-height: 1.15; }
+.memo-page h2 { font-size: 1.4rem; margin-top: 2em; padding-bottom: 6px; border-bottom: 1px solid var(--bpn-border); }
+.memo-page h3 { font-size: 1.1rem; margin-top: 1.6em; }
+.memo-page p { margin: 0 0 1em; line-height: 1.65; }
+.memo-page strong { font-weight: 700; }
+.memo-page table {
+  width: 100%; border-collapse: collapse; margin: 1.2em 0;
+  font-size: 0.9rem; background: var(--bpn-card);
+  border: 1px solid var(--bpn-border);
+}
+.memo-page th, .memo-page td {
+  padding: 8px 10px; text-align: left;
+  border-bottom: 1px solid var(--bpn-border);
+}
+.memo-page th {
+  background: var(--bpn-bg); font-family: var(--font-head);
+  text-transform: uppercase; font-size: 0.72rem;
+  letter-spacing: 0.08em; color: var(--bpn-muted);
+}
+.memo-page td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.memo-page hr { border: 0; border-top: 1px solid var(--bpn-border); margin: 2em 0; }
+.memo-page ul, .memo-page ol { padding-left: 1.4em; line-height: 1.6; }
+.memo-page li { margin-bottom: 0.4em; }
+.memo-page blockquote {
+  border-left: 3px solid var(--bpn-green);
+  padding: 4px 16px; margin: 1em 0;
+  color: var(--bpn-dark); font-style: italic;
+}
+.memo-page blockquote cite { display: block; font-size: 0.82rem; color: var(--bpn-muted); margin-top: 6px; font-style: normal; }
+.memo-page code { background: var(--bpn-card); padding: 1px 5px; border-radius: 3px; font-size: 0.9em; }
+.memo-page .memo-meta { color: var(--bpn-muted); font-size: 0.95rem; margin-bottom: 2em; }
+.memo-page .memo-status {
+  display: inline-block; background: var(--bpn-bg);
+  border: 1px solid var(--bpn-border); border-radius: 3px;
+  padding: 4px 10px; margin-top: 6px;
+  font-family: var(--font-head); font-size: 0.72rem;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--bpn-muted);
+}
+
+/* Sponsor cards in memo */
+.sponsor-cards {
+  display: grid; grid-template-columns: 1fr 1fr 1fr;
+  gap: 14px; margin: 1.5em 0;
+}
+@media (max-width: 720px) { .sponsor-cards { grid-template-columns: 1fr; } }
+.sponsor-card {
+  background: var(--bpn-card);
+  border: 1px solid var(--bpn-border);
+  border-left: 3px solid var(--bpn-green);
+  border-radius: 0 4px 4px 0;
+  padding: 14px 16px;
+}
+.sponsor-card .sc-bill {
+  font-family: var(--font-head); font-weight: 700;
+  font-size: 1.1rem; color: var(--bpn-dark);
+  margin: 0 0 4px;
+}
+.sponsor-card .sc-title {
+  font-size: 0.82rem; color: var(--bpn-muted);
+  margin: 0 0 10px; line-height: 1.4;
+}
+.sponsor-card .sc-prime {
+  font-size: 0.88rem; font-weight: 600; color: var(--bpn-dark);
+}
+.sponsor-card .sc-prime small { display: block; color: var(--bpn-muted); font-weight: 500; margin-top: 1px; }
+.sponsor-card .sc-meta {
+  font-size: 0.78rem; color: var(--bpn-muted);
+  margin-top: 8px; padding-top: 8px;
+  border-top: 1px solid var(--bpn-border);
+}
+
+/* Memo-specific permit-time stat box */
+.permit-stats {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 14px; margin: 1.4em 0;
+}
+@media (max-width: 720px) { .permit-stats { grid-template-columns: 1fr; } }
+.permit-stat {
+  background: var(--bpn-bg);
+  border-radius: 4px;
+  padding: 16px 18px;
+  border-left: 3px solid var(--bpn-gold);
+}
+.permit-stat .ps-num {
+  font-family: var(--font-head); font-weight: 700;
+  font-size: 1.7rem; color: var(--bpn-dark); line-height: 1;
+}
+.permit-stat .ps-label {
+  font-size: 0.84rem; color: var(--bpn-dark);
+  margin-top: 6px; line-height: 1.4;
+}
+.permit-stat .ps-source {
+  font-size: 0.72rem; color: var(--bpn-muted);
+  margin-top: 6px; font-style: italic;
+}
+
+/* Mobile memo */
+@media (max-width: 720px) {
+  .memo-page { padding: 28px 16px 56px; }
+  .memo-page h1 { font-size: 1.7rem; }
+  .memo-page h2 { font-size: 1.2rem; margin-top: 1.6em; }
+  .memo-page h3 { font-size: 1.02rem; }
+  .memo-page table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+}
+
 /* =====================================================================
    MOBILE POLISH
    ===================================================================== */
