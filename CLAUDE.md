@@ -86,6 +86,23 @@ When updating senator data: cross-check every county against authoritative curre
 - **HB 502 (RESET Board / CRES bill)** — Rep. Mandy Steele (D-Allegheny), introduced April 2025 as part of Shapiro's Lightning Plan.
 - **H.R. 8477 (American Energy Dominance Act)** — Fitzpatrick (R-PA-1), Lawler (R-NY-17), Miller (R-OH-7), Carey (R-OH-15); introduced April 23, 2026; would remove OBBBA's accelerated 45Y/48E deadlines.
 
+## Future direction (not in v3 scope)
+
+**Cross-venue project tracker.** Eventually BPN intends to build a publicly-accessible tracker that follows each PA generation project across every venue it passes through:
+
+- PJM interconnection queue
+- State agency permits (DEP Chapter 102 / 105, PennDOT HOP, PUC siting)
+- County Conservation District review (where DEP Chapter 102 review is delegated locally)
+- County Planning Commission
+- Township zoning hearing board
+- Federal NEPA review (where applicable)
+
+The data lives across 67 counties × ~2,500 municipalities; no canonical consolidation exists today. The state-side tools published since 2024 (DEP permit tracker, PennDOT KPI dashboard, PAyback) cover only the state-agency layer. The local-permitting layer is fragmented and is where most of the 70 GIA-posted projects are actually stuck.
+
+Out of scope for this v3. Captured here so future sessions know it's the eventual destination.
+
+A spot-check during v3 development confirmed Hoodlebug Solar Energy Center (PJM AF1-272, Indiana County) appeared on Indiana County Planning Commission's July 2025 agenda — six years after PJM submission, still in local zoning review.
+
 ## Deploy
 
 GitHub: https://github.com/jongeeting/pa-interconnection (public).
