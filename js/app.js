@@ -176,26 +176,44 @@ function renderMarkers() {
     const opacity = meets ? 0.95 : 0.30;
     const size = Math.max(10, Math.min(36, 8 + Math.sqrt(p.mw_capacity) * 2.6));
 
-    const el = document.createElement('div');
-    el.className = 'map-marker';
-    el.style.cssText = `
+    // Wrapper: stable size for hit-testing, no transforms that could fight
+    // with MapLibre's positional transform.
+    const wrapper = document.createElement('div');
+    wrapper.className = 'map-marker-wrap';
+    wrapper.style.cssText = `
       width: ${size}px; height: ${size}px;
+      cursor: pointer;
+      position: relative;
+    `;
+
+    // Inner dot does the visual work (color, opacity, hover scale). Hit-tested
+    // on the wrapper so growing the dot doesn't fight the cursor.
+    const dot = document.createElement('div');
+    dot.className = 'map-marker';
+    dot.style.cssText = `
+      position: absolute; inset: 0;
       background: ${color};
       border: 2px solid white;
       border-radius: 50%;
       box-shadow: 0 1px 3px rgba(0,0,0,0.25);
       opacity: ${opacity};
-      cursor: pointer;
-      transition: scale 100ms ease;
+      transition: transform 100ms ease;
+      transform-origin: center center;
+      pointer-events: none;
     `;
-    // Use CSS `scale` property (composes with MapLibre's positional transform)
-    // rather than `transform` (which would overwrite the translate that pins
-    // the marker to its lat/lon).
-    el.addEventListener('mouseenter', () => { el.style.scale = '1.18'; el.style.zIndex = '5'; });
-    el.addEventListener('mouseleave', () => { el.style.scale = '1';    el.style.zIndex = ''; });
-    el.addEventListener('click', () => showProjectCard(p));
+    wrapper.appendChild(dot);
 
-    const m = new maplibregl.Marker({ element: el })
+    wrapper.addEventListener('mouseenter', () => {
+      dot.style.transform = 'scale(1.25)';
+      wrapper.style.zIndex = '5';
+    });
+    wrapper.addEventListener('mouseleave', () => {
+      dot.style.transform = '';
+      wrapper.style.zIndex = '';
+    });
+    wrapper.addEventListener('click', (e) => { e.stopPropagation(); showProjectCard(p); });
+
+    const m = new maplibregl.Marker({ element: wrapper })
       .setLngLat([p.lon, p.lat])
       .addTo(map);
     markers.push(m);
@@ -232,7 +250,7 @@ function buildProjectCardHTML(p) {
   const districtsBlock = (sens || reps)
     ? `<div class="districts-block">
          <div class="districts-label">Regional representatives</div>
-         <div class="districts-sub">State legislators whose districts cover ${p.county} County.</div>
+         <div class="districts-sub">All state legislators whose districts cover ${p.county} County. Percentages show share of county area in each district.</div>
          ${sens ? `<div class="districts-section"><div class="districts-section-h">State Senate</div><ul class="dist-list">${sens}</ul></div>` : ''}
          ${reps ? `<div class="districts-section"><div class="districts-section-h">State House</div><ul class="dist-list">${reps}</ul></div>` : ''}
        </div>`
@@ -263,11 +281,13 @@ function showProjectCard(p) {
   }
   activeProjectPopup = new maplibregl.Popup({
     closeButton: true,
-    closeOnClick: true,
+    closeOnClick: false,
     closeOnMove: false,
     offset: 14,
-    maxWidth: '340px',
+    maxWidth: '300px',
     className: 'proj-popup',
+    // Let MapLibre auto-pick the anchor (top/bottom/left/right) based on
+    // available space so the popup doesn't clip the map edges.
   })
     .setLngLat([p.lon, p.lat])
     .setHTML(buildProjectCardHTML(p))

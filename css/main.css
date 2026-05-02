@@ -763,6 +763,13 @@ footer a { color: var(--bpn-green); }
   margin: 0 0 10px;
 }
 
+/* Allow project popups to extend beyond the map container's edges so they
+   aren't clipped at narrow viewports / small map heights. The canvas keeps
+   its own overflow:hidden via .maplibregl-canvas-container. */
+#map.maplibregl-map { overflow: visible !important; }
+#map .maplibregl-canvas-container { overflow: hidden; }
+.maplibregl-popup.proj-popup { z-index: 50; }
+
 /* Project popup attached to bubble (replaces the side-panel proj-card) */
 .maplibregl-popup.proj-popup .maplibregl-popup-content {
   background: var(--bpn-card);
@@ -770,7 +777,8 @@ footer a { color: var(--bpn-green); }
   border-radius: 4px;
   padding: 0;
   box-shadow: 0 8px 24px rgba(0,0,0,0.18);
-  max-width: 340px;
+  width: 300px;
+  max-width: 300px;
   font-family: var(--font-body);
 }
 .maplibregl-popup.proj-popup .maplibregl-popup-close-button {
@@ -784,9 +792,15 @@ footer a { color: var(--bpn-green); }
 }
 .proj-card-popup {
   padding: 16px 18px 14px;
-  max-height: 70vh;
+  max-height: 520px;
   overflow-y: auto;
 }
+.proj-card-popup h3 { font-size: 1.1rem; }
+.proj-card-popup .proj-meta { font-size: 0.8rem; margin-bottom: 12px; }
+.proj-card-popup .proj-stat { font-size: 0.88rem; padding: 5px 0; }
+.proj-card-popup .districts-block { padding: 12px 14px 10px; margin-top: 12px; }
+.proj-card-popup .districts-sub { font-size: 0.76rem; line-height: 1.4; margin-bottom: 10px; }
+.proj-card-popup .dist-item { font-size: 0.82rem; padding: 4px 0; gap: 8px; }
 .proj-card-popup h3 {
   font-size: 1.05rem; line-height: 1.2;
   margin: 0 4px 4px 0;
