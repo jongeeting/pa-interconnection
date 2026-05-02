@@ -763,11 +763,6 @@ footer a { color: var(--bpn-green); }
   margin: 0 0 10px;
 }
 
-/* Allow project popups to extend beyond the map container's edges so they
-   aren't clipped at narrow viewports / small map heights. The canvas keeps
-   its own overflow:hidden via .maplibregl-canvas-container. */
-#map.maplibregl-map { overflow: visible !important; }
-#map .maplibregl-canvas-container { overflow: hidden; }
 .maplibregl-popup.proj-popup { z-index: 50; }
 
 /* Project popup attached to bubble (replaces the side-panel proj-card) */
@@ -791,8 +786,8 @@ footer a { color: var(--bpn-green); }
   border-bottom-color: var(--bpn-border);
 }
 .proj-card-popup {
-  padding: 16px 18px 14px;
-  max-height: 520px;
+  padding: 14px 16px 12px;
+  max-height: 440px;
   overflow-y: auto;
 }
 .proj-card-popup h3 { font-size: 1.1rem; }
@@ -801,6 +796,73 @@ footer a { color: var(--bpn-green); }
 .proj-card-popup .districts-block { padding: 12px 14px 10px; margin-top: 12px; }
 .proj-card-popup .districts-sub { font-size: 0.76rem; line-height: 1.4; margin-bottom: 10px; }
 .proj-card-popup .dist-item { font-size: 0.82rem; padding: 4px 0; gap: 8px; }
+
+.rep-line {
+  display: flex; align-items: center; gap: 10px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--bpn-border);
+  font-size: 0.88rem;
+}
+.rep-line:last-child { border-bottom: none; }
+.rep-line .rep-name { flex: 1; }
+.rep-line .rep-dist {
+  color: var(--bpn-muted);
+  font-size: 0.76rem;
+  font-family: var(--font-head);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+/* County-popup specific */
+.county-loc-note {
+  font-size: 0.76rem; color: var(--bpn-muted);
+  background: var(--bpn-bg); padding: 8px 10px;
+  border-radius: 3px; margin: 0 0 12px;
+  line-height: 1.4;
+}
+.county-proj-list {
+  list-style: none; padding: 0; margin: 0 0 14px;
+}
+.county-proj {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--bpn-border);
+}
+.county-proj:last-child { border-bottom: none; }
+.county-proj.below-threshold { opacity: 0.55; }
+.cp-header {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 0.88rem;
+}
+.cp-fuel-dot {
+  display: inline-block; width: 9px; height: 9px;
+  border-radius: 50%; flex-shrink: 0;
+}
+.cp-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cp-mw { color: var(--bpn-dark); font-weight: 700; white-space: nowrap; }
+.cp-meta {
+  font-size: 0.74rem; color: var(--bpn-muted);
+  margin-top: 2px;
+  display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
+}
+.cliff-badge {
+  display: inline-block;
+  background: var(--bpn-red); color: white;
+  font-size: 0.66rem; font-weight: 700;
+  padding: 1px 6px; border-radius: 3px;
+  letter-spacing: 0.04em; text-transform: uppercase;
+}
+.proj-gia-mini {
+  font-size: 0.66rem; font-weight: 700;
+  color: var(--bpn-green);
+  border: 1px solid var(--bpn-green);
+  padding: 1px 6px; border-radius: 3px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+.proj-gia-mini:hover {
+  background: var(--bpn-green); color: white;
+  text-decoration: none;
+}
 .proj-card-popup h3 {
   font-size: 1.05rem; line-height: 1.2;
   margin: 0 4px 4px 0;

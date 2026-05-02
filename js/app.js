@@ -27,6 +27,7 @@ let mixComparison = null;
 let senateGeojson = null;
 let houseGeojson = null;
 let cosponsorData = null;
+let countyCentroids = {};
 let map = null;
 let markers = [];
 let activeProjectPopup = null;
@@ -34,7 +35,7 @@ let chamberMap = null;
 const CHAMBER_STATE = { chamber: 'senate', view: 'capacity', selected: null };
 
 async function init() {
-  const [p, t, f, c, mc, sg, hg, cs] = await Promise.all([
+  const [p, t, f, c, mc, sg, hg, cs, cc] = await Promise.all([
     fetch('data/projects.json').then(r => r.json()),
     fetch('data/threshold-analysis.json').then(r => r.json()),
     fetch('data/fuel-mix.json').then(r => r.json()),
@@ -43,6 +44,7 @@ async function init() {
     fetch('data/pa-senate-districts.geojson').then(r => r.json()),
     fetch('data/pa-house-districts.geojson').then(r => r.json()),
     fetch('data/hb502-cosponsors.json').then(r => r.json()).catch(() => ({ senate: {}, house: {} })),
+    fetch('data/county-centroids.json').then(r => r.json()),
   ]);
   projects = p;
   thresholdData = t;
@@ -52,6 +54,13 @@ async function init() {
   senateGeojson = sg;
   houseGeojson = hg;
   cosponsorData = cs;
+  // Normalize centroids to {lat, lon} objects (file may have arrays or objects)
+  countyCentroids = {};
+  Object.keys(cc).forEach(k => {
+    const v = cc[k];
+    if (Array.isArray(v)) countyCentroids[k] = { lat: v[0], lon: v[1] };
+    else countyCentroids[k] = v;
+  });
   bakeCosponsorIntoGeoJson();
 
   // Initialize filter sets to all values present
@@ -168,56 +177,92 @@ function projectMeetsThreshold(p) {
 function renderMarkers() {
   if (!map) return;
   clearMarkers();
+
+  // Aggregate projects by county. We don't have parcel-level coordinates;
+  // pretending to know exact project locations would be misleading. Each
+  // bubble represents a county, sized by total stuck MW; the popup lists
+  // every project in that county and the legislators whose districts cover
+  // any portion of it.
+  const byCounty = new Map();
   projects.forEach(p => {
     if (!projectVisible(p)) return;
+    if (!byCounty.has(p.county)) {
+      byCounty.set(p.county, {
+        county: p.county,
+        projects: [],
+        totalMW: 0,
+        senators: p.senators || [],
+        house_reps: p.house_reps || [],
+      });
+    }
+    const c = byCounty.get(p.county);
+    c.projects.push(p);
+    c.totalMW += p.mw_capacity;
+  });
 
-    const meets = projectMeetsThreshold(p);
-    const color = FUEL_COLORS[p.fuel_group] || '#888';
-    const opacity = meets ? 0.95 : 0.30;
-    const size = Math.max(10, Math.min(36, 8 + Math.sqrt(p.mw_capacity) * 2.6));
+  byCounty.forEach((cty) => {
+    const meetsList = cty.projects.filter(projectMeetsThreshold);
+    const allMeet = meetsList.length === cty.projects.length;
+    const noneMeet = meetsList.length === 0;
+    const opacity = noneMeet ? 0.28 : (allMeet ? 0.95 : 0.7);
 
-    // Wrapper: stable size for hit-testing, no transforms that could fight
-    // with MapLibre's positional transform.
+    const meetsMW = meetsList.reduce((s, p) => s + p.mw_capacity, 0);
+    // Size by total MW; scale tuned so smallest counties (~7 MW) are visible
+    // but the largest (Crawford, 132 MW) don't dominate.
+    const size = Math.max(22, Math.min(64, 18 + Math.sqrt(cty.totalMW) * 3.2));
+
     const wrapper = document.createElement('div');
-    wrapper.className = 'map-marker-wrap';
-    wrapper.style.cssText = `
-      width: ${size}px; height: ${size}px;
-      cursor: pointer;
-      position: relative;
-    `;
+    wrapper.className = 'county-marker-wrap';
+    wrapper.style.cssText = `width:${size}px;height:${size}px;cursor:pointer;position:relative;`;
 
-    // Inner dot does the visual work (color, opacity, hover scale). Hit-tested
-    // on the wrapper so growing the dot doesn't fight the cursor.
     const dot = document.createElement('div');
-    dot.className = 'map-marker';
+    dot.className = 'county-marker';
     dot.style.cssText = `
-      position: absolute; inset: 0;
-      background: ${color};
+      position:absolute; inset:0;
+      background: var(--bpn-green);
       border: 2px solid white;
       border-radius: 50%;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.22);
       opacity: ${opacity};
       transition: transform 100ms ease;
       transform-origin: center center;
       pointer-events: none;
     `;
+
+    // Project count label inside the dot
+    const label = document.createElement('div');
+    label.style.cssText = `
+      position:absolute; inset:0;
+      display:flex; align-items:center; justify-content:center;
+      color:white; font-weight:700;
+      font-family: var(--font-head);
+      font-size: ${size > 36 ? '0.92rem' : '0.74rem'};
+      pointer-events: none; line-height: 1;
+    `;
+    label.textContent = String(cty.projects.length);
+
     wrapper.appendChild(dot);
+    wrapper.appendChild(label);
 
     wrapper.addEventListener('mouseenter', () => {
-      dot.style.transform = 'scale(1.25)';
+      dot.style.transform = 'scale(1.15)';
       wrapper.style.zIndex = '5';
     });
     wrapper.addEventListener('mouseleave', () => {
       dot.style.transform = '';
       wrapper.style.zIndex = '';
     });
-    wrapper.addEventListener('click', (e) => { e.stopPropagation(); showProjectCard(p); });
+    wrapper.addEventListener('click', (e) => { e.stopPropagation(); showCountyCard(cty); });
 
+    // Real county centroid (not jittered fake project coordinates)
+    const centroid = countyCentroids[cty.county];
+    if (!centroid) return;
     const m = new maplibregl.Marker({ element: wrapper })
-      .setLngLat([p.lon, p.lat])
+      .setLngLat([centroid.lon, centroid.lat])
       .addTo(map);
     markers.push(m);
   });
+
   updateThresholdReadout();
 }
 
@@ -234,6 +279,67 @@ function legRow(district, name, party, overlap_pct, chamber) {
   return `<li class="dist-item">${pill}<span class="dist-name"><strong>${name}</strong></span><span class="dist-num">${prefix}-${String(district).padStart(pad,'0')}</span>${pct}</li>`;
 }
 
+function buildCountyCardHTML(cty) {
+  // Multi-district legislator list (per user request: list the regional reps,
+  // not just the dominant one). Honest about the data limitation.
+  const sens = (cty.senators || []).map(s => legRow(s.district, s.name, s.party, s.overlap_pct, 'senate')).join('');
+  const reps = (cty.house_reps || []).map(h => legRow(h.district, h.name, h.party, h.overlap_pct, 'house')).join('');
+  const districtsBlock = (sens || reps)
+    ? `<div class="districts-block">
+         <div class="districts-label">Regional representatives</div>
+         ${sens ? `<div class="districts-section"><div class="districts-section-h">State Senate</div><ul class="dist-list">${sens}</ul></div>` : ''}
+         ${reps ? `<div class="districts-section"><div class="districts-section-h">State House</div><ul class="dist-list">${reps}</ul></div>` : ''}
+       </div>`
+    : '';
+
+  const projects = cty.projects.slice().sort((a, b) => b.mw_capacity - a.mw_capacity);
+  const projRows = projects.map(p => {
+    const cliffMark = p.cliff_exposed ? '<span class="cliff-badge">cliff</span>' : '';
+    const meetsThreshold = projectMeetsThreshold(p);
+    const meetsClass = meetsThreshold ? '' : 'below-threshold';
+    const giaLink = p.gia_url ? `<a class="proj-gia-mini" href="${p.gia_url}" target="_blank" rel="noopener noreferrer" title="View PJM agreement (PDF)">PDF</a>` : '';
+    return `<li class="county-proj ${meetsClass}">
+      <div class="cp-header">
+        <span class="cp-fuel-dot" style="background:${FUEL_COLORS[p.fuel_group] || '#888'}"></span>
+        <span class="cp-name"><strong>${p.name}</strong></span>
+        <span class="cp-mw">${fmt1(p.mw_capacity)} MW</span>
+      </div>
+      <div class="cp-meta">${p.fuel} · ${p.status} · PJM ${p.id} ${cliffMark} ${giaLink}</div>
+    </li>`;
+  }).join('');
+
+  return `
+    <div class="proj-card-popup">
+      <h3>${cty.county} County</h3>
+      <div class="proj-meta">${cty.projects.length} GIA-posted project${cty.projects.length === 1 ? '' : 's'} · ${fmt1(cty.totalMW)} MW summer-peak total</div>
+      <div class="county-loc-note">Project locations within the county are not yet sourced; bubbles are placed at the county centroid.</div>
+      <ul class="county-proj-list">${projRows}</ul>
+      ${districtsBlock}
+    </div>
+  `;
+}
+
+function showCountyCard(cty) {
+  if (!map) return;
+  if (activeProjectPopup) {
+    activeProjectPopup.remove();
+    activeProjectPopup = null;
+  }
+  const centroid = countyCentroids[cty.county];
+  if (!centroid) return;
+  activeProjectPopup = new maplibregl.Popup({
+    closeButton: true,
+    closeOnClick: false,
+    closeOnMove: false,
+    offset: 16,
+    maxWidth: '340px',
+    className: 'proj-popup',
+  })
+    .setLngLat([centroid.lon, centroid.lat])
+    .setHTML(buildCountyCardHTML(cty))
+    .addTo(map);
+}
+
 function buildProjectCardHTML(p) {
   const cliffMark = p.cliff_exposed
     ? '<span style="color:var(--bpn-red);font-weight:600">Yes</span>'
@@ -245,14 +351,29 @@ function buildProjectCardHTML(p) {
     ? `<a class="proj-doc-link" href="${p.gia_url}" target="_blank" rel="noopener noreferrer">View PJM agreement (PDF) →</a>`
     : '';
 
-  const sens = (p.senators || []).map(s => legRow(s.district, s.name, s.party, s.overlap_pct, 'senate')).join('');
-  const reps = (p.house_reps || []).map(h => legRow(h.district, h.name, h.party, h.overlap_pct, 'house')).join('');
-  const districtsBlock = (sens || reps)
+  // Show the dominant senator + dominant house rep (highest county-overlap %).
+  // Full multi-district data lives in the data file and feeds the Politics
+  // section's choropleth aggregations.
+  const dominantSen = (p.senators || [])[0];
+  const dominantRep = (p.house_reps || [])[0];
+
+  function repLine(prefix, distPrefix, distPad, leg) {
+    if (!leg) return '';
+    const pill = legPill(leg.party);
+    const distLabel = `${distPrefix}-${String(leg.district).padStart(distPad, '0')}`;
+    const partyLabel = leg.party === 'R' ? 'Republican' : leg.party === 'D' ? 'Democrat' : 'Vacant';
+    return `<div class="rep-line">
+      ${pill}
+      <span class="rep-name"><strong>${prefix} ${leg.name}</strong></span>
+      <span class="rep-dist">${distLabel} · ${partyLabel}</span>
+    </div>`;
+  }
+
+  const districtsBlock = (dominantSen || dominantRep)
     ? `<div class="districts-block">
          <div class="districts-label">Regional representatives</div>
-         <div class="districts-sub">All state legislators whose districts cover ${p.county} County. Percentages show share of county area in each district.</div>
-         ${sens ? `<div class="districts-section"><div class="districts-section-h">State Senate</div><ul class="dist-list">${sens}</ul></div>` : ''}
-         ${reps ? `<div class="districts-section"><div class="districts-section-h">State House</div><ul class="dist-list">${reps}</ul></div>` : ''}
+         ${repLine('Sen.', 'SD', 2, dominantSen)}
+         ${repLine('Rep.', 'HD', 3, dominantRep)}
        </div>`
     : '';
 
