@@ -3,21 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pennsylvania's Generation Pipeline at the Federal Cliff | Build Philly Now</title>
+  <title>Federal Tax Cliff Threatens Pennsylvania's Energy Generation Pipeline | Build Philly Now</title>
   <meta name="description" content="70 PA generation projects have cleared PJM engineering review and are stuck on permitting. Federal tax credits expire in 14 months. The case for amending HB 502.">
 
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
-  <link rel="stylesheet" href="css/main.css?v=1">
+  <link rel="stylesheet" href="css/main.css?v=2">
 </head>
 <body>
 
 <nav class="nav">
   <div class="nav-inner">
     <a href="#top" class="nav-brand">
-      <div class="nav-brand-mono">BPN</div>
+      <img src="assets/bpn-monogram.png" alt="BPN" class="nav-brand-logo">
       <span class="nav-brand-sub">PA Generation Queue at the Federal Cliff</span>
     </a>
     <div class="nav-links">
+      <a href="#context">Context</a>
       <a href="#explore">Map</a>
       <a href="#threshold">Threshold</a>
       <a href="#senators">Senators</a>
@@ -29,7 +31,7 @@
 <header class="hero" id="top">
   <div class="container">
     <span class="tag">Research · May 2026</span>
-    <h1>Pennsylvania's Generation Pipeline Is Stuck Behind a Federal Tax Cliff</h1>
+    <h1>Federal Tax Cliff Threatens Pennsylvania's Energy Generation Pipeline</h1>
     <p class="lede">
       <strong>70 Pennsylvania generation projects</strong> — 1,583 MW of summer-peak capacity — have already cleared PJM's engineering review and executed Generation Interconnection Agreements. They are stuck on state and local permitting. For the solar and wind subset, the One Big Beautiful Bill Act's federal tax credit deadlines threaten to void project economics within 14 months. Governor Shapiro's <strong>HB 502</strong> is the obvious vehicle, but its 25 MW eligibility threshold excludes most of the projects at risk. This is the case for lowering it to 10 MW — or lower.
     </p>
@@ -57,7 +59,7 @@
       <div class="brief-card">
         <div class="brief-num">1.</div>
         <h3>The pipeline is real, vetted, and stuck</h3>
-        <p>PJM has already determined these 70 projects can be safely interconnected and signed agreements with each developer. They are not waiting on engineering. They are waiting on people. Most have been in development since 2018–2020.</p>
+        <p>PJM has already determined these 70 projects can be safely interconnected and signed agreements with each developer. They are not waiting on engineering. They are waiting on bureaucratic process and politics. Most have been in development since 2018–2020.</p>
       </div>
       <div class="brief-card">
         <div class="brief-num">2.</div>
@@ -69,6 +71,39 @@
         <h3>HB 502's threshold misses the target</h3>
         <p>The bill's 25 MW eligibility floor was set as a generic "utility-scale" default. PA's pipeline is overwhelmingly community-scale. Lowering the threshold to 10 MW would expand HB 502's coverage of stuck projects from 29% to 83%.</p>
       </div>
+    </div>
+
+    <div class="brief-callout-row">
+      <div class="brief-callout">
+        <div class="callout-num">103 GW authorized → 23 GW built</div>
+        <p>Per PJM's March 2026 disclosure, of the 103 GW of Generation Interconnection Agreements executed since 2020, only 23 GW reached commercial operation. <strong>77% of GIA-posted projects withdrew before sending power to the grid.</strong> Permitting friction is the dominant attrition driver, and the federal cliff makes it worse.</p>
+        <cite>Source: PJM, March 2026, via <a href="https://heatmap.news/energy/pjm-queue-natural-gas" target="_blank" rel="noopener noreferrer">Heatmap, April 30, 2026</a></cite>
+      </div>
+      <div class="brief-callout">
+        <div class="callout-num">The PJM-wide queue mix has flipped</div>
+        <p>PJM's 2022 queue was 66% solar by capacity. The new Cycle 1 queue (April 2026) is <strong>48% natural gas</strong>, with solar down to 7%. The state-level breakdown of Cycle 1 PA projects is forthcoming. The 70 PA projects already in legacy queue agreements remain the population most exposed to the federal cliff today.</p>
+        <cite>Source: PJM Cycle 1 announcement (April 29, 2026), via <a href="https://heatmap.news/energy/pjm-queue-natural-gas" target="_blank" rel="noopener noreferrer">Heatmap</a></cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="context">
+  <div class="container">
+    <h2><span class="kicker">Pre-Cycle 1 context</span>How PA's queue compared to PJM's, before the new data</h2>
+    <p style="max-width:760px">
+      Most national reporting describes PJM's interconnection queue in aggregate. The state-level cut matters here. The chart below compares the legacy PJM-wide queue (the 2022 snapshot, as it stood when PJM closed the queue and began reform) against the legacy PA active queue analyzed throughout this site. Both predate the April 2026 Cycle 1 announcement. The Cycle 1 PA breakdown will be added when PJM publishes it.
+    </p>
+
+    <div class="chart-card" style="margin-top:24px">
+      <h3>Legacy queue mix: PJM-wide vs Pennsylvania</h3>
+      <div class="chart-sub">Share of MW capacity in each queue. Total queue size shown next to each bar.</div>
+      <div class="chart-host" style="height:240px"><canvas id="chart-mix-comparison"></canvas></div>
+      <div id="chart-mix-comparison-caption" class="chart-caption"></div>
+    </div>
+
+    <div class="note" style="margin-top:24px">
+      <strong>What the chart shows.</strong> PA's legacy active queue tracked PJM-wide closely on renewable share (84% solar, storage, and solar+storage hybrids combined for PA vs ~83% for PJM-wide), with PA slightly more storage-heavy and slightly less gas-heavy than the system average. PA's queue also contained two utility-scale nuclear projects — both at Peach Bottom — that drive PA's 8% nuclear share without a parallel in the PJM-wide chart. Whether PA's <em>Cycle 1</em> share continues to over-index on storage and renewables, or follows the system mix toward gas, is the question we expect to answer in coming weeks.
     </div>
   </div>
 </section>
@@ -170,7 +205,7 @@
   <div class="container">
     <h2><span class="kicker">Political map</span>State senators with stuck capacity in their districts</h2>
     <p style="max-width:760px">
-      Almost every county with a GIA-posted project is represented in the State Senate by a Republican. These are the legislators whose constituents stand to gain construction trades jobs, host-community PILOT revenue, and tax base if these projects break ground — and lose it if they don't. Senator names below are <strong>BPN to verify</strong> against current district maps before any external use.
+      Almost every county with a GIA-posted project is represented in the State Senate by a Republican. These are the legislators whose constituents stand to gain construction trades jobs, host-community PILOT revenue, and tax base if these projects break ground — and lose it if they don't.
     </p>
     <div class="senator-targets" id="senator-targets"></div>
   </div>
@@ -180,6 +215,38 @@
   <div class="container">
     <h2><span class="kicker">Largest projects</span>Top 20 GIA-posted PA projects by MW</h2>
     <div class="chart-card" id="top-projects-host" style="margin-top:24px"></div>
+  </div>
+</section>
+
+<section id="counterarguments">
+  <div class="container">
+    <h2><span class="kicker">Counter-arguments</span>What the strongest critiques get right, and where they fall short</h2>
+    <p style="max-width:760px">
+      Three rebuttals to the case for amending HB 502 are worth taking seriously. None of them undermine the threshold-amendment argument, but each shapes how the policy should be drafted.
+    </p>
+
+    <div class="brief-grid" style="margin-top:24px">
+      <div class="brief-card">
+        <h3>"Interconnection, not land use, is the bottleneck"</h3>
+        <p>The MPL Law Firm critique (September 2025) argued that PJM's queue, not local zoning, was historically the binding constraint — and that PA's Municipalities Planning Code already imposes timing limits on local review.</p>
+        <p style="margin-top:10px"><strong>What it gets right:</strong> for the 270 active PA projects still in PJM's pre-GIA pipeline, interconnection reform is the bigger lever.</p>
+        <p style="margin-top:10px"><strong>Where it falls short:</strong> it doesn't apply to the 70 GIA-posted projects, which have already cleared PJM. For them, state and local permitting is the binding constraint by definition. The MPL critique is best read as "don't let HB 502 be your only reform," not "don't pass HB 502."</p>
+      </div>
+
+      <div class="brief-card">
+        <h3>"They have GIAs — they'll get built"</h3>
+        <p>It's true that an executed PJM GIA is a meaningful milestone. It's not true that it's a guarantee.</p>
+        <p style="margin-top:10px"><strong>The data:</strong> per PJM's March 2026 disclosure, of the 103 GW of GIAs executed across all PJM since 2020, only 23 GW reached commercial operation. <strong>77% of GIA-posted projects withdrew before sending power to the grid.</strong></p>
+        <p style="margin-top:10px">For PA's 64 cliff-exposed solar and wind projects, the historical attrition rate plus a hard federal deadline 14 months out is a worse setup than the 77% baseline implies. A state policy intervention is the only mechanism available to push the conversion rate higher.</p>
+      </div>
+
+      <div class="brief-card">
+        <h3>"Local preemption is the wrong tool"</h3>
+        <p>PA League of Cities and PSAB have raised concerns about HB 502's preemption of local land-use controls.</p>
+        <p style="margin-top:10px"><strong>What it gets right:</strong> blanket preemption with no environmental safeguards or community-benefit floor would be a real problem.</p>
+        <p style="margin-top:10px"><strong>Where it falls short:</strong> the bill as drafted already includes a 90-day RESET Board determination clock, a 45-day public hearing window, and a 180-day Environmental Hearing Board appeal window. The threshold amendment doesn't change any of those safeguards — it just expands which projects qualify for the same procedural framework. The MAREC and PEC testimony record makes the same point.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -209,13 +276,21 @@
         <p>Bill text uses "capacity," interpreted here as PJM's "MW Capacity" (summer net) field. For solar projects this typically runs lower than "MW Energy" (winter net), so the threshold semantics matter. Confirm with bill drafters before final use.</p>
       </div>
       <div class="method-card">
-        <h4>Senator attribution</h4>
-        <p>County-level approximation based on PA State Senate districts post-2022 redistricting. Many counties span multiple districts; the dominant senator is shown. Project locations shown at jittered county centroids since precise lat/lon was not available in the source file.</p>
+        <h4>Legislator attribution</h4>
+        <p>Each project is tagged with the State Senate and State House districts whose boundaries cover the project's county under PA's post-2022 redistricting. For projects pinned to county centroids (most), all overlapping districts are listed. Project locations are shown at jittered county centroids since precise lat/lon was not available in the source file. Where parcel-level coordinates are sourced, attribution becomes point-in-polygon and a single Senate + House district per project.</p>
+      </div>
+      <div class="method-card">
+        <h4>Cycle 1 mix shift</h4>
+        <p>PJM's April 29, 2026 Cycle 1 announcement (811 projects, 220 GW system-wide) showed a dramatic shift in the PJM-wide queue mix: from 66% solar in 2022 to 48% natural gas today. The state-level breakdown of PA projects within Cycle 1 has not yet been published. The site will be refreshed when it is.</p>
+      </div>
+      <div class="method-card">
+        <h4>GIA-to-COD attrition</h4>
+        <p>PJM's March 2026 disclosure: 103 GW of Generation Interconnection Agreements executed since 2020 produced only 23 GW of commercial operation — a 77% attrition rate. This is the historical baseline. For PA's 64 cliff-exposed solar and wind projects, the OBBBA tax-credit deadlines compress the construction window, making the attrition rate likely to run higher absent state policy intervention.</p>
       </div>
     </div>
 
     <div class="note" style="margin-top:28px">
-      <strong>Limitations.</strong> This analysis covers the legacy PJM queue, which closed before April 2026. PJM's Cycle 1 — 811 projects, 220 GW system-wide — will produce a state-level breakdown in coming weeks. When that data lands, we will refresh this analysis to include both the legacy and Cycle 1 PA pipelines. The "stuck on permitting" inference for suspended projects is not yet directly verified; project-level outreach or FOIL requests would confirm. Senator names and district numbers are <strong>BPN to verify</strong>.
+      <strong>Limitations.</strong> This analysis covers the legacy PJM queue, which closed before April 2026. PJM's Cycle 1 — 811 projects, 220 GW system-wide — will produce a state-level breakdown in coming weeks. When that data lands, we will refresh this analysis to include both the legacy and Cycle 1 PA pipelines. The "stuck on permitting" inference for suspended projects is not yet directly verified; project-level outreach or FOIL requests would confirm.
     </div>
   </div>
 </section>

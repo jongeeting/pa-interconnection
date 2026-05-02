@@ -1,0 +1,92 @@
+# Project context for Claude (and humans)
+
+This is the **PA Generation Queue / Federal Tax Cliff** site for [Build Philly Now](https://buildphillynow.substack.com).
+
+## What the site argues
+
+Of Pennsylvania's 340 active PJM-queued generation projects (10,421 MW), **70 have executed Generation Interconnection Agreements** (1,583 MW summer-peak). For these, engineering review is complete — the binding constraint is now state and local permitting, not PJM. Of the 70, **64 are solar/wind** exposed to OBBBA's federal tax-credit cliff (begin construction by July 4, 2026; placed in service by Dec 31, 2027).
+
+**Policy ask:** lower HB 502's eligibility threshold from 25 MW to 10 MW. This expands cliff-exposed coverage from 17 of 64 projects to 55 of 64.
+
+## Authorial voice
+
+- **Voice:** policy-research, not advocacy. Specific, sourced, defensible. Hot takes that outrun the data get cut.
+- **Don't conflate scopes.** PJM-wide ≠ PA. Legacy queue ≠ Cycle 1. 2022 snapshot ≠ today. Copy must explicitly say which.
+- **Don't add features the user didn't ask for.** No speculative dashboards, no extra charts, no new fuel taxonomies. Bug fixes are bug fixes.
+- **Brand tokens — DO NOT change:** green `#00844d`, beige bg `#eae7e4`, card `#f5f3f1`, gold `#c99b2e`, red `#b23a2f`. Type stack: Fraunces (display) + Hanken Grotesk (body). Section structure mirrors https://bpn-oz-analysis.netlify.app/.
+- **Co-authors.** Penn ENVS 5100 Group 4 (Brandon Licata, Nechama Lowy, Lexi Luong, Anna Phillips, Andrew Weng, Jie Ying) — currently credited for the threshold-analysis insight specifically. Per Jon (May 2026), they will become full co-authors after collab in coming weeks; update footer attribution then.
+
+## Canonical data derivation (the 70 projects)
+
+Source: `Copy of PlanningQueues.xlsx` — PJM Planning Queues file, PA-only export, obtained via Penn Group 4 from RMI.
+
+Filter to reproduce the GIA-posted set:
+
+```
+State == "PA"
+AND Status IN {Active, Engineering and Procurement, Suspended,
+               Under Construction, Partially in Service,
+               Partially in Service - Under Construction}
+AND "Interim/Interconnection Service/Generation Interconnection Agreement Status"
+    IN {Document Posted, Posted}
+```
+
+Result: **70 projects, 1,583 MW summer (MW Capacity), 2,794 MW winter (MW Energy).**
+
+Status mix: 41 Engineering and Procurement, 22 Suspended, 6 Under Construction, 1 Partially in Service.
+Fuel mix: 60 Solar, 5 Storage, 2 Solar+Storage, 1 Wind, 2 Nuclear (the 2 nuclear are Peach Bottom Units #2 and #3).
+Cliff-exposed (solar + wind only): 64 projects, 1,390 MW.
+
+Project `name` should match xlsx `Commercial Name` (developer-facing). Where empty, fall back to xlsx `Name` (utility/PJM internal name) — this happens for one project, `AF1-302` → `Brookville-Squab Hollow 138 kV`.
+
+## Repo layout
+
+```
+index.html              Single-page site
+memo.html               (Phase 7) Long-form policy memo
+css/main.css            BPN brand tokens
+js/app.js               Map, charts, filters, slider — vanilla JS
+data/
+  projects.json             70 GIA-posted projects, with attribution
+  threshold-analysis.json   Cuts at 5/10/15/20/25/50/100 MW × 3 scopes
+  fuel-mix.json             PA active queue fuel mix
+  by-county.json            County rollup
+  county-centroids.json     PA county centroid lookup
+  queue-mix-comparison.json PJM-wide vs PA legacy + Cycle 1 mix
+  csv/                      Public CSV downloads
+.claude/launch.json     Dev preview config (port 8080)
+netlify.toml            Static-site deploy config
+```
+
+## Dev
+
+```bash
+npm run dev   # npx serve on :8080
+```
+
+No build step. All static.
+
+## Open verification items
+
+1. **Senate + House district attribution.** County-level proxy currently. Phase 4–5 work: attach all overlapping districts per project. Use authoritative shapefiles from the [PA Spatial Data Access portal](https://www.pasda.psu.edu/) or [PA OpenData](https://data.pa.gov/). Where parcel lat/lon is sourced, switch to point-in-polygon for that specific project.
+2. **Project geometry.** Most projects pinned to jittered county centroids. PJM Queue Active List + state PUC + zoning records can yield parcel-level locations for the larger ones. Realistic recovery rate: 10–20 of 70.
+3. **MW Capacity vs MW Energy.** HB 502 says "capacity" — currently interpreted as PJM's MW Capacity (summer net). Confirm with bill drafters.
+4. **"Stuck on permitting" inference for Suspended projects.** Not directly verified at the project level. FOIL or developer outreach would confirm.
+
+## Senator-data corrections that need to land in Phase 4
+
+Past versions (and the v3 memo's example list) contained at least one error: Crawford County's senator is **Sen. Michele Brooks (SD-50, R)**, not Sen. Dan Laughlin (SD-49, who represents Erie). The data file already has Brooks correctly — the memo had Laughlin and was silently corrected when memo.html was generated.
+
+When updating senator data: cross-check every county against authoritative current-period PA Senate maps. PA's 50 Senate districts and 203 House districts both follow post-2022 redistricting boundaries.
+
+## External references
+
+- **Heatmap, "Where Did All the Solar Go?"** (April 30, 2026) — https://heatmap.news/energy/pjm-queue-natural-gas. Source for PJM-wide 2022 vs Cycle 1 mix charts and the 103 GW → 23 GW attrition stat.
+- **PJM Planning Queues** — public PDFs of every project's Feasibility, System Impact, Facilities Study, GIA, and CSA are linked from each project record (see `gia_url` field).
+- **HB 502 (RESET Board / CRES bill)** — Rep. Mandy Steele (D-Allegheny), introduced April 2025 as part of Shapiro's Lightning Plan.
+- **H.R. 8477 (American Energy Dominance Act)** — Fitzpatrick (R-PA-1), Lawler (R-NY-17), Miller (R-OH-7), Carey (R-OH-15); introduced April 23, 2026; would remove OBBBA's accelerated 45Y/48E deadlines.
+
+## Deploy
+
+GitHub: https://github.com/jongeeting/pa-interconnection (public).
+Netlify: configured via `netlify.toml`. Publish dir is repo root, no build command.

@@ -21,20 +21,23 @@ let projects = [];
 let thresholdData = null;
 let fuelMix = null;
 let countyData = null;
+let mixComparison = null;
 let map = null;
 let markers = [];
 
 async function init() {
-  const [p, t, f, c] = await Promise.all([
+  const [p, t, f, c, mc] = await Promise.all([
     fetch('data/projects.json').then(r => r.json()),
     fetch('data/threshold-analysis.json').then(r => r.json()),
     fetch('data/fuel-mix.json').then(r => r.json()),
     fetch('data/by-county.json').then(r => r.json()),
+    fetch('data/queue-mix-comparison.json').then(r => r.json()),
   ]);
   projects = p;
   thresholdData = t;
   fuelMix = f;
   countyData = c;
+  mixComparison = mc;
 
   // Initialize fuel filter set with all fuels present
   new Set(projects.map(p => p.fuel_group)).forEach(fg => STATE.showFuels.add(fg));
@@ -74,7 +77,7 @@ function buildHeroStats() {
     </div>
     <div class="stat">
       <div class="stat-num">${fmt(projects.reduce((s,p)=>s+p.mw_capacity,0))} <span style="font-size:1.1rem;font-weight:500;color:var(--bpn-muted)">MW</span></div>
-      <div class="stat-label">Summer-peak capacity stuck behind state and local permitting</div>
+      <div class="stat-label">Summer-peak capacity stuck in state and local permitting</div>
     </div>
     <div class="stat">
       <div class="stat-num">${cliff.length} <span style="font-size:1.1rem;font-weight:500;color:var(--bpn-muted)">/ ${fmt(cliffMW)} MW</span></div>
@@ -189,6 +192,10 @@ function showProjectCard(p) {
 
   const submitted = p.submitted ? new Date(p.submitted).toLocaleDateString(undefined, {year:'numeric', month:'short'}) : '—';
 
+  const giaLink = p.gia_url
+    ? `<a class="proj-doc-link" href="${p.gia_url}" target="_blank" rel="noopener noreferrer">View PJM agreement (PDF) →</a>`
+    : '';
+
   el.innerHTML = `
     <h3>${p.name}</h3>
     <div class="proj-meta">${p.county} County · PJM ID ${p.id}</div>
@@ -200,6 +207,7 @@ function showProjectCard(p) {
     <div class="proj-stat"><span class="proj-stat-label">Federal cliff exposed</span><span class="proj-stat-value">${cliffMark}</span></div>
     <div class="proj-stat"><span class="proj-stat-label">CSA executed</span><span class="proj-stat-value">${p.csa_posted ? 'Yes' : 'No'}</span></div>
     ${senTag}
+    ${giaLink}
   `;
 }
 
@@ -301,12 +309,88 @@ function highlightThresholdRow() {
 function buildCharts() {
   // Threshold sensitivity chart (3 series: all active, GIA-posted, cliff-exposed)
   buildThresholdChart();
+  // PA-vs-PJM mix comparison
+  buildMixComparisonChart();
   // Fuel mix chart
   buildFuelMixChart();
   // County rankings chart
   buildCountyChart();
   // Status breakdown
   buildStatusChart();
+}
+
+function buildMixComparisonChart() {
+  const ctx = document.getElementById('chart-mix-comparison');
+  if (!ctx || !mixComparison) return;
+
+  // Two-bar 100% stacked horizontal: PJM 2022 (top) vs PA legacy active (bottom)
+  const fuelOrder = ['Natural Gas', 'Solar', 'Solar+Storage', 'Storage', 'Wind', 'Nuclear', 'Other'];
+  const series = [
+    { key: 'pjm_2022_full_queue' },
+    { key: 'pa_legacy_active' },
+  ];
+
+  const labels = series.map(s => mixComparison[s.key].label);
+  const datasets = fuelOrder.map(fuel => ({
+    label: fuel,
+    backgroundColor: FUEL_COLORS[fuel] || '#a9a39a',
+    borderColor: 'white',
+    borderWidth: 1,
+    data: series.map(s => {
+      const f = (mixComparison[s.key].fuels || []).find(x => x.fuel === fuel);
+      return f ? f.pct : 0;
+    }),
+  }));
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: { labels, datasets },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { position: 'bottom', labels: { font: { family: 'Hanken Grotesk' }, boxWidth: 12, padding: 10 } },
+        tooltip: {
+          titleFont: { family: 'Hanken Grotesk' }, bodyFont: { family: 'Hanken Grotesk' },
+          callbacks: {
+            label: (ctx) => {
+              const seriesKey = series[ctx.dataIndex].key;
+              const fuel = ctx.dataset.label;
+              const f = (mixComparison[seriesKey].fuels || []).find(x => x.fuel === fuel);
+              if (!f || !f.pct) return null;
+              return `${fuel}: ${f.pct}% (${fmt(f.mw)} MW)`;
+            }
+          }
+        }
+      },
+      scales: {
+        x: {
+          stacked: true, min: 0, max: 100,
+          grid: { color: 'rgba(0,0,0,0.06)' },
+          ticks: {
+            font: { family: 'Hanken Grotesk' },
+            callback: (v) => v + '%'
+          }
+        },
+        y: {
+          stacked: true,
+          grid: { display: false },
+          ticks: { font: { family: 'Hanken Grotesk', size: 12 }, color: '#1a1a1a' }
+        }
+      }
+    }
+  });
+
+  // Caption: total MW for each
+  const cap = document.getElementById('chart-mix-comparison-caption');
+  if (cap) {
+    cap.innerHTML = series.map(s => {
+      const d = mixComparison[s.key];
+      const lbl = d.label_long || d.label;
+      return `<div class="caption-row"><strong>${lbl}:</strong> ${fmt(d.total_mw)} MW total ${d.source_label ? '· <span class="caption-src">' + d.source_label + '</span>' : ''}</div>`;
+    }).join('');
+  }
 }
 
 function buildThresholdChart() {

@@ -1,0 +1,54 @@
+{
+  "_note": "Three queue snapshots compared. PA active = legacy queue snapshot via the planning queues file used elsewhere on this site. PJM 2022 and PJM Cycle 1 numbers are sourced from Heatmap's reporting on PJM Interconnection data.",
+
+  "pjm_2022_full_queue": {
+    "label": "PJM-wide (2022)",
+    "label_long": "PJM-wide queue (2022 snapshot, pre-closure)",
+    "total_mw": 86821,
+    "as_of": "2022",
+    "source_url": "https://heatmap.news/energy/pjm-queue-natural-gas",
+    "source_label": "Heatmap, April 30, 2026 (from PJM Interconnection)",
+    "fuels": [
+      { "fuel": "Solar",       "mw": 57616, "pct": 66.4 },
+      { "fuel": "Storage",     "mw": 14148, "pct": 16.3 },
+      { "fuel": "Natural Gas", "mw":  7966, "pct":  9.2 },
+      { "fuel": "Wind",        "mw":  6223, "pct":  7.2 },
+      { "fuel": "Other",       "mw":   868, "pct":  1.0 }
+    ]
+  },
+
+  "pa_legacy_active": {
+    "label": "PA active (legacy)",
+    "label_long": "PA active queue (legacy snapshot, pre-Cycle 1)",
+    "total_mw": 10421,
+    "as_of": "Legacy queue, snapshot as of analysis date",
+    "source_label": "PJM Planning Queues file, via RMI / Penn ENVS 5100 Group 4",
+    "fuels": [
+      { "fuel": "Solar",         "mw": 4542, "pct": 43.6 },
+      { "fuel": "Storage",       "mw": 2119, "pct": 20.3 },
+      { "fuel": "Solar+Storage", "mw": 2059, "pct": 19.8 },
+      { "fuel": "Nuclear",       "mw":  847, "pct":  8.1 },
+      { "fuel": "Natural Gas",   "mw":  451, "pct":  4.3 },
+      { "fuel": "Wind",          "mw":  401, "pct":  3.8 },
+      { "fuel": "Other",         "mw":    3, "pct":  0.0 }
+    ]
+  },
+
+  "pjm_cycle1_2026": {
+    "label": "PJM-wide Cycle 1 (April 29, 2026)",
+    "total_mw": 220222,
+    "as_of": "April 29, 2026",
+    "source_url": "https://heatmap.news/energy/pjm-queue-natural-gas",
+    "source_label": "PJM Cycle 1 announcement, via Heatmap",
+    "n_projects": 811,
+    "fuels": [
+      { "fuel": "Natural Gas",   "mw": 105797, "pct": 48.0 },
+      { "fuel": "Storage",       "mw":  67465, "pct": 30.6 },
+      { "fuel": "Nuclear",       "mw":  17906, "pct":  8.1 },
+      { "fuel": "Solar",         "mw":  14781, "pct":  6.7 },
+      { "fuel": "Solar+Storage", "mw":   8890, "pct":  4.0 },
+      { "fuel": "Wind",          "mw":   4726, "pct":  2.1 },
+      { "fuel": "Other",         "mw":    657, "pct":  0.3 }
+    ]
+  }
+}
