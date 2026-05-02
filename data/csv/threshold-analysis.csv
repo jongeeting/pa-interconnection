@@ -1,0 +1,22 @@
+scope,threshold_mw,projects,pct_projects,mw_capacity,pct_mw
+All active PA queue,5,293,86.2,10305.0,98.9
+All active PA queue,10,214,62.9,9737.0,93.4
+All active PA queue,15,142,41.8,8859.0,85.0
+All active PA queue,20,128,37.6,8616.0,82.7
+All active PA queue,25,100,29.4,8023.0,77.0
+All active PA queue,50,56,16.5,6397.0,61.4
+All active PA queue,100,25,7.4,4439.0,42.6
+GIA-posted (engineering complete),5,69,98.6,1582.0,99.9
+GIA-posted (engineering complete),10,58,82.9,1497.0,94.5
+GIA-posted (engineering complete),15,24,34.3,1086.0,68.6
+GIA-posted (engineering complete),20,23,32.9,1068.0,67.5
+GIA-posted (engineering complete),25,20,28.6,1000.0,63.2
+GIA-posted (engineering complete),50,8,11.4,522.0,32.9
+GIA-posted (engineering complete),100,1,1.4,100.0,6.3
+Cliff-exposed: GIA-posted solar + wind,5,64,100.0,1390.0,100.0
+Cliff-exposed: GIA-posted solar + wind,10,55,85.9,1321.0,95.0
+Cliff-exposed: GIA-posted solar + wind,15,21,32.8,910.0,65.5
+Cliff-exposed: GIA-posted solar + wind,20,20,31.2,892.0,64.2
+Cliff-exposed: GIA-posted solar + wind,25,17,26.6,824.0,59.3
+Cliff-exposed: GIA-posted solar + wind,50,7,10.9,422.0,30.3
+Cliff-exposed: GIA-posted solar + wind,100,0,0.0,0.0,0.0

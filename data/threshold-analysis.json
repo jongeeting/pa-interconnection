@@ -1,0 +1,170 @@
+{
+  "all_active": {
+    "label": "All active PA queue",
+    "total_projects": 340,
+    "total_mw": 10421.0,
+    "cuts": [
+      {
+        "threshold": 5,
+        "projects": 293,
+        "pct_projects": 86.2,
+        "mw_capacity": 10305.0,
+        "pct_mw": 98.9
+      },
+      {
+        "threshold": 10,
+        "projects": 214,
+        "pct_projects": 62.9,
+        "mw_capacity": 9737.0,
+        "pct_mw": 93.4
+      },
+      {
+        "threshold": 15,
+        "projects": 142,
+        "pct_projects": 41.8,
+        "mw_capacity": 8859.0,
+        "pct_mw": 85.0
+      },
+      {
+        "threshold": 20,
+        "projects": 128,
+        "pct_projects": 37.6,
+        "mw_capacity": 8616.0,
+        "pct_mw": 82.7
+      },
+      {
+        "threshold": 25,
+        "projects": 100,
+        "pct_projects": 29.4,
+        "mw_capacity": 8023.0,
+        "pct_mw": 77.0
+      },
+      {
+        "threshold": 50,
+        "projects": 56,
+        "pct_projects": 16.5,
+        "mw_capacity": 6397.0,
+        "pct_mw": 61.4
+      },
+      {
+        "threshold": 100,
+        "projects": 25,
+        "pct_projects": 7.4,
+        "mw_capacity": 4439.0,
+        "pct_mw": 42.6
+      }
+    ]
+  },
+  "gia_posted": {
+    "label": "GIA-posted (engineering complete)",
+    "total_projects": 70,
+    "total_mw": 1583.0,
+    "cuts": [
+      {
+        "threshold": 5,
+        "projects": 69,
+        "pct_projects": 98.6,
+        "mw_capacity": 1582.0,
+        "pct_mw": 99.9
+      },
+      {
+        "threshold": 10,
+        "projects": 58,
+        "pct_projects": 82.9,
+        "mw_capacity": 1497.0,
+        "pct_mw": 94.5
+      },
+      {
+        "threshold": 15,
+        "projects": 24,
+        "pct_projects": 34.3,
+        "mw_capacity": 1086.0,
+        "pct_mw": 68.6
+      },
+      {
+        "threshold": 20,
+        "projects": 23,
+        "pct_projects": 32.9,
+        "mw_capacity": 1068.0,
+        "pct_mw": 67.5
+      },
+      {
+        "threshold": 25,
+        "projects": 20,
+        "pct_projects": 28.6,
+        "mw_capacity": 1000.0,
+        "pct_mw": 63.2
+      },
+      {
+        "threshold": 50,
+        "projects": 8,
+        "pct_projects": 11.4,
+        "mw_capacity": 522.0,
+        "pct_mw": 32.9
+      },
+      {
+        "threshold": 100,
+        "projects": 1,
+        "pct_projects": 1.4,
+        "mw_capacity": 100.0,
+        "pct_mw": 6.3
+      }
+    ]
+  },
+  "cliff_exposed": {
+    "label": "Cliff-exposed: GIA-posted solar + wind",
+    "total_projects": 64,
+    "total_mw": 1390.0,
+    "cuts": [
+      {
+        "threshold": 5,
+        "projects": 64,
+        "pct_projects": 100.0,
+        "mw_capacity": 1390.0,
+        "pct_mw": 100.0
+      },
+      {
+        "threshold": 10,
+        "projects": 55,
+        "pct_projects": 85.9,
+        "mw_capacity": 1321.0,
+        "pct_mw": 95.0
+      },
+      {
+        "threshold": 15,
+        "projects": 21,
+        "pct_projects": 32.8,
+        "mw_capacity": 910.0,
+        "pct_mw": 65.5
+      },
+      {
+        "threshold": 20,
+        "projects": 20,
+        "pct_projects": 31.2,
+        "mw_capacity": 892.0,
+        "pct_mw": 64.2
+      },
+      {
+        "threshold": 25,
+        "projects": 17,
+        "pct_projects": 26.6,
+        "mw_capacity": 824.0,
+        "pct_mw": 59.3
+      },
+      {
+        "threshold": 50,
+        "projects": 7,
+        "pct_projects": 10.9,
+        "mw_capacity": 422.0,
+        "pct_mw": 30.3
+      },
+      {
+        "threshold": 100,
+        "projects": 0,
+        "pct_projects": 0.0,
+        "mw_capacity": 0.0,
+        "pct_mw": 0.0
+      }
+    ]
+  }
+}

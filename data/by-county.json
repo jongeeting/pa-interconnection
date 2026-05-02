@@ -1,0 +1,266 @@
+[
+  {
+    "county": "Crawford",
+    "projects": 6,
+    "mw_capacity": 131.7,
+    "senator": "Michele Brooks",
+    "senator_party": "R",
+    "senate_district": 50
+  },
+  {
+    "county": "York",
+    "projects": 4,
+    "mw_capacity": 122.5,
+    "senator": "Kristin Phillips-Hill",
+    "senator_party": "R",
+    "senate_district": 28
+  },
+  {
+    "county": "McKean",
+    "projects": 2,
+    "mw_capacity": 122.2,
+    "senator": "Cris Dush",
+    "senator_party": "R",
+    "senate_district": 25
+  },
+  {
+    "county": "Centre",
+    "projects": 3,
+    "mw_capacity": 109.0,
+    "senator": "Cris Dush",
+    "senator_party": "R",
+    "senate_district": 25
+  },
+  {
+    "county": "Bucks",
+    "projects": 1,
+    "mw_capacity": 100.0,
+    "senator": "Steve Santarsiero",
+    "senator_party": "D",
+    "senate_district": 10
+  },
+  {
+    "county": "Somerset",
+    "projects": 4,
+    "mw_capacity": 90.0,
+    "senator": "Pat Stefano",
+    "senator_party": "R",
+    "senate_district": 32
+  },
+  {
+    "county": "Erie",
+    "projects": 2,
+    "mw_capacity": 80.0,
+    "senator": "Dan Laughlin",
+    "senator_party": "R",
+    "senate_district": 49
+  },
+  {
+    "county": "Adams",
+    "projects": 4,
+    "mw_capacity": 78.0,
+    "senator": "Doug Mastriano",
+    "senator_party": "R",
+    "senate_district": 33
+  },
+  {
+    "county": "Mercer",
+    "projects": 4,
+    "mw_capacity": 67.5,
+    "senator": "Michele Brooks",
+    "senator_party": "R",
+    "senate_district": 50
+  },
+  {
+    "county": "Indiana",
+    "projects": 1,
+    "mw_capacity": 66.0,
+    "senator": "Joe Pittman",
+    "senator_party": "R",
+    "senate_district": 41
+  },
+  {
+    "county": "Jefferson",
+    "projects": 2,
+    "mw_capacity": 59.2,
+    "senator": "Cris Dush",
+    "senator_party": "R",
+    "senate_district": 25
+  },
+  {
+    "county": "Columbia",
+    "projects": 5,
+    "mw_capacity": 55.3,
+    "senator": "Gene Yaw",
+    "senator_party": "R",
+    "senate_district": 23
+  },
+  {
+    "county": "Franklin",
+    "projects": 1,
+    "mw_capacity": 53.5,
+    "senator": "Doug Mastriano",
+    "senator_party": "R",
+    "senate_district": 33
+  },
+  {
+    "county": "Monroe",
+    "projects": 1,
+    "mw_capacity": 48.0,
+    "senator": "Rosemary Brown",
+    "senator_party": "R",
+    "senate_district": 40
+  },
+  {
+    "county": "Union",
+    "projects": 4,
+    "mw_capacity": 48.0,
+    "senator": "Lynda Schlegel Culver",
+    "senator_party": "R",
+    "senate_district": 27
+  },
+  {
+    "county": "Carbon",
+    "projects": 1,
+    "mw_capacity": 39.5,
+    "senator": "David Argall",
+    "senator_party": "R",
+    "senate_district": 29
+  },
+  {
+    "county": "Northumberland",
+    "projects": 4,
+    "mw_capacity": 37.2,
+    "senator": "Lynda Schlegel Culver",
+    "senator_party": "R",
+    "senate_district": 27
+  },
+  {
+    "county": "Huntingdon",
+    "projects": 3,
+    "mw_capacity": 36.0,
+    "senator": "Judy Ward",
+    "senator_party": "R",
+    "senate_district": 30
+  },
+  {
+    "county": "Snyder",
+    "projects": 2,
+    "mw_capacity": 36.0,
+    "senator": "Lynda Schlegel Culver",
+    "senator_party": "R",
+    "senate_district": 27
+  },
+  {
+    "county": "Juniata",
+    "projects": 1,
+    "mw_capacity": 35.0,
+    "senator": "Cris Dush",
+    "senator_party": "R",
+    "senate_district": 25
+  },
+  {
+    "county": "Lawrence",
+    "projects": 1,
+    "mw_capacity": 25.2,
+    "senator": "Elder Vogel Jr.",
+    "senator_party": "R",
+    "senate_district": 47
+  },
+  {
+    "county": "Luzerne",
+    "projects": 2,
+    "mw_capacity": 24.0,
+    "senator": "Lisa Baker",
+    "senator_party": "R",
+    "senate_district": 20
+  },
+  {
+    "county": "Clearfield",
+    "projects": 1,
+    "mw_capacity": 20.5,
+    "senator": "Wayne Langerholc",
+    "senator_party": "R",
+    "senate_district": 35
+  },
+  {
+    "county": "Blair",
+    "projects": 1,
+    "mw_capacity": 12.0,
+    "senator": "Judy Ward",
+    "senator_party": "R",
+    "senate_district": 30
+  },
+  {
+    "county": "Bradford",
+    "projects": 1,
+    "mw_capacity": 12.0,
+    "senator": "Gene Yaw",
+    "senator_party": "R",
+    "senate_district": 23
+  },
+  {
+    "county": "Westmoreland",
+    "projects": 1,
+    "mw_capacity": 12.0,
+    "senator": "Kim Ward",
+    "senator_party": "R",
+    "senate_district": 39
+  },
+  {
+    "county": "Dauphin",
+    "projects": 2,
+    "mw_capacity": 11.2,
+    "senator": "Patty Kim",
+    "senator_party": "D",
+    "senate_district": 15
+  },
+  {
+    "county": "Cumberland",
+    "projects": 1,
+    "mw_capacity": 10.9,
+    "senator": "Mike Regan",
+    "senator_party": "R",
+    "senate_district": 31
+  },
+  {
+    "county": "Fulton",
+    "projects": 1,
+    "mw_capacity": 9.4,
+    "senator": "Doug Mastriano",
+    "senator_party": "R",
+    "senate_district": 33
+  },
+  {
+    "county": "Montour",
+    "projects": 1,
+    "mw_capacity": 8.4,
+    "senator": "Gene Yaw",
+    "senator_party": "R",
+    "senate_district": 23
+  },
+  {
+    "county": "Berks",
+    "projects": 1,
+    "mw_capacity": 8.0,
+    "senator": "Judy Schwank",
+    "senator_party": "D",
+    "senate_district": 11
+  },
+  {
+    "county": "Fayette",
+    "projects": 1,
+    "mw_capacity": 8.0,
+    "senator": "Pat Stefano",
+    "senator_party": "R",
+    "senate_district": 32
+  },
+  {
+    "county": "Bedford",
+    "projects": 1,
+    "mw_capacity": 7.2,
+    "senator": "Judy Ward",
+    "senator_party": "R",
+    "senate_district": 30
+  }
+]

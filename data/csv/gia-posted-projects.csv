@@ -1,0 +1,71 @@
+id,name,county,fuel,fuel_group,cliff_exposed,mw_capacity,mw_energy,status,submitted,transmission_owner,csa_posted,senator,senator_party,senate_district
+AD2-077,Energy Mountain,Bucks,Storage,Storage,False,100.0,150.0,Suspended,2018-03-16,PPL,True,Steve Santarsiero,D,10
+AE2-344,Shorebird Solar,Crawford,Solar,Solar,True,69.9,116.5,Suspended,2019-03-14,PENELEC,True,Michele Brooks,R,50
+AF1-272,Hoodlebug Solar Energy Center,Indiana,Solar,Solar,True,66.0,110.0,Engineering and Procurement,2019-10-01,PENELEC,False,Joe Pittman,R,41
+AE2-113,Ridgeway Solar,McKean,Solar,Solar,True,61.9,120.0,Under Construction,2019-03-01,PENELEC,True,Cris Dush,R,25
+AE2-139,Bradford Solar,McKean,Solar,Solar,True,60.3,100.5,Engineering and Procurement,2019-03-09,PENELEC,False,Cris Dush,R,25
+AF1-143,Rockdale Solar,Somerset,Solar,Solar,True,60.0,100.0,Engineering and Procurement,2019-09-18,PENELEC,False,Pat Stefano,R,32
+AD2-062,Beaver Creek Solar ,Franklin,Solar,Solar,True,53.5,80.3,Suspended,2018-02-24,PENELEC,True,Doug Mastriano,R,33
+AE2-262,MPG Solar,Centre,Solar,Solar,True,50.0,83.6,Engineering and Procurement,2019-03-29,APS,True,Cris Dush,R,25
+AE2-175,Swiftwater Solar,Monroe,Solar,Solar,True,48.0,80.0,Partially in Service - Under Construction,2019-03-19,PPL,True,Rosemary Brown,R,40
+AF1-098,Wilson Solar,Erie,Solar,Solar,True,48.0,80.0,Engineering and Procurement,2019-08-30,PENELEC,True,Dan Laughlin,R,49
+AE1-129,Strinestown Solar Project,York,Solar,Solar,True,47.0,79.6,Suspended,2018-09-07,ME,True,Kristin Phillips-Hill,R,28
+AE2-263,MPG Solar,Centre,Solar,Solar,True,47.0,78.38,Engineering and Procurement,2019-03-29,APS,True,Cris Dush,R,25
+AB2-175,Peach Bottom Units #2 & #3,York,Nuclear,Nuclear,False,44.0,44.0,Partially in Service - Under Construction,2016-04-29,PECO,False,Kristin Phillips-Hill,R,28
+AE2-345,Granite Hill Solar,Adams,Solar,Solar,True,42.0,70.0,Suspended,2019-03-13,ME,True,Doug Mastriano,R,33
+AE2-316,Squab Solar,Jefferson,Solar,Solar,True,41.2,90.0,Under Construction,2019-03-30,PENELEC,True,Cris Dush,R,25
+AG1-156,Mora Solar,Carbon,Solar,Solar,True,39.5,60.0,Engineering and Procurement,2020-09-10,PPL,False,David Argall,R,29
+AF2-361,Walker Solar Two,Juniata,Solar,Solar,True,35.0,80.0,Engineering and Procurement,2020-03-31,PPL,True,Cris Dush,R,25
+AE2-299,Erie East Energy,Erie,Storage,Storage,False,32.0,160.0,Suspended,2019-03-22,PENELEC,True,Dan Laughlin,R,49
+AE2-285,MC Solar I,Mercer,Solar,Solar,True,30.0,50.0,Engineering and Procurement,2019-03-30,ATSI,True,Michele Brooks,R,50
+AG1-054,Green Meadows Solar,Lawrence,Solar,Solar,True,25.2,40.0,Engineering and Procurement,2020-07-21,ATSI,True,Elder Vogel Jr.,R,47
+AF2-234,Washington West Solar,Snyder,Solar; Storage,Solar+Storage,True,24.0,40.0,Engineering and Procurement,2020-03-26,PPL,False,Lynda Schlegel Culver,R,27
+AE2-211,Dover Solar,York,Solar,Solar,True,23.1,55.0,Suspended,2019-03-20,ME,True,Kristin Phillips-Hill,R,28
+AF1-086,Rogue's Wind,Clearfield,Wind,Wind,True,20.54,109.9,Under Construction,2019-08-30,PENELEC,True,Wayne Langerholc,R,35
+AF1-302,(AF1-302),Jefferson,Solar,Solar,True,18.0,42.0,Engineering and Procurement,2019-09-30,PENELEC,True,Cris Dush,R,25
+AF1-226,Cottontail Solar 7,Columbia,Solar,Solar,True,14.7,35.0,Suspended,2019-09-28,PPL,True,Gene Yaw,R,23
+AE1-079,"Welcome Solar, LLC",Mercer,Solar,Solar,True,13.5,19.9,Under Construction,2018-08-11,ATSI,True,Michele Brooks,R,50
+AE1-237,Welcome Solar II,Crawford,Solar,Solar,True,13.5,19.9,Under Construction,2018-09-29,ATSI,True,Michele Brooks,R,50
+AE2-343,"Welcome Solar III, LLC",Crawford,Solar,Solar,True,12.3,17.9,Under Construction,2019-04-01,ATSI,True,Michele Brooks,R,50
+AE1-183,Jackson Center Solar Facility,Mercer,Solar,Solar,True,12.0,20.0,Engineering and Procurement,2018-09-26,ATSI,True,Michele Brooks,R,50
+AE2-001,Confer Solar I,Centre,Solar,Solar,True,12.0,20.0,Suspended,2018-10-02,APS,True,Cris Dush,R,25
+AE2-117,HU-Pauls ,Huntingdon,Solar,Solar,True,12.0,20.0,Suspended,2019-03-01,PENELEC,True,Judy Ward,R,30
+AE2-118,HU-Logging,Huntingdon,Solar,Solar,True,12.0,20.0,Suspended,2019-02-28,PENELEC,True,Judy Ward,R,30
+AE2-131,UN-Kylertown,Westmoreland,Solar,Solar,True,12.0,20.0,Under Construction,2019-02-28,PENELEC,True,Kim Ward,R,39
+AF1-093,Jackson Center Solar II,Mercer,Solar,Solar,True,12.0,20.0,Engineering and Procurement,2019-08-31,ATSI,True,Michele Brooks,R,50
+AF1-094,Franklin Solar,Crawford,Solar,Solar,True,12.0,20.0,Engineering and Procurement,2019-08-30,PENELEC,True,Michele Brooks,R,50
+AF1-321,SunEast Hooversville Solar,Somerset,Solar,Solar,True,12.0,20.0,Suspended,2019-09-30,PENELEC,True,Pat Stefano,R,32
+AF1-333,Limestone Solar,Union,Solar,Solar,True,12.0,20.0,Engineering and Procurement,2019-09-27,PPL,False,Lynda Schlegel Culver,R,27
+AF1-337,Limestone Solar,Union,Solar,Solar,True,12.0,20.0,Engineering and Procurement,2019-09-27,PPL,False,Lynda Schlegel Culver,R,27
+AF1-338,Limestone Solar,Union,Solar,Solar,True,12.0,20.0,Engineering and Procurement,2019-09-27,PPL,False,Lynda Schlegel Culver,R,27
+AF1-339,Limestone Solar,Union,Solar,Solar,True,12.0,20.0,Engineering and Procurement,2019-09-28,PPL,False,Lynda Schlegel Culver,R,27
+AF2-001,SunEast Hooversville Solar,Somerset,Solar,Solar,True,12.0,20.0,Suspended,2019-10-01,PENELEC,True,Pat Stefano,R,32
+AF2-233,Washington East Solar,Snyder,Solar; Storage,Solar+Storage,True,12.0,20.0,Engineering and Procurement,2020-03-26,PPL,False,Lynda Schlegel Culver,R,27
+AF2-238,Farmers Valley Solar,Bradford,Solar,Solar,True,12.0,20.0,Engineering and Procurement,2020-03-26,PENELEC,False,Gene Yaw,R,23
+AF2-417,WA-Cochecton 2,Adams,Solar,Solar,True,12.0,20.0,Engineering and Procurement,2020-03-31,PPL,False,Doug Mastriano,R,33
+AF2-421,Club Ford Energy Center,Adams,Solar,Solar,True,12.0,20.0,Engineering and Procurement,2020-04-01,PPL,False,Doug Mastriano,R,33
+AF2-424,Shamrock Energy Center,Northumberland,Solar,Solar,True,12.0,20.0,Engineering and Procurement,2020-03-31,PPL,False,Lynda Schlegel Culver,R,27
+AF2-425,Shamrock Energy Center,Adams,Solar,Solar,True,12.0,20.0,Engineering and Procurement,2020-03-31,PPL,False,Doug Mastriano,R,33
+AF2-433,Frosty Valley Energy Center,Columbia,Solar,Solar,True,12.0,20.0,Engineering and Procurement,2020-03-31,PPL,False,Gene Yaw,R,23
+AG1-040,Nichols Solar,Crawford,Solar,Solar,True,12.0,20.0,Engineering and Procurement,2020-06-20,PENELEC,False,Michele Brooks,R,50
+AG1-100,Henry Solar,Crawford,Solar,Solar,True,12.0,20.0,Engineering and Procurement,2020-08-18,PENELEC,False,Michele Brooks,R,50
+AG1-164,Club Ford Energy Center,Luzerne,Solar,Solar,True,12.0,20.0,Engineering and Procurement,2020-09-16,PPL,False,Lisa Baker,R,20
+AG1-165,Club Ford Energy Center,Luzerne,Solar,Solar,True,12.0,20.0,Engineering and Procurement,2020-09-17,PPL,False,Lisa Baker,R,20
+AG1-281,BL-Hileman Hollow,Blair,Solar,Solar,True,12.0,20.0,Engineering and Procurement,2020-09-30,PENELEC,False,Judy Ward,R,30
+AG1-301,Scarecrow Solar,Huntingdon,Solar,Solar,True,12.0,20.0,Engineering and Procurement,2020-09-29,PENELEC,False,Judy Ward,R,30
+AF2-086,Stoneybrook Solar,Columbia,Solar,Solar,True,11.8,19.6,Engineering and Procurement,2020-02-03,PPL,False,Gene Yaw,R,23
+AF2-445A,Norwegian Solar,Northumberland,Solar,Solar,True,11.8,19.8,Suspended,2020-04-01,PPL,True,Lynda Schlegel Culver,R,27
+AF2-229,Gobbler Knob,Cumberland,Solar,Solar,True,10.9,20.0,Engineering and Procurement,2020-03-26,PENELEC,False,Mike Regan,R,31
+AF1-271A,G Morris Solar,Dauphin,Solar,Solar,True,10.2,17.0,Suspended,2019-09-27,PPL,True,Patty Kim,D,15
+AF1-136,FU-Hanks Solar,Fulton,Solar,Solar,True,9.43,15.72,Engineering and Procurement,2019-09-19,APS,True,Doug Mastriano,R,33
+AE2-084,Cottontail Solar 3,Montour,Solar,Solar,True,8.4,20.0,Suspended,2019-02-03,PPL,True,Gene Yaw,R,23
+AE2-110,Montour 1,Columbia,Solar,Solar,True,8.4,20.0,Suspended,2019-03-03,PPL,True,Gene Yaw,R,23
+AE2-241,Mountain Holly,Columbia,Solar,Solar,True,8.4,20.0,Suspended,2019-03-23,PPL,True,Gene Yaw,R,23
+AF1-057,Dover Solar,York,Solar,Solar,True,8.4,20.0,Suspended,2019-07-31,ME,True,Kristin Phillips-Hill,R,28
+AF2-029,Fayette Energy Facility,Fayette,Storage,Storage,False,8.0,20.0,Engineering and Procurement,2019-10-28,APS,True,Pat Stefano,R,32
+AF2-030,Ontelaunee Power Generating Plant,Berks,Storage,Storage,False,8.0,20.0,Engineering and Procurement,2019-10-28,ME,False,Judy Schwank,D,11
+AF2-092,Magenta Solar,Bedford,Solar,Solar,True,7.2,12.0,Suspended,2020-02-11,PENELEC,True,Judy Ward,R,30
+AG1-259,Boyles Run Solar,Northumberland,Solar,Solar,True,6.7,15.9,Engineering and Procurement,2020-09-28,PPL,False,Lynda Schlegel Culver,R,27
+AG1-260,Boyles Run Solar,Northumberland,Solar,Solar,True,6.7,15.9,Engineering and Procurement,2020-09-28,PPL,False,Lynda Schlegel Culver,R,27
+AF2-002,SunEast Hooversville Solar,Somerset,Solar,Solar,True,6.0,10.0,Suspended,2019-10-01,PENELEC,True,Pat Stefano,R,32
+AF1-040,Momentum Gratz,Dauphin,Storage,Storage,False,1.0,20.0,Suspended,2019-06-15,PPL,True,Patty Kim,D,15

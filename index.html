@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pennsylvania's Generation Pipeline at the Federal Cliff | Build Philly Now</title>
+  <meta name="description" content="70 PA generation projects have cleared PJM engineering review and are stuck on permitting. Federal tax credits expire in 14 months. The case for amending HB 502.">
+
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="css/main.css?v=1">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">
+      <div class="nav-brand-mono">BPN</div>
+      <span class="nav-brand-sub">PA Generation Queue at the Federal Cliff</span>
+    </a>
+    <div class="nav-links">
+      <a href="#explore">Map</a>
+      <a href="#threshold">Threshold</a>
+      <a href="#senators">Senators</a>
+      <a href="#downloads">Downloads</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="container">
+    <span class="tag">Research · May 2026</span>
+    <h1>Pennsylvania's Generation Pipeline Is Stuck Behind a Federal Tax Cliff</h1>
+    <p class="lede">
+      <strong>70 Pennsylvania generation projects</strong> — 1,583 MW of summer-peak capacity — have already cleared PJM's engineering review and executed Generation Interconnection Agreements. They are stuck on state and local permitting. For the solar and wind subset, the One Big Beautiful Bill Act's federal tax credit deadlines threaten to void project economics within 14 months. Governor Shapiro's <strong>HB 502</strong> is the obvious vehicle, but its 25 MW eligibility threshold excludes most of the projects at risk. This is the case for lowering it to 10 MW — or lower.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#explore" class="btn btn-primary">Explore the map →</a>
+      <a href="#downloads" class="btn btn-secondary">Download the data</a>
+    </div>
+
+    <blockquote class="pullquote">
+      Pennsylvania's active interconnection queue is overwhelmingly clean energy. Solar, storage, and solar+storage hybrids together account for <strong>84% of the 10,400 MW pipeline</strong>. Natural gas is 4%. Whether Pennsylvania captures or forfeits this generation depends on Harrisburg.
+      <cite>— Build Philly Now analysis of PJM Planning Queues data</cite>
+    </blockquote>
+
+    <div class="stat-row" id="hero-stats"></div>
+  </div>
+</header>
+
+<section id="brief">
+  <div class="container">
+    <h2><span class="kicker">The case in brief</span>Pennsylvania has a permitting bottleneck and a federal countdown clock.</h2>
+    <p style="max-width:760px">The bottleneck is what makes the policy necessary. The cliff is what makes the timing urgent. HB 502, with the right amendments, addresses both.</p>
+
+    <div class="brief-grid">
+      <div class="brief-card">
+        <div class="brief-num">1.</div>
+        <h3>The pipeline is real, vetted, and stuck</h3>
+        <p>PJM has already determined these 70 projects can be safely interconnected and signed agreements with each developer. They are not waiting on engineering. They are waiting on people. Most have been in development since 2018–2020.</p>
+      </div>
+      <div class="brief-card">
+        <div class="brief-num">2.</div>
+        <h3>The federal cliff hits in 14 months</h3>
+        <p>Under OBBBA, solar and wind projects must "begin construction" — meet IRS Notice 2025-42's Physical Work Test — by July 4, 2026, or be fully placed in service by year-end 2027. State and local permits are the binding prerequisite.</p>
+      </div>
+      <div class="brief-card">
+        <div class="brief-num">3.</div>
+        <h3>HB 502's threshold misses the target</h3>
+        <p>The bill's 25 MW eligibility floor was set as a generic "utility-scale" default. PA's pipeline is overwhelmingly community-scale. Lowering the threshold to 10 MW would expand HB 502's coverage of stuck projects from 29% to 83%.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="explore">
+  <div class="container">
+    <h2><span class="kicker">Interactive map</span>The 70 stuck projects, where they sit, and who represents them</h2>
+    <p style="max-width:760px">
+      Each circle is a generation project with an executed PJM Generation Interconnection Agreement. <strong>Click or tap any project</strong> for full details, including the state senator whose district contains it. Use the slider to see which projects HB 502 would cover at different MW thresholds.
+    </p>
+
+    <div class="map-wrap">
+      <div id="map"></div>
+      <div class="map-side">
+        <div class="map-controls">
+          <h4>HB 502 threshold simulator</h4>
+          <div class="threshold-slider-wrap">
+            <div class="threshold-display">
+              <span class="threshold-label">Capacity threshold</span>
+              <span class="threshold-value" id="threshold-value">≥ 10 MW</span>
+            </div>
+            <input type="range" id="threshold-slider" min="5" max="50" step="5" value="10">
+          </div>
+          <div class="threshold-readout" id="threshold-readout"></div>
+        </div>
+
+        <div class="map-controls">
+          <h4>Filter by fuel</h4>
+          <div class="filter-group" id="fuel-filters"></div>
+          <div class="filter-group" style="border-top:1px solid var(--bpn-border);padding-top:12px;margin-top:14px">
+            <label>
+              <input type="checkbox" id="cliff-only">
+              Cliff-exposed only (solar + wind)
+            </label>
+          </div>
+        </div>
+
+        <div class="proj-card" id="proj-card">
+          <div class="empty">Click a project on the map to see details, including the state senator whose district contains it.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="note">
+      <strong>How to read the map:</strong> Marker size scales with project MW. Markers below the current threshold appear at reduced opacity to show what HB 502 <em>would not</em> cover at that setting. Drag the slider down to 5 MW to see the maximum coverage scenario; up to 25 MW to see how much HB 502 misses as currently drafted.
+    </div>
+  </div>
+</section>
+
+<section id="threshold">
+  <div class="container">
+    <h2><span class="kicker">Threshold analysis</span>The single most consequential amendment to HB 502</h2>
+    <p style="max-width:760px">
+      Lowering the bill's eligibility threshold expands coverage at every level of the development pipeline. The chart below shows three scopes — all 340 active PA projects, the 70 GIA-posted urgent universe, and the 64 cliff-exposed solar/wind projects — at thresholds from ≥5 MW to ≥100 MW.
+    </p>
+
+    <div class="chart-grid">
+      <div class="chart-card" style="grid-column: 1 / -1">
+        <h3>Projects covered by HB 502 at each threshold</h3>
+        <div class="chart-sub">Three scopes: full active pipeline, GIA-posted, and federal-cliff-exposed solar/wind</div>
+        <div class="chart-host" style="height:340px"><canvas id="chart-threshold"></canvas></div>
+      </div>
+    </div>
+
+    <div class="chart-card" style="margin-top:24px" id="threshold-table-host"></div>
+
+    <div class="note" style="margin-top:24px">
+      <strong>The 10 MW line is also defensible on first principles.</strong> Below 10 MW, PA solar projects typically operate as net-metered or distributed generation and fall under different regulatory frameworks. Above 10 MW, projects are unambiguously commercial-scale and reasonably subject to a state siting standard. The line is principled, not just convenient.
+    </div>
+  </div>
+</section>
+
+<section id="charts">
+  <div class="container">
+    <h2><span class="kicker">What's in the queue</span>Pennsylvania's pipeline is not what people think it is</h2>
+
+    <div class="chart-grid">
+      <div class="chart-card">
+        <h3>Active PA queue by fuel</h3>
+        <div class="chart-sub">Summer-peak capacity, all 340 active development projects (10,421 MW total)</div>
+        <div class="chart-host" style="height:300px"><canvas id="chart-fuel-mix"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <h3>Status of GIA-posted projects</h3>
+        <div class="chart-sub">22 are suspended — most likely behind state or local permitting</div>
+        <div class="chart-host" style="height:300px"><canvas id="chart-status"></canvas></div>
+      </div>
+    </div>
+
+    <div class="chart-card" style="margin-top:24px">
+      <h3>Top counties by stuck capacity</h3>
+      <div class="chart-sub">Bar color reflects party of the state senator representing each county. Almost all of these counties are represented by Republicans.</div>
+      <div class="chart-host" style="height:420px"><canvas id="chart-counties"></canvas></div>
+    </div>
+  </div>
+</section>
+
+<section id="senators">
+  <div class="container">
+    <h2><span class="kicker">Political map</span>State senators with stuck capacity in their districts</h2>
+    <p style="max-width:760px">
+      Almost every county with a GIA-posted project is represented in the State Senate by a Republican. These are the legislators whose constituents stand to gain construction trades jobs, host-community PILOT revenue, and tax base if these projects break ground — and lose it if they don't. Senator names below are <strong>BPN to verify</strong> against current district maps before any external use.
+    </p>
+    <div class="senator-targets" id="senator-targets"></div>
+  </div>
+</section>
+
+<section id="top-projects">
+  <div class="container">
+    <h2><span class="kicker">Largest projects</span>Top 20 GIA-posted PA projects by MW</h2>
+    <div class="chart-card" id="top-projects-host" style="margin-top:24px"></div>
+  </div>
+</section>
+
+<section id="methodology">
+  <div class="container">
+    <h2><span class="kicker">Methodology</span>How this analysis works</h2>
+
+    <div class="method-grid">
+      <div class="method-card">
+        <h4>Source data</h4>
+        <p>PJM Planning Queues file (legacy queue snapshot, pre-Cycle 1 reform). Obtained via researchers at the University of Pennsylvania ENVS 5100 group through RMI. PA-only export with 1,976 historical and active projects across all fuel types.</p>
+      </div>
+      <div class="method-card">
+        <h4>Active pipeline definition</h4>
+        <p>Excludes Withdrawn, In Service, and Deactivated projects. Includes Active, Engineering and Procurement, Suspended, Under Construction, and Partially in Service — 340 PA projects, 10,421 MW summer-peak capacity.</p>
+      </div>
+      <div class="method-card">
+        <h4>GIA-posted urgent universe</h4>
+        <p>Projects whose Generation Interconnection Agreement column shows "Document Posted" — i.e., the agreement has been executed and posted publicly by PJM. 70 PA projects, 1,583 MW. This is the population whose engineering review is complete and whose binding constraint is now state and local permitting.</p>
+      </div>
+      <div class="method-card">
+        <h4>Federal cliff exposure</h4>
+        <p>Solar and wind projects only. Under OBBBA, these technologies must "begin construction" by July 4, 2026 (per IRS Notice 2025-42's Physical Work Test) or be placed in service by December 31, 2027. Standalone storage and nuclear are on the original IRA timeline through 2033 and are not directly cliff-exposed.</p>
+      </div>
+      <div class="method-card">
+        <h4>HB 502 threshold</h4>
+        <p>Bill text uses "capacity," interpreted here as PJM's "MW Capacity" (summer net) field. For solar projects this typically runs lower than "MW Energy" (winter net), so the threshold semantics matter. Confirm with bill drafters before final use.</p>
+      </div>
+      <div class="method-card">
+        <h4>Senator attribution</h4>
+        <p>County-level approximation based on PA State Senate districts post-2022 redistricting. Many counties span multiple districts; the dominant senator is shown. Project locations shown at jittered county centroids since precise lat/lon was not available in the source file.</p>
+      </div>
+    </div>
+
+    <div class="note" style="margin-top:28px">
+      <strong>Limitations.</strong> This analysis covers the legacy PJM queue, which closed before April 2026. PJM's Cycle 1 — 811 projects, 220 GW system-wide — will produce a state-level breakdown in coming weeks. When that data lands, we will refresh this analysis to include both the legacy and Cycle 1 PA pipelines. The "stuck on permitting" inference for suspended projects is not yet directly verified; project-level outreach or FOIL requests would confirm. Senator names and district numbers are <strong>BPN to verify</strong>.
+    </div>
+  </div>
+</section>
+
+<section id="downloads">
+  <div class="container">
+    <h2><span class="kicker">Downloads</span>Take it with you</h2>
+    <div class="dl-grid">
+      <a class="dl-card" href="data/csv/gia-posted-projects.csv">
+        <span class="dl-tag primary">CSV · Primary</span>
+        <h4>70 GIA-posted projects</h4>
+        <p>Full project list with fuel, capacity, status, county, senator, and PJM agreement flags.</p>
+      </a>
+      <a class="dl-card" href="data/csv/threshold-analysis.csv">
+        <span class="dl-tag">CSV</span>
+        <h4>Threshold sensitivity</h4>
+        <p>Coverage at 5/10/15/20/25/50/100 MW thresholds across three scopes.</p>
+      </a>
+      <a class="dl-card" href="data/csv/by-county.csv">
+        <span class="dl-tag">CSV</span>
+        <h4>By county</h4>
+        <p>County-level rollup with project counts, MW totals, and dominant state senator.</p>
+      </a>
+      <a class="dl-card" href="data/projects.json">
+        <span class="dl-tag">JSON</span>
+        <h4>Projects as JSON</h4>
+        <p>Same as primary CSV but with coordinates and full structured fields, ready for re-use in analysis tools.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p><strong><a href="https://buildphillynow.substack.com">Build Philly Now</a></strong> is an economic development think tank in Philadelphia dedicated to building more housing, infrastructure, and energy. This research is produced with <strong><a href="https://map.buildphillynow.org">BPN Property Intelligence</a></strong>, our software platform covering parcel-level data, permits, zoning, transit, and development activity.</p>
+    <p>Initial analysis published May 2026 in collaboration with researchers at the University of Pennsylvania ENVS 5100 program — Brandon Licata, Nechama Lowy, Lexi Luong, Anna Phillips, Andrew Weng, Jie Ying. Data sources: PJM Planning Queues file (via RMI), Pennsylvania General Assembly bill records, IRS Notice 2025-42, OBBBA / H.R. 1 (2025).</p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="js/app.js?v=1"></script>
+
+</body>
+</html>

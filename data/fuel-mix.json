@@ -1,0 +1,48 @@
+{
+  "active_total_mw": 10421.0,
+  "active_total_projects": 340,
+  "fuels": [
+    {
+      "fuel_group": "Solar",
+      "projects": 238,
+      "mw_capacity": 4542.0,
+      "mw_energy": 6577.0
+    },
+    {
+      "fuel_group": "Storage",
+      "projects": 30,
+      "mw_capacity": 2119.0,
+      "mw_energy": 2253.0
+    },
+    {
+      "fuel_group": "Solar+Storage",
+      "projects": 51,
+      "mw_capacity": 2059.0,
+      "mw_energy": 2425.0
+    },
+    {
+      "fuel_group": "Nuclear",
+      "projects": 2,
+      "mw_capacity": 847.0,
+      "mw_energy": 903.0
+    },
+    {
+      "fuel_group": "Natural Gas",
+      "projects": 5,
+      "mw_capacity": 451.0,
+      "mw_energy": 333.0
+    },
+    {
+      "fuel_group": "Wind",
+      "projects": 13,
+      "mw_capacity": 401.0,
+      "mw_energy": 437.0
+    },
+    {
+      "fuel_group": "Other",
+      "projects": 1,
+      "mw_capacity": 3.0,
+      "mw_energy": 4.0
+    }
+  ]
+}

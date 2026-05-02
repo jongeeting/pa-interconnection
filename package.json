@@ -1,0 +1,15 @@
+{
+  "name": "pa-interconnection",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Build Philly Now research site analyzing the 70 PA generation projects with executed PJM Generation Interconnection Agreements that face the OBBBA federal tax credit cliff.",
+  "scripts": {
+    "dev": "npx --yes serve@14 -l 8080 .",
+    "start": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jongeeting/pa-interconnection.git"
+  },
+  "license": "CC-BY-4.0"
+}
