@@ -741,3 +741,108 @@ footer a { color: var(--bpn-green); }
   font-size: 0.85rem; padding: 3px 0;
 }
 .popup-stat-label { color: var(--bpn-muted); }
+
+/* =====================================================================
+   MOBILE POLISH
+   ===================================================================== */
+
+/* Tablet and smaller — under ~900px */
+@media (max-width: 900px) {
+  /* Map sidebar collapses below the map */
+  .map-side { gap: 14px; }
+  #map { height: 440px; }
+  /* Chamber map height reduced */
+  #chamber-map { height: 460px; }
+}
+
+/* Phone — under 720px */
+@media (max-width: 720px) {
+  .container { padding: 0 16px; }
+
+  /* Hero */
+  .hero { padding: 36px 0 24px; }
+  .hero h1 { font-size: 2.05rem; line-height: 1.1; }
+  .hero .lede { font-size: 1.02rem; }
+  .hero-actions { gap: 10px; }
+  .btn { padding: 10px 14px; font-size: 0.9rem; }
+
+  /* Section spacing */
+  section { padding: 36px 0; }
+  section h2 { font-size: 1.55rem; }
+  section h2 .kicker { font-size: 0.72rem; letter-spacing: 0.12em; }
+
+  /* Stat row already collapses to 2 cols at 820px; tighten */
+  .stat-row { margin: 20px 0; }
+  .stat { padding: 14px 16px; }
+  .stat-num { font-size: 1.6rem; }
+  .stat-label { font-size: 0.76rem; margin-top: 4px; }
+
+  /* Pullquote tighter */
+  .pullquote { padding: 10px 16px; font-size: 0.95rem; }
+
+  /* Map: project marker sidebar already stacks; keep map a touch shorter */
+  #map { height: 380px; }
+
+  /* Chamber map */
+  .map-toolbar { gap: 8px; flex-direction: column; align-items: stretch; }
+  .toggle-group { width: 100%; }
+  .toggle-btn { flex: 1; padding: 8px 10px; font-size: 0.84rem; }
+  #chamber-map { height: 380px; }
+
+  /* Legend: smaller, less max-width to fit narrow viewports */
+  .districts-map-legend {
+    left: 8px; bottom: 8px;
+    padding: 8px 10px; font-size: 0.72rem;
+    max-width: 180px;
+  }
+  .districts-map-legend .legend-title { font-size: 0.66rem; }
+
+  /* District detail panel */
+  .district-detail { padding: 14px 16px; }
+  .dd-title { font-size: 1.05rem; }
+  .dd-stats { grid-template-columns: 1fr; gap: 8px; }
+  .dd-stat-num { font-size: 1.3rem; }
+  .dd-projects-list li {
+    grid-template-columns: 10px 1fr auto;
+    font-size: 0.82rem;
+  }
+  .dd-projects-list .dd-proj-county { display: none; }
+
+  /* Project popup card: shrink districts block */
+  .districts-block { padding: 12px; }
+  .districts-section-h { font-size: 0.66rem; }
+  .dist-item { font-size: 0.8rem; gap: 6px; }
+
+  /* Threshold table: horizontal scroll */
+  .threshold-table { font-size: 0.85rem; }
+  .threshold-table th, .threshold-table td { padding: 6px 8px; }
+
+  /* Top projects: simplify; allow horizontal scroll */
+  #top-projects-host { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+  /* Brief callout numbers are quite long; smaller */
+  .brief-callout .callout-num { font-size: 1.15rem; line-height: 1.2; }
+  .brief-callout p { font-size: 0.88rem; }
+
+  /* Threshold slider readout */
+  .map-controls { padding: 14px; }
+
+  /* Charts: shorter on mobile */
+  .chart-host { font-size: 0.85rem; }
+
+  /* Method/method-grid spacing */
+  .method-card { padding: 16px; }
+
+  /* Footer */
+  footer { padding: 28px 0; font-size: 0.85rem; }
+}
+
+/* Small phones — under 480px */
+@media (max-width: 480px) {
+  .hero h1 { font-size: 1.85rem; }
+  .nav-brand-sub { display: none; }
+  .stat-row { grid-template-columns: 1fr; }
+  .stat:nth-child(2n) { border-bottom: 1px solid var(--bpn-border); }
+  .nav-links { gap: 10px; }
+  .nav-links a { font-size: 0.8rem; padding: 4px 0; }
+}

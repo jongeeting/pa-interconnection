@@ -35,7 +35,8 @@
   },
 
   "pjm_cycle1_2026": {
-    "label": "PJM-wide Cycle 1 (April 29, 2026)",
+    "label": "PJM Cycle 1 (2026)",
+    "label_long": "PJM-wide Cycle 1 (April 29, 2026 announcement)",
     "total_mw": 220222,
     "as_of": "April 29, 2026",
     "source_url": "https://heatmap.news/energy/pjm-queue-natural-gas",

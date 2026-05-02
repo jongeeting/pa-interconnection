@@ -352,11 +352,12 @@ function buildMixComparisonChart() {
   const ctx = document.getElementById('chart-mix-comparison');
   if (!ctx || !mixComparison) return;
 
-  // Two-bar 100% stacked horizontal: PJM 2022 (top) vs PA legacy active (bottom)
+  // Three-bar 100% stacked horizontal: PA legacy, PJM-wide 2022, PJM Cycle 1 (2026 expected)
   const fuelOrder = ['Natural Gas', 'Solar', 'Solar+Storage', 'Storage', 'Wind', 'Nuclear', 'Other'];
   const series = [
-    { key: 'pjm_2022_full_queue' },
     { key: 'pa_legacy_active' },
+    { key: 'pjm_2022_full_queue' },
+    { key: 'pjm_cycle1_2026' },
   ];
 
   const labels = series.map(s => mixComparison[s.key].label);
@@ -971,4 +972,64 @@ function refresh() {
   // Already called individually; this is the post-init hook
 }
 
-document.addEventListener('DOMContentLoaded', init);
+// Map each section to its corresponding nav-link group
+const NAV_SECTIONS = {
+  'charts':           'overview',
+  'context':          'overview',
+  'brief':            'projects',
+  'explore':          'projects',
+  'top-projects':     'projects',
+  'threshold':        'policy',
+  'counterarguments': 'policy',
+  'districts':        'politics',
+  'methodology':      null,
+  'downloads':        'downloads',
+};
+
+function setupActiveNavObserver() {
+  const links = [...document.querySelectorAll('.nav-links a[data-nav]')];
+  if (!links.length) return;
+
+  function setActive(group) {
+    links.forEach(a => a.classList.toggle('active', a.dataset.nav === group));
+  }
+
+  // State: track which sections are currently in the observed band
+  const visibleSet = new Set();
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) visibleSet.add(e.target.id);
+      else visibleSet.delete(e.target.id);
+    });
+    if (visibleSet.size === 0) {
+      // No section in the active band: at top of page, in hero, or between sections.
+      links.forEach(a => a.classList.remove('active'));
+      return;
+    }
+    // Of the visible ones, pick the LAST in DOM order — this is the deepest section
+    // the user has scrolled into. (When two sections briefly co-exist in the band
+    // during scroll, the deeper one is what the user just landed on.)
+    const orderedIds = Object.keys(NAV_SECTIONS);
+    const visibleInOrder = orderedIds.filter(id => visibleSet.has(id));
+    const current = visibleInOrder[visibleInOrder.length - 1];
+    if (current) {
+      const group = NAV_SECTIONS[current];
+      if (group) setActive(group);
+      else links.forEach(a => a.classList.remove('active'));
+    }
+  }, {
+    // Active when section's top is between nav and 40% down viewport
+    rootMargin: '-80px 0px -60% 0px',
+    threshold: 0,
+  });
+  Object.keys(NAV_SECTIONS).forEach(id => {
+    const el = document.getElementById(id);
+    if (el) observer.observe(el);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  init();
+  setupActiveNavObserver();
+});
