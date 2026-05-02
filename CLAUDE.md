@@ -16,26 +16,19 @@ Of Pennsylvania's 340 active PJM-queued generation projects (10,421 MW), **70 ha
 - **Brand tokens — DO NOT change:** green `#00844d`, beige bg `#eae7e4`, card `#f5f3f1`, gold `#c99b2e`, red `#b23a2f`. Type stack: Fraunces (display) + Hanken Grotesk (body). Section structure mirrors https://bpn-oz-analysis.netlify.app/.
 - **Co-authors.** Penn ENVS 5100 Group 4 (Brandon Licata, Nechama Lowy, Lexi Luong, Anna Phillips, Andrew Weng, Jie Ying). Their December 2025 brief "Pennsylvania and PJM: Speeding Up Interconnection" had 6 policy recommendations; the HB 502 threshold-amendment piece (their #2) is what BPN extended into a memo + site. They originated the threshold-analysis methodology (their cuts are at slightly different scopes — they report % of solar in active queue, BPN reports % of GIA-posted urgent universe). Currently credited for the threshold-analysis insight specifically. Per Jon (May 2026), they will become full co-authors after collab in coming weeks; update footer attribution then.
 
-## Canonical data derivation (the 70 projects)
+## Canonical data derivation (the 91 ready-to-build projects)
 
-Source: `Copy of PlanningQueues.xlsx` — PJM Planning Queues file, PA-only export, obtained via Penn Group 4 from RMI.
+Source: **PJMReadytoBuild.xlsx** — PJM "Ready to Build" snapshot dated March 2026, shared by Nicholas Birkhead. This is PJM's own published list of projects with executed Generation Interconnection Agreements that have not yet reached commercial operation. Full list spans all of PJM (495 projects, ≈54 GW MW Energy — matches PJM's public figure). PA subset: **91 projects, 1,758 MW summer / 3,365 MW winter.**
 
-Filter to reproduce the GIA-posted set:
+To reproduce: take the `ReadytoBuild` tab and filter `State == "PA"`. The previous version of this site used the legacy PJM Planning Queues file via Penn Group 4 / RMI, which is now superseded.
 
-```
-State == "PA"
-AND Status IN {Active, Engineering and Procurement, Suspended,
-               Under Construction, Partially in Service,
-               Partially in Service - Under Construction}
-AND "Interim/Interconnection Service/Generation Interconnection Agreement Status"
-    IN {Document Posted, Posted}
-```
+Status mix: 45 E&P / 27 Suspended / 17 Under Construction / 2 Partially in Service - Under Construction.
+Fuel mix: 77 Solar / 7 Solar+Storage / 5 Storage / 1 Wind / 1 Nuclear (Peach Bottom Unit #2 or #3).
+Cliff-exposed (solar + wind only): **78 projects, 1,415 MW.**
 
-Result: **70 projects, 1,583 MW summer (MW Capacity), 2,794 MW winter (MW Energy).**
+Project IDs annotated `AF2-050 - moved to TC1` indicate the project has migrated from legacy queue review into PJM's Cycle 1 (or Cycle 2) reformed-process review. Nine PA projects carry this annotation. The `moved_to_cycle` field on each project record preserves it.
 
-Status mix: 41 Engineering and Procurement, 22 Suspended, 6 Under Construction, 1 Partially in Service.
-Fuel mix: 60 Solar, 5 Storage, 2 Solar+Storage, 1 Wind, 2 Nuclear (the 2 nuclear are Peach Bottom Units #2 and #3).
-Cliff-exposed (solar + wind only): 64 projects, 1,390 MW.
+The earlier 70-project / 1,583 MW analysis (Q4 2025 / early 2026 snapshot) is preserved in the v3 git history if you need to compare.
 
 Project `name` should match xlsx `Commercial Name` (developer-facing). Where empty, fall back to xlsx `Name` (utility/PJM internal name) — this happens for one project, `AF1-302` → `Brookville-Squab Hollow 138 kV`.
 

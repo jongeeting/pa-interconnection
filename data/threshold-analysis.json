@@ -56,113 +56,115 @@
     ]
   },
   "gia_posted": {
-    "label": "GIA-posted (engineering complete)",
-    "total_projects": 70,
-    "total_mw": 1583.0,
+    "label": "Ready-to-build PA universe",
+    "total_projects": 91,
+    "total_mw": 1758.3,
+    "source": "PJM 'Ready to Build' list (March 2026 snapshot, via Nicholas Birkhead)",
     "cuts": [
       {
         "threshold": 5,
-        "projects": 69,
-        "pct_projects": 98.6,
-        "mw_capacity": 1582.0,
-        "pct_mw": 99.9
+        "projects": 82,
+        "pct_projects": 90.1,
+        "mw_capacity": 1742.8,
+        "pct_mw": 99.1
       },
       {
         "threshold": 10,
-        "projects": 58,
-        "pct_projects": 82.9,
-        "mw_capacity": 1497.0,
-        "pct_mw": 94.5
+        "projects": 65,
+        "pct_projects": 71.4,
+        "mw_capacity": 1609.8,
+        "pct_mw": 91.6
       },
       {
         "threshold": 15,
-        "projects": 24,
-        "pct_projects": 34.3,
-        "mw_capacity": 1086.0,
-        "pct_mw": 68.6
+        "projects": 27,
+        "pct_projects": 29.7,
+        "mw_capacity": 1152.8,
+        "pct_mw": 65.6
       },
       {
         "threshold": 20,
-        "projects": 23,
-        "pct_projects": 32.9,
-        "mw_capacity": 1068.0,
-        "pct_mw": 67.5
+        "projects": 25,
+        "pct_projects": 27.5,
+        "mw_capacity": 1119.6,
+        "pct_mw": 63.7
       },
       {
         "threshold": 25,
-        "projects": 20,
-        "pct_projects": 28.6,
-        "mw_capacity": 1000.0,
-        "pct_mw": 63.2
-      },
-      {
-        "threshold": 50,
-        "projects": 8,
-        "pct_projects": 11.4,
-        "mw_capacity": 522.0,
-        "pct_mw": 32.9
-      },
-      {
-        "threshold": 100,
-        "projects": 1,
-        "pct_projects": 1.4,
-        "mw_capacity": 100.0,
-        "pct_mw": 6.3
-      }
-    ]
-  },
-  "cliff_exposed": {
-    "label": "Cliff-exposed: GIA-posted solar + wind",
-    "total_projects": 64,
-    "total_mw": 1390.0,
-    "cuts": [
-      {
-        "threshold": 5,
-        "projects": 64,
-        "pct_projects": 100.0,
-        "mw_capacity": 1390.0,
-        "pct_mw": 100.0
-      },
-      {
-        "threshold": 10,
-        "projects": 55,
-        "pct_projects": 85.9,
-        "mw_capacity": 1321.0,
-        "pct_mw": 95.0
-      },
-      {
-        "threshold": 15,
-        "projects": 21,
-        "pct_projects": 32.8,
-        "mw_capacity": 910.0,
-        "pct_mw": 65.5
-      },
-      {
-        "threshold": 20,
-        "projects": 20,
-        "pct_projects": 31.2,
-        "mw_capacity": 892.0,
-        "pct_mw": 64.2
-      },
-      {
-        "threshold": 25,
-        "projects": 17,
-        "pct_projects": 26.6,
-        "mw_capacity": 824.0,
-        "pct_mw": 59.3
+        "projects": 22,
+        "pct_projects": 24.2,
+        "mw_capacity": 1052.0,
+        "pct_mw": 59.8
       },
       {
         "threshold": 50,
         "projects": 7,
-        "pct_projects": 10.9,
-        "mw_capacity": 422.0,
-        "pct_mw": 30.3
+        "pct_projects": 7.7,
+        "mw_capacity": 468.1,
+        "pct_mw": 26.6
+      },
+      {
+        "threshold": 100,
+        "projects": 1,
+        "pct_projects": 1.1,
+        "mw_capacity": 100.0,
+        "pct_mw": 5.7
+      }
+    ]
+  },
+  "cliff_exposed": {
+    "label": "Cliff-exposed: ready-to-build solar + wind",
+    "total_projects": 78,
+    "total_mw": 1415.0,
+    "source": "PJM Ready-to-Build, solar + wind only",
+    "cuts": [
+      {
+        "threshold": 5,
+        "projects": 70,
+        "pct_projects": 89.7,
+        "mw_capacity": 1400.5,
+        "pct_mw": 99.0
+      },
+      {
+        "threshold": 10,
+        "projects": 55,
+        "pct_projects": 70.5,
+        "mw_capacity": 1283.5,
+        "pct_mw": 90.7
+      },
+      {
+        "threshold": 15,
+        "projects": 21,
+        "pct_projects": 26.9,
+        "mw_capacity": 877.8,
+        "pct_mw": 62.0
+      },
+      {
+        "threshold": 20,
+        "projects": 19,
+        "pct_projects": 24.4,
+        "mw_capacity": 844.6,
+        "pct_mw": 59.7
+      },
+      {
+        "threshold": 25,
+        "projects": 17,
+        "pct_projects": 21.8,
+        "mw_capacity": 801.0,
+        "pct_mw": 56.6
+      },
+      {
+        "threshold": 50,
+        "projects": 6,
+        "pct_projects": 7.7,
+        "mw_capacity": 368.1,
+        "pct_mw": 26.0
       },
       {
         "threshold": 100,
         "projects": 0,
         "pct_projects": 0.0,
-        "mw_capacity": 0.0,
+        "mw_capacity": 0,
         "pct_mw": 0.0
       }
     ]

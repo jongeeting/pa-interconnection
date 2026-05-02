@@ -100,7 +100,7 @@ function buildHeroStats() {
   el.innerHTML = `
     <div class="stat">
       <div class="stat-num">${projects.length}</div>
-      <div class="stat-label">PA projects with executed PJM Generation Interconnection Agreements</div>
+      <div class="stat-label">PA projects ready to build (signed PJM Interconnection Agreements, no commercial operation yet)</div>
     </div>
     <div class="stat">
       <div class="stat-num">${fmt(projects.reduce((s,p)=>s+p.mw_capacity,0))} <span style="font-size:1.1rem;font-weight:500;color:var(--bpn-muted)">MW</span></div>

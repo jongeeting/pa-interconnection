@@ -1,5 +1,77 @@
 [
   {
+    "id": "AE2-299",
+    "name": "Erie East Energy",
+    "county": "Erie",
+    "lat": 42.0706,
+    "lon": -80.0989,
+    "fuel": "Storage",
+    "fuel_group": "Storage",
+    "cliff_exposed": false,
+    "mw_capacity": 32.0,
+    "mw_energy": 160.0,
+    "mfo": 160.0,
+    "status": "Suspended",
+    "submitted": "2019-03-22",
+    "test_energy_date": "2026-03-30",
+    "commercial_operation_milestone": "2026-06-01",
+    "projected_in_service_date": "2026-06-01",
+    "transmission_owner": "PENELEC",
+    "csa_posted": true,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae2_299_isa.pdf",
+    "primary_senator": {
+      "name": "Daniel Laughlin",
+      "party": "R",
+      "district": 49
+    },
+    "senators": [
+      {
+        "district": 49,
+        "name": "Daniel Laughlin",
+        "overlap_pct": 94.9,
+        "party": "R"
+      },
+      {
+        "district": 21,
+        "name": "Scott E. Hutchinson",
+        "overlap_pct": 5.1,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 1,
+        "name": "Patrick J. Harkins",
+        "overlap_pct": 49.3,
+        "party": "D"
+      },
+      {
+        "district": 4,
+        "name": "Jacob D. Banta",
+        "overlap_pct": 32.5,
+        "party": "R"
+      },
+      {
+        "district": 6,
+        "name": "Brad Roae",
+        "overlap_pct": 7.6,
+        "party": "R"
+      },
+      {
+        "district": 2,
+        "name": "Robert E. Merski",
+        "overlap_pct": 6.6,
+        "party": "D"
+      },
+      {
+        "district": 3,
+        "name": "Ryan A. Bizzarro",
+        "overlap_pct": 4.0,
+        "party": "D"
+      }
+    ]
+  },
+  {
     "id": "AD2-077",
     "name": "Energy Mountain",
     "county": "Bucks",
@@ -14,7 +86,7 @@
     "status": "Suspended",
     "submitted": "2018-03-16",
     "commercial_operation_milestone": "2029-07-31",
-    "revised_in_service_date": "2029-07-31",
+    "projected_in_service_date": "2029-07-31",
     "transmission_owner": "PPL",
     "csa_posted": true,
     "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ad2_077_isa.pdf",
@@ -107,11 +179,126 @@
     ]
   },
   {
+    "id": "AG1-548",
+    "name": "Erie South-Union City 115 kV",
+    "county": "Erie",
+    "lat": 42.083,
+    "lon": -80.0609,
+    "fuel": "Solar; Storage",
+    "fuel_group": "Solar+Storage",
+    "cliff_exposed": false,
+    "mw_capacity": 45.0,
+    "mw_energy": 150.0,
+    "mfo": 150.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2020-09-30",
+    "test_energy_date": "2028-12-22",
+    "commercial_operation_milestone": "2029-06-30",
+    "projected_in_service_date": "2029-06-30",
+    "transmission_owner": "PENELEC",
+    "csa_posted": false,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/ag1_548_gia.pdf",
+    "moved_to_cycle": "TC1",
+    "primary_senator": {
+      "name": "Daniel Laughlin",
+      "party": "R",
+      "district": 49
+    },
+    "senators": [
+      {
+        "district": 49,
+        "name": "Daniel Laughlin",
+        "overlap_pct": 94.9,
+        "party": "R"
+      },
+      {
+        "district": 21,
+        "name": "Scott E. Hutchinson",
+        "overlap_pct": 5.1,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 1,
+        "name": "Patrick J. Harkins",
+        "overlap_pct": 49.3,
+        "party": "D"
+      },
+      {
+        "district": 4,
+        "name": "Jacob D. Banta",
+        "overlap_pct": 32.5,
+        "party": "R"
+      },
+      {
+        "district": 6,
+        "name": "Brad Roae",
+        "overlap_pct": 7.6,
+        "party": "R"
+      },
+      {
+        "district": 2,
+        "name": "Robert E. Merski",
+        "overlap_pct": 6.6,
+        "party": "D"
+      },
+      {
+        "district": 3,
+        "name": "Ryan A. Bizzarro",
+        "overlap_pct": 4.0,
+        "party": "D"
+      }
+    ]
+  },
+  {
+    "id": "AE2-113",
+    "name": "Ridgeway Solar",
+    "county": "McKean",
+    "lat": 41.8141,
+    "lon": -78.5728,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 61.9,
+    "mw_energy": 120.0,
+    "mfo": 120.0,
+    "status": "Under Construction",
+    "submitted": "2019-03-01",
+    "test_energy_date": "2026-06-22",
+    "commercial_operation_milestone": "2026-08-10",
+    "projected_in_service_date": "2026-08-10",
+    "transmission_owner": "PENELEC",
+    "csa_posted": true,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae2_113_isa.pdf",
+    "primary_senator": {
+      "name": "Cris Dush",
+      "party": "R",
+      "district": 25
+    },
+    "senators": [
+      {
+        "district": 25,
+        "name": "Cris Dush",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 67,
+        "name": "Martin T. Causer",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ]
+  },
+  {
     "id": "AE2-344",
     "name": "Shorebird Solar",
     "county": "Crawford",
-    "lat": 41.719141016151376,
-    "lon": -80.12899999999999,
+    "lat": 41.6845,
+    "lon": -80.109,
     "fuel": "Solar",
     "fuel_group": "Solar",
     "cliff_exposed": true,
@@ -122,7 +309,7 @@
     "submitted": "2019-03-14",
     "test_energy_date": "2025-10-31",
     "commercial_operation_milestone": "2025-12-31",
-    "revised_in_service_date": "2025-12-31",
+    "projected_in_service_date": "2025-12-31",
     "transmission_owner": "PENELEC",
     "csa_posted": true,
     "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae2_344_isa.pdf",
@@ -176,7 +363,7 @@
     "submitted": "2019-10-01",
     "test_energy_date": "2027-06-21",
     "commercial_operation_milestone": "2027-08-31",
-    "revised_in_service_date": "2027-08-31",
+    "projected_in_service_date": "2027-08-31",
     "transmission_owner": "PENELEC",
     "csa_posted": false,
     "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af1_272_gia.pdf",
@@ -209,43 +396,49 @@
     ]
   },
   {
-    "id": "AE2-113",
-    "name": "Ridgeway Solar",
-    "county": "McKean",
-    "lat": 41.8141,
-    "lon": -78.5328,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
+    "id": "AF1-086",
+    "name": "Rogue's Wind",
+    "county": "Clearfield",
+    "lat": 41.0093,
+    "lon": -78.4744,
+    "fuel": "Wind",
+    "fuel_group": "Wind",
     "cliff_exposed": true,
-    "mw_capacity": 61.9,
-    "mw_energy": 120.0,
-    "mfo": 120.0,
+    "mw_capacity": 20.54,
+    "mw_energy": 109.9,
+    "mfo": 109.9,
     "status": "Under Construction",
-    "submitted": "2019-03-01",
-    "test_energy_date": "2026-06-22",
-    "commercial_operation_milestone": "2026-08-10",
-    "revised_in_service_date": "2026-08-10",
+    "submitted": "2019-08-30",
+    "test_energy_date": "2026-06-01",
+    "commercial_operation_milestone": "2026-09-01",
+    "projected_in_service_date": "2026-09-01",
     "transmission_owner": "PENELEC",
     "csa_posted": true,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae2_113_isa.pdf",
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/af1_086_isa.pdf",
     "primary_senator": {
-      "name": "Cris Dush",
+      "name": "Wayne Langerholc",
       "party": "R",
-      "district": 25
+      "district": 35
     },
     "senators": [
       {
-        "district": 25,
-        "name": "Cris Dush",
+        "district": 35,
+        "name": "Wayne Langerholc",
         "overlap_pct": 100.0,
         "party": "R"
       }
     ],
     "house_reps": [
       {
-        "district": 67,
-        "name": "Martin T. Causer",
-        "overlap_pct": 100.0,
+        "district": 73,
+        "name": "Dallas Kephart",
+        "overlap_pct": 66.5,
+        "party": "R"
+      },
+      {
+        "district": 75,
+        "name": "Mike Armanini",
+        "overlap_pct": 33.5,
         "party": "R"
       }
     ]
@@ -254,8 +447,8 @@
     "id": "AE2-139",
     "name": "Bradford Solar",
     "county": "McKean",
-    "lat": 41.8141,
-    "lon": -78.61280000000001,
+    "lat": 41.7741,
+    "lon": -78.5728,
     "fuel": "Solar",
     "fuel_group": "Solar",
     "cliff_exposed": true,
@@ -266,7 +459,7 @@
     "submitted": "2019-03-09",
     "test_energy_date": "2027-11-16",
     "commercial_operation_milestone": "2027-12-15",
-    "revised_in_service_date": "2027-12-15",
+    "projected_in_service_date": "2027-12-15",
     "transmission_owner": "PENELEC",
     "csa_posted": false,
     "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/ae2_139_gia.pdf",
@@ -297,7 +490,7 @@
     "name": "Rockdale Solar",
     "county": "Somerset",
     "lat": 39.9712,
-    "lon": -78.9982,
+    "lon": -79.0382,
     "fuel": "Solar",
     "fuel_group": "Solar",
     "cliff_exposed": true,
@@ -306,9 +499,9 @@
     "mfo": 100.0,
     "status": "Engineering and Procurement",
     "submitted": "2019-09-18",
-    "test_energy_date": "2027-11-16",
-    "commercial_operation_milestone": "2027-12-31",
-    "revised_in_service_date": "2027-12-31",
+    "test_energy_date": "2028-11-16",
+    "commercial_operation_milestone": "2028-12-31",
+    "projected_in_service_date": "2028-12-31",
     "transmission_owner": "PENELEC",
     "csa_posted": false,
     "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af1_143_gia.pdf",
@@ -341,55 +534,110 @@
     ]
   },
   {
-    "id": "AD2-062",
-    "name": "Beaver Creek Solar",
-    "county": "Franklin",
-    "lat": 39.9279,
-    "lon": -77.7228,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 53.5,
-    "mw_energy": 80.3,
-    "mfo": 80.3,
-    "status": "Suspended",
-    "submitted": "2018-02-24",
-    "test_energy_date": "2024-09-01",
-    "commercial_operation_milestone": "2024-12-03",
-    "revised_in_service_date": "2024-12-03",
+    "id": "AG1-090",
+    "name": "Philipsburg 115 kV",
+    "county": "Centre",
+    "lat": 40.9176,
+    "lon": -77.82,
+    "fuel": "Solar; Storage",
+    "fuel_group": "Solar+Storage",
+    "cliff_exposed": false,
+    "mw_capacity": 30.0,
+    "mw_energy": 95.0,
+    "mfo": 95.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2020-08-01",
+    "test_energy_date": "2029-01-15",
+    "commercial_operation_milestone": "2029-06-30",
+    "projected_in_service_date": "2029-06-30",
     "transmission_owner": "PENELEC",
-    "csa_posted": true,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ad2_062_isa.pdf",
+    "csa_posted": false,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/ag1_090_gia.pdf",
+    "moved_to_cycle": "TC1",
     "primary_senator": {
-      "name": "Doug Mastriano",
+      "name": "Cris Dush",
       "party": "R",
-      "district": 33
+      "district": 25
     },
     "senators": [
       {
-        "district": 33,
-        "name": "Doug Mastriano",
-        "overlap_pct": 100.0,
+        "district": 25,
+        "name": "Cris Dush",
+        "overlap_pct": 70.9,
+        "party": "R"
+      },
+      {
+        "district": 35,
+        "name": "Wayne Langerholc",
+        "overlap_pct": 29.1,
         "party": "R"
       }
     ],
     "house_reps": [
       {
-        "district": 90,
-        "name": "Chad G. Reichard",
-        "overlap_pct": 40.7,
+        "district": 82,
+        "name": "Paul Takac",
+        "overlap_pct": 41.6,
+        "party": "D"
+      },
+      {
+        "district": 77,
+        "name": "Scott Conklin",
+        "overlap_pct": 29.3,
+        "party": "D"
+      },
+      {
+        "district": 171,
+        "name": "Kerry A. Benninghoff",
+        "overlap_pct": 29.1,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AE2-316",
+    "name": "Squab Solar",
+    "county": "Jefferson",
+    "lat": 41.1267,
+    "lon": -79.0089,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 41.2,
+    "mw_energy": 90.0,
+    "mfo": 90.0,
+    "status": "Under Construction",
+    "submitted": "2019-03-30",
+    "test_energy_date": "2027-03-01",
+    "commercial_operation_milestone": "2027-12-31",
+    "projected_in_service_date": "2027-12-31",
+    "transmission_owner": "PENELEC",
+    "csa_posted": true,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/ae2_316_gia.pdf",
+    "primary_senator": {
+      "name": "Cris Dush",
+      "party": "R",
+      "district": 25
+    },
+    "senators": [
+      {
+        "district": 25,
+        "name": "Cris Dush",
+        "overlap_pct": 68.8,
         "party": "R"
       },
       {
-        "district": 81,
-        "name": "Rich Irvin",
-        "overlap_pct": 39.7,
+        "district": 41,
+        "name": "Joe Pittman",
+        "overlap_pct": 31.2,
         "party": "R"
-      },
+      }
+    ],
+    "house_reps": [
       {
-        "district": 89,
-        "name": "Rob W. Kauffman",
-        "overlap_pct": 19.5,
+        "district": 66,
+        "name": "Brian Smith",
+        "overlap_pct": 100.0,
         "party": "R"
       }
     ]
@@ -398,8 +646,8 @@
     "id": "AE2-262",
     "name": "MPG Solar",
     "county": "Centre",
-    "lat": 40.952241016151376,
-    "lon": -77.83999999999999,
+    "lat": 40.9425,
+    "lon": -77.7887,
     "fuel": "Solar",
     "fuel_group": "Solar",
     "cliff_exposed": true,
@@ -410,7 +658,7 @@
     "submitted": "2019-03-29",
     "test_energy_date": "2028-06-07",
     "commercial_operation_milestone": "2028-07-31",
-    "revised_in_service_date": "2028-07-31",
+    "projected_in_service_date": "2028-07-31",
     "transmission_owner": "APS",
     "csa_posted": true,
     "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae2_262_isa.pdf",
@@ -470,7 +718,7 @@
     "submitted": "2019-03-19",
     "test_energy_date": "2025-04-18",
     "commercial_operation_milestone": "2025-12-31",
-    "revised_in_service_date": "2025-12-31",
+    "projected_in_service_date": "2025-12-31",
     "transmission_owner": "PPL",
     "csa_posted": true,
     "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae2_175_isa.pdf",
@@ -512,8 +760,8 @@
     "id": "AF1-098",
     "name": "Wilson Solar",
     "county": "Erie",
-    "lat": 42.0706,
-    "lon": -80.1389,
+    "lat": 42.0059,
+    "lon": -80.0519,
     "fuel": "Solar",
     "fuel_group": "Solar",
     "cliff_exposed": true,
@@ -524,7 +772,7 @@
     "submitted": "2019-08-30",
     "test_energy_date": "2027-11-12",
     "commercial_operation_milestone": "2028-01-29",
-    "revised_in_service_date": "2028-01-29",
+    "projected_in_service_date": "2028-01-29",
     "transmission_owner": "PENELEC",
     "csa_posted": true,
     "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/af1_098_isa.pdf",
@@ -581,10 +829,58 @@
     ]
   },
   {
+    "id": "AF2-361",
+    "name": "Walker Solar Two",
+    "county": "Juniata",
+    "lat": 40.577,
+    "lon": -77.4006,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 35.0,
+    "mw_energy": 80.0,
+    "mfo": 80.0,
+    "status": "Under Construction",
+    "submitted": "2020-03-31",
+    "test_energy_date": "2026-06-30",
+    "commercial_operation_milestone": "2026-09-19",
+    "projected_in_service_date": "2026-09-19",
+    "transmission_owner": "PPL",
+    "csa_posted": true,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/af2_361_isa.pdf",
+    "primary_senator": {
+      "name": "Judy Ward",
+      "party": "R",
+      "district": 30
+    },
+    "senators": [
+      {
+        "district": 30,
+        "name": "Judy Ward",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 86,
+        "name": "Perry A. Stambaugh",
+        "overlap_pct": 84.9,
+        "party": "R"
+      },
+      {
+        "district": 85,
+        "name": "David H. Rowe",
+        "overlap_pct": 15.1,
+        "party": "R"
+      }
+    ]
+  },
+  {
     "id": "AE1-129",
     "name": "Strinestown Solar Project",
     "county": "York",
-    "lat": 39.967,
+    "lat": 39.927,
     "lon": -76.7277,
     "fuel": "Solar",
     "fuel_group": "Solar",
@@ -596,7 +892,7 @@
     "submitted": "2018-09-07",
     "test_energy_date": "2026-12-07",
     "commercial_operation_milestone": "2027-01-07",
-    "revised_in_service_date": "2027-01-07",
+    "projected_in_service_date": "2027-01-07",
     "transmission_owner": "ME",
     "csa_posted": true,
     "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae1_129_isa.pdf",
@@ -668,8 +964,8 @@
     "id": "AE2-263",
     "name": "MPG Solar",
     "county": "Centre",
-    "lat": 40.882958983848624,
-    "lon": -77.83999999999999,
+    "lat": 40.8998,
+    "lon": -77.742,
     "fuel": "Solar",
     "fuel_group": "Solar",
     "cliff_exposed": true,
@@ -680,7 +976,7 @@
     "submitted": "2019-03-29",
     "test_energy_date": "2028-06-07",
     "commercial_operation_milestone": "2028-07-31",
-    "revised_in_service_date": "2028-07-31",
+    "projected_in_service_date": "2028-07-31",
     "transmission_owner": "APS",
     "csa_posted": true,
     "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae2_263_isa.pdf",
@@ -725,95 +1021,11 @@
     ]
   },
   {
-    "id": "AB2-175",
-    "name": "Peach Bottom Units #2 & #3",
-    "county": "York",
-    "lat": 39.927,
-    "lon": -76.68769999999999,
-    "fuel": "Nuclear",
-    "fuel_group": "Nuclear",
-    "cliff_exposed": false,
-    "mw_capacity": 44.0,
-    "mw_energy": 44.0,
-    "mfo": 2709.8,
-    "status": "Partially in Service - Under Construction",
-    "submitted": "2016-04-29",
-    "test_energy_date": "2019-03-26",
-    "commercial_operation_milestone": "2018-12-31",
-    "revised_in_service_date": "2018-12-31",
-    "transmission_owner": "PECO",
-    "csa_posted": false,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ab2_175_isa.pdf",
-    "primary_senator": {
-      "name": "Kristin Phillips-Hill",
-      "party": "R",
-      "district": 28
-    },
-    "senators": [
-      {
-        "district": 28,
-        "name": "Kristin Phillips-Hill",
-        "overlap_pct": 66.3,
-        "party": "R"
-      },
-      {
-        "district": 31,
-        "name": "Dawn W. Keefer",
-        "overlap_pct": 33.7,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 92,
-        "name": "Marc S. Anderson",
-        "overlap_pct": 22.4,
-        "party": "R"
-      },
-      {
-        "district": 94,
-        "name": "Wendy Fink",
-        "overlap_pct": 19.8,
-        "party": "R"
-      },
-      {
-        "district": 93,
-        "name": "Mike Jones",
-        "overlap_pct": 17.2,
-        "party": "R"
-      },
-      {
-        "district": 196,
-        "name": "Vacant",
-        "overlap_pct": 14.3,
-        "party": null
-      },
-      {
-        "district": 169,
-        "name": "Kate A. Klunk",
-        "overlap_pct": 13.8,
-        "party": "R"
-      },
-      {
-        "district": 47,
-        "name": "Joseph D'Orsie",
-        "overlap_pct": 10.9,
-        "party": "R"
-      },
-      {
-        "district": 95,
-        "name": "Carol Hill-Evans",
-        "overlap_pct": 1.4,
-        "party": "D"
-      }
-    ]
-  },
-  {
     "id": "AE2-345",
     "name": "Granite Hill Solar",
     "county": "Adams",
     "lat": 39.8718,
-    "lon": -77.17909999999999,
+    "lon": -77.2191,
     "fuel": "Solar",
     "fuel_group": "Solar",
     "cliff_exposed": true,
@@ -824,7 +1036,7 @@
     "submitted": "2019-03-13",
     "test_energy_date": "2026-01-12",
     "commercial_operation_milestone": "2026-02-01",
-    "revised_in_service_date": "2026-02-01",
+    "projected_in_service_date": "2026-02-01",
     "transmission_owner": "ME",
     "csa_posted": true,
     "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae2_345_isa.pdf",
@@ -857,54 +1069,6 @@
     ]
   },
   {
-    "id": "AE2-316",
-    "name": "Squab Solar",
-    "county": "Jefferson",
-    "lat": 41.1267,
-    "lon": -78.96889999999999,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 41.2,
-    "mw_energy": 90.0,
-    "mfo": 90.0,
-    "status": "Under Construction",
-    "submitted": "2019-03-30",
-    "test_energy_date": "2026-05-10",
-    "commercial_operation_milestone": "2026-07-10",
-    "revised_in_service_date": "2026-07-10",
-    "transmission_owner": "PENELEC",
-    "csa_posted": true,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/ae2_316_gia.pdf",
-    "primary_senator": {
-      "name": "Cris Dush",
-      "party": "R",
-      "district": 25
-    },
-    "senators": [
-      {
-        "district": 25,
-        "name": "Cris Dush",
-        "overlap_pct": 68.8,
-        "party": "R"
-      },
-      {
-        "district": 41,
-        "name": "Joe Pittman",
-        "overlap_pct": 31.2,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 66,
-        "name": "Brian Smith",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ]
-  },
-  {
     "id": "AG1-156",
     "name": "Mora Solar",
     "county": "Carbon",
@@ -918,9 +1082,9 @@
     "mfo": 60.0,
     "status": "Engineering and Procurement",
     "submitted": "2020-09-10",
-    "test_energy_date": "2027-10-30",
+    "test_energy_date": "2028-06-30",
     "commercial_operation_milestone": "2027-12-31",
-    "revised_in_service_date": "2027-12-31",
+    "projected_in_service_date": "2027-12-31",
     "transmission_owner": "PPL",
     "csa_posted": false,
     "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/ag1_156_gia.pdf",
@@ -947,286 +1111,22 @@
     ]
   },
   {
-    "id": "AF2-361",
-    "name": "Walker Solar Two",
-    "county": "Juniata",
-    "lat": 40.577,
-    "lon": -77.4006,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 35.0,
-    "mw_energy": 80.0,
-    "mfo": 80.0,
-    "status": "Engineering and Procurement",
-    "submitted": "2020-03-31",
-    "test_energy_date": "2026-05-26",
-    "commercial_operation_milestone": "2026-09-19",
-    "revised_in_service_date": "2026-09-19",
-    "transmission_owner": "PPL",
-    "csa_posted": true,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/af2_361_isa.pdf",
-    "primary_senator": {
-      "name": "Judy Ward",
-      "party": "R",
-      "district": 30
-    },
-    "senators": [
-      {
-        "district": 30,
-        "name": "Judy Ward",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 86,
-        "name": "Perry A. Stambaugh",
-        "overlap_pct": 84.9,
-        "party": "R"
-      },
-      {
-        "district": 85,
-        "name": "David H. Rowe",
-        "overlap_pct": 15.1,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AE2-299",
-    "name": "Erie East Energy",
-    "county": "Erie",
-    "lat": 42.0706,
-    "lon": -80.0589,
-    "fuel": "Storage",
-    "fuel_group": "Storage",
-    "cliff_exposed": false,
-    "mw_capacity": 32.0,
-    "mw_energy": 160.0,
-    "mfo": 160.0,
-    "status": "Suspended",
-    "submitted": "2019-03-22",
-    "test_energy_date": "2026-03-30",
-    "commercial_operation_milestone": "2026-06-01",
-    "revised_in_service_date": "2026-06-01",
-    "transmission_owner": "PENELEC",
-    "csa_posted": true,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae2_299_isa.pdf",
-    "primary_senator": {
-      "name": "Daniel Laughlin",
-      "party": "R",
-      "district": 49
-    },
-    "senators": [
-      {
-        "district": 49,
-        "name": "Daniel Laughlin",
-        "overlap_pct": 94.9,
-        "party": "R"
-      },
-      {
-        "district": 21,
-        "name": "Scott E. Hutchinson",
-        "overlap_pct": 5.1,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 1,
-        "name": "Patrick J. Harkins",
-        "overlap_pct": 49.3,
-        "party": "D"
-      },
-      {
-        "district": 4,
-        "name": "Jacob D. Banta",
-        "overlap_pct": 32.5,
-        "party": "R"
-      },
-      {
-        "district": 6,
-        "name": "Brad Roae",
-        "overlap_pct": 7.6,
-        "party": "R"
-      },
-      {
-        "district": 2,
-        "name": "Robert E. Merski",
-        "overlap_pct": 6.6,
-        "party": "D"
-      },
-      {
-        "district": 3,
-        "name": "Ryan A. Bizzarro",
-        "overlap_pct": 4.0,
-        "party": "D"
-      }
-    ]
-  },
-  {
-    "id": "AE2-285",
-    "name": "MC Solar I",
-    "county": "Mercer",
-    "lat": 41.3014,
-    "lon": -80.29610000000001,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 30.0,
-    "mw_energy": 50.0,
-    "mfo": 50.0,
-    "status": "Engineering and Procurement",
-    "submitted": "2019-03-30",
-    "test_energy_date": "2026-12-03",
-    "commercial_operation_milestone": "2027-01-29",
-    "revised_in_service_date": "2027-01-29",
-    "transmission_owner": "ATSI",
-    "csa_posted": true,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae2_285_isa.pdf",
-    "primary_senator": {
-      "name": "Michele Brooks",
-      "party": "R",
-      "district": 50
-    },
-    "senators": [
-      {
-        "district": 50,
-        "name": "Michele Brooks",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 17,
-        "name": "Timothy R. Bonner",
-        "overlap_pct": 69.5,
-        "party": "R"
-      },
-      {
-        "district": 7,
-        "name": "Parke Wentling",
-        "overlap_pct": 30.5,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AG1-054",
-    "name": "Green Meadows Solar",
-    "county": "Lawrence",
-    "lat": 40.9999,
-    "lon": -80.3449,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 25.2,
-    "mw_energy": 40.0,
-    "mfo": 40.0,
-    "status": "Engineering and Procurement",
-    "submitted": "2020-07-21",
-    "test_energy_date": "2027-04-20",
-    "commercial_operation_milestone": "2027-05-31",
-    "revised_in_service_date": "2027-05-31",
-    "transmission_owner": "ATSI",
-    "csa_posted": true,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/ag1_054_gia.pdf",
-    "primary_senator": {
-      "name": "Michele Brooks",
-      "party": "R",
-      "district": 50
-    },
-    "senators": [
-      {
-        "district": 50,
-        "name": "Michele Brooks",
-        "overlap_pct": 79.6,
-        "party": "R"
-      },
-      {
-        "district": 47,
-        "name": "Elder A. Vogel",
-        "overlap_pct": 20.4,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 9,
-        "name": "Marla Brown",
-        "overlap_pct": 56.4,
-        "party": "R"
-      },
-      {
-        "district": 8,
-        "name": "Aaron Bernstine",
-        "overlap_pct": 43.6,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AF2-234",
-    "name": "Washington West Solar",
-    "county": "Snyder",
-    "lat": 40.7788,
-    "lon": -77.1226,
-    "fuel": "Solar; Storage",
-    "fuel_group": "Solar+Storage",
-    "cliff_exposed": true,
-    "mw_capacity": 24.0,
-    "mw_energy": 40.0,
-    "mfo": 40.0,
-    "status": "Engineering and Procurement",
-    "submitted": "2020-03-26",
-    "test_energy_date": "2026-10-30",
-    "commercial_operation_milestone": "2026-12-30",
-    "revised_in_service_date": "2026-12-30",
-    "transmission_owner": "PPL",
-    "csa_posted": false,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af2_234_gia.pdf",
-    "primary_senator": {
-      "name": "Lynda Schlegel Culver",
-      "party": "R",
-      "district": 27
-    },
-    "senators": [
-      {
-        "district": 27,
-        "name": "Lynda Schlegel Culver",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 85,
-        "name": "David H. Rowe",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ]
-  },
-  {
     "id": "AE2-211",
     "name": "Dover Solar",
     "county": "York",
-    "lat": 39.927,
-    "lon": -76.7677,
+    "lat": 39.9519,
+    "lon": -76.6964,
     "fuel": "Solar",
     "fuel_group": "Solar",
     "cliff_exposed": true,
     "mw_capacity": 23.1,
     "mw_energy": 55.0,
     "mfo": 55.0,
-    "status": "Suspended",
+    "status": "Engineering and Procurement",
     "submitted": "2019-03-20",
     "test_energy_date": "2026-09-14",
-    "commercial_operation_milestone": "2026-10-14",
-    "revised_in_service_date": "2026-10-14",
+    "commercial_operation_milestone": "2027-09-07",
+    "projected_in_service_date": "2027-09-07",
     "transmission_owner": "ME",
     "csa_posted": true,
     "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae2_211_isa.pdf",
@@ -1295,25 +1195,73 @@
     ]
   },
   {
-    "id": "AF1-086",
-    "name": "Rogue's Wind",
-    "county": "Clearfield",
-    "lat": 41.0093,
-    "lon": -78.4744,
-    "fuel": "Wind",
-    "fuel_group": "Wind",
+    "id": "AE2-285",
+    "name": "MC Solar I",
+    "county": "Mercer",
+    "lat": 41.3014,
+    "lon": -80.2561,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
     "cliff_exposed": true,
-    "mw_capacity": 20.54,
-    "mw_energy": 109.9,
-    "mfo": 109.9,
+    "mw_capacity": 30.0,
+    "mw_energy": 50.0,
+    "mfo": 50.0,
     "status": "Under Construction",
-    "submitted": "2019-08-30",
-    "test_energy_date": "2026-03-30",
-    "commercial_operation_milestone": "2026-09-01",
-    "revised_in_service_date": "2026-09-01",
-    "transmission_owner": "PENELEC",
+    "submitted": "2019-03-30",
+    "test_energy_date": "2026-12-03",
+    "commercial_operation_milestone": "2027-01-29",
+    "projected_in_service_date": "2027-01-29",
+    "transmission_owner": "ATSI",
     "csa_posted": true,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/af1_086_isa.pdf",
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae2_285_isa.pdf",
+    "primary_senator": {
+      "name": "Michele Brooks",
+      "party": "R",
+      "district": 50
+    },
+    "senators": [
+      {
+        "district": 50,
+        "name": "Michele Brooks",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 17,
+        "name": "Timothy R. Bonner",
+        "overlap_pct": 69.5,
+        "party": "R"
+      },
+      {
+        "district": 7,
+        "name": "Parke Wentling",
+        "overlap_pct": 30.5,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AF2-050",
+    "name": "Maple Hill-Fiddlers 1 SP (Bear Rock)",
+    "county": "Cambria",
+    "lat": 40.4954,
+    "lon": -78.7167,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 30.0,
+    "mw_energy": 50.0,
+    "mfo": 150.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2019-12-23",
+    "commercial_operation_milestone": "2029-01-31",
+    "projected_in_service_date": "2029-01-31",
+    "transmission_owner": "PENELEC",
+    "csa_posted": false,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af2_050_gia.pdf",
+    "moved_to_cycle": "TC1",
     "primary_senator": {
       "name": "Wayne Langerholc",
       "party": "R",
@@ -1329,36 +1277,126 @@
     ],
     "house_reps": [
       {
-        "district": 73,
-        "name": "Dallas Kephart",
-        "overlap_pct": 66.5,
+        "district": 71,
+        "name": "Jim Rigby",
+        "overlap_pct": 51.9,
         "party": "R"
       },
       {
-        "district": 75,
-        "name": "Mike Armanini",
-        "overlap_pct": 33.5,
+        "district": 72,
+        "name": "Frank Burns",
+        "overlap_pct": 31.7,
+        "party": "D"
+      },
+      {
+        "district": 73,
+        "name": "Dallas Kephart",
+        "overlap_pct": 16.4,
         "party": "R"
       }
     ]
   },
   {
+    "id": "AB2-175",
+    "name": "Peach Bottom Units #2 & #3",
+    "county": "York",
+    "lat": 39.9092,
+    "lon": -76.6497,
+    "fuel": "Nuclear",
+    "fuel_group": "Nuclear",
+    "cliff_exposed": false,
+    "mw_capacity": 44.0,
+    "mw_energy": 44.0,
+    "mfo": 2709.8,
+    "status": "Partially in Service - Under Construction",
+    "submitted": "2016-04-29",
+    "test_energy_date": "2019-03-26",
+    "commercial_operation_milestone": "2018-12-31",
+    "projected_in_service_date": "2018-12-31",
+    "transmission_owner": "PECO",
+    "csa_posted": false,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ab2_175_isa.pdf",
+    "primary_senator": {
+      "name": "Kristin Phillips-Hill",
+      "party": "R",
+      "district": 28
+    },
+    "senators": [
+      {
+        "district": 28,
+        "name": "Kristin Phillips-Hill",
+        "overlap_pct": 66.3,
+        "party": "R"
+      },
+      {
+        "district": 31,
+        "name": "Dawn W. Keefer",
+        "overlap_pct": 33.7,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 92,
+        "name": "Marc S. Anderson",
+        "overlap_pct": 22.4,
+        "party": "R"
+      },
+      {
+        "district": 94,
+        "name": "Wendy Fink",
+        "overlap_pct": 19.8,
+        "party": "R"
+      },
+      {
+        "district": 93,
+        "name": "Mike Jones",
+        "overlap_pct": 17.2,
+        "party": "R"
+      },
+      {
+        "district": 196,
+        "name": "Vacant",
+        "overlap_pct": 14.3,
+        "party": null
+      },
+      {
+        "district": 169,
+        "name": "Kate A. Klunk",
+        "overlap_pct": 13.8,
+        "party": "R"
+      },
+      {
+        "district": 47,
+        "name": "Joseph D'Orsie",
+        "overlap_pct": 10.9,
+        "party": "R"
+      },
+      {
+        "district": 95,
+        "name": "Carol Hill-Evans",
+        "overlap_pct": 1.4,
+        "party": "D"
+      }
+    ]
+  },
+  {
     "id": "AF1-302",
-    "name": "Brookville-Squab Hollow 138 kV",
+    "name": "Squab Solar",
     "county": "Jefferson",
-    "lat": 41.1267,
-    "lon": -79.0489,
+    "lat": 41.0867,
+    "lon": -79.0089,
     "fuel": "Solar",
     "fuel_group": "Solar",
     "cliff_exposed": true,
     "mw_capacity": 18.0,
     "mw_energy": 42.0,
     "mfo": 132.0,
-    "status": "Engineering and Procurement",
+    "status": "Under Construction",
     "submitted": "2019-09-30",
-    "test_energy_date": "2026-05-10",
-    "commercial_operation_milestone": "2026-12-31",
-    "revised_in_service_date": "2026-12-31",
+    "test_energy_date": "2027-03-01",
+    "commercial_operation_milestone": "2027-12-31",
+    "projected_in_service_date": "2027-12-31",
     "transmission_owner": "PENELEC",
     "csa_posted": true,
     "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af1_302_gia.pdf",
@@ -1391,11 +1429,148 @@
     ]
   },
   {
+    "id": "AF2-234",
+    "name": "Washington West Solar",
+    "county": "Snyder",
+    "lat": 40.7788,
+    "lon": -77.0826,
+    "fuel": "Solar; Storage",
+    "fuel_group": "Solar+Storage",
+    "cliff_exposed": false,
+    "mw_capacity": 24.0,
+    "mw_energy": 40.0,
+    "mfo": 40.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2020-03-26",
+    "test_energy_date": "2026-10-30",
+    "commercial_operation_milestone": "2026-12-30",
+    "projected_in_service_date": "2026-12-30",
+    "transmission_owner": "PPL",
+    "csa_posted": false,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af2_234_gia.pdf",
+    "primary_senator": {
+      "name": "Lynda Schlegel Culver",
+      "party": "R",
+      "district": 27
+    },
+    "senators": [
+      {
+        "district": 27,
+        "name": "Lynda Schlegel Culver",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 85,
+        "name": "David H. Rowe",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AG1-054",
+    "name": "Green Meadows Solar",
+    "county": "Lawrence",
+    "lat": 40.9999,
+    "lon": -80.3449,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 25.2,
+    "mw_energy": 40.0,
+    "mfo": 40.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2020-07-21",
+    "test_energy_date": "2027-04-20",
+    "commercial_operation_milestone": "2027-05-31",
+    "projected_in_service_date": "2027-05-31",
+    "transmission_owner": "ATSI",
+    "csa_posted": true,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/ag1_054_gia.pdf",
+    "primary_senator": {
+      "name": "Michele Brooks",
+      "party": "R",
+      "district": 50
+    },
+    "senators": [
+      {
+        "district": 50,
+        "name": "Michele Brooks",
+        "overlap_pct": 79.6,
+        "party": "R"
+      },
+      {
+        "district": 47,
+        "name": "Elder A. Vogel",
+        "overlap_pct": 20.4,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 9,
+        "name": "Marla Brown",
+        "overlap_pct": 56.4,
+        "party": "R"
+      },
+      {
+        "district": 8,
+        "name": "Aaron Bernstine",
+        "overlap_pct": 43.6,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AE2-074",
+    "name": "Potter Solar",
+    "county": "Potter",
+    "lat": 41.7437,
+    "lon": -77.8916,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 15.11,
+    "mw_energy": 35.0,
+    "mfo": 35.0,
+    "status": "Under Construction",
+    "submitted": "2019-02-20",
+    "test_energy_date": "2026-04-17",
+    "commercial_operation_milestone": "2026-07-31",
+    "projected_in_service_date": "2026-07-31",
+    "transmission_owner": "APS",
+    "csa_posted": false,
+    "primary_senator": {
+      "name": "Cris Dush",
+      "party": "R",
+      "district": 25
+    },
+    "senators": [
+      {
+        "district": 25,
+        "name": "Cris Dush",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 67,
+        "name": "Martin T. Causer",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ]
+  },
+  {
     "id": "AF1-226",
     "name": "Cottontail Solar 7",
     "county": "Columbia",
-    "lat": 41.0774114100917,
-    "lon": -76.43246067977499,
+    "lat": 41.0539,
+    "lon": -76.4001,
     "fuel": "Solar",
     "fuel_group": "Solar",
     "cliff_exposed": true,
@@ -1406,7 +1581,7 @@
     "submitted": "2019-09-28",
     "test_energy_date": "2028-09-30",
     "commercial_operation_milestone": "2028-11-30",
-    "revised_in_service_date": "2028-11-30",
+    "projected_in_service_date": "2028-11-30",
     "transmission_owner": "PPL",
     "csa_posted": true,
     "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/af1_226_isa.pdf",
@@ -1433,178 +1608,22 @@
     ]
   },
   {
-    "id": "AE1-079",
-    "name": "Welcome Solar, LLC",
+    "id": "AE1-183",
+    "name": "Jackson Center Solar Facility",
     "county": "Mercer",
     "lat": 41.3014,
     "lon": -80.2161,
     "fuel": "Solar",
     "fuel_group": "Solar",
     "cliff_exposed": true,
-    "mw_capacity": 13.5,
-    "mw_energy": 19.9,
-    "mfo": 19.9,
-    "status": "Under Construction",
-    "submitted": "2018-08-11",
-    "test_energy_date": "2026-12-14",
-    "commercial_operation_milestone": "2027-02-24",
-    "revised_in_service_date": "2027-02-24",
-    "transmission_owner": "ATSI",
-    "csa_posted": true,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae1_079_isa.pdf",
-    "primary_senator": {
-      "name": "Michele Brooks",
-      "party": "R",
-      "district": 50
-    },
-    "senators": [
-      {
-        "district": 50,
-        "name": "Michele Brooks",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 17,
-        "name": "Timothy R. Bonner",
-        "overlap_pct": 69.5,
-        "party": "R"
-      },
-      {
-        "district": 7,
-        "name": "Parke Wentling",
-        "overlap_pct": 30.5,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AE1-237",
-    "name": "Welcome Solar II",
-    "county": "Crawford",
-    "lat": 41.6845,
-    "lon": -80.06899999999999,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 13.5,
-    "mw_energy": 19.9,
-    "mfo": 19.9,
-    "status": "Under Construction",
-    "submitted": "2018-09-29",
-    "test_energy_date": "2026-06-25",
-    "commercial_operation_milestone": "2026-08-29",
-    "revised_in_service_date": "2026-08-29",
-    "transmission_owner": "ATSI",
-    "csa_posted": true,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae1_237_isa.pdf",
-    "primary_senator": {
-      "name": "Michele Brooks",
-      "party": "R",
-      "district": 50
-    },
-    "senators": [
-      {
-        "district": 50,
-        "name": "Michele Brooks",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 6,
-        "name": "Brad Roae",
-        "overlap_pct": 57.8,
-        "party": "R"
-      },
-      {
-        "district": 65,
-        "name": "Kathy L. Rapp",
-        "overlap_pct": 29.2,
-        "party": "R"
-      },
-      {
-        "district": 64,
-        "name": "R. Lee James",
-        "overlap_pct": 13.0,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AE2-343",
-    "name": "Welcome Solar III, LLC",
-    "county": "Crawford",
-    "lat": 41.719141016151376,
-    "lon": -80.089,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 12.3,
-    "mw_energy": 17.9,
-    "mfo": 17.9,
-    "status": "Under Construction",
-    "submitted": "2019-04-01",
-    "test_energy_date": "2026-07-30",
-    "commercial_operation_milestone": "2024-06-05",
-    "revised_in_service_date": "2024-06-05",
-    "transmission_owner": "ATSI",
-    "csa_posted": true,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae2_343_isa.pdf",
-    "primary_senator": {
-      "name": "Michele Brooks",
-      "party": "R",
-      "district": 50
-    },
-    "senators": [
-      {
-        "district": 50,
-        "name": "Michele Brooks",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 6,
-        "name": "Brad Roae",
-        "overlap_pct": 57.8,
-        "party": "R"
-      },
-      {
-        "district": 65,
-        "name": "Kathy L. Rapp",
-        "overlap_pct": 29.2,
-        "party": "R"
-      },
-      {
-        "district": 64,
-        "name": "R. Lee James",
-        "overlap_pct": 13.0,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AE1-183",
-    "name": "Jackson Center Solar Facility",
-    "county": "Mercer",
-    "lat": 41.3414,
-    "lon": -80.2561,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
     "mw_capacity": 12.0,
     "mw_energy": 20.0,
     "mfo": 20.0,
-    "status": "Engineering and Procurement",
+    "status": "Under Construction",
     "submitted": "2018-09-26",
     "test_energy_date": "2026-06-29",
     "commercial_operation_milestone": "2026-07-31",
-    "revised_in_service_date": "2026-07-31",
+    "projected_in_service_date": "2026-07-31",
     "transmission_owner": "ATSI",
     "csa_posted": true,
     "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae1_183_isa.pdf",
@@ -1641,7 +1660,7 @@
     "name": "Confer Solar I",
     "county": "Centre",
     "lat": 40.9176,
-    "lon": -77.77999999999999,
+    "lon": -77.82,
     "fuel": "Solar",
     "fuel_group": "Solar",
     "cliff_exposed": true,
@@ -1652,7 +1671,7 @@
     "submitted": "2018-10-02",
     "test_energy_date": "2026-04-03",
     "commercial_operation_milestone": "2026-05-30",
-    "revised_in_service_date": "2026-05-30",
+    "projected_in_service_date": "2026-05-30",
     "transmission_owner": "APS",
     "csa_posted": true,
     "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae2_001_isa.pdf",
@@ -1697,11 +1716,53 @@
     ]
   },
   {
+    "id": "AE2-110",
+    "name": "Montour 1",
+    "county": "Columbia",
+    "lat": 41.0739,
+    "lon": -76.3655,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 8.4,
+    "mw_energy": 20.0,
+    "mfo": 20.0,
+    "status": "Suspended",
+    "submitted": "2019-03-03",
+    "test_energy_date": "2027-12-06",
+    "commercial_operation_milestone": "2025-02-28",
+    "projected_in_service_date": "2025-02-28",
+    "transmission_owner": "PPL",
+    "csa_posted": true,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae2_110_isa.pdf",
+    "primary_senator": {
+      "name": "Lynda Schlegel Culver",
+      "party": "R",
+      "district": 27
+    },
+    "senators": [
+      {
+        "district": 27,
+        "name": "Lynda Schlegel Culver",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 109,
+        "name": "Robert Leadbeter",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ]
+  },
+  {
     "id": "AE2-117",
     "name": "HU-Pauls",
     "county": "Huntingdon",
     "lat": 40.4239,
-    "lon": -77.93549999999999,
+    "lon": -77.9755,
     "fuel": "Solar",
     "fuel_group": "Solar",
     "cliff_exposed": true,
@@ -1710,9 +1771,9 @@
     "mfo": 20.0,
     "status": "Suspended",
     "submitted": "2019-03-01",
-    "test_energy_date": "2027-03-16",
+    "test_energy_date": "2027-12-31",
     "commercial_operation_milestone": "2027-03-31",
-    "revised_in_service_date": "2027-03-31",
+    "projected_in_service_date": "2027-03-31",
     "transmission_owner": "PENELEC",
     "csa_posted": true,
     "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae2_117_isa.pdf",
@@ -1748,8 +1809,8 @@
     "id": "AE2-118",
     "name": "HU-Logging",
     "county": "Huntingdon",
-    "lat": 40.45854101615138,
-    "lon": -77.99549999999999,
+    "lat": 40.3839,
+    "lon": -77.9755,
     "fuel": "Solar",
     "fuel_group": "Solar",
     "cliff_exposed": true,
@@ -1759,7 +1820,7 @@
     "status": "Suspended",
     "submitted": "2019-02-28",
     "commercial_operation_milestone": "2024-08-31",
-    "revised_in_service_date": "2024-08-31",
+    "projected_in_service_date": "2024-08-31",
     "transmission_owner": "PENELEC",
     "csa_posted": true,
     "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae2_118_isa.pdf",
@@ -1807,7 +1868,7 @@
     "submitted": "2019-02-28",
     "test_energy_date": "2027-01-11",
     "commercial_operation_milestone": "2027-03-01",
-    "revised_in_service_date": "2027-03-01",
+    "projected_in_service_date": "2027-03-01",
     "transmission_owner": "PENELEC",
     "csa_posted": true,
     "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae2_131_isa.pdf",
@@ -1876,721 +1937,25 @@
     ]
   },
   {
-    "id": "AF1-093",
-    "name": "Jackson Center Solar II",
-    "county": "Mercer",
-    "lat": 41.2614,
-    "lon": -80.2561,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 12.0,
-    "mw_energy": 20.0,
-    "mfo": 20.0,
-    "status": "Engineering and Procurement",
-    "submitted": "2019-08-31",
-    "test_energy_date": "2026-06-29",
-    "commercial_operation_milestone": "2026-07-31",
-    "revised_in_service_date": "2026-07-31",
-    "transmission_owner": "ATSI",
-    "csa_posted": true,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/af1_093_isa.pdf",
-    "primary_senator": {
-      "name": "Michele Brooks",
-      "party": "R",
-      "district": 50
-    },
-    "senators": [
-      {
-        "district": 50,
-        "name": "Michele Brooks",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 17,
-        "name": "Timothy R. Bonner",
-        "overlap_pct": 69.5,
-        "party": "R"
-      },
-      {
-        "district": 7,
-        "name": "Parke Wentling",
-        "overlap_pct": 30.5,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AF1-094",
-    "name": "Franklin Solar",
-    "county": "Crawford",
-    "lat": 41.6845,
-    "lon": -80.149,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 12.0,
-    "mw_energy": 20.0,
-    "mfo": 20.0,
-    "status": "Engineering and Procurement",
-    "submitted": "2019-08-30",
-    "test_energy_date": "2026-07-31",
-    "commercial_operation_milestone": "2026-09-20",
-    "revised_in_service_date": "2026-09-20",
-    "transmission_owner": "PENELEC",
-    "csa_posted": true,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/af1_094_isa.pdf",
-    "primary_senator": {
-      "name": "Michele Brooks",
-      "party": "R",
-      "district": 50
-    },
-    "senators": [
-      {
-        "district": 50,
-        "name": "Michele Brooks",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 6,
-        "name": "Brad Roae",
-        "overlap_pct": 57.8,
-        "party": "R"
-      },
-      {
-        "district": 65,
-        "name": "Kathy L. Rapp",
-        "overlap_pct": 29.2,
-        "party": "R"
-      },
-      {
-        "district": 64,
-        "name": "R. Lee James",
-        "overlap_pct": 13.0,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AF1-321",
-    "name": "SunEast Hooversville Solar",
-    "county": "Somerset",
-    "lat": 40.0112,
-    "lon": -79.0382,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 12.0,
-    "mw_energy": 20.0,
-    "mfo": 20.0,
-    "status": "Suspended",
-    "submitted": "2019-09-30",
-    "test_energy_date": "2026-05-01",
-    "commercial_operation_milestone": "2026-08-01",
-    "revised_in_service_date": "2026-08-01",
-    "transmission_owner": "PENELEC",
-    "csa_posted": true,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/af1_321_isa.pdf",
-    "primary_senator": {
-      "name": "Patrick J. Stefano",
-      "party": "R",
-      "district": 32
-    },
-    "senators": [
-      {
-        "district": 32,
-        "name": "Patrick J. Stefano",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 69,
-        "name": "Carl Walker Metzgar",
-        "overlap_pct": 93.6,
-        "party": "R"
-      },
-      {
-        "district": 71,
-        "name": "Jim Rigby",
-        "overlap_pct": 6.4,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AF1-333",
-    "name": "Limestone Solar",
-    "county": "Union",
-    "lat": 40.9638,
-    "lon": -77.01929999999999,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 12.0,
-    "mw_energy": 20.0,
-    "mfo": 20.0,
-    "status": "Engineering and Procurement",
-    "submitted": "2019-09-27",
-    "test_energy_date": "2027-08-16",
-    "commercial_operation_milestone": "2027-09-30",
-    "revised_in_service_date": "2027-09-30",
-    "transmission_owner": "PPL",
-    "csa_posted": false,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af1_333_gia.pdf",
-    "primary_senator": {
-      "name": "Gene Yaw",
-      "party": "R",
-      "district": 23
-    },
-    "senators": [
-      {
-        "district": 23,
-        "name": "Gene Yaw",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 76,
-        "name": "Stephanie Borowicz",
-        "overlap_pct": 72.3,
-        "party": "R"
-      },
-      {
-        "district": 83,
-        "name": "Jamie L. Flick",
-        "overlap_pct": 19.4,
-        "party": "R"
-      },
-      {
-        "district": 85,
-        "name": "David H. Rowe",
-        "overlap_pct": 8.3,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AF1-337",
-    "name": "Limestone Solar",
-    "county": "Union",
-    "lat": 41.0038,
-    "lon": -77.0593,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 12.0,
-    "mw_energy": 20.0,
-    "mfo": 40.0,
-    "status": "Engineering and Procurement",
-    "submitted": "2019-09-27",
-    "test_energy_date": "2027-08-16",
-    "commercial_operation_milestone": "2027-09-30",
-    "revised_in_service_date": "2027-09-30",
-    "transmission_owner": "PPL",
-    "csa_posted": false,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af1_337_gia.pdf",
-    "primary_senator": {
-      "name": "Gene Yaw",
-      "party": "R",
-      "district": 23
-    },
-    "senators": [
-      {
-        "district": 23,
-        "name": "Gene Yaw",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 76,
-        "name": "Stephanie Borowicz",
-        "overlap_pct": 72.3,
-        "party": "R"
-      },
-      {
-        "district": 83,
-        "name": "Jamie L. Flick",
-        "overlap_pct": 19.4,
-        "party": "R"
-      },
-      {
-        "district": 85,
-        "name": "David H. Rowe",
-        "overlap_pct": 8.3,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AF1-338",
-    "name": "Limestone Solar",
-    "county": "Union",
-    "lat": 40.9638,
-    "lon": -77.0993,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 12.0,
-    "mw_energy": 20.0,
-    "mfo": 60.0,
-    "status": "Engineering and Procurement",
-    "submitted": "2019-09-27",
-    "test_energy_date": "2027-08-16",
-    "commercial_operation_milestone": "2027-09-30",
-    "revised_in_service_date": "2027-09-30",
-    "transmission_owner": "PPL",
-    "csa_posted": false,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af1_338_gia.pdf",
-    "primary_senator": {
-      "name": "Gene Yaw",
-      "party": "R",
-      "district": 23
-    },
-    "senators": [
-      {
-        "district": 23,
-        "name": "Gene Yaw",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 76,
-        "name": "Stephanie Borowicz",
-        "overlap_pct": 72.3,
-        "party": "R"
-      },
-      {
-        "district": 83,
-        "name": "Jamie L. Flick",
-        "overlap_pct": 19.4,
-        "party": "R"
-      },
-      {
-        "district": 85,
-        "name": "David H. Rowe",
-        "overlap_pct": 8.3,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AF1-339",
-    "name": "Limestone Solar",
-    "county": "Union",
-    "lat": 40.9238,
-    "lon": -77.0593,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 12.0,
-    "mw_energy": 20.0,
-    "mfo": 80.0,
-    "status": "Engineering and Procurement",
-    "submitted": "2019-09-28",
-    "test_energy_date": "2027-08-16",
-    "commercial_operation_milestone": "2027-09-30",
-    "revised_in_service_date": "2027-09-30",
-    "transmission_owner": "PPL",
-    "csa_posted": false,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af1_339_gia.pdf",
-    "primary_senator": {
-      "name": "Gene Yaw",
-      "party": "R",
-      "district": 23
-    },
-    "senators": [
-      {
-        "district": 23,
-        "name": "Gene Yaw",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 76,
-        "name": "Stephanie Borowicz",
-        "overlap_pct": 72.3,
-        "party": "R"
-      },
-      {
-        "district": 83,
-        "name": "Jamie L. Flick",
-        "overlap_pct": 19.4,
-        "party": "R"
-      },
-      {
-        "district": 85,
-        "name": "David H. Rowe",
-        "overlap_pct": 8.3,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AF2-001",
-    "name": "SunEast Hooversville Solar",
-    "county": "Somerset",
-    "lat": 39.9712,
-    "lon": -79.07820000000001,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 12.0,
-    "mw_energy": 20.0,
-    "mfo": 40.0,
-    "status": "Suspended",
-    "submitted": "2019-10-01",
-    "test_energy_date": "2026-05-01",
-    "commercial_operation_milestone": "2026-08-01",
-    "revised_in_service_date": "2026-08-01",
-    "transmission_owner": "PENELEC",
-    "csa_posted": true,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/af2_001_isa.pdf",
-    "primary_senator": {
-      "name": "Patrick J. Stefano",
-      "party": "R",
-      "district": 32
-    },
-    "senators": [
-      {
-        "district": 32,
-        "name": "Patrick J. Stefano",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 69,
-        "name": "Carl Walker Metzgar",
-        "overlap_pct": 93.6,
-        "party": "R"
-      },
-      {
-        "district": 71,
-        "name": "Jim Rigby",
-        "overlap_pct": 6.4,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AF2-233",
-    "name": "Washington East Solar",
-    "county": "Snyder",
-    "lat": 40.7788,
-    "lon": -77.0426,
-    "fuel": "Solar; Storage",
-    "fuel_group": "Solar+Storage",
-    "cliff_exposed": true,
-    "mw_capacity": 12.0,
-    "mw_energy": 20.0,
-    "mfo": 20.0,
-    "status": "Engineering and Procurement",
-    "submitted": "2020-03-26",
-    "test_energy_date": "2026-10-30",
-    "commercial_operation_milestone": "2026-12-30",
-    "revised_in_service_date": "2026-12-30",
-    "transmission_owner": "PPL",
-    "csa_posted": false,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af2_233_gia.pdf",
-    "primary_senator": {
-      "name": "Lynda Schlegel Culver",
-      "party": "R",
-      "district": 27
-    },
-    "senators": [
-      {
-        "district": 27,
-        "name": "Lynda Schlegel Culver",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 85,
-        "name": "David H. Rowe",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AF2-238",
-    "name": "Farmers Valley Solar",
-    "county": "Bradford",
-    "lat": 41.7866,
-    "lon": -76.5263,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 12.0,
-    "mw_energy": 20.0,
-    "mfo": 20.0,
-    "status": "Engineering and Procurement",
-    "submitted": "2020-03-26",
-    "test_energy_date": "2027-05-14",
-    "commercial_operation_milestone": "2027-07-31",
-    "revised_in_service_date": "2027-07-31",
-    "transmission_owner": "PENELEC",
-    "csa_posted": false,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af2_238_gia.pdf",
-    "primary_senator": {
-      "name": "Gene Yaw",
-      "party": "R",
-      "district": 23
-    },
-    "senators": [
-      {
-        "district": 23,
-        "name": "Gene Yaw",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 68,
-        "name": "Clint Owlett",
-        "overlap_pct": 50.2,
-        "party": "R"
-      },
-      {
-        "district": 110,
-        "name": "Tina Pickett",
-        "overlap_pct": 49.8,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AF2-417",
-    "name": "WA-Cochecton 2",
-    "county": "Adams",
-    "lat": 39.9118,
-    "lon": -77.2191,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 12.0,
-    "mw_energy": 20.0,
-    "mfo": 20.0,
-    "status": "Engineering and Procurement",
-    "submitted": "2020-03-31",
-    "test_energy_date": "2026-10-31",
-    "commercial_operation_milestone": "2027-12-31",
-    "revised_in_service_date": "2027-12-31",
-    "transmission_owner": "PPL",
-    "csa_posted": false,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af2_417_gia.pdf",
-    "primary_senator": {
-      "name": "Doug Mastriano",
-      "party": "R",
-      "district": 33
-    },
-    "senators": [
-      {
-        "district": 33,
-        "name": "Doug Mastriano",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 91,
-        "name": "Dan Moul",
-        "overlap_pct": 62.3,
-        "party": "R"
-      },
-      {
-        "district": 193,
-        "name": "Catherine I Wallen",
-        "overlap_pct": 37.7,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AF2-421",
-    "name": "Club Ford Energy Center",
-    "county": "Adams",
-    "lat": 39.8718,
-    "lon": -77.2591,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 12.0,
-    "mw_energy": 20.0,
-    "mfo": 20.0,
-    "status": "Engineering and Procurement",
-    "submitted": "2020-04-01",
-    "test_energy_date": "2027-09-30",
-    "commercial_operation_milestone": "2028-03-01",
-    "revised_in_service_date": "2028-03-01",
-    "transmission_owner": "PPL",
-    "csa_posted": false,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af2_421_gia.pdf",
-    "primary_senator": {
-      "name": "Doug Mastriano",
-      "party": "R",
-      "district": 33
-    },
-    "senators": [
-      {
-        "district": 33,
-        "name": "Doug Mastriano",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 91,
-        "name": "Dan Moul",
-        "overlap_pct": 62.3,
-        "party": "R"
-      },
-      {
-        "district": 193,
-        "name": "Catherine I Wallen",
-        "overlap_pct": 37.7,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AF2-424",
-    "name": "Shamrock Energy Center",
-    "county": "Northumberland",
-    "lat": 40.8546,
-    "lon": -76.66659999999999,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 12.0,
-    "mw_energy": 20.0,
-    "mfo": 20.0,
-    "status": "Engineering and Procurement",
-    "submitted": "2020-03-31",
-    "test_energy_date": "2026-12-18",
-    "commercial_operation_milestone": "2027-02-01",
-    "revised_in_service_date": "2027-02-01",
-    "transmission_owner": "PPL",
-    "csa_posted": false,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af2_424_gia.pdf",
-    "primary_senator": {
-      "name": "Lynda Schlegel Culver",
-      "party": "R",
-      "district": 27
-    },
-    "senators": [
-      {
-        "district": 27,
-        "name": "Lynda Schlegel Culver",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 107,
-        "name": "Joanne Stehr",
-        "overlap_pct": 56.0,
-        "party": "R"
-      },
-      {
-        "district": 108,
-        "name": "Michael Stender",
-        "overlap_pct": 44.0,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AF2-425",
-    "name": "Shamrock Energy Center",
-    "county": "Adams",
-    "lat": 39.8318,
-    "lon": -77.2191,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 12.0,
-    "mw_energy": 20.0,
-    "mfo": 20.0,
-    "status": "Engineering and Procurement",
-    "submitted": "2020-03-31",
-    "test_energy_date": "2026-12-18",
-    "commercial_operation_milestone": "2027-02-01",
-    "revised_in_service_date": "2027-02-01",
-    "transmission_owner": "PPL",
-    "csa_posted": false,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af2_425_gia.pdf",
-    "primary_senator": {
-      "name": "Doug Mastriano",
-      "party": "R",
-      "district": 33
-    },
-    "senators": [
-      {
-        "district": 33,
-        "name": "Doug Mastriano",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 91,
-        "name": "Dan Moul",
-        "overlap_pct": 62.3,
-        "party": "R"
-      },
-      {
-        "district": 193,
-        "name": "Catherine I Wallen",
-        "overlap_pct": 37.7,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AF2-433",
-    "name": "Frosty Valley Energy Center",
+    "id": "AE2-241",
+    "name": "Mountain Holly",
     "county": "Columbia",
-    "lat": 41.01585773934819,
-    "lon": -76.387739320225,
+    "lat": 41.0139,
+    "lon": -76.3308,
     "fuel": "Solar",
     "fuel_group": "Solar",
     "cliff_exposed": true,
-    "mw_capacity": 12.0,
+    "mw_capacity": 8.4,
     "mw_energy": 20.0,
     "mfo": 20.0,
-    "status": "Engineering and Procurement",
-    "submitted": "2020-03-31",
-    "test_energy_date": "2026-12-01",
-    "commercial_operation_milestone": "2027-01-15",
-    "revised_in_service_date": "2027-01-15",
+    "status": "Suspended",
+    "submitted": "2019-03-23",
+    "test_energy_date": "2027-02-09",
+    "commercial_operation_milestone": "2027-06-01",
+    "projected_in_service_date": "2027-06-01",
     "transmission_owner": "PPL",
-    "csa_posted": false,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af2_433_gia.pdf",
+    "csa_posted": true,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae2_241_isa.pdf",
     "primary_senator": {
       "name": "Lynda Schlegel Culver",
       "party": "R",
@@ -2614,570 +1979,24 @@
     ]
   },
   {
-    "id": "AG1-040",
-    "name": "Nichols Solar",
-    "county": "Crawford",
-    "lat": 41.649858983848624,
-    "lon": -80.12899999999999,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 12.0,
-    "mw_energy": 20.0,
-    "mfo": 20.0,
-    "status": "Engineering and Procurement",
-    "submitted": "2020-06-20",
-    "test_energy_date": "2026-11-27",
-    "commercial_operation_milestone": "2026-12-31",
-    "revised_in_service_date": "2026-12-31",
-    "transmission_owner": "PENELEC",
-    "csa_posted": false,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/ag1_040_gia.pdf",
-    "primary_senator": {
-      "name": "Michele Brooks",
-      "party": "R",
-      "district": 50
-    },
-    "senators": [
-      {
-        "district": 50,
-        "name": "Michele Brooks",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 6,
-        "name": "Brad Roae",
-        "overlap_pct": 57.8,
-        "party": "R"
-      },
-      {
-        "district": 65,
-        "name": "Kathy L. Rapp",
-        "overlap_pct": 29.2,
-        "party": "R"
-      },
-      {
-        "district": 64,
-        "name": "R. Lee James",
-        "overlap_pct": 13.0,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AG1-100",
-    "name": "Henry Solar",
-    "county": "Crawford",
-    "lat": 41.649858983848624,
-    "lon": -80.089,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 12.0,
-    "mw_energy": 20.0,
-    "mfo": 20.0,
-    "status": "Engineering and Procurement",
-    "submitted": "2020-08-18",
-    "test_energy_date": "2026-10-26",
-    "commercial_operation_milestone": "2026-12-31",
-    "revised_in_service_date": "2026-12-31",
-    "transmission_owner": "PENELEC",
-    "csa_posted": false,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/ag1_100_gia.pdf",
-    "primary_senator": {
-      "name": "Michele Brooks",
-      "party": "R",
-      "district": 50
-    },
-    "senators": [
-      {
-        "district": 50,
-        "name": "Michele Brooks",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 6,
-        "name": "Brad Roae",
-        "overlap_pct": 57.8,
-        "party": "R"
-      },
-      {
-        "district": 65,
-        "name": "Kathy L. Rapp",
-        "overlap_pct": 29.2,
-        "party": "R"
-      },
-      {
-        "district": 64,
-        "name": "R. Lee James",
-        "overlap_pct": 13.0,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AG1-164",
-    "name": "Club Ford Energy Center",
-    "county": "Luzerne",
-    "lat": 41.1759,
-    "lon": -75.93769999999999,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 12.0,
-    "mw_energy": 20.0,
-    "mfo": 40.0,
-    "status": "Engineering and Procurement",
-    "submitted": "2020-09-16",
-    "test_energy_date": "2026-12-30",
-    "commercial_operation_milestone": "2027-03-01",
-    "revised_in_service_date": "2027-03-01",
-    "transmission_owner": "PPL",
-    "csa_posted": false,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/ag1_164_gia.pdf",
-    "primary_senator": {
-      "name": "Lisa Baker",
-      "party": "R",
-      "district": 20
-    },
-    "senators": [
-      {
-        "district": 20,
-        "name": "Lisa Baker",
-        "overlap_pct": 38.0,
-        "party": "R"
-      },
-      {
-        "district": 27,
-        "name": "Lynda Schlegel Culver",
-        "overlap_pct": 29.4,
-        "party": "R"
-      },
-      {
-        "district": 29,
-        "name": "David G. Argall",
-        "overlap_pct": 24.7,
-        "party": "R"
-      },
-      {
-        "district": 22,
-        "name": "Marty Flynn",
-        "overlap_pct": 7.9,
-        "party": "D"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 117,
-        "name": "Jamie Walsh",
-        "overlap_pct": 55.8,
-        "party": "R"
-      },
-      {
-        "district": 121,
-        "name": "Eddie Day Pashinski",
-        "overlap_pct": 12.9,
-        "party": "D"
-      },
-      {
-        "district": 119,
-        "name": "Alec J. Ryncavage",
-        "overlap_pct": 11.0,
-        "party": "R"
-      },
-      {
-        "district": 120,
-        "name": "Brenda M. Pugh",
-        "overlap_pct": 10.0,
-        "party": "R"
-      },
-      {
-        "district": 116,
-        "name": "Dane Watro",
-        "overlap_pct": 5.8,
-        "party": "R"
-      },
-      {
-        "district": 118,
-        "name": "Jim Haddock",
-        "overlap_pct": 4.5,
-        "party": "D"
-      }
-    ]
-  },
-  {
-    "id": "AG1-165",
-    "name": "Club Ford Energy Center",
-    "county": "Luzerne",
-    "lat": 41.1759,
-    "lon": -76.0177,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 12.0,
-    "mw_energy": 20.0,
-    "mfo": 60.0,
-    "status": "Engineering and Procurement",
-    "submitted": "2020-09-17",
-    "test_energy_date": "2026-12-30",
-    "commercial_operation_milestone": "2027-03-01",
-    "revised_in_service_date": "2027-03-01",
-    "transmission_owner": "PPL",
-    "csa_posted": false,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/ag1_165_gia.pdf",
-    "primary_senator": {
-      "name": "Lisa Baker",
-      "party": "R",
-      "district": 20
-    },
-    "senators": [
-      {
-        "district": 20,
-        "name": "Lisa Baker",
-        "overlap_pct": 38.0,
-        "party": "R"
-      },
-      {
-        "district": 27,
-        "name": "Lynda Schlegel Culver",
-        "overlap_pct": 29.4,
-        "party": "R"
-      },
-      {
-        "district": 29,
-        "name": "David G. Argall",
-        "overlap_pct": 24.7,
-        "party": "R"
-      },
-      {
-        "district": 22,
-        "name": "Marty Flynn",
-        "overlap_pct": 7.9,
-        "party": "D"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 117,
-        "name": "Jamie Walsh",
-        "overlap_pct": 55.8,
-        "party": "R"
-      },
-      {
-        "district": 121,
-        "name": "Eddie Day Pashinski",
-        "overlap_pct": 12.9,
-        "party": "D"
-      },
-      {
-        "district": 119,
-        "name": "Alec J. Ryncavage",
-        "overlap_pct": 11.0,
-        "party": "R"
-      },
-      {
-        "district": 120,
-        "name": "Brenda M. Pugh",
-        "overlap_pct": 10.0,
-        "party": "R"
-      },
-      {
-        "district": 116,
-        "name": "Dane Watro",
-        "overlap_pct": 5.8,
-        "party": "R"
-      },
-      {
-        "district": 118,
-        "name": "Jim Haddock",
-        "overlap_pct": 4.5,
-        "party": "D"
-      }
-    ]
-  },
-  {
-    "id": "AG1-281",
-    "name": "BL-Hileman Hollow",
-    "county": "Blair",
-    "lat": 40.4838,
-    "lon": -78.3486,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 12.0,
-    "mw_energy": 20.0,
-    "mfo": 20.0,
-    "status": "Engineering and Procurement",
-    "submitted": "2020-09-30",
-    "test_energy_date": "2026-12-15",
-    "commercial_operation_milestone": "2027-12-31",
-    "revised_in_service_date": "2027-12-31",
-    "transmission_owner": "PENELEC",
-    "csa_posted": false,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/ag1_281_gia.pdf",
-    "primary_senator": {
-      "name": "Judy Ward",
-      "party": "R",
-      "district": 30
-    },
-    "senators": [
-      {
-        "district": 30,
-        "name": "Judy Ward",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 80,
-        "name": "Scott Barger",
-        "overlap_pct": 83.6,
-        "party": "R"
-      },
-      {
-        "district": 79,
-        "name": "Andrea C. Verobish",
-        "overlap_pct": 16.4,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AG1-301",
-    "name": "Scarecrow Solar",
-    "county": "Huntingdon",
-    "lat": 40.38925898384863,
-    "lon": -77.99549999999999,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 12.0,
-    "mw_energy": 20.0,
-    "mfo": 20.0,
-    "status": "Engineering and Procurement",
-    "submitted": "2020-09-29",
-    "test_energy_date": "2027-04-12",
-    "commercial_operation_milestone": "2027-05-01",
-    "revised_in_service_date": "2027-05-01",
-    "transmission_owner": "PENELEC",
-    "csa_posted": false,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/ag1_301_gia.pdf",
-    "primary_senator": {
-      "name": "Judy Ward",
-      "party": "R",
-      "district": 30
-    },
-    "senators": [
-      {
-        "district": 30,
-        "name": "Judy Ward",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 81,
-        "name": "Rich Irvin",
-        "overlap_pct": 93.1,
-        "party": "R"
-      },
-      {
-        "district": 80,
-        "name": "Scott Barger",
-        "overlap_pct": 6.9,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AF2-086",
-    "name": "Stoneybrook Solar",
-    "county": "Columbia",
-    "lat": 41.0303885899083,
-    "lon": -76.43246067977499,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 11.8,
-    "mw_energy": 19.6,
-    "mfo": 19.6,
-    "status": "Engineering and Procurement",
-    "submitted": "2020-02-03",
-    "test_energy_date": "2027-10-29",
-    "commercial_operation_milestone": "2027-12-31",
-    "revised_in_service_date": "2027-12-31",
-    "transmission_owner": "PPL",
-    "csa_posted": false,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af2_086_gia.pdf",
-    "primary_senator": {
-      "name": "Lynda Schlegel Culver",
-      "party": "R",
-      "district": 27
-    },
-    "senators": [
-      {
-        "district": 27,
-        "name": "Lynda Schlegel Culver",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 109,
-        "name": "Robert Leadbeter",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AF2-445A",
-    "name": "Norwegian Solar",
-    "county": "Northumberland",
-    "lat": 40.8946,
-    "lon": -76.7066,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 11.8,
-    "mw_energy": 19.8,
-    "mfo": 19.8,
-    "status": "Suspended",
-    "submitted": "2020-04-01",
-    "commercial_operation_milestone": "2024-09-24",
-    "revised_in_service_date": "2024-09-24",
-    "transmission_owner": "PPL",
-    "csa_posted": true,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/af2_445a_isa.pdf",
-    "primary_senator": {
-      "name": "Lynda Schlegel Culver",
-      "party": "R",
-      "district": 27
-    },
-    "senators": [
-      {
-        "district": 27,
-        "name": "Lynda Schlegel Culver",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 107,
-        "name": "Joanne Stehr",
-        "overlap_pct": 56.0,
-        "party": "R"
-      },
-      {
-        "district": 108,
-        "name": "Michael Stender",
-        "overlap_pct": 44.0,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AF2-229",
-    "name": "Gobbler Knob",
-    "county": "Cumberland",
-    "lat": 40.1657,
-    "lon": -77.2686,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 10.9,
-    "mw_energy": 20.0,
-    "mfo": 20.0,
-    "status": "Engineering and Procurement",
-    "submitted": "2020-03-26",
-    "test_energy_date": "2027-09-14",
-    "commercial_operation_milestone": "2027-11-30",
-    "revised_in_service_date": "2027-11-30",
-    "transmission_owner": "PENELEC",
-    "csa_posted": false,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af2_229_gia.pdf",
-    "primary_senator": {
-      "name": "Greg Rothman",
-      "party": "R",
-      "district": 34
-    },
-    "senators": [
-      {
-        "district": 34,
-        "name": "Greg Rothman",
-        "overlap_pct": 94.6,
-        "party": "R"
-      },
-      {
-        "district": 31,
-        "name": "Dawn W. Keefer",
-        "overlap_pct": 5.4,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 199,
-        "name": "Barbara Gleim",
-        "overlap_pct": 41.9,
-        "party": "R"
-      },
-      {
-        "district": 193,
-        "name": "Catherine I Wallen",
-        "overlap_pct": 29.5,
-        "party": "R"
-      },
-      {
-        "district": 87,
-        "name": "Thomas H. Kutz",
-        "overlap_pct": 20.6,
-        "party": "R"
-      },
-      {
-        "district": 88,
-        "name": "Sheryl M. Delozier",
-        "overlap_pct": 5.1,
-        "party": "R"
-      },
-      {
-        "district": 103,
-        "name": "Nathan Davidson",
-        "overlap_pct": 2.8,
-        "party": "D"
-      }
-    ]
-  },
-  {
-    "id": "AF1-271A",
-    "name": "G Morris Solar",
+    "id": "AF1-040",
+    "name": "Momentum Gratz",
     "county": "Dauphin",
     "lat": 40.4118,
-    "lon": -76.82910000000001,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 10.2,
-    "mw_energy": 17.0,
-    "mfo": 17.0,
+    "lon": -76.7891,
+    "fuel": "Storage",
+    "fuel_group": "Storage",
+    "cliff_exposed": false,
+    "mw_capacity": 1.0,
+    "mw_energy": 20.0,
+    "mfo": 20.0,
     "status": "Suspended",
-    "submitted": "2019-09-27",
-    "test_energy_date": "2026-03-02",
-    "commercial_operation_milestone": "2026-04-15",
-    "revised_in_service_date": "2026-04-15",
+    "submitted": "2019-06-15",
+    "commercial_operation_milestone": "2024-09-06",
+    "projected_in_service_date": "2024-09-06",
     "transmission_owner": "PPL",
     "csa_posted": true,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/af1_271a_isa.pdf",
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/af1_040_isa.pdf",
     "primary_senator": {
       "name": "Patty Kim",
       "party": "D",
@@ -3231,178 +2050,10 @@
     ]
   },
   {
-    "id": "AF1-136",
-    "name": "FU-Hanks Solar",
-    "county": "Fulton",
-    "lat": 39.9259,
-    "lon": -78.0996,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 9.43,
-    "mw_energy": 15.72,
-    "mfo": 15.72,
-    "status": "Engineering and Procurement",
-    "submitted": "2019-09-19",
-    "test_energy_date": "2026-10-12",
-    "commercial_operation_milestone": "2026-11-17",
-    "revised_in_service_date": "2026-11-17",
-    "transmission_owner": "APS",
-    "csa_posted": true,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/af1_136_isa.pdf",
-    "primary_senator": {
-      "name": "Judy Ward",
-      "party": "R",
-      "district": 30
-    },
-    "senators": [
-      {
-        "district": 30,
-        "name": "Judy Ward",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 78,
-        "name": "Jesse Topper",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AE2-084",
-    "name": "Cottontail Solar 3",
-    "county": "Montour",
-    "lat": 41.026,
-    "lon": -76.6566,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 8.4,
-    "mw_energy": 20.0,
-    "mfo": 20.0,
-    "status": "Suspended",
-    "submitted": "2019-02-03",
-    "test_energy_date": "2025-10-01",
-    "commercial_operation_milestone": "2026-04-01",
-    "revised_in_service_date": "2026-04-01",
-    "transmission_owner": "PPL",
-    "csa_posted": true,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae2_084_isa.pdf",
-    "primary_senator": {
-      "name": "Lynda Schlegel Culver",
-      "party": "R",
-      "district": 27
-    },
-    "senators": [
-      {
-        "district": 27,
-        "name": "Lynda Schlegel Culver",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 108,
-        "name": "Michael Stender",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AE2-110",
-    "name": "Montour 1",
-    "county": "Columbia",
-    "lat": 41.0539,
-    "lon": -76.36009999999999,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 8.4,
-    "mw_energy": 20.0,
-    "mfo": 20.0,
-    "status": "Suspended",
-    "submitted": "2019-03-03",
-    "test_energy_date": "2027-12-06",
-    "commercial_operation_milestone": "2025-02-28",
-    "revised_in_service_date": "2025-02-28",
-    "transmission_owner": "PPL",
-    "csa_posted": true,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae2_110_isa.pdf",
-    "primary_senator": {
-      "name": "Lynda Schlegel Culver",
-      "party": "R",
-      "district": 27
-    },
-    "senators": [
-      {
-        "district": 27,
-        "name": "Lynda Schlegel Culver",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 109,
-        "name": "Robert Leadbeter",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ]
-  },
-  {
-    "id": "AE2-241",
-    "name": "Mountain Holly",
-    "county": "Columbia",
-    "lat": 41.091942260651805,
-    "lon": -76.387739320225,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 8.4,
-    "mw_energy": 20.0,
-    "mfo": 20.0,
-    "status": "Suspended",
-    "submitted": "2019-03-23",
-    "test_energy_date": "2027-02-09",
-    "commercial_operation_milestone": "2027-06-01",
-    "revised_in_service_date": "2027-06-01",
-    "transmission_owner": "PPL",
-    "csa_posted": true,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae2_241_isa.pdf",
-    "primary_senator": {
-      "name": "Lynda Schlegel Culver",
-      "party": "R",
-      "district": 27
-    },
-    "senators": [
-      {
-        "district": 27,
-        "name": "Lynda Schlegel Culver",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ],
-    "house_reps": [
-      {
-        "district": 109,
-        "name": "Robert Leadbeter",
-        "overlap_pct": 100.0,
-        "party": "R"
-      }
-    ]
-  },
-  {
     "id": "AF1-057",
     "name": "Dover Solar",
     "county": "York",
-    "lat": 39.887,
+    "lat": 39.927,
     "lon": -76.7277,
     "fuel": "Solar",
     "fuel_group": "Solar",
@@ -3410,11 +2061,11 @@
     "mw_capacity": 8.4,
     "mw_energy": 20.0,
     "mfo": 75.0,
-    "status": "Suspended",
+    "status": "Engineering and Procurement",
     "submitted": "2019-07-31",
     "test_energy_date": "2026-09-14",
     "commercial_operation_milestone": "2026-10-14",
-    "revised_in_service_date": "2026-10-14",
+    "projected_in_service_date": "2026-10-14",
     "transmission_owner": "ME",
     "csa_posted": true,
     "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/af1_057_isa.pdf",
@@ -3483,6 +2134,561 @@
     ]
   },
   {
+    "id": "AF1-093",
+    "name": "Jackson Center Solar II",
+    "county": "Mercer",
+    "lat": 41.2214,
+    "lon": -80.2561,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 12.0,
+    "mw_energy": 20.0,
+    "mfo": 20.0,
+    "status": "Under Construction",
+    "submitted": "2019-08-31",
+    "test_energy_date": "2026-06-29",
+    "commercial_operation_milestone": "2026-07-31",
+    "projected_in_service_date": "2026-07-31",
+    "transmission_owner": "ATSI",
+    "csa_posted": true,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/af1_093_isa.pdf",
+    "primary_senator": {
+      "name": "Michele Brooks",
+      "party": "R",
+      "district": 50
+    },
+    "senators": [
+      {
+        "district": 50,
+        "name": "Michele Brooks",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 17,
+        "name": "Timothy R. Bonner",
+        "overlap_pct": 69.5,
+        "party": "R"
+      },
+      {
+        "district": 7,
+        "name": "Parke Wentling",
+        "overlap_pct": 30.5,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AF1-094",
+    "name": "Franklin Solar",
+    "county": "Crawford",
+    "lat": 41.7094,
+    "lon": -80.0777,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 12.0,
+    "mw_energy": 20.0,
+    "mfo": 20.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2019-08-30",
+    "test_energy_date": "2026-07-31",
+    "commercial_operation_milestone": "2026-09-20",
+    "projected_in_service_date": "2026-09-20",
+    "transmission_owner": "PENELEC",
+    "csa_posted": true,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/af1_094_isa.pdf",
+    "primary_senator": {
+      "name": "Michele Brooks",
+      "party": "R",
+      "district": 50
+    },
+    "senators": [
+      {
+        "district": 50,
+        "name": "Michele Brooks",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 6,
+        "name": "Brad Roae",
+        "overlap_pct": 57.8,
+        "party": "R"
+      },
+      {
+        "district": 65,
+        "name": "Kathy L. Rapp",
+        "overlap_pct": 29.2,
+        "party": "R"
+      },
+      {
+        "district": 64,
+        "name": "R. Lee James",
+        "overlap_pct": 13.0,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AF1-134",
+    "name": "CL-Green Acres",
+    "county": "Clearfield",
+    "lat": 41.0217,
+    "lon": -78.4364,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 12.0,
+    "mw_energy": 20.0,
+    "mfo": 20.0,
+    "status": "Under Construction",
+    "submitted": "2019-09-19",
+    "test_energy_date": "2026-09-01",
+    "commercial_operation_milestone": "2027-12-01",
+    "projected_in_service_date": "2027-12-01",
+    "transmission_owner": "PENELEC",
+    "csa_posted": false,
+    "primary_senator": {
+      "name": "Wayne Langerholc",
+      "party": "R",
+      "district": 35
+    },
+    "senators": [
+      {
+        "district": 35,
+        "name": "Wayne Langerholc",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 73,
+        "name": "Dallas Kephart",
+        "overlap_pct": 66.5,
+        "party": "R"
+      },
+      {
+        "district": 75,
+        "name": "Mike Armanini",
+        "overlap_pct": 33.5,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AF1-153",
+    "name": "Jakes Hollow Solar",
+    "county": "Elk",
+    "lat": 41.429,
+    "lon": -78.6479,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 12.0,
+    "mw_energy": 20.0,
+    "mfo": 20.0,
+    "status": "Suspended",
+    "submitted": "2019-09-19",
+    "test_energy_date": "2027-10-30",
+    "commercial_operation_milestone": "2027-12-29",
+    "projected_in_service_date": "2027-12-29",
+    "transmission_owner": "APS",
+    "csa_posted": false,
+    "primary_senator": {
+      "name": "Cris Dush",
+      "party": "R",
+      "district": 25
+    },
+    "senators": [
+      {
+        "district": 25,
+        "name": "Cris Dush",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 75,
+        "name": "Mike Armanini",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AF1-254",
+    "name": "FR-Williamsport",
+    "county": "Franklin",
+    "lat": 39.9279,
+    "lon": -77.7228,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 12.0,
+    "mw_energy": 20.0,
+    "mfo": 20.0,
+    "status": "Under Construction",
+    "submitted": "2019-09-30",
+    "test_energy_date": "2026-03-16",
+    "commercial_operation_milestone": "2025-12-31",
+    "projected_in_service_date": "2025-12-31",
+    "transmission_owner": "APS",
+    "csa_posted": false,
+    "primary_senator": {
+      "name": "Doug Mastriano",
+      "party": "R",
+      "district": 33
+    },
+    "senators": [
+      {
+        "district": 33,
+        "name": "Doug Mastriano",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 90,
+        "name": "Chad G. Reichard",
+        "overlap_pct": 40.7,
+        "party": "R"
+      },
+      {
+        "district": 81,
+        "name": "Rich Irvin",
+        "overlap_pct": 39.7,
+        "party": "R"
+      },
+      {
+        "district": 89,
+        "name": "Rob W. Kauffman",
+        "overlap_pct": 19.5,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AF1-321",
+    "name": "SunEast Hooversville Solar",
+    "county": "Somerset",
+    "lat": 39.9836,
+    "lon": -79.0002,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 12.0,
+    "mw_energy": 20.0,
+    "mfo": 20.0,
+    "status": "Suspended",
+    "submitted": "2019-09-30",
+    "test_energy_date": "2026-05-01",
+    "commercial_operation_milestone": "2026-08-01",
+    "projected_in_service_date": "2026-08-01",
+    "transmission_owner": "PENELEC",
+    "csa_posted": true,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/af1_321_isa.pdf",
+    "primary_senator": {
+      "name": "Patrick J. Stefano",
+      "party": "R",
+      "district": 32
+    },
+    "senators": [
+      {
+        "district": 32,
+        "name": "Patrick J. Stefano",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 69,
+        "name": "Carl Walker Metzgar",
+        "overlap_pct": 93.6,
+        "party": "R"
+      },
+      {
+        "district": 71,
+        "name": "Jim Rigby",
+        "overlap_pct": 6.4,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AF1-333",
+    "name": "Limestone Solar",
+    "county": "Union",
+    "lat": 40.9638,
+    "lon": -77.0593,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 12.0,
+    "mw_energy": 20.0,
+    "mfo": 20.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2019-09-27",
+    "test_energy_date": "2027-08-16",
+    "commercial_operation_milestone": "2027-09-30",
+    "projected_in_service_date": "2027-09-30",
+    "transmission_owner": "PPL",
+    "csa_posted": false,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af1_333_gia.pdf",
+    "primary_senator": {
+      "name": "Gene Yaw",
+      "party": "R",
+      "district": 23
+    },
+    "senators": [
+      {
+        "district": 23,
+        "name": "Gene Yaw",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 76,
+        "name": "Stephanie Borowicz",
+        "overlap_pct": 72.3,
+        "party": "R"
+      },
+      {
+        "district": 83,
+        "name": "Jamie L. Flick",
+        "overlap_pct": 19.4,
+        "party": "R"
+      },
+      {
+        "district": 85,
+        "name": "David H. Rowe",
+        "overlap_pct": 8.3,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AF1-337",
+    "name": "Limestone Solar",
+    "county": "Union",
+    "lat": 40.9638,
+    "lon": -77.0193,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 12.0,
+    "mw_energy": 20.0,
+    "mfo": 40.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2019-09-27",
+    "test_energy_date": "2027-08-16",
+    "commercial_operation_milestone": "2027-09-30",
+    "projected_in_service_date": "2027-09-30",
+    "transmission_owner": "PPL",
+    "csa_posted": false,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af1_337_gia.pdf",
+    "primary_senator": {
+      "name": "Gene Yaw",
+      "party": "R",
+      "district": 23
+    },
+    "senators": [
+      {
+        "district": 23,
+        "name": "Gene Yaw",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 76,
+        "name": "Stephanie Borowicz",
+        "overlap_pct": 72.3,
+        "party": "R"
+      },
+      {
+        "district": 83,
+        "name": "Jamie L. Flick",
+        "overlap_pct": 19.4,
+        "party": "R"
+      },
+      {
+        "district": 85,
+        "name": "David H. Rowe",
+        "overlap_pct": 8.3,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AF1-338",
+    "name": "Limestone Solar",
+    "county": "Union",
+    "lat": 40.8838,
+    "lon": -77.0593,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 12.0,
+    "mw_energy": 20.0,
+    "mfo": 60.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2019-09-27",
+    "test_energy_date": "2027-08-16",
+    "commercial_operation_milestone": "2027-09-30",
+    "projected_in_service_date": "2027-09-30",
+    "transmission_owner": "PPL",
+    "csa_posted": false,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af1_338_gia.pdf",
+    "primary_senator": {
+      "name": "Gene Yaw",
+      "party": "R",
+      "district": 23
+    },
+    "senators": [
+      {
+        "district": 23,
+        "name": "Gene Yaw",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 76,
+        "name": "Stephanie Borowicz",
+        "overlap_pct": 72.3,
+        "party": "R"
+      },
+      {
+        "district": 83,
+        "name": "Jamie L. Flick",
+        "overlap_pct": 19.4,
+        "party": "R"
+      },
+      {
+        "district": 85,
+        "name": "David H. Rowe",
+        "overlap_pct": 8.3,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AF1-339",
+    "name": "Limestone Solar",
+    "county": "Union",
+    "lat": 40.9638,
+    "lon": -77.0593,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 12.0,
+    "mw_energy": 20.0,
+    "mfo": 80.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2019-09-28",
+    "test_energy_date": "2027-08-16",
+    "commercial_operation_milestone": "2027-09-30",
+    "projected_in_service_date": "2027-09-30",
+    "transmission_owner": "PPL",
+    "csa_posted": false,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af1_339_gia.pdf",
+    "primary_senator": {
+      "name": "Gene Yaw",
+      "party": "R",
+      "district": 23
+    },
+    "senators": [
+      {
+        "district": 23,
+        "name": "Gene Yaw",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 76,
+        "name": "Stephanie Borowicz",
+        "overlap_pct": 72.3,
+        "party": "R"
+      },
+      {
+        "district": 83,
+        "name": "Jamie L. Flick",
+        "overlap_pct": 19.4,
+        "party": "R"
+      },
+      {
+        "district": 85,
+        "name": "David H. Rowe",
+        "overlap_pct": 8.3,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AF2-001",
+    "name": "SunEast Hooversville Solar",
+    "county": "Somerset",
+    "lat": 39.9065,
+    "lon": -78.9912,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 12.0,
+    "mw_energy": 20.0,
+    "mfo": 40.0,
+    "status": "Suspended",
+    "submitted": "2019-10-01",
+    "test_energy_date": "2026-05-01",
+    "commercial_operation_milestone": "2026-08-01",
+    "projected_in_service_date": "2026-08-01",
+    "transmission_owner": "PENELEC",
+    "csa_posted": true,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/af2_001_isa.pdf",
+    "primary_senator": {
+      "name": "Patrick J. Stefano",
+      "party": "R",
+      "district": 32
+    },
+    "senators": [
+      {
+        "district": 32,
+        "name": "Patrick J. Stefano",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 69,
+        "name": "Carl Walker Metzgar",
+        "overlap_pct": 93.6,
+        "party": "R"
+      },
+      {
+        "district": 71,
+        "name": "Jim Rigby",
+        "overlap_pct": 6.4,
+        "party": "R"
+      }
+    ]
+  },
+  {
     "id": "AF2-029",
     "name": "Fayette Energy Facility",
     "county": "Fayette",
@@ -3498,7 +2704,7 @@
     "submitted": "2019-10-28",
     "test_energy_date": "2028-10-15",
     "commercial_operation_milestone": "2028-10-31",
-    "revised_in_service_date": "2028-10-31",
+    "projected_in_service_date": "2028-10-31",
     "transmission_owner": "APS",
     "csa_posted": true,
     "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af2_029_gia.pdf",
@@ -3544,9 +2750,9 @@
     "mfo": 650.0,
     "status": "Engineering and Procurement",
     "submitted": "2019-10-28",
-    "test_energy_date": "2028-01-14",
-    "commercial_operation_milestone": "2028-02-29",
-    "revised_in_service_date": "2028-02-29",
+    "test_energy_date": "2029-01-12",
+    "commercial_operation_milestone": "2029-03-01",
+    "projected_in_service_date": "2029-03-01",
     "transmission_owner": "ME",
     "csa_posted": false,
     "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af2_030_gia.pdf",
@@ -3639,67 +2845,97 @@
     ]
   },
   {
-    "id": "AF2-092",
-    "name": "Magenta Solar",
-    "county": "Bedford",
-    "lat": 40.0072,
-    "lon": -78.491,
+    "id": "AF2-229",
+    "name": "Gobbler Knob",
+    "county": "Cumberland",
+    "lat": 40.1657,
+    "lon": -77.2686,
     "fuel": "Solar",
     "fuel_group": "Solar",
     "cliff_exposed": true,
-    "mw_capacity": 7.2,
-    "mw_energy": 12.0,
-    "mfo": 12.0,
-    "status": "Suspended",
-    "submitted": "2020-02-11",
-    "test_energy_date": "2026-05-31",
-    "commercial_operation_milestone": "2026-08-11",
-    "revised_in_service_date": "2026-08-11",
+    "mw_capacity": 10.9,
+    "mw_energy": 20.0,
+    "mfo": 20.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2020-03-26",
+    "test_energy_date": "2027-09-14",
+    "commercial_operation_milestone": "2027-11-30",
+    "projected_in_service_date": "2027-11-30",
     "transmission_owner": "PENELEC",
-    "csa_posted": true,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/af2_092_isa.pdf",
+    "csa_posted": false,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af2_229_gia.pdf",
     "primary_senator": {
-      "name": "Patrick J. Stefano",
+      "name": "Greg Rothman",
       "party": "R",
-      "district": 32
+      "district": 34
     },
     "senators": [
       {
-        "district": 32,
-        "name": "Patrick J. Stefano",
-        "overlap_pct": 100.0,
+        "district": 34,
+        "name": "Greg Rothman",
+        "overlap_pct": 94.6,
+        "party": "R"
+      },
+      {
+        "district": 31,
+        "name": "Dawn W. Keefer",
+        "overlap_pct": 5.4,
         "party": "R"
       }
     ],
     "house_reps": [
       {
-        "district": 78,
-        "name": "Jesse Topper",
-        "overlap_pct": 100.0,
+        "district": 199,
+        "name": "Barbara Gleim",
+        "overlap_pct": 41.9,
         "party": "R"
+      },
+      {
+        "district": 193,
+        "name": "Catherine I Wallen",
+        "overlap_pct": 29.5,
+        "party": "R"
+      },
+      {
+        "district": 87,
+        "name": "Thomas H. Kutz",
+        "overlap_pct": 20.6,
+        "party": "R"
+      },
+      {
+        "district": 88,
+        "name": "Sheryl M. Delozier",
+        "overlap_pct": 5.1,
+        "party": "R"
+      },
+      {
+        "district": 103,
+        "name": "Nathan Davidson",
+        "overlap_pct": 2.8,
+        "party": "D"
       }
     ]
   },
   {
-    "id": "AG1-259",
-    "name": "Boyles Run Solar",
-    "county": "Northumberland",
-    "lat": 40.8546,
-    "lon": -76.7466,
-    "fuel": "Solar",
-    "fuel_group": "Solar",
-    "cliff_exposed": true,
-    "mw_capacity": 6.7,
-    "mw_energy": 15.9,
-    "mfo": 15.9,
+    "id": "AF2-233",
+    "name": "Washington East Solar",
+    "county": "Snyder",
+    "lat": 40.7388,
+    "lon": -77.0826,
+    "fuel": "Solar; Storage",
+    "fuel_group": "Solar+Storage",
+    "cliff_exposed": false,
+    "mw_capacity": 12.0,
+    "mw_energy": 20.0,
+    "mfo": 20.0,
     "status": "Engineering and Procurement",
-    "submitted": "2020-09-28",
-    "test_energy_date": "2027-03-01",
-    "commercial_operation_milestone": "2028-04-30",
-    "revised_in_service_date": "2028-04-30",
+    "submitted": "2020-03-26",
+    "test_energy_date": "2026-10-30",
+    "commercial_operation_milestone": "2026-12-30",
+    "projected_in_service_date": "2026-12-30",
     "transmission_owner": "PPL",
     "csa_posted": false,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/ag1_259_gia.pdf",
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af2_233_gia.pdf",
     "primary_senator": {
       "name": "Lynda Schlegel Culver",
       "party": "R",
@@ -3715,39 +2951,225 @@
     ],
     "house_reps": [
       {
-        "district": 107,
-        "name": "Joanne Stehr",
-        "overlap_pct": 56.0,
-        "party": "R"
-      },
-      {
-        "district": 108,
-        "name": "Michael Stender",
-        "overlap_pct": 44.0,
+        "district": 85,
+        "name": "David H. Rowe",
+        "overlap_pct": 100.0,
         "party": "R"
       }
     ]
   },
   {
-    "id": "AG1-260",
-    "name": "Boyles Run Solar",
+    "id": "AF2-238",
+    "name": "Farmers Valley Solar",
+    "county": "Bradford",
+    "lat": 41.7866,
+    "lon": -76.5263,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 12.0,
+    "mw_energy": 20.0,
+    "mfo": 20.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2020-03-26",
+    "test_energy_date": "2028-04-14",
+    "commercial_operation_milestone": "2028-07-31",
+    "projected_in_service_date": "2028-07-31",
+    "transmission_owner": "PENELEC",
+    "csa_posted": false,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af2_238_gia.pdf",
+    "primary_senator": {
+      "name": "Gene Yaw",
+      "party": "R",
+      "district": 23
+    },
+    "senators": [
+      {
+        "district": 23,
+        "name": "Gene Yaw",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 68,
+        "name": "Clint Owlett",
+        "overlap_pct": 50.2,
+        "party": "R"
+      },
+      {
+        "district": 110,
+        "name": "Tina Pickett",
+        "overlap_pct": 49.8,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AF2-296",
+    "name": "CL- Belsena Solar",
+    "county": "Clearfield",
+    "lat": 40.9446,
+    "lon": -78.4274,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 12.0,
+    "mw_energy": 20.0,
+    "mfo": 20.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2020-03-28",
+    "test_energy_date": "2028-10-13",
+    "commercial_operation_milestone": "2028-12-31",
+    "projected_in_service_date": "2028-12-31",
+    "transmission_owner": "PENELEC",
+    "csa_posted": false,
+    "moved_to_cycle": "TC1",
+    "primary_senator": {
+      "name": "Wayne Langerholc",
+      "party": "R",
+      "district": 35
+    },
+    "senators": [
+      {
+        "district": 35,
+        "name": "Wayne Langerholc",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 73,
+        "name": "Dallas Kephart",
+        "overlap_pct": 66.5,
+        "party": "R"
+      },
+      {
+        "district": 75,
+        "name": "Mike Armanini",
+        "overlap_pct": 33.5,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AF2-417",
+    "name": "WA-Cochecton 2",
+    "county": "Adams",
+    "lat": 39.8842,
+    "lon": -77.1811,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 12.0,
+    "mw_energy": 20.0,
+    "mfo": 20.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2020-03-31",
+    "test_energy_date": "2027-03-31",
+    "commercial_operation_milestone": "2027-12-31",
+    "projected_in_service_date": "2027-12-31",
+    "transmission_owner": "PPL",
+    "csa_posted": false,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af2_417_gia.pdf",
+    "primary_senator": {
+      "name": "Doug Mastriano",
+      "party": "R",
+      "district": 33
+    },
+    "senators": [
+      {
+        "district": 33,
+        "name": "Doug Mastriano",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 91,
+        "name": "Dan Moul",
+        "overlap_pct": 62.3,
+        "party": "R"
+      },
+      {
+        "district": 193,
+        "name": "Catherine I Wallen",
+        "overlap_pct": 37.7,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AF2-421",
+    "name": "Club Ford Energy Center",
+    "county": "Adams",
+    "lat": 39.8071,
+    "lon": -77.1721,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 12.0,
+    "mw_energy": 20.0,
+    "mfo": 20.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2020-04-01",
+    "test_energy_date": "2027-09-30",
+    "commercial_operation_milestone": "2028-03-01",
+    "projected_in_service_date": "2028-03-01",
+    "transmission_owner": "PPL",
+    "csa_posted": false,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af2_421_gia.pdf",
+    "primary_senator": {
+      "name": "Doug Mastriano",
+      "party": "R",
+      "district": 33
+    },
+    "senators": [
+      {
+        "district": 33,
+        "name": "Doug Mastriano",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 91,
+        "name": "Dan Moul",
+        "overlap_pct": 62.3,
+        "party": "R"
+      },
+      {
+        "district": 193,
+        "name": "Catherine I Wallen",
+        "overlap_pct": 37.7,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AF2-424",
+    "name": "Shamrock Energy Center",
     "county": "Northumberland",
-    "lat": 40.8146,
+    "lat": 40.8546,
     "lon": -76.7066,
     "fuel": "Solar",
     "fuel_group": "Solar",
     "cliff_exposed": true,
-    "mw_capacity": 6.7,
-    "mw_energy": 15.9,
-    "mfo": 31.8,
+    "mw_capacity": 12.0,
+    "mw_energy": 20.0,
+    "mfo": 20.0,
     "status": "Engineering and Procurement",
-    "submitted": "2020-09-28",
-    "test_energy_date": "2027-03-01",
-    "commercial_operation_milestone": "2028-04-30",
-    "revised_in_service_date": "2028-04-30",
+    "submitted": "2020-03-31",
+    "test_energy_date": "2026-12-18",
+    "commercial_operation_milestone": "2027-02-01",
+    "projected_in_service_date": "2027-02-01",
     "transmission_owner": "PPL",
     "csa_posted": false,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/ag1_260_gia.pdf",
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af2_424_gia.pdf",
     "primary_senator": {
       "name": "Lynda Schlegel Culver",
       "party": "R",
@@ -3777,72 +3199,813 @@
     ]
   },
   {
-    "id": "AF2-002",
-    "name": "SunEast Hooversville Solar",
-    "county": "Somerset",
-    "lat": 39.931200000000004,
-    "lon": -79.0382,
+    "id": "AF2-425",
+    "name": "Shamrock Energy Center",
+    "county": "Adams",
+    "lat": 39.8718,
+    "lon": -77.2191,
     "fuel": "Solar",
     "fuel_group": "Solar",
     "cliff_exposed": true,
-    "mw_capacity": 6.0,
-    "mw_energy": 10.0,
-    "mfo": 50.0,
-    "status": "Suspended",
-    "submitted": "2019-10-01",
-    "test_energy_date": "2026-05-01",
-    "commercial_operation_milestone": "2026-08-01",
-    "revised_in_service_date": "2026-08-01",
-    "transmission_owner": "PENELEC",
-    "csa_posted": true,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/af2_002_isa.pdf",
+    "mw_capacity": 12.0,
+    "mw_energy": 20.0,
+    "mfo": 20.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2020-03-31",
+    "test_energy_date": "2026-12-18",
+    "commercial_operation_milestone": "2027-02-01",
+    "projected_in_service_date": "2027-02-01",
+    "transmission_owner": "PPL",
+    "csa_posted": false,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af2_425_gia.pdf",
     "primary_senator": {
-      "name": "Patrick J. Stefano",
+      "name": "Doug Mastriano",
       "party": "R",
-      "district": 32
+      "district": 33
     },
     "senators": [
       {
-        "district": 32,
-        "name": "Patrick J. Stefano",
+        "district": 33,
+        "name": "Doug Mastriano",
         "overlap_pct": 100.0,
         "party": "R"
       }
     ],
     "house_reps": [
       {
-        "district": 69,
-        "name": "Carl Walker Metzgar",
-        "overlap_pct": 93.6,
+        "district": 91,
+        "name": "Dan Moul",
+        "overlap_pct": 62.3,
         "party": "R"
       },
       {
-        "district": 71,
-        "name": "Jim Rigby",
-        "overlap_pct": 6.4,
+        "district": 193,
+        "name": "Catherine I Wallen",
+        "overlap_pct": 37.7,
         "party": "R"
       }
     ]
   },
   {
-    "id": "AF1-040",
-    "name": "Momentum Gratz",
-    "county": "Dauphin",
-    "lat": 40.4118,
-    "lon": -76.7491,
-    "fuel": "Storage",
-    "fuel_group": "Storage",
-    "cliff_exposed": false,
-    "mw_capacity": 1.0,
+    "id": "AF2-433",
+    "name": "Frosty Valley Energy Center",
+    "county": "Columbia",
+    "lat": 41.0539,
+    "lon": -76.4001,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 12.0,
     "mw_energy": 20.0,
     "mfo": 20.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2020-03-31",
+    "test_energy_date": "2026-12-01",
+    "commercial_operation_milestone": "2027-01-15",
+    "projected_in_service_date": "2027-01-15",
+    "transmission_owner": "PPL",
+    "csa_posted": false,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af2_433_gia.pdf",
+    "primary_senator": {
+      "name": "Lynda Schlegel Culver",
+      "party": "R",
+      "district": 27
+    },
+    "senators": [
+      {
+        "district": 27,
+        "name": "Lynda Schlegel Culver",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 109,
+        "name": "Robert Leadbeter",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AF2-434",
+    "name": "Frosty Valley Energy Center",
+    "county": "Columbia",
+    "lat": 41.0339,
+    "lon": -76.4347,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 12.0,
+    "mw_energy": 20.0,
+    "mfo": 40.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2020-03-31",
+    "test_energy_date": "2026-12-01",
+    "commercial_operation_milestone": "2027-01-15",
+    "projected_in_service_date": "2027-01-15",
+    "transmission_owner": "PPL",
+    "csa_posted": false,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af2_434_gia.pdf",
+    "primary_senator": {
+      "name": "Lynda Schlegel Culver",
+      "party": "R",
+      "district": 27
+    },
+    "senators": [
+      {
+        "district": 27,
+        "name": "Lynda Schlegel Culver",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 109,
+        "name": "Robert Leadbeter",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AG1-040",
+    "name": "Nichols Solar",
+    "county": "Crawford",
+    "lat": 41.6667,
+    "lon": -80.031,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 12.0,
+    "mw_energy": 20.0,
+    "mfo": 20.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2020-06-20",
+    "test_energy_date": "2026-11-27",
+    "commercial_operation_milestone": "2026-12-31",
+    "projected_in_service_date": "2026-12-31",
+    "transmission_owner": "PENELEC",
+    "csa_posted": false,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/ag1_040_gia.pdf",
+    "primary_senator": {
+      "name": "Michele Brooks",
+      "party": "R",
+      "district": 50
+    },
+    "senators": [
+      {
+        "district": 50,
+        "name": "Michele Brooks",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 6,
+        "name": "Brad Roae",
+        "overlap_pct": 57.8,
+        "party": "R"
+      },
+      {
+        "district": 65,
+        "name": "Kathy L. Rapp",
+        "overlap_pct": 29.2,
+        "party": "R"
+      },
+      {
+        "district": 64,
+        "name": "R. Lee James",
+        "overlap_pct": 13.0,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AG1-100",
+    "name": "Henry Solar",
+    "county": "Crawford",
+    "lat": 41.6845,
+    "lon": -80.109,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 12.0,
+    "mw_energy": 20.0,
+    "mfo": 20.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2020-08-18",
+    "test_energy_date": "2027-10-26",
+    "commercial_operation_milestone": "2027-12-31",
+    "projected_in_service_date": "2027-12-31",
+    "transmission_owner": "PENELEC",
+    "csa_posted": false,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/ag1_100_gia.pdf",
+    "primary_senator": {
+      "name": "Michele Brooks",
+      "party": "R",
+      "district": 50
+    },
+    "senators": [
+      {
+        "district": 50,
+        "name": "Michele Brooks",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 6,
+        "name": "Brad Roae",
+        "overlap_pct": 57.8,
+        "party": "R"
+      },
+      {
+        "district": 65,
+        "name": "Kathy L. Rapp",
+        "overlap_pct": 29.2,
+        "party": "R"
+      },
+      {
+        "district": 64,
+        "name": "R. Lee James",
+        "overlap_pct": 13.0,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AG1-164",
+    "name": "Club Ford Energy Center",
+    "county": "Luzerne",
+    "lat": 41.1759,
+    "lon": -75.9777,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 12.0,
+    "mw_energy": 20.0,
+    "mfo": 40.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2020-09-16",
+    "test_energy_date": "2026-12-30",
+    "commercial_operation_milestone": "2028-03-01",
+    "projected_in_service_date": "2028-03-01",
+    "transmission_owner": "PPL",
+    "csa_posted": false,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/ag1_164_gia.pdf",
+    "primary_senator": {
+      "name": "Lisa Baker",
+      "party": "R",
+      "district": 20
+    },
+    "senators": [
+      {
+        "district": 20,
+        "name": "Lisa Baker",
+        "overlap_pct": 38.0,
+        "party": "R"
+      },
+      {
+        "district": 27,
+        "name": "Lynda Schlegel Culver",
+        "overlap_pct": 29.4,
+        "party": "R"
+      },
+      {
+        "district": 29,
+        "name": "David G. Argall",
+        "overlap_pct": 24.7,
+        "party": "R"
+      },
+      {
+        "district": 22,
+        "name": "Marty Flynn",
+        "overlap_pct": 7.9,
+        "party": "D"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 117,
+        "name": "Jamie Walsh",
+        "overlap_pct": 55.8,
+        "party": "R"
+      },
+      {
+        "district": 121,
+        "name": "Eddie Day Pashinski",
+        "overlap_pct": 12.9,
+        "party": "D"
+      },
+      {
+        "district": 119,
+        "name": "Alec J. Ryncavage",
+        "overlap_pct": 11.0,
+        "party": "R"
+      },
+      {
+        "district": 120,
+        "name": "Brenda M. Pugh",
+        "overlap_pct": 10.0,
+        "party": "R"
+      },
+      {
+        "district": 116,
+        "name": "Dane Watro",
+        "overlap_pct": 5.8,
+        "party": "R"
+      },
+      {
+        "district": 118,
+        "name": "Jim Haddock",
+        "overlap_pct": 4.5,
+        "party": "D"
+      }
+    ]
+  },
+  {
+    "id": "AG1-165",
+    "name": "Club Ford Energy Center",
+    "county": "Luzerne",
+    "lat": 41.1359,
+    "lon": -75.9777,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 12.0,
+    "mw_energy": 20.0,
+    "mfo": 60.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2020-09-17",
+    "test_energy_date": "2026-12-30",
+    "commercial_operation_milestone": "2028-03-01",
+    "projected_in_service_date": "2028-03-01",
+    "transmission_owner": "PPL",
+    "csa_posted": false,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/ag1_165_gia.pdf",
+    "primary_senator": {
+      "name": "Lisa Baker",
+      "party": "R",
+      "district": 20
+    },
+    "senators": [
+      {
+        "district": 20,
+        "name": "Lisa Baker",
+        "overlap_pct": 38.0,
+        "party": "R"
+      },
+      {
+        "district": 27,
+        "name": "Lynda Schlegel Culver",
+        "overlap_pct": 29.4,
+        "party": "R"
+      },
+      {
+        "district": 29,
+        "name": "David G. Argall",
+        "overlap_pct": 24.7,
+        "party": "R"
+      },
+      {
+        "district": 22,
+        "name": "Marty Flynn",
+        "overlap_pct": 7.9,
+        "party": "D"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 117,
+        "name": "Jamie Walsh",
+        "overlap_pct": 55.8,
+        "party": "R"
+      },
+      {
+        "district": 121,
+        "name": "Eddie Day Pashinski",
+        "overlap_pct": 12.9,
+        "party": "D"
+      },
+      {
+        "district": 119,
+        "name": "Alec J. Ryncavage",
+        "overlap_pct": 11.0,
+        "party": "R"
+      },
+      {
+        "district": 120,
+        "name": "Brenda M. Pugh",
+        "overlap_pct": 10.0,
+        "party": "R"
+      },
+      {
+        "district": 116,
+        "name": "Dane Watro",
+        "overlap_pct": 5.8,
+        "party": "R"
+      },
+      {
+        "district": 118,
+        "name": "Jim Haddock",
+        "overlap_pct": 4.5,
+        "party": "D"
+      }
+    ]
+  },
+  {
+    "id": "AG1-281",
+    "name": "BL-Hileman Hollow",
+    "county": "Blair",
+    "lat": 40.4838,
+    "lon": -78.3486,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 12.0,
+    "mw_energy": 20.0,
+    "mfo": 20.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2020-09-30",
+    "test_energy_date": "2027-02-26",
+    "commercial_operation_milestone": "2027-12-31",
+    "projected_in_service_date": "2027-12-31",
+    "transmission_owner": "PENELEC",
+    "csa_posted": false,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/ag1_281_gia.pdf",
+    "primary_senator": {
+      "name": "Judy Ward",
+      "party": "R",
+      "district": 30
+    },
+    "senators": [
+      {
+        "district": 30,
+        "name": "Judy Ward",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 80,
+        "name": "Scott Barger",
+        "overlap_pct": 83.6,
+        "party": "R"
+      },
+      {
+        "district": 79,
+        "name": "Andrea C. Verobish",
+        "overlap_pct": 16.4,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AG1-377",
+    "name": "Black Moshannon Solar",
+    "county": "Centre",
+    "lat": 40.8816,
+    "lon": -77.8374,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 6.0,
+    "mw_energy": 20.0,
+    "mfo": 115.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2020-09-30",
+    "test_energy_date": "2029-01-15",
+    "commercial_operation_milestone": "2029-06-30",
+    "projected_in_service_date": "2029-06-30",
+    "transmission_owner": "PENELEC",
+    "csa_posted": false,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/ag1_377_gia.pdf",
+    "moved_to_cycle": "TC1",
+    "primary_senator": {
+      "name": "Cris Dush",
+      "party": "R",
+      "district": 25
+    },
+    "senators": [
+      {
+        "district": 25,
+        "name": "Cris Dush",
+        "overlap_pct": 70.9,
+        "party": "R"
+      },
+      {
+        "district": 35,
+        "name": "Wayne Langerholc",
+        "overlap_pct": 29.1,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 82,
+        "name": "Paul Takac",
+        "overlap_pct": 41.6,
+        "party": "D"
+      },
+      {
+        "district": 77,
+        "name": "Scott Conklin",
+        "overlap_pct": 29.3,
+        "party": "D"
+      },
+      {
+        "district": 171,
+        "name": "Kerry A. Benninghoff",
+        "overlap_pct": 29.1,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AG1-378",
+    "name": "Black Moshannon Solar",
+    "county": "Centre",
+    "lat": 40.8998,
+    "lon": -77.898,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 6.0,
+    "mw_energy": 20.0,
+    "mfo": 135.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2020-09-30",
+    "test_energy_date": "2029-01-15",
+    "commercial_operation_milestone": "2029-06-30",
+    "projected_in_service_date": "2029-06-30",
+    "transmission_owner": "PENELEC",
+    "csa_posted": false,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/ag1_378_gia.pdf",
+    "moved_to_cycle": "TC1",
+    "primary_senator": {
+      "name": "Cris Dush",
+      "party": "R",
+      "district": 25
+    },
+    "senators": [
+      {
+        "district": 25,
+        "name": "Cris Dush",
+        "overlap_pct": 70.9,
+        "party": "R"
+      },
+      {
+        "district": 35,
+        "name": "Wayne Langerholc",
+        "overlap_pct": 29.1,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 82,
+        "name": "Paul Takac",
+        "overlap_pct": 41.6,
+        "party": "D"
+      },
+      {
+        "district": 77,
+        "name": "Scott Conklin",
+        "overlap_pct": 29.3,
+        "party": "D"
+      },
+      {
+        "district": 171,
+        "name": "Kerry A. Benninghoff",
+        "overlap_pct": 29.1,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AE1-079",
+    "name": "Welcome Solar, LLC",
+    "county": "Mercer",
+    "lat": 41.3014,
+    "lon": -80.2561,
+    "fuel": "Solar; Storage",
+    "fuel_group": "Solar+Storage",
+    "cliff_exposed": false,
+    "mw_capacity": 13.5,
+    "mw_energy": 19.9,
+    "mfo": 19.9,
+    "status": "Under Construction",
+    "submitted": "2018-08-11",
+    "test_energy_date": "2026-12-14",
+    "commercial_operation_milestone": "2027-02-24",
+    "projected_in_service_date": "2027-02-24",
+    "transmission_owner": "ATSI",
+    "csa_posted": true,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae1_079_isa.pdf",
+    "primary_senator": {
+      "name": "Michele Brooks",
+      "party": "R",
+      "district": 50
+    },
+    "senators": [
+      {
+        "district": 50,
+        "name": "Michele Brooks",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 17,
+        "name": "Timothy R. Bonner",
+        "overlap_pct": 69.5,
+        "party": "R"
+      },
+      {
+        "district": 7,
+        "name": "Parke Wentling",
+        "overlap_pct": 30.5,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AE1-237",
+    "name": "Welcome Solar II",
+    "county": "Crawford",
+    "lat": 41.6485,
+    "lon": -80.1264,
+    "fuel": "Solar; Storage",
+    "fuel_group": "Solar+Storage",
+    "cliff_exposed": false,
+    "mw_capacity": 13.5,
+    "mw_energy": 19.9,
+    "mfo": 19.9,
+    "status": "Under Construction",
+    "submitted": "2018-09-29",
+    "test_energy_date": "2026-06-25",
+    "commercial_operation_milestone": "2026-08-29",
+    "projected_in_service_date": "2026-08-29",
+    "transmission_owner": "ATSI",
+    "csa_posted": true,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae1_237_isa.pdf",
+    "primary_senator": {
+      "name": "Michele Brooks",
+      "party": "R",
+      "district": 50
+    },
+    "senators": [
+      {
+        "district": 50,
+        "name": "Michele Brooks",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 6,
+        "name": "Brad Roae",
+        "overlap_pct": 57.8,
+        "party": "R"
+      },
+      {
+        "district": 65,
+        "name": "Kathy L. Rapp",
+        "overlap_pct": 29.2,
+        "party": "R"
+      },
+      {
+        "district": 64,
+        "name": "R. Lee James",
+        "overlap_pct": 13.0,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AF2-086",
+    "name": "Stoneybrook Solar",
+    "county": "Columbia",
+    "lat": 41.0939,
+    "lon": -76.4694,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 11.8,
+    "mw_energy": 19.6,
+    "mfo": 19.6,
+    "status": "Engineering and Procurement",
+    "submitted": "2020-02-03",
+    "test_energy_date": "2027-10-29",
+    "commercial_operation_milestone": "2027-12-31",
+    "projected_in_service_date": "2027-12-31",
+    "transmission_owner": "PPL",
+    "csa_posted": false,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/af2_086_gia.pdf",
+    "primary_senator": {
+      "name": "Lynda Schlegel Culver",
+      "party": "R",
+      "district": 27
+    },
+    "senators": [
+      {
+        "district": 27,
+        "name": "Lynda Schlegel Culver",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 109,
+        "name": "Robert Leadbeter",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AE2-343",
+    "name": "Welcome Solar III, LLC",
+    "county": "Crawford",
+    "lat": 41.6667,
+    "lon": -80.187,
+    "fuel": "Solar; Storage",
+    "fuel_group": "Solar+Storage",
+    "cliff_exposed": false,
+    "mw_capacity": 12.3,
+    "mw_energy": 17.9,
+    "mfo": 17.9,
+    "status": "Under Construction",
+    "submitted": "2019-04-01",
+    "test_energy_date": "2026-07-30",
+    "commercial_operation_milestone": "2026-08-29",
+    "projected_in_service_date": "2026-08-29",
+    "transmission_owner": "ATSI",
+    "csa_posted": true,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/ae2_343_isa.pdf",
+    "primary_senator": {
+      "name": "Michele Brooks",
+      "party": "R",
+      "district": 50
+    },
+    "senators": [
+      {
+        "district": 50,
+        "name": "Michele Brooks",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 6,
+        "name": "Brad Roae",
+        "overlap_pct": 57.8,
+        "party": "R"
+      },
+      {
+        "district": 65,
+        "name": "Kathy L. Rapp",
+        "overlap_pct": 29.2,
+        "party": "R"
+      },
+      {
+        "district": 64,
+        "name": "R. Lee James",
+        "overlap_pct": 13.0,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AF1-271A",
+    "name": "G Morris Solar",
+    "county": "Dauphin",
+    "lat": 40.3718,
+    "lon": -76.7891,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 10.2,
+    "mw_energy": 17.0,
+    "mfo": 17.0,
     "status": "Suspended",
-    "submitted": "2019-06-15",
-    "commercial_operation_milestone": "2024-09-06",
-    "revised_in_service_date": "2024-09-06",
+    "submitted": "2019-09-27",
+    "test_energy_date": "2026-03-02",
+    "commercial_operation_milestone": "2026-04-15",
+    "projected_in_service_date": "2026-04-15",
     "transmission_owner": "PPL",
     "csa_posted": true,
-    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/af1_040_isa.pdf",
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/af1_271a_isa.pdf",
     "primary_senator": {
       "name": "Patty Kim",
       "party": "D",
@@ -3891,6 +4054,1199 @@
         "district": 103,
         "name": "Nathan Davidson",
         "overlap_pct": 1.6,
+        "party": "D"
+      }
+    ]
+  },
+  {
+    "id": "AF2-294",
+    "name": "Thompson 34.5 kV",
+    "county": "Wayne",
+    "lat": 41.6483,
+    "lon": -75.3076,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 10.2,
+    "mw_energy": 17.0,
+    "mfo": 17.0,
+    "status": "Suspended",
+    "submitted": "2020-03-29",
+    "test_energy_date": "2025-02-01",
+    "commercial_operation_milestone": "2025-03-31",
+    "projected_in_service_date": "2025-03-31",
+    "transmission_owner": "PENELEC",
+    "csa_posted": false,
+    "primary_senator": {
+      "name": "Lisa Baker",
+      "party": "R",
+      "district": 20
+    },
+    "senators": [
+      {
+        "district": 20,
+        "name": "Lisa Baker",
+        "overlap_pct": 72.2,
+        "party": "R"
+      },
+      {
+        "district": 40,
+        "name": "Rosemary M. Brown",
+        "overlap_pct": 27.8,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 111,
+        "name": "Jonathan Fritz",
+        "overlap_pct": 71.1,
+        "party": "R"
+      },
+      {
+        "district": 139,
+        "name": "Jeff Olsommer",
+        "overlap_pct": 28.9,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AF1-140",
+    "name": "BL-Diamond Bear Rocks",
+    "county": "Adams",
+    "lat": 39.8842,
+    "lon": -77.2571,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 9.78,
+    "mw_energy": 16.3,
+    "mfo": 16.3,
+    "status": "Engineering and Procurement",
+    "submitted": "2019-09-19",
+    "test_energy_date": "2026-11-15",
+    "commercial_operation_milestone": "2026-12-31",
+    "projected_in_service_date": "2026-12-31",
+    "transmission_owner": "PENELEC",
+    "csa_posted": false,
+    "primary_senator": {
+      "name": "Doug Mastriano",
+      "party": "R",
+      "district": 33
+    },
+    "senators": [
+      {
+        "district": 33,
+        "name": "Doug Mastriano",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 91,
+        "name": "Dan Moul",
+        "overlap_pct": 62.3,
+        "party": "R"
+      },
+      {
+        "district": 193,
+        "name": "Catherine I Wallen",
+        "overlap_pct": 37.7,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AE2-248",
+    "name": "CE-FILMORE",
+    "county": "Centre",
+    "lat": 40.9176,
+    "lon": -77.82,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 9.6,
+    "mw_energy": 16.0,
+    "mfo": 16.0,
+    "status": "Suspended",
+    "submitted": "2019-03-25",
+    "test_energy_date": "2027-10-29",
+    "commercial_operation_milestone": "2027-12-31",
+    "projected_in_service_date": "2027-12-31",
+    "transmission_owner": "APS",
+    "csa_posted": false,
+    "primary_senator": {
+      "name": "Cris Dush",
+      "party": "R",
+      "district": 25
+    },
+    "senators": [
+      {
+        "district": 25,
+        "name": "Cris Dush",
+        "overlap_pct": 70.9,
+        "party": "R"
+      },
+      {
+        "district": 35,
+        "name": "Wayne Langerholc",
+        "overlap_pct": 29.1,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 82,
+        "name": "Paul Takac",
+        "overlap_pct": 41.6,
+        "party": "D"
+      },
+      {
+        "district": 77,
+        "name": "Scott Conklin",
+        "overlap_pct": 29.3,
+        "party": "D"
+      },
+      {
+        "district": 171,
+        "name": "Kerry A. Benninghoff",
+        "overlap_pct": 29.1,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AG1-259",
+    "name": "Boyles Run Solar",
+    "county": "Northumberland",
+    "lat": 40.8346,
+    "lon": -76.672,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 6.7,
+    "mw_energy": 15.9,
+    "mfo": 15.9,
+    "status": "Engineering and Procurement",
+    "submitted": "2020-09-28",
+    "test_energy_date": "2028-03-01",
+    "commercial_operation_milestone": "2028-04-30",
+    "projected_in_service_date": "2028-04-30",
+    "transmission_owner": "PPL",
+    "csa_posted": false,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/ag1_259_gia.pdf",
+    "primary_senator": {
+      "name": "Lynda Schlegel Culver",
+      "party": "R",
+      "district": 27
+    },
+    "senators": [
+      {
+        "district": 27,
+        "name": "Lynda Schlegel Culver",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 107,
+        "name": "Joanne Stehr",
+        "overlap_pct": 56.0,
+        "party": "R"
+      },
+      {
+        "district": 108,
+        "name": "Michael Stender",
+        "overlap_pct": 44.0,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AG1-260",
+    "name": "Boyles Run Solar",
+    "county": "Northumberland",
+    "lat": 40.8146,
+    "lon": -76.7759,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 6.7,
+    "mw_energy": 15.9,
+    "mfo": 31.8,
+    "status": "Engineering and Procurement",
+    "submitted": "2020-09-28",
+    "test_energy_date": "2028-03-01",
+    "commercial_operation_milestone": "2028-04-30",
+    "projected_in_service_date": "2028-04-30",
+    "transmission_owner": "PPL",
+    "csa_posted": false,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/gia/ag1_260_gia.pdf",
+    "primary_senator": {
+      "name": "Lynda Schlegel Culver",
+      "party": "R",
+      "district": 27
+    },
+    "senators": [
+      {
+        "district": 27,
+        "name": "Lynda Schlegel Culver",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 107,
+        "name": "Joanne Stehr",
+        "overlap_pct": 56.0,
+        "party": "R"
+      },
+      {
+        "district": 108,
+        "name": "Michael Stender",
+        "overlap_pct": 44.0,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AF1-136",
+    "name": "FU-Hanks Solar",
+    "county": "Fulton",
+    "lat": 39.9259,
+    "lon": -78.0996,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 9.43,
+    "mw_energy": 15.72,
+    "mfo": 15.72,
+    "status": "Suspended",
+    "submitted": "2019-09-19",
+    "test_energy_date": "2026-10-12",
+    "commercial_operation_milestone": "2026-11-17",
+    "projected_in_service_date": "2026-11-17",
+    "transmission_owner": "APS",
+    "csa_posted": true,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/af1_136_isa.pdf",
+    "primary_senator": {
+      "name": "Judy Ward",
+      "party": "R",
+      "district": 30
+    },
+    "senators": [
+      {
+        "district": 30,
+        "name": "Judy Ward",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 78,
+        "name": "Jesse Topper",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AF2-221",
+    "name": "Stony Creek Solar",
+    "county": "Somerset",
+    "lat": 39.9712,
+    "lon": -79.0382,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 6.3,
+    "mw_energy": 15.0,
+    "mfo": 15.0,
+    "status": "Suspended",
+    "submitted": "2020-03-25",
+    "test_energy_date": "2025-08-01",
+    "commercial_operation_milestone": "2025-10-01",
+    "projected_in_service_date": "2025-10-01",
+    "transmission_owner": "PENELEC",
+    "csa_posted": false,
+    "primary_senator": {
+      "name": "Patrick J. Stefano",
+      "party": "R",
+      "district": 32
+    },
+    "senators": [
+      {
+        "district": 32,
+        "name": "Patrick J. Stefano",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 69,
+        "name": "Carl Walker Metzgar",
+        "overlap_pct": 93.6,
+        "party": "R"
+      },
+      {
+        "district": 71,
+        "name": "Jim Rigby",
+        "overlap_pct": 6.4,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AG1-197",
+    "name": "Morgan Street-Cochranton 34.5 kV",
+    "county": "Crawford",
+    "lat": 41.6845,
+    "lon": -80.109,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 9.0,
+    "mw_energy": 15.0,
+    "mfo": 15.0,
+    "status": "Suspended",
+    "submitted": "2020-09-19",
+    "test_energy_date": "2026-12-09",
+    "commercial_operation_milestone": "2026-03-31",
+    "projected_in_service_date": "2026-03-31",
+    "transmission_owner": "PENELEC",
+    "csa_posted": false,
+    "primary_senator": {
+      "name": "Michele Brooks",
+      "party": "R",
+      "district": 50
+    },
+    "senators": [
+      {
+        "district": 50,
+        "name": "Michele Brooks",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 6,
+        "name": "Brad Roae",
+        "overlap_pct": 57.8,
+        "party": "R"
+      },
+      {
+        "district": 65,
+        "name": "Kathy L. Rapp",
+        "overlap_pct": 29.2,
+        "party": "R"
+      },
+      {
+        "district": 64,
+        "name": "R. Lee James",
+        "overlap_pct": 13.0,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AF1-167",
+    "name": "CL-Route 58 B",
+    "county": "Clarion",
+    "lat": 41.1958,
+    "lon": -79.4304,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 8.109,
+    "mw_energy": 13.515,
+    "mfo": 13.515,
+    "status": "Suspended",
+    "submitted": "2019-09-24",
+    "test_energy_date": "2025-11-28",
+    "commercial_operation_milestone": "2026-01-31",
+    "projected_in_service_date": "2026-01-31",
+    "transmission_owner": "APS",
+    "csa_posted": false,
+    "primary_senator": {
+      "name": "Scott E. Hutchinson",
+      "party": "R",
+      "district": 21
+    },
+    "senators": [
+      {
+        "district": 21,
+        "name": "Scott E. Hutchinson",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 63,
+        "name": "Josh Bashline",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AF2-039",
+    "name": "Shawville-Clearfield 34.5 kV",
+    "county": "Clearfield",
+    "lat": 41.0093,
+    "lon": -78.4744,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 8.1,
+    "mw_energy": 13.5,
+    "mfo": 13.5,
+    "status": "Under Construction",
+    "submitted": "2019-11-29",
+    "test_energy_date": "2026-07-03",
+    "commercial_operation_milestone": "2026-09-01",
+    "projected_in_service_date": "2026-09-01",
+    "transmission_owner": "PENELEC",
+    "csa_posted": false,
+    "primary_senator": {
+      "name": "Wayne Langerholc",
+      "party": "R",
+      "district": 35
+    },
+    "senators": [
+      {
+        "district": 35,
+        "name": "Wayne Langerholc",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 73,
+        "name": "Dallas Kephart",
+        "overlap_pct": 66.5,
+        "party": "R"
+      },
+      {
+        "district": 75,
+        "name": "Mike Armanini",
+        "overlap_pct": 33.5,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AF2-002",
+    "name": "SunEast Hooversville Solar",
+    "county": "Somerset",
+    "lat": 39.9836,
+    "lon": -79.0762,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 6.0,
+    "mw_energy": 10.0,
+    "mfo": 50.0,
+    "status": "Suspended",
+    "submitted": "2019-10-01",
+    "test_energy_date": "2026-05-01",
+    "commercial_operation_milestone": "2026-08-01",
+    "projected_in_service_date": "2026-08-01",
+    "transmission_owner": "PENELEC",
+    "csa_posted": true,
+    "gia_url": "https://www.pjm.com/pjmfiles/pub/planning/project-queues/isa/af2_002_isa.pdf",
+    "primary_senator": {
+      "name": "Patrick J. Stefano",
+      "party": "R",
+      "district": 32
+    },
+    "senators": [
+      {
+        "district": 32,
+        "name": "Patrick J. Stefano",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 69,
+        "name": "Carl Walker Metzgar",
+        "overlap_pct": 93.6,
+        "party": "R"
+      },
+      {
+        "district": 71,
+        "name": "Jim Rigby",
+        "overlap_pct": 6.4,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AF2-088",
+    "name": "Shawville-Clearfield 34.5 kV II",
+    "county": "Clearfield",
+    "lat": 41.0217,
+    "lon": -78.5124,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 3.9,
+    "mw_energy": 6.5,
+    "mfo": 20.0,
+    "status": "Under Construction",
+    "submitted": "2020-02-05",
+    "test_energy_date": "2026-07-03",
+    "commercial_operation_milestone": "2026-09-01",
+    "projected_in_service_date": "2026-09-01",
+    "transmission_owner": "PENELEC",
+    "csa_posted": false,
+    "primary_senator": {
+      "name": "Wayne Langerholc",
+      "party": "R",
+      "district": 35
+    },
+    "senators": [
+      {
+        "district": 35,
+        "name": "Wayne Langerholc",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 73,
+        "name": "Dallas Kephart",
+        "overlap_pct": 66.5,
+        "party": "R"
+      },
+      {
+        "district": 75,
+        "name": "Mike Armanini",
+        "overlap_pct": 33.5,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "id": "AG1-362",
+    "name": "Furnace View Farms",
+    "county": "Berks",
+    "lat": 40.3716,
+    "lon": -75.929,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 3.2,
+    "mw_energy": 5.0,
+    "mfo": 5.0,
+    "status": "Suspended",
+    "submitted": "2020-09-30",
+    "commercial_operation_milestone": "2023-12-29",
+    "projected_in_service_date": "2023-12-29",
+    "transmission_owner": "PPL",
+    "csa_posted": false,
+    "primary_senator": {
+      "name": "Chris Gebhard",
+      "party": "R",
+      "district": 48
+    },
+    "senators": [
+      {
+        "district": 48,
+        "name": "Chris Gebhard",
+        "overlap_pct": 48.3,
+        "party": "R"
+      },
+      {
+        "district": 11,
+        "name": "Judith L. Schwank",
+        "overlap_pct": 23.7,
+        "party": "D"
+      },
+      {
+        "district": 24,
+        "name": "Tracy Pennycuick",
+        "overlap_pct": 17.4,
+        "party": "R"
+      },
+      {
+        "district": 13,
+        "name": "Scott Martin",
+        "overlap_pct": 7.7,
+        "party": "R"
+      },
+      {
+        "district": 44,
+        "name": "Katie J. Muth",
+        "overlap_pct": 2.9,
+        "party": "D"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 5,
+        "name": "Eric J. Weaknecht",
+        "overlap_pct": 29.0,
+        "party": "R"
+      },
+      {
+        "district": 130,
+        "name": "David M. Maloney",
+        "overlap_pct": 24.2,
+        "party": "R"
+      },
+      {
+        "district": 124,
+        "name": "Jamie Barton",
+        "overlap_pct": 21.3,
+        "party": "R"
+      },
+      {
+        "district": 128,
+        "name": "Mark M. Gillen",
+        "overlap_pct": 16.1,
+        "party": "R"
+      },
+      {
+        "district": 99,
+        "name": "David H. Zimmerman",
+        "overlap_pct": 4.1,
+        "party": "R"
+      },
+      {
+        "district": 126,
+        "name": "Jacklyn Rusnock",
+        "overlap_pct": 3.0,
+        "party": "D"
+      },
+      {
+        "district": 129,
+        "name": "Johanny Cepeda-Freytiz",
+        "overlap_pct": 1.5,
+        "party": "D"
+      },
+      {
+        "district": 127,
+        "name": "Manuel Guzman",
+        "overlap_pct": 0.8,
+        "party": "D"
+      }
+    ]
+  },
+  {
+    "id": "AG1-253",
+    "name": "Greenfield CSG 1",
+    "county": "Erie",
+    "lat": 42.0706,
+    "lon": -80.0989,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 2.7,
+    "mw_energy": 4.0,
+    "mfo": 4.0,
+    "status": "Suspended",
+    "submitted": "2020-09-25",
+    "commercial_operation_milestone": "2025-05-30",
+    "projected_in_service_date": "2025-05-30",
+    "transmission_owner": "PENELEC",
+    "csa_posted": false,
+    "primary_senator": {
+      "name": "Daniel Laughlin",
+      "party": "R",
+      "district": 49
+    },
+    "senators": [
+      {
+        "district": 49,
+        "name": "Daniel Laughlin",
+        "overlap_pct": 94.9,
+        "party": "R"
+      },
+      {
+        "district": 21,
+        "name": "Scott E. Hutchinson",
+        "overlap_pct": 5.1,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 1,
+        "name": "Patrick J. Harkins",
+        "overlap_pct": 49.3,
+        "party": "D"
+      },
+      {
+        "district": 4,
+        "name": "Jacob D. Banta",
+        "overlap_pct": 32.5,
+        "party": "R"
+      },
+      {
+        "district": 6,
+        "name": "Brad Roae",
+        "overlap_pct": 7.6,
+        "party": "R"
+      },
+      {
+        "district": 2,
+        "name": "Robert E. Merski",
+        "overlap_pct": 6.6,
+        "party": "D"
+      },
+      {
+        "district": 3,
+        "name": "Ryan A. Bizzarro",
+        "overlap_pct": 4.0,
+        "party": "D"
+      }
+    ]
+  },
+  {
+    "id": "AG1-251",
+    "name": "Springfield CSG 1",
+    "county": "Delaware",
+    "lat": 39.9168,
+    "lon": -75.3998,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 1.9,
+    "mw_energy": 3.88,
+    "mfo": 3.875,
+    "status": "Suspended",
+    "submitted": "2020-09-25",
+    "commercial_operation_milestone": "2024-08-31",
+    "projected_in_service_date": "2024-08-31",
+    "transmission_owner": "ATSI",
+    "csa_posted": false,
+    "primary_senator": {
+      "name": "John I. Kane",
+      "party": "D",
+      "district": 9
+    },
+    "senators": [
+      {
+        "district": 9,
+        "name": "John I. Kane",
+        "overlap_pct": 50.4,
+        "party": "D"
+      },
+      {
+        "district": 26,
+        "name": "Timothy P. Kearney",
+        "overlap_pct": 28.4,
+        "party": "D"
+      },
+      {
+        "district": 17,
+        "name": "Amanda M. Cappelletti",
+        "overlap_pct": 12.5,
+        "party": "D"
+      },
+      {
+        "district": 8,
+        "name": "Anthony H. Williams",
+        "overlap_pct": 8.8,
+        "party": "D"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 168,
+        "name": "Lisa A. Borowski",
+        "overlap_pct": 22.6,
+        "party": "D"
+      },
+      {
+        "district": 160,
+        "name": "Craig Williams",
+        "overlap_pct": 20.6,
+        "party": "R"
+      },
+      {
+        "district": 165,
+        "name": "Jennifer O'Mara",
+        "overlap_pct": 11.4,
+        "party": "D"
+      },
+      {
+        "district": 161,
+        "name": "Leanne Krueger",
+        "overlap_pct": 10.9,
+        "party": "D"
+      },
+      {
+        "district": 159,
+        "name": "Carol Kazeem",
+        "overlap_pct": 9.7,
+        "party": "D"
+      },
+      {
+        "district": 166,
+        "name": "Greg Vitali",
+        "overlap_pct": 7.1,
+        "party": "D"
+      },
+      {
+        "district": 162,
+        "name": "David M. Delloso",
+        "overlap_pct": 5.4,
+        "party": "D"
+      },
+      {
+        "district": 185,
+        "name": "Regina G. Young",
+        "overlap_pct": 4.7,
+        "party": "D"
+      },
+      {
+        "district": 163,
+        "name": "Heather Boyd",
+        "overlap_pct": 3.8,
+        "party": "D"
+      },
+      {
+        "district": 164,
+        "name": "Gina H. Curry",
+        "overlap_pct": 2.4,
+        "party": "D"
+      },
+      {
+        "district": 191,
+        "name": "Joanna E. McClinton",
+        "overlap_pct": 1.3,
+        "party": "D"
+      }
+    ]
+  },
+  {
+    "id": "AG1-140",
+    "name": "Great Lake Growers",
+    "county": "Erie",
+    "lat": 42.083,
+    "lon": -80.1369,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 1.7,
+    "mw_energy": 2.62,
+    "mfo": 2.62,
+    "status": "Suspended",
+    "submitted": "2020-09-03",
+    "commercial_operation_milestone": "2024-12-31",
+    "projected_in_service_date": "2024-12-31",
+    "transmission_owner": "PENELEC",
+    "csa_posted": false,
+    "primary_senator": {
+      "name": "Daniel Laughlin",
+      "party": "R",
+      "district": 49
+    },
+    "senators": [
+      {
+        "district": 49,
+        "name": "Daniel Laughlin",
+        "overlap_pct": 94.9,
+        "party": "R"
+      },
+      {
+        "district": 21,
+        "name": "Scott E. Hutchinson",
+        "overlap_pct": 5.1,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 1,
+        "name": "Patrick J. Harkins",
+        "overlap_pct": 49.3,
+        "party": "D"
+      },
+      {
+        "district": 4,
+        "name": "Jacob D. Banta",
+        "overlap_pct": 32.5,
+        "party": "R"
+      },
+      {
+        "district": 6,
+        "name": "Brad Roae",
+        "overlap_pct": 7.6,
+        "party": "R"
+      },
+      {
+        "district": 2,
+        "name": "Robert E. Merski",
+        "overlap_pct": 6.6,
+        "party": "D"
+      },
+      {
+        "district": 3,
+        "name": "Ryan A. Bizzarro",
+        "overlap_pct": 4.0,
+        "party": "D"
+      }
+    ]
+  },
+  {
+    "id": "AG2-476",
+    "name": "Hokes-Grantley 69 kV II",
+    "county": "York",
+    "lat": 39.891,
+    "lon": -76.7451,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 0.1,
+    "mw_energy": 0.0,
+    "mfo": 20.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2025-02-10",
+    "commercial_operation_milestone": "2028-05-31",
+    "projected_in_service_date": "2028-05-31",
+    "transmission_owner": "ME",
+    "csa_posted": false,
+    "moved_to_cycle": "TC2",
+    "primary_senator": {
+      "name": "Kristin Phillips-Hill",
+      "party": "R",
+      "district": 28
+    },
+    "senators": [
+      {
+        "district": 28,
+        "name": "Kristin Phillips-Hill",
+        "overlap_pct": 66.3,
+        "party": "R"
+      },
+      {
+        "district": 31,
+        "name": "Dawn W. Keefer",
+        "overlap_pct": 33.7,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 92,
+        "name": "Marc S. Anderson",
+        "overlap_pct": 22.4,
+        "party": "R"
+      },
+      {
+        "district": 94,
+        "name": "Wendy Fink",
+        "overlap_pct": 19.8,
+        "party": "R"
+      },
+      {
+        "district": 93,
+        "name": "Mike Jones",
+        "overlap_pct": 17.2,
+        "party": "R"
+      },
+      {
+        "district": 196,
+        "name": "Vacant",
+        "overlap_pct": 14.3,
+        "party": null
+      },
+      {
+        "district": 169,
+        "name": "Kate A. Klunk",
+        "overlap_pct": 13.8,
+        "party": "R"
+      },
+      {
+        "district": 47,
+        "name": "Joseph D'Orsie",
+        "overlap_pct": 10.9,
+        "party": "R"
+      },
+      {
+        "district": 95,
+        "name": "Carol Hill-Evans",
+        "overlap_pct": 1.4,
+        "party": "D"
+      }
+    ]
+  },
+  {
+    "id": "AG2-477",
+    "name": "Hokes-Jackson 69 kV III",
+    "county": "York",
+    "lat": 39.9092,
+    "lon": -76.8057,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 0.5,
+    "mw_energy": 0.0,
+    "mfo": 20.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2025-02-10",
+    "commercial_operation_milestone": "2028-05-31",
+    "projected_in_service_date": "2028-05-31",
+    "transmission_owner": "ME",
+    "csa_posted": false,
+    "moved_to_cycle": "TC2",
+    "primary_senator": {
+      "name": "Kristin Phillips-Hill",
+      "party": "R",
+      "district": 28
+    },
+    "senators": [
+      {
+        "district": 28,
+        "name": "Kristin Phillips-Hill",
+        "overlap_pct": 66.3,
+        "party": "R"
+      },
+      {
+        "district": 31,
+        "name": "Dawn W. Keefer",
+        "overlap_pct": 33.7,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 92,
+        "name": "Marc S. Anderson",
+        "overlap_pct": 22.4,
+        "party": "R"
+      },
+      {
+        "district": 94,
+        "name": "Wendy Fink",
+        "overlap_pct": 19.8,
+        "party": "R"
+      },
+      {
+        "district": 93,
+        "name": "Mike Jones",
+        "overlap_pct": 17.2,
+        "party": "R"
+      },
+      {
+        "district": 196,
+        "name": "Vacant",
+        "overlap_pct": 14.3,
+        "party": null
+      },
+      {
+        "district": 169,
+        "name": "Kate A. Klunk",
+        "overlap_pct": 13.8,
+        "party": "R"
+      },
+      {
+        "district": 47,
+        "name": "Joseph D'Orsie",
+        "overlap_pct": 10.9,
+        "party": "R"
+      },
+      {
+        "district": 95,
+        "name": "Carol Hill-Evans",
+        "overlap_pct": 1.4,
+        "party": "D"
+      }
+    ]
+  },
+  {
+    "id": "AG2-478",
+    "name": "Hokes-Jackson 69 kV IV",
+    "county": "York",
+    "lat": 39.927,
+    "lon": -76.7277,
+    "fuel": "Solar",
+    "fuel_group": "Solar",
+    "cliff_exposed": true,
+    "mw_capacity": 0.5,
+    "mw_energy": 0.0,
+    "mfo": 20.0,
+    "status": "Engineering and Procurement",
+    "submitted": "2025-02-11",
+    "commercial_operation_milestone": "2028-08-31",
+    "projected_in_service_date": "2028-08-31",
+    "transmission_owner": "ME",
+    "csa_posted": false,
+    "moved_to_cycle": "TC2",
+    "primary_senator": {
+      "name": "Kristin Phillips-Hill",
+      "party": "R",
+      "district": 28
+    },
+    "senators": [
+      {
+        "district": 28,
+        "name": "Kristin Phillips-Hill",
+        "overlap_pct": 66.3,
+        "party": "R"
+      },
+      {
+        "district": 31,
+        "name": "Dawn W. Keefer",
+        "overlap_pct": 33.7,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 92,
+        "name": "Marc S. Anderson",
+        "overlap_pct": 22.4,
+        "party": "R"
+      },
+      {
+        "district": 94,
+        "name": "Wendy Fink",
+        "overlap_pct": 19.8,
+        "party": "R"
+      },
+      {
+        "district": 93,
+        "name": "Mike Jones",
+        "overlap_pct": 17.2,
+        "party": "R"
+      },
+      {
+        "district": 196,
+        "name": "Vacant",
+        "overlap_pct": 14.3,
+        "party": null
+      },
+      {
+        "district": 169,
+        "name": "Kate A. Klunk",
+        "overlap_pct": 13.8,
+        "party": "R"
+      },
+      {
+        "district": 47,
+        "name": "Joseph D'Orsie",
+        "overlap_pct": 10.9,
+        "party": "R"
+      },
+      {
+        "district": 95,
+        "name": "Carol Hill-Evans",
+        "overlap_pct": 1.4,
         "party": "D"
       }
     ]
