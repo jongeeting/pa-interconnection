@@ -28,6 +28,7 @@ let senateGeojson = null;
 let houseGeojson = null;
 let cosponsorData = null;
 let countyCentroids = {};
+let countiesGeojson = null;
 let map = null;
 let markers = [];
 let activeProjectPopup = null;
@@ -35,7 +36,7 @@ let chamberMap = null;
 const CHAMBER_STATE = { chamber: 'senate', view: 'capacity', selected: null };
 
 async function init() {
-  const [p, t, f, c, mc, sg, hg, cs, cc] = await Promise.all([
+  const [p, t, f, c, mc, sg, hg, cs, cc, cg] = await Promise.all([
     fetch('data/projects.json').then(r => r.json()),
     fetch('data/threshold-analysis.json').then(r => r.json()),
     fetch('data/fuel-mix.json').then(r => r.json()),
@@ -45,6 +46,7 @@ async function init() {
     fetch('data/pa-house-districts.geojson').then(r => r.json()),
     fetch('data/hb502-cosponsors.json').then(r => r.json()).catch(() => ({ senate: {}, house: {} })),
     fetch('data/county-centroids.json').then(r => r.json()),
+    fetch('data/pa-counties.geojson').then(r => r.json()),
   ]);
   projects = p;
   thresholdData = t;
@@ -61,6 +63,7 @@ async function init() {
     if (Array.isArray(v)) countyCentroids[k] = { lat: v[0], lon: v[1] };
     else countyCentroids[k] = v;
   });
+  countiesGeojson = cg;
   bakeCosponsorIntoGeoJson();
 
   // Initialize filter sets to all values present
@@ -121,8 +124,29 @@ function buildBriefSection() {
   // Already in static HTML
 }
 
+// County-shading buckets (sequential green palette). Same scale as the
+// chamber-map politics view so the visual language is consistent.
+const COUNTY_BUCKETS = [
+  { max: 0,     fill: '#eae7e4', label: 'No ready-to-build projects' },
+  { max: 25,    fill: '#d9e8df', label: '< 25 MW' },
+  { max: 75,    fill: '#9bc3a8', label: '25–75 MW' },
+  { max: 125,   fill: '#4f9c72', label: '75–125 MW' },
+  { max: 9e9,   fill: '#00844d', label: '125+ MW' },
+];
+
+function countyFillExpression() {
+  return [
+    'step', ['get', 'total_mw'],
+    COUNTY_BUCKETS[0].fill, 0.001,
+    COUNTY_BUCKETS[1].fill, 25,
+    COUNTY_BUCKETS[2].fill, 75,
+    COUNTY_BUCKETS[3].fill, 125,
+    COUNTY_BUCKETS[4].fill,
+  ];
+}
+
 function buildMap() {
-  if (typeof maplibregl === 'undefined') return;
+  if (typeof maplibregl === 'undefined' || !countiesGeojson) return;
 
   map = new maplibregl.Map({
     container: 'map',
@@ -138,7 +162,7 @@ function buildMap() {
           attribution: '© OpenStreetMap contributors © CARTO'
         }
       },
-      layers: [{ id: 'carto-light', type: 'raster', source: 'carto-light' }]
+      layers: [{ id: 'carto-light', type: 'raster', source: 'carto-light', paint: { 'raster-opacity': 0.55 } }]
     },
     center: [-77.7, 41.0],
     zoom: 6.4,
@@ -148,8 +172,140 @@ function buildMap() {
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
 
   map.on('load', () => {
-    renderMarkers();
+    map.addSource('pa-counties', { type: 'geojson', data: countiesGeojson });
+
+    // Fill: county shaded by total stuck MW
+    map.addLayer({
+      id: 'county-fill',
+      type: 'fill',
+      source: 'pa-counties',
+      paint: {
+        'fill-color': countyFillExpression(),
+        'fill-opacity': 0.85,
+      },
+    });
+
+    // Stroke: thin black border for every county
+    map.addLayer({
+      id: 'county-line',
+      type: 'line',
+      source: 'pa-counties',
+      paint: {
+        'line-color': '#1a1a1a',
+        'line-width': 0.5,
+        'line-opacity': 0.4,
+      },
+    });
+
+    // Hover: thick border on whichever county the cursor is over
+    map.addLayer({
+      id: 'county-hover',
+      type: 'line',
+      source: 'pa-counties',
+      paint: { 'line-color': '#1a1a1a', 'line-width': 2.5 },
+      filter: ['==', ['get', 'county'], ''],
+    });
+
+    setupCountyMapInteractions();
+    renderCountyLabels();
+    renderMapLegend();
+    updateThresholdReadout();
   });
+}
+
+function setupCountyMapInteractions() {
+  map.on('mousemove', 'county-fill', (e) => {
+    const f = e.features[0];
+    if (!f) return;
+    if (f.properties.project_count === 0) {
+      map.getCanvas().style.cursor = '';
+      map.setFilter('county-hover', ['==', ['get', 'county'], '']);
+      return;
+    }
+    map.getCanvas().style.cursor = 'pointer';
+    map.setFilter('county-hover', ['==', ['get', 'county'], f.properties.county]);
+  });
+  map.on('mouseleave', 'county-fill', () => {
+    map.getCanvas().style.cursor = '';
+    map.setFilter('county-hover', ['==', ['get', 'county'], '']);
+  });
+  map.on('click', 'county-fill', (e) => {
+    const f = e.features[0];
+    if (!f || f.properties.project_count === 0) return;
+    showCountyCardFromFeature(f.properties);
+  });
+}
+
+function showCountyCardFromFeature(props) {
+  // Reconstitute a county object that buildCountyCardHTML expects.
+  // GeoJSON properties may serialize arrays as strings, so parse defensively.
+  function parseField(v) {
+    if (Array.isArray(v) || (typeof v === 'object' && v !== null)) return v;
+    if (typeof v === 'string') {
+      try { return JSON.parse(v); } catch { return []; }
+    }
+    return [];
+  }
+  const cty = {
+    county: props.county,
+    totalMW: props.total_mw,
+    projects: parseField(props.projects).map(pr => ({
+      ...pr,
+      cliff_exposed: pr.cliff_exposed === true || pr.cliff_exposed === 'true',
+    })),
+    senators: parseField(props.senators),
+    house_reps: parseField(props.house_reps),
+  };
+  showCountyCard(cty);
+}
+
+// Place project-count labels at each county centroid. These are MapLibre
+// markers whose only job is to show the number; the click handler is on the
+// underlying polygon (via the fill layer's click handler above).
+function renderCountyLabels() {
+  if (!map || !countiesGeojson) return;
+  // Clear any existing label markers before re-rendering
+  markers.forEach(m => m.remove());
+  markers = [];
+
+  countiesGeojson.features.forEach(feat => {
+    const props = feat.properties;
+    const visibleProjects = projects.filter(p => p.county === props.county && projectVisible(p));
+    if (visibleProjects.length === 0) return;
+    const totalMW = visibleProjects.reduce((s, p) => s + p.mw_capacity, 0);
+    const meets = visibleProjects.filter(projectMeetsThreshold);
+    const allMeet = meets.length === visibleProjects.length;
+    const noneMeet = meets.length === 0;
+
+    const wrapper = document.createElement('div');
+    wrapper.className = 'county-label-wrap';
+    wrapper.style.cssText = `
+      pointer-events: none;
+      font-family: var(--font-head);
+      font-weight: 700;
+      color: white;
+      text-shadow: 0 0 4px rgba(0,0,0,0.7), 0 0 4px rgba(0,0,0,0.7);
+      font-size: ${totalMW >= 75 ? '1.05rem' : '0.85rem'};
+      opacity: ${noneMeet ? 0.45 : 1};
+    `;
+    wrapper.textContent = String(visibleProjects.length);
+
+    const centroid = countyCentroids[props.county];
+    if (!centroid) return;
+    const m = new maplibregl.Marker({ element: wrapper, anchor: 'center' })
+      .setLngLat([centroid.lon, centroid.lat])
+      .addTo(map);
+    markers.push(m);
+  });
+}
+
+function renderMapLegend() {
+  const el = document.getElementById('map-legend');
+  if (!el) return;
+  const rows = COUNTY_BUCKETS.map(b => {
+    return `<div class="legend-row"><span class="legend-swatch" style="background:${b.fill}"></span><span>${b.label}</span></div>`;
+  }).join('');
+  el.innerHTML = `<div class="legend-title">Stuck capacity by county</div>${rows}`;
 }
 
 function clearMarkers() {
@@ -174,94 +330,48 @@ function projectMeetsThreshold(p) {
   return p.mw_capacity >= STATE.threshold;
 }
 
+// Filter changes (fuel/status/party/threshold) update the polygon-shading by
+// recomputing each county's visible-project total_mw and pushing fresh GeoJSON
+// to the source. The polygons themselves don't move; the shading just updates.
 function renderMarkers() {
-  if (!map) return;
-  clearMarkers();
+  if (!map || !countiesGeojson) return;
+  if (!map.getSource || !map.getSource('pa-counties')) return;  // not loaded yet
 
-  // Aggregate projects by county. We don't have parcel-level coordinates;
-  // pretending to know exact project locations would be misleading. Each
-  // bubble represents a county, sized by total stuck MW; the popup lists
-  // every project in that county and the legislators whose districts cover
-  // any portion of it.
-  const byCounty = new Map();
+  // Recompute per-county MW based on the projects that pass the current filters
+  const visibleByCounty = new Map();
   projects.forEach(p => {
     if (!projectVisible(p)) return;
-    if (!byCounty.has(p.county)) {
-      byCounty.set(p.county, {
-        county: p.county,
-        projects: [],
-        totalMW: 0,
-        senators: p.senators || [],
-        house_reps: p.house_reps || [],
-      });
+    if (!visibleByCounty.has(p.county)) {
+      visibleByCounty.set(p.county, { count: 0, mw: 0, projects: [] });
     }
-    const c = byCounty.get(p.county);
-    c.projects.push(p);
-    c.totalMW += p.mw_capacity;
+    const a = visibleByCounty.get(p.county);
+    a.count += 1;
+    a.mw += p.mw_capacity;
+    a.projects.push(p);
   });
 
-  byCounty.forEach((cty) => {
-    const meetsList = cty.projects.filter(projectMeetsThreshold);
-    const allMeet = meetsList.length === cty.projects.length;
-    const noneMeet = meetsList.length === 0;
-    const opacity = noneMeet ? 0.28 : (allMeet ? 0.95 : 0.7);
+  // Update the GeoJSON properties in-place so the choropleth reflects filters
+  const updated = {
+    type: 'FeatureCollection',
+    features: countiesGeojson.features.map(feat => {
+      const c = feat.properties.county;
+      const v = visibleByCounty.get(c);
+      return {
+        ...feat,
+        properties: {
+          ...feat.properties,
+          project_count: v ? v.count : 0,
+          total_mw: v ? Math.round(v.mw * 10) / 10 : 0,
+          // keep the projects/senators/house_reps from the original geojson
+          // for the click-popup; we don't need to filter the popup contents
+        },
+      };
+    }),
+  };
+  map.getSource('pa-counties').setData(updated);
 
-    const meetsMW = meetsList.reduce((s, p) => s + p.mw_capacity, 0);
-    // Size by total MW; scale tuned so smallest counties (~7 MW) are visible
-    // but the largest (Crawford, 132 MW) don't dominate.
-    const size = Math.max(22, Math.min(64, 18 + Math.sqrt(cty.totalMW) * 3.2));
-
-    const wrapper = document.createElement('div');
-    wrapper.className = 'county-marker-wrap';
-    wrapper.style.cssText = `width:${size}px;height:${size}px;cursor:pointer;position:relative;`;
-
-    const dot = document.createElement('div');
-    dot.className = 'county-marker';
-    dot.style.cssText = `
-      position:absolute; inset:0;
-      background: var(--bpn-green);
-      border: 2px solid white;
-      border-radius: 50%;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.22);
-      opacity: ${opacity};
-      transition: transform 100ms ease;
-      transform-origin: center center;
-      pointer-events: none;
-    `;
-
-    // Project count label inside the dot
-    const label = document.createElement('div');
-    label.style.cssText = `
-      position:absolute; inset:0;
-      display:flex; align-items:center; justify-content:center;
-      color:white; font-weight:700;
-      font-family: var(--font-head);
-      font-size: ${size > 36 ? '0.92rem' : '0.74rem'};
-      pointer-events: none; line-height: 1;
-    `;
-    label.textContent = String(cty.projects.length);
-
-    wrapper.appendChild(dot);
-    wrapper.appendChild(label);
-
-    wrapper.addEventListener('mouseenter', () => {
-      dot.style.transform = 'scale(1.15)';
-      wrapper.style.zIndex = '5';
-    });
-    wrapper.addEventListener('mouseleave', () => {
-      dot.style.transform = '';
-      wrapper.style.zIndex = '';
-    });
-    wrapper.addEventListener('click', (e) => { e.stopPropagation(); showCountyCard(cty); });
-
-    // Real county centroid (not jittered fake project coordinates)
-    const centroid = countyCentroids[cty.county];
-    if (!centroid) return;
-    const m = new maplibregl.Marker({ element: wrapper })
-      .setLngLat([centroid.lon, centroid.lat])
-      .addTo(map);
-    markers.push(m);
-  });
+  // Update labels (project count per visible county)
+  renderCountyLabels();
 
   updateThresholdReadout();
 }
@@ -311,8 +421,8 @@ function buildCountyCardHTML(cty) {
   return `
     <div class="proj-card-popup">
       <h3>${cty.county} County</h3>
-      <div class="proj-meta">${cty.projects.length} GIA-posted project${cty.projects.length === 1 ? '' : 's'} · ${fmt1(cty.totalMW)} MW summer-peak total</div>
-      <div class="county-loc-note">Project locations within the county are not yet sourced; bubbles are placed at the county centroid.</div>
+      <div class="proj-meta">${cty.projects.length} ready-to-build project${cty.projects.length === 1 ? '' : 's'} · ${fmt1(cty.totalMW)} MW summer-peak total</div>
+      <div class="county-loc-note">Project locations within the county are not yet sourced — the map shades the whole county rather than implying a single point per project.</div>
       <ul class="county-proj-list">${projRows}</ul>
       ${districtsBlock}
     </div>

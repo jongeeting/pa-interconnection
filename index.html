@@ -149,15 +149,17 @@
   <div class="container">
     <h2><span class="kicker">Interactive map</span>The 91 stuck projects, by county, and who represents them</h2>
     <p style="max-width:760px">
-      Each circle is a Pennsylvania county with at least one ready-to-build project (signed PJM Interconnection Agreement, no commercial operation yet), plotted at the county centroid. The number inside is the project count; the bubble size is the total stuck MW. We don't have parcel-level coordinates for individual projects, so a single dot per project would imply more precision than we actually have. Use the controls to filter by fuel, status, or senator party — or to preview HB&nbsp;502's eligibility threshold (the <a href="#threshold">Policy section below</a> walks through that analysis in detail). <strong>Click a county to see every project in it and the regional representatives whose districts overlap.</strong>
+      Each PA county is shaded by total stuck capacity (signed PJM Interconnection Agreements, no commercial operation yet). Darker green = more MW. The number overlaid on each county is the count of ready-to-build projects there. We don't have parcel-level coordinates for individual projects — a single dot per project would imply more precision than we actually have. Use the controls to filter by fuel, status, or senator party — or to preview HB&nbsp;502's eligibility threshold (the <a href="#threshold">Policy section below</a> walks through that analysis in detail). <strong>Click any shaded county to see every project in it and the regional representatives whose districts overlap.</strong>
     </p>
 
     <div class="map-wrap">
-      <div id="map"></div>
+      <div id="map">
+        <div class="map-legend" id="map-legend"></div>
+      </div>
       <div class="map-side">
         <div class="map-controls map-controls-threshold">
           <h4>HB 502 threshold preview</h4>
-          <p class="map-controls-help">Drag to see which projects HB&nbsp;502 would cover at each MW threshold. Markers below the threshold appear dimmed.</p>
+          <p class="map-controls-help">Drag to see which projects HB&nbsp;502 would cover at each MW threshold. The project-count number on a county dims when none of its projects meet the threshold.</p>
           <div class="threshold-slider-wrap">
             <div class="threshold-display">
               <span class="threshold-label">Capacity threshold</span>
@@ -193,7 +195,7 @@
     </div>
 
     <div class="note">
-      <strong>How to read the map:</strong> Marker size scales with project MW. Markers below the current threshold appear at reduced opacity to show what HB&nbsp;502 <em>would not</em> cover at that setting. Drag the slider down to 5&nbsp;MW to see the maximum coverage scenario; up to 25&nbsp;MW to see how much HB&nbsp;502 misses as currently drafted.
+      <strong>How to read the map:</strong> Each county's color reflects total stuck MW from ready-to-build projects (5 buckets, none through 125+ MW). The number overlaid is project count. The threshold preview slider above doesn't change county colors — it controls the label opacity, dimming counties where no projects currently meet HB&nbsp;502's threshold. Drag down to 5&nbsp;MW to see maximum coverage; up to 25&nbsp;MW to see what the bill misses as currently drafted.
     </div>
   </div>
 </section>

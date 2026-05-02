@@ -259,8 +259,44 @@ section h2 { display: block; }
 }
 @media (max-width: 960px) { .map-wrap { grid-template-columns: 1fr; } }
 #map {
+  position: relative;
   height: 580px; border: 1px solid var(--bpn-border); border-radius: 4px;
   background: #f0ede8;
+  overflow: hidden;
+}
+
+/* Choropleth legend (in-map overlay, lower-left) */
+.map-legend {
+  position: absolute;
+  left: 12px; bottom: 12px;
+  background: rgba(255,255,255,0.95);
+  border: 1px solid var(--bpn-border);
+  border-radius: 4px;
+  padding: 9px 11px;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  z-index: 5;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  max-width: 200px;
+}
+.map-legend .legend-title {
+  font-family: var(--font-head);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: var(--bpn-muted);
+  margin-bottom: 4px;
+}
+.map-legend .legend-row {
+  display: flex; align-items: center; gap: 7px;
+  margin-top: 2px;
+}
+.map-legend .legend-swatch {
+  display: inline-block;
+  width: 16px; height: 11px;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 2px;
+  flex-shrink: 0;
 }
 .map-side {
   display: flex; flex-direction: column; gap: 18px;
