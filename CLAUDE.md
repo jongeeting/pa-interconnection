@@ -14,7 +14,7 @@ Of Pennsylvania's 340 active PJM-queued generation projects (10,421 MW), **70 ha
 - **Don't conflate scopes.** PJM-wide ≠ PA. Legacy queue ≠ Cycle 1. 2022 snapshot ≠ today. Copy must explicitly say which.
 - **Don't add features the user didn't ask for.** No speculative dashboards, no extra charts, no new fuel taxonomies. Bug fixes are bug fixes.
 - **Brand tokens — DO NOT change:** green `#00844d`, beige bg `#eae7e4`, card `#f5f3f1`, gold `#c99b2e`, red `#b23a2f`. Type stack: Fraunces (display) + Hanken Grotesk (body). Section structure mirrors https://bpn-oz-analysis.netlify.app/.
-- **Co-authors.** Penn ENVS 5100 Group 4 (Brandon Licata, Nechama Lowy, Lexi Luong, Anna Phillips, Andrew Weng, Jie Ying) — currently credited for the threshold-analysis insight specifically. Per Jon (May 2026), they will become full co-authors after collab in coming weeks; update footer attribution then.
+- **Co-authors.** Penn ENVS 5100 Group 4 (Brandon Licata, Nechama Lowy, Lexi Luong, Anna Phillips, Andrew Weng, Jie Ying). Their December 2025 brief "Pennsylvania and PJM: Speeding Up Interconnection" had 6 policy recommendations; the HB 502 threshold-amendment piece (their #2) is what BPN extended into a memo + site. They originated the threshold-analysis methodology (their cuts are at slightly different scopes — they report % of solar in active queue, BPN reports % of GIA-posted urgent universe). Currently credited for the threshold-analysis insight specifically. Per Jon (May 2026), they will become full co-authors after collab in coming weeks; update footer attribution then.
 
 ## Canonical data derivation (the 70 projects)
 

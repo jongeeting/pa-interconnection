@@ -50,6 +50,7 @@ async function init() {
   buildThresholdTable();
   buildCharts();
   buildSenatorTargets();
+  buildHouseTargets();
   buildTopProjectsTable();
   refresh();
 }
@@ -175,16 +176,22 @@ function renderMarkers() {
   updateThresholdReadout();
 }
 
+function legPill(party) {
+  if (!party) return '<span class="party-pill party-V" title="Vacant">V</span>';
+  return `<span class="party-pill party-${party}">${party}</span>`;
+}
+
+function legRow(district, name, party, overlap_pct, chamber) {
+  const prefix = chamber === 'senate' ? 'SD' : 'HD';
+  const pad = chamber === 'senate' ? 2 : 3;
+  const pill = legPill(party);
+  const pct = overlap_pct > 0 ? `<span class="dist-pct">${Math.round(overlap_pct)}%</span>` : '';
+  return `<li class="dist-item">${pill}<span class="dist-name"><strong>${name}</strong></span><span class="dist-num">${prefix}-${String(district).padStart(pad,'0')}</span>${pct}</li>`;
+}
+
 function showProjectCard(p) {
   const el = document.getElementById('proj-card');
   if (!el) return;
-  const partyClass = p.senator_party ? `party-${p.senator_party}` : '';
-  const partyPill = p.senator_party
-    ? `<span class="party-pill ${partyClass}">${p.senator_party}</span>`
-    : '';
-  const senTag = p.senator
-    ? `<div class="senator-tag">${partyPill} <span><strong>Sen. ${p.senator}</strong> · District ${p.senate_district}</span></div>`
-    : `<div style="font-size:0.82rem;color:var(--bpn-muted);margin-top:10px">Senator: not yet attributed</div>`;
 
   const cliffMark = p.cliff_exposed
     ? '<span style="color:var(--bpn-red);font-weight:600">Yes</span>'
@@ -194,6 +201,17 @@ function showProjectCard(p) {
 
   const giaLink = p.gia_url
     ? `<a class="proj-doc-link" href="${p.gia_url}" target="_blank" rel="noopener noreferrer">View PJM agreement (PDF) →</a>`
+    : '';
+
+  const sens = (p.senators || []).map(s => legRow(s.district, s.name, s.party, s.overlap_pct, 'senate')).join('');
+  const reps = (p.house_reps || []).map(h => legRow(h.district, h.name, h.party, h.overlap_pct, 'house')).join('');
+  const districtsBlock = (sens || reps)
+    ? `<div class="districts-block">
+         <div class="districts-label">Regional representatives</div>
+         <div class="districts-sub">All state legislators whose districts cover ${p.county} County. Percentages show share of county area in each district.</div>
+         ${sens ? `<div class="districts-section"><div class="districts-section-h">State Senate</div><ul class="dist-list">${sens}</ul></div>` : ''}
+         ${reps ? `<div class="districts-section"><div class="districts-section-h">State House</div><ul class="dist-list">${reps}</ul></div>` : ''}
+       </div>`
     : '';
 
   el.innerHTML = `
@@ -206,7 +224,7 @@ function showProjectCard(p) {
     <div class="proj-stat"><span class="proj-stat-label">Submitted to PJM</span><span class="proj-stat-value">${submitted}</span></div>
     <div class="proj-stat"><span class="proj-stat-label">Federal cliff exposed</span><span class="proj-stat-value">${cliffMark}</span></div>
     <div class="proj-stat"><span class="proj-stat-label">CSA executed</span><span class="proj-stat-value">${p.csa_posted ? 'Yes' : 'No'}</span></div>
-    ${senTag}
+    ${districtsBlock}
     ${giaLink}
   `;
 }
@@ -463,6 +481,11 @@ function buildCountyChart() {
   const ctx = document.getElementById('chart-counties');
   if (!ctx || !countyData) return;
   const top = countyData.slice(0, 14);
+  // Color by dominant senator's party (multi-senator counties: highest overlap %)
+  function dominantParty(c) {
+    const s = (c.senators || [])[0];
+    return s ? s.party : 'R';
+  }
   new Chart(ctx, {
     type: 'bar',
     data: {
@@ -470,7 +493,7 @@ function buildCountyChart() {
       datasets: [{
         label: 'MW Capacity (GIA-posted)',
         data: top.map(c => c.mw_capacity),
-        backgroundColor: top.map(c => c.senator_party === 'D' ? '#1e5f9c' : '#b23a2f'),
+        backgroundColor: top.map(c => dominantParty(c) === 'D' ? '#1e5f9c' : '#b23a2f'),
         borderColor: 'rgba(0,0,0,0.05)',
       }]
     },
@@ -482,7 +505,8 @@ function buildCountyChart() {
           callbacks: {
             afterLabel: (c) => {
               const item = top[c.dataIndex];
-              return item.senator ? `Sen. ${item.senator} (${item.senator_party})` : '';
+              const sens = (item.senators || []).map(s => `Sen. ${s.name} (SD-${s.district}, ${s.party})`);
+              return sens.length ? sens : '';
             }
           }
         }
@@ -533,30 +557,58 @@ function buildStatusChart() {
 function buildSenatorTargets() {
   const el = document.getElementById('senator-targets');
   if (!el) return;
-  // Aggregate by senator
-  const bySen = {};
+  buildLegislatorTargets(el, 'senate');
+}
+
+function buildHouseTargets() {
+  const el = document.getElementById('house-targets');
+  if (!el) return;
+  buildLegislatorTargets(el, 'house');
+}
+
+// chamber: 'senate' or 'house'
+// Each project contributes to every legislator whose district covers any
+// portion of the project's county. MW shown is the project's full MW since
+// we don't know which sub-portion of the county the project is in.
+function buildLegislatorTargets(el, chamber) {
+  const fieldName = chamber === 'senate' ? 'senators' : 'house_reps';
+  const prefix = chamber === 'senate' ? 'Sen.' : 'Rep.';
+  const distPrefix = chamber === 'senate' ? 'SD' : 'HD';
+  const distPad = chamber === 'senate' ? 2 : 3;
+
+  const byLeg = {};
   projects.forEach(p => {
-    if (!p.senator) return;
-    const k = p.senator;
-    if (!bySen[k]) bySen[k] = {
-      senator: p.senator, party: p.senator_party, district: p.senate_district,
-      projects: 0, mw: 0, counties: new Set()
-    };
-    bySen[k].projects += 1;
-    bySen[k].mw += p.mw_capacity;
-    bySen[k].counties.add(p.county);
+    (p[fieldName] || []).forEach(l => {
+      const k = `${l.name}|${l.district}`;
+      if (!byLeg[k]) byLeg[k] = {
+        name: l.name, party: l.party, district: l.district,
+        projects: 0, mw: 0, counties: new Set()
+      };
+      byLeg[k].projects += 1;
+      byLeg[k].mw += p.mw_capacity;
+      byLeg[k].counties.add(p.county);
+    });
   });
-  const list = Object.values(bySen).sort((a,b) => b.mw - a.mw);
-  el.innerHTML = list.map(s => `
-    <div class="sen-card party-${s.party}-card">
-      <div class="sen-name">Sen. ${s.senator}</div>
-      <div class="sen-meta">District ${s.district} · ${s.party === 'R' ? 'Republican' : 'Democrat'}</div>
+  const list = Object.values(byLeg).sort((a,b) => b.mw - a.mw);
+  if (list.length === 0) {
+    el.innerHTML = '<div style="color:var(--bpn-muted)">No legislators attached.</div>';
+    return;
+  }
+  el.innerHTML = list.map(s => {
+    const partyClass = s.party ? `party-${s.party}-card` : '';
+    const partyLabel = s.party === 'R' ? 'Republican' : s.party === 'D' ? 'Democrat' : 'Vacant';
+    const distLabel = `${distPrefix}-${String(s.district).padStart(distPad, '0')}`;
+    const titleName = s.name === 'Vacant' ? `${distLabel} (Vacant seat)` : `${prefix} ${s.name}`;
+    return `
+    <div class="sen-card ${partyClass}">
+      <div class="sen-name">${titleName}</div>
+      <div class="sen-meta">${distLabel} · ${partyLabel}</div>
       <div class="sen-stat"><span>Projects in district</span><span class="sen-stat-num">${s.projects}</span></div>
       <div class="sen-stat"><span>MW at risk</span><span class="sen-stat-num">${fmt1(s.mw)}</span></div>
       <div class="sen-stat"><span>Counties</span><span class="sen-stat-num">${s.counties.size}</span></div>
       <div style="font-size:0.78rem;color:var(--bpn-muted);margin-top:8px">${[...s.counties].join(', ')}</div>
-    </div>
-  `).join('');
+    </div>`;
+  }).join('');
 }
 
 function buildTopProjectsTable() {
@@ -569,14 +621,18 @@ function buildTopProjectsTable() {
       <th class="num">MW Cap</th><th>Status</th><th>Senator</th>
     </tr></thead><tbody>`;
   top.forEach(p => {
-    const partyPill = p.senator_party ? `<span class="party-pill party-${p.senator_party}" style="margin-right:6px">${p.senator_party}</span>` : '';
+    const ps = p.primary_senator;
+    const partyPill = ps?.party ? `<span class="party-pill party-${ps.party}" style="margin-right:6px">${ps.party}</span>` : '';
+    const senCell = ps
+      ? `${partyPill}${ps.name} <small style="color:var(--bpn-muted)">SD-${ps.district}</small>`
+      : '<span style="color:var(--bpn-muted)">—</span>';
     html += `<tr>
       <td><strong>${p.name}</strong><br><small>${p.id}</small></td>
       <td>${p.county}</td>
       <td><span style="display:inline-block;width:8px;height:8px;background:${FUEL_COLORS[p.fuel_group]||'#888'};border-radius:50%;margin-right:6px"></span>${p.fuel_group}</td>
       <td class="num">${fmt1(p.mw_capacity)}</td>
       <td style="font-size:0.85rem">${p.status}</td>
-      <td>${partyPill}${p.senator || '<span style="color:var(--bpn-muted)">—</span>'}</td>
+      <td>${senCell}</td>
     </tr>`;
   });
   html += '</tbody></table>';

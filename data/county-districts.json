@@ -1,0 +1,1868 @@
+{
+  "Adams": {
+    "house_districts": [
+      {
+        "district": 91,
+        "overlap_pct": 62.3
+      },
+      {
+        "district": 193,
+        "overlap_pct": 37.7
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 33,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Allegheny": {
+    "house_districts": [
+      {
+        "district": 44,
+        "overlap_pct": 14.5
+      },
+      {
+        "district": 28,
+        "overlap_pct": 11.8
+      },
+      {
+        "district": 33,
+        "overlap_pct": 10.6
+      },
+      {
+        "district": 39,
+        "overlap_pct": 9.7
+      },
+      {
+        "district": 30,
+        "overlap_pct": 6.2
+      },
+      {
+        "district": 45,
+        "overlap_pct": 6.0
+      },
+      {
+        "district": 32,
+        "overlap_pct": 5.7
+      },
+      {
+        "district": 25,
+        "overlap_pct": 5.2
+      },
+      {
+        "district": 35,
+        "overlap_pct": 4.2
+      },
+      {
+        "district": 38,
+        "overlap_pct": 3.9
+      },
+      {
+        "district": 46,
+        "overlap_pct": 2.8
+      },
+      {
+        "district": 21,
+        "overlap_pct": 2.7
+      },
+      {
+        "district": 20,
+        "overlap_pct": 2.6
+      },
+      {
+        "district": 34,
+        "overlap_pct": 2.2
+      },
+      {
+        "district": 40,
+        "overlap_pct": 2.2
+      },
+      {
+        "district": 27,
+        "overlap_pct": 2.2
+      },
+      {
+        "district": 42,
+        "overlap_pct": 1.9
+      },
+      {
+        "district": 19,
+        "overlap_pct": 1.7
+      },
+      {
+        "district": 36,
+        "overlap_pct": 1.4
+      },
+      {
+        "district": 24,
+        "overlap_pct": 1.2
+      },
+      {
+        "district": 23,
+        "overlap_pct": 1.0
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 37,
+        "overlap_pct": 33.8
+      },
+      {
+        "district": 38,
+        "overlap_pct": 27.7
+      },
+      {
+        "district": 45,
+        "overlap_pct": 22.4
+      },
+      {
+        "district": 42,
+        "overlap_pct": 8.1
+      },
+      {
+        "district": 43,
+        "overlap_pct": 7.9
+      }
+    ]
+  },
+  "Armstrong": {
+    "house_districts": [
+      {
+        "district": 63,
+        "overlap_pct": 63.8
+      },
+      {
+        "district": 60,
+        "overlap_pct": 36.2
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 41,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Beaver": {
+    "house_districts": [
+      {
+        "district": 15,
+        "overlap_pct": 48.1
+      },
+      {
+        "district": 14,
+        "overlap_pct": 39.7
+      },
+      {
+        "district": 16,
+        "overlap_pct": 12.2
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 47,
+        "overlap_pct": 84.5
+      },
+      {
+        "district": 46,
+        "overlap_pct": 15.5
+      }
+    ]
+  },
+  "Bedford": {
+    "house_districts": [
+      {
+        "district": 78,
+        "overlap_pct": 100.0
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 32,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Berks": {
+    "house_districts": [
+      {
+        "district": 5,
+        "overlap_pct": 29.0
+      },
+      {
+        "district": 130,
+        "overlap_pct": 24.2
+      },
+      {
+        "district": 124,
+        "overlap_pct": 21.3
+      },
+      {
+        "district": 128,
+        "overlap_pct": 16.1
+      },
+      {
+        "district": 99,
+        "overlap_pct": 4.1
+      },
+      {
+        "district": 126,
+        "overlap_pct": 3.0
+      },
+      {
+        "district": 129,
+        "overlap_pct": 1.5
+      },
+      {
+        "district": 127,
+        "overlap_pct": 0.8
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 48,
+        "overlap_pct": 48.3
+      },
+      {
+        "district": 11,
+        "overlap_pct": 23.7
+      },
+      {
+        "district": 24,
+        "overlap_pct": 17.4
+      },
+      {
+        "district": 13,
+        "overlap_pct": 7.7
+      },
+      {
+        "district": 44,
+        "overlap_pct": 2.9
+      }
+    ]
+  },
+  "Blair": {
+    "house_districts": [
+      {
+        "district": 80,
+        "overlap_pct": 83.6
+      },
+      {
+        "district": 79,
+        "overlap_pct": 16.4
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 30,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Bradford": {
+    "house_districts": [
+      {
+        "district": 68,
+        "overlap_pct": 50.2
+      },
+      {
+        "district": 110,
+        "overlap_pct": 49.8
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 23,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Bucks": {
+    "house_districts": [
+      {
+        "district": 145,
+        "overlap_pct": 27.8
+      },
+      {
+        "district": 143,
+        "overlap_pct": 21.6
+      },
+      {
+        "district": 29,
+        "overlap_pct": 13.2
+      },
+      {
+        "district": 31,
+        "overlap_pct": 8.6
+      },
+      {
+        "district": 178,
+        "overlap_pct": 8.1
+      },
+      {
+        "district": 140,
+        "overlap_pct": 5.5
+      },
+      {
+        "district": 142,
+        "overlap_pct": 4.4
+      },
+      {
+        "district": 144,
+        "overlap_pct": 4.2
+      },
+      {
+        "district": 18,
+        "overlap_pct": 3.4
+      },
+      {
+        "district": 141,
+        "overlap_pct": 3.1
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 16,
+        "overlap_pct": 42.9
+      },
+      {
+        "district": 10,
+        "overlap_pct": 36.7
+      },
+      {
+        "district": 6,
+        "overlap_pct": 20.4
+      }
+    ]
+  },
+  "Butler": {
+    "house_districts": [
+      {
+        "district": 8,
+        "overlap_pct": 33.5
+      },
+      {
+        "district": 17,
+        "overlap_pct": 30.4
+      },
+      {
+        "district": 11,
+        "overlap_pct": 27.0
+      },
+      {
+        "district": 12,
+        "overlap_pct": 9.1
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 21,
+        "overlap_pct": 82.2
+      },
+      {
+        "district": 47,
+        "overlap_pct": 17.8
+      }
+    ]
+  },
+  "Cambria": {
+    "house_districts": [
+      {
+        "district": 71,
+        "overlap_pct": 51.9
+      },
+      {
+        "district": 72,
+        "overlap_pct": 31.7
+      },
+      {
+        "district": 73,
+        "overlap_pct": 16.4
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 35,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Cameron": {
+    "house_districts": [
+      {
+        "district": 67,
+        "overlap_pct": 100.0
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 25,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Carbon": {
+    "house_districts": [
+      {
+        "district": 122,
+        "overlap_pct": 100.0
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 29,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Centre": {
+    "house_districts": [
+      {
+        "district": 82,
+        "overlap_pct": 41.6
+      },
+      {
+        "district": 77,
+        "overlap_pct": 29.3
+      },
+      {
+        "district": 171,
+        "overlap_pct": 29.1
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 25,
+        "overlap_pct": 70.9
+      },
+      {
+        "district": 35,
+        "overlap_pct": 29.1
+      }
+    ]
+  },
+  "Chester": {
+    "house_districts": [
+      {
+        "district": 13,
+        "overlap_pct": 25.1
+      },
+      {
+        "district": 158,
+        "overlap_pct": 15.9
+      },
+      {
+        "district": 26,
+        "overlap_pct": 14.3
+      },
+      {
+        "district": 74,
+        "overlap_pct": 10.9
+      },
+      {
+        "district": 167,
+        "overlap_pct": 9.5
+      },
+      {
+        "district": 155,
+        "overlap_pct": 8.3
+      },
+      {
+        "district": 157,
+        "overlap_pct": 7.3
+      },
+      {
+        "district": 156,
+        "overlap_pct": 4.8
+      },
+      {
+        "district": 160,
+        "overlap_pct": 3.8
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 19,
+        "overlap_pct": 43.3
+      },
+      {
+        "district": 44,
+        "overlap_pct": 40.0
+      },
+      {
+        "district": 9,
+        "overlap_pct": 16.7
+      }
+    ]
+  },
+  "Clarion": {
+    "house_districts": [
+      {
+        "district": 63,
+        "overlap_pct": 100.0
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 21,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Clearfield": {
+    "house_districts": [
+      {
+        "district": 73,
+        "overlap_pct": 66.5
+      },
+      {
+        "district": 75,
+        "overlap_pct": 33.5
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 35,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Clinton": {
+    "house_districts": [
+      {
+        "district": 76,
+        "overlap_pct": 100.0
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 25,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Columbia": {
+    "house_districts": [
+      {
+        "district": 109,
+        "overlap_pct": 100.0
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 27,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Crawford": {
+    "house_districts": [
+      {
+        "district": 6,
+        "overlap_pct": 57.8
+      },
+      {
+        "district": 65,
+        "overlap_pct": 29.2
+      },
+      {
+        "district": 64,
+        "overlap_pct": 13.0
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 50,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Cumberland": {
+    "house_districts": [
+      {
+        "district": 199,
+        "overlap_pct": 41.9
+      },
+      {
+        "district": 193,
+        "overlap_pct": 29.5
+      },
+      {
+        "district": 87,
+        "overlap_pct": 20.6
+      },
+      {
+        "district": 88,
+        "overlap_pct": 5.1
+      },
+      {
+        "district": 103,
+        "overlap_pct": 2.8
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 34,
+        "overlap_pct": 94.6
+      },
+      {
+        "district": 31,
+        "overlap_pct": 5.4
+      }
+    ]
+  },
+  "Dauphin": {
+    "house_districts": [
+      {
+        "district": 125,
+        "overlap_pct": 64.0
+      },
+      {
+        "district": 106,
+        "overlap_pct": 24.3
+      },
+      {
+        "district": 105,
+        "overlap_pct": 5.2
+      },
+      {
+        "district": 104,
+        "overlap_pct": 4.8
+      },
+      {
+        "district": 103,
+        "overlap_pct": 1.6
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 15,
+        "overlap_pct": 53.4
+      },
+      {
+        "district": 34,
+        "overlap_pct": 46.6
+      }
+    ]
+  },
+  "Delaware": {
+    "house_districts": [
+      {
+        "district": 168,
+        "overlap_pct": 22.6
+      },
+      {
+        "district": 160,
+        "overlap_pct": 20.6
+      },
+      {
+        "district": 165,
+        "overlap_pct": 11.4
+      },
+      {
+        "district": 161,
+        "overlap_pct": 10.9
+      },
+      {
+        "district": 159,
+        "overlap_pct": 9.7
+      },
+      {
+        "district": 166,
+        "overlap_pct": 7.1
+      },
+      {
+        "district": 162,
+        "overlap_pct": 5.4
+      },
+      {
+        "district": 185,
+        "overlap_pct": 4.7
+      },
+      {
+        "district": 163,
+        "overlap_pct": 3.8
+      },
+      {
+        "district": 164,
+        "overlap_pct": 2.4
+      },
+      {
+        "district": 191,
+        "overlap_pct": 1.3
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 9,
+        "overlap_pct": 50.4
+      },
+      {
+        "district": 26,
+        "overlap_pct": 28.4
+      },
+      {
+        "district": 17,
+        "overlap_pct": 12.5
+      },
+      {
+        "district": 8,
+        "overlap_pct": 8.8
+      }
+    ]
+  },
+  "Elk": {
+    "house_districts": [
+      {
+        "district": 75,
+        "overlap_pct": 100.0
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 25,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Erie": {
+    "house_districts": [
+      {
+        "district": 1,
+        "overlap_pct": 49.3
+      },
+      {
+        "district": 4,
+        "overlap_pct": 32.5
+      },
+      {
+        "district": 6,
+        "overlap_pct": 7.6
+      },
+      {
+        "district": 2,
+        "overlap_pct": 6.6
+      },
+      {
+        "district": 3,
+        "overlap_pct": 4.0
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 49,
+        "overlap_pct": 94.9
+      },
+      {
+        "district": 21,
+        "overlap_pct": 5.1
+      }
+    ]
+  },
+  "Fayette": {
+    "house_districts": [
+      {
+        "district": 52,
+        "overlap_pct": 54.2
+      },
+      {
+        "district": 51,
+        "overlap_pct": 45.8
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 32,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Forest": {
+    "house_districts": [
+      {
+        "district": 65,
+        "overlap_pct": 100.0
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 21,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Franklin": {
+    "house_districts": [
+      {
+        "district": 90,
+        "overlap_pct": 40.7
+      },
+      {
+        "district": 81,
+        "overlap_pct": 39.7
+      },
+      {
+        "district": 89,
+        "overlap_pct": 19.5
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 33,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Fulton": {
+    "house_districts": [
+      {
+        "district": 78,
+        "overlap_pct": 100.0
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 30,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Greene": {
+    "house_districts": [
+      {
+        "district": 50,
+        "overlap_pct": 100.0
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 46,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Huntingdon": {
+    "house_districts": [
+      {
+        "district": 81,
+        "overlap_pct": 93.1
+      },
+      {
+        "district": 80,
+        "overlap_pct": 6.9
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 30,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Indiana": {
+    "house_districts": [
+      {
+        "district": 62,
+        "overlap_pct": 59.8
+      },
+      {
+        "district": 66,
+        "overlap_pct": 40.2
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 41,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Jefferson": {
+    "house_districts": [
+      {
+        "district": 66,
+        "overlap_pct": 100.0
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 25,
+        "overlap_pct": 68.8
+      },
+      {
+        "district": 41,
+        "overlap_pct": 31.2
+      }
+    ]
+  },
+  "Juniata": {
+    "house_districts": [
+      {
+        "district": 86,
+        "overlap_pct": 84.9
+      },
+      {
+        "district": 85,
+        "overlap_pct": 15.1
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 30,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Lackawanna": {
+    "house_districts": [
+      {
+        "district": 113,
+        "overlap_pct": 34.5
+      },
+      {
+        "district": 112,
+        "overlap_pct": 25.4
+      },
+      {
+        "district": 114,
+        "overlap_pct": 24.7
+      },
+      {
+        "district": 118,
+        "overlap_pct": 15.4
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 40,
+        "overlap_pct": 53.7
+      },
+      {
+        "district": 22,
+        "overlap_pct": 46.3
+      }
+    ]
+  },
+  "Lancaster": {
+    "house_districts": [
+      {
+        "district": 100,
+        "overlap_pct": 31.5
+      },
+      {
+        "district": 37,
+        "overlap_pct": 14.4
+      },
+      {
+        "district": 99,
+        "overlap_pct": 13.9
+      },
+      {
+        "district": 97,
+        "overlap_pct": 12.2
+      },
+      {
+        "district": 43,
+        "overlap_pct": 10.4
+      },
+      {
+        "district": 98,
+        "overlap_pct": 9.3
+      },
+      {
+        "district": 41,
+        "overlap_pct": 5.0
+      },
+      {
+        "district": 96,
+        "overlap_pct": 2.2
+      },
+      {
+        "district": 49,
+        "overlap_pct": 1.2
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 13,
+        "overlap_pct": 55.0
+      },
+      {
+        "district": 36,
+        "overlap_pct": 35.0
+      },
+      {
+        "district": 48,
+        "overlap_pct": 10.0
+      }
+    ]
+  },
+  "Lawrence": {
+    "house_districts": [
+      {
+        "district": 9,
+        "overlap_pct": 56.4
+      },
+      {
+        "district": 8,
+        "overlap_pct": 43.6
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 50,
+        "overlap_pct": 79.6
+      },
+      {
+        "district": 47,
+        "overlap_pct": 20.4
+      }
+    ]
+  },
+  "Lebanon": {
+    "house_districts": [
+      {
+        "district": 102,
+        "overlap_pct": 68.3
+      },
+      {
+        "district": 101,
+        "overlap_pct": 19.6
+      },
+      {
+        "district": 98,
+        "overlap_pct": 12.1
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 48,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Lehigh": {
+    "house_districts": [
+      {
+        "district": 187,
+        "overlap_pct": 44.2
+      },
+      {
+        "district": 131,
+        "overlap_pct": 18.8
+      },
+      {
+        "district": 183,
+        "overlap_pct": 12.6
+      },
+      {
+        "district": 132,
+        "overlap_pct": 10.0
+      },
+      {
+        "district": 133,
+        "overlap_pct": 7.0
+      },
+      {
+        "district": 134,
+        "overlap_pct": 3.8
+      },
+      {
+        "district": 22,
+        "overlap_pct": 3.5
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 16,
+        "overlap_pct": 82.8
+      },
+      {
+        "district": 14,
+        "overlap_pct": 16.0
+      },
+      {
+        "district": 18,
+        "overlap_pct": 1.3
+      }
+    ]
+  },
+  "Luzerne": {
+    "house_districts": [
+      {
+        "district": 117,
+        "overlap_pct": 55.8
+      },
+      {
+        "district": 121,
+        "overlap_pct": 12.9
+      },
+      {
+        "district": 119,
+        "overlap_pct": 11.0
+      },
+      {
+        "district": 120,
+        "overlap_pct": 10.0
+      },
+      {
+        "district": 116,
+        "overlap_pct": 5.8
+      },
+      {
+        "district": 118,
+        "overlap_pct": 4.5
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 20,
+        "overlap_pct": 38.0
+      },
+      {
+        "district": 27,
+        "overlap_pct": 29.4
+      },
+      {
+        "district": 29,
+        "overlap_pct": 24.7
+      },
+      {
+        "district": 22,
+        "overlap_pct": 7.9
+      }
+    ]
+  },
+  "Lycoming": {
+    "house_districts": [
+      {
+        "district": 84,
+        "overlap_pct": 87.7
+      },
+      {
+        "district": 83,
+        "overlap_pct": 12.3
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 23,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "McKean": {
+    "house_districts": [
+      {
+        "district": 67,
+        "overlap_pct": 100.0
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 25,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Mercer": {
+    "house_districts": [
+      {
+        "district": 17,
+        "overlap_pct": 69.5
+      },
+      {
+        "district": 7,
+        "overlap_pct": 30.5
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 50,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Mifflin": {
+    "house_districts": [
+      {
+        "district": 171,
+        "overlap_pct": 81.4
+      },
+      {
+        "district": 85,
+        "overlap_pct": 18.6
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 30,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Monroe": {
+    "house_districts": [
+      {
+        "district": 176,
+        "overlap_pct": 44.7
+      },
+      {
+        "district": 115,
+        "overlap_pct": 43.2
+      },
+      {
+        "district": 189,
+        "overlap_pct": 12.1
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 40,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Montgomery": {
+    "house_districts": [
+      {
+        "district": 147,
+        "overlap_pct": 19.5
+      },
+      {
+        "district": 70,
+        "overlap_pct": 10.1
+      },
+      {
+        "district": 131,
+        "overlap_pct": 9.4
+      },
+      {
+        "district": 150,
+        "overlap_pct": 8.1
+      },
+      {
+        "district": 146,
+        "overlap_pct": 8.0
+      },
+      {
+        "district": 61,
+        "overlap_pct": 7.6
+      },
+      {
+        "district": 151,
+        "overlap_pct": 6.5
+      },
+      {
+        "district": 148,
+        "overlap_pct": 6.2
+      },
+      {
+        "district": 149,
+        "overlap_pct": 5.7
+      },
+      {
+        "district": 53,
+        "overlap_pct": 4.4
+      },
+      {
+        "district": 152,
+        "overlap_pct": 4.2
+      },
+      {
+        "district": 153,
+        "overlap_pct": 4.2
+      },
+      {
+        "district": 154,
+        "overlap_pct": 3.4
+      },
+      {
+        "district": 54,
+        "overlap_pct": 2.7
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 24,
+        "overlap_pct": 40.9
+      },
+      {
+        "district": 12,
+        "overlap_pct": 30.0
+      },
+      {
+        "district": 17,
+        "overlap_pct": 12.1
+      },
+      {
+        "district": 44,
+        "overlap_pct": 7.1
+      },
+      {
+        "district": 4,
+        "overlap_pct": 6.6
+      },
+      {
+        "district": 7,
+        "overlap_pct": 3.2
+      }
+    ]
+  },
+  "Montour": {
+    "house_districts": [
+      {
+        "district": 108,
+        "overlap_pct": 100.0
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 27,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Northampton": {
+    "house_districts": [
+      {
+        "district": 138,
+        "overlap_pct": 46.5
+      },
+      {
+        "district": 183,
+        "overlap_pct": 21.2
+      },
+      {
+        "district": 137,
+        "overlap_pct": 12.6
+      },
+      {
+        "district": 136,
+        "overlap_pct": 11.4
+      },
+      {
+        "district": 135,
+        "overlap_pct": 5.4
+      },
+      {
+        "district": 131,
+        "overlap_pct": 2.9
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 18,
+        "overlap_pct": 65.4
+      },
+      {
+        "district": 14,
+        "overlap_pct": 34.6
+      }
+    ]
+  },
+  "Northumberland": {
+    "house_districts": [
+      {
+        "district": 107,
+        "overlap_pct": 56.0
+      },
+      {
+        "district": 108,
+        "overlap_pct": 44.0
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 27,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Perry": {
+    "house_districts": [
+      {
+        "district": 86,
+        "overlap_pct": 100.0
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 34,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Philadelphia": {
+    "house_districts": [
+      {
+        "district": 185,
+        "overlap_pct": 10.2
+      },
+      {
+        "district": 194,
+        "overlap_pct": 8.2
+      },
+      {
+        "district": 170,
+        "overlap_pct": 7.7
+      },
+      {
+        "district": 173,
+        "overlap_pct": 5.8
+      },
+      {
+        "district": 190,
+        "overlap_pct": 5.7
+      },
+      {
+        "district": 172,
+        "overlap_pct": 5.6
+      },
+      {
+        "district": 174,
+        "overlap_pct": 5.3
+      },
+      {
+        "district": 177,
+        "overlap_pct": 5.3
+      },
+      {
+        "district": 184,
+        "overlap_pct": 5.1
+      },
+      {
+        "district": 200,
+        "overlap_pct": 4.5
+      },
+      {
+        "district": 201,
+        "overlap_pct": 3.1
+      },
+      {
+        "district": 179,
+        "overlap_pct": 3.0
+      },
+      {
+        "district": 198,
+        "overlap_pct": 2.8
+      },
+      {
+        "district": 192,
+        "overlap_pct": 2.8
+      },
+      {
+        "district": 180,
+        "overlap_pct": 2.7
+      },
+      {
+        "district": 175,
+        "overlap_pct": 2.7
+      },
+      {
+        "district": 203,
+        "overlap_pct": 2.5
+      },
+      {
+        "district": 186,
+        "overlap_pct": 2.4
+      },
+      {
+        "district": 197,
+        "overlap_pct": 2.3
+      },
+      {
+        "district": 10,
+        "overlap_pct": 2.1
+      },
+      {
+        "district": 188,
+        "overlap_pct": 2.0
+      },
+      {
+        "district": 195,
+        "overlap_pct": 2.0
+      },
+      {
+        "district": 181,
+        "overlap_pct": 2.0
+      },
+      {
+        "district": 202,
+        "overlap_pct": 1.8
+      },
+      {
+        "district": 191,
+        "overlap_pct": 1.4
+      },
+      {
+        "district": 182,
+        "overlap_pct": 1.1
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 5,
+        "overlap_pct": 25.2
+      },
+      {
+        "district": 1,
+        "overlap_pct": 18.7
+      },
+      {
+        "district": 7,
+        "overlap_pct": 17.4
+      },
+      {
+        "district": 2,
+        "overlap_pct": 12.1
+      },
+      {
+        "district": 3,
+        "overlap_pct": 9.9
+      },
+      {
+        "district": 4,
+        "overlap_pct": 9.0
+      },
+      {
+        "district": 8,
+        "overlap_pct": 7.8
+      }
+    ]
+  },
+  "Pike": {
+    "house_districts": [
+      {
+        "district": 139,
+        "overlap_pct": 72.4
+      },
+      {
+        "district": 189,
+        "overlap_pct": 27.6
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 20,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Potter": {
+    "house_districts": [
+      {
+        "district": 67,
+        "overlap_pct": 100.0
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 25,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Schuylkill": {
+    "house_districts": [
+      {
+        "district": 107,
+        "overlap_pct": 32.0
+      },
+      {
+        "district": 124,
+        "overlap_pct": 30.9
+      },
+      {
+        "district": 123,
+        "overlap_pct": 23.7
+      },
+      {
+        "district": 116,
+        "overlap_pct": 13.4
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 29,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Snyder": {
+    "house_districts": [
+      {
+        "district": 85,
+        "overlap_pct": 100.0
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 27,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Somerset": {
+    "house_districts": [
+      {
+        "district": 69,
+        "overlap_pct": 93.6
+      },
+      {
+        "district": 71,
+        "overlap_pct": 6.4
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 32,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Sullivan": {
+    "house_districts": [
+      {
+        "district": 84,
+        "overlap_pct": 100.0
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 23,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Susquehanna": {
+    "house_districts": [
+      {
+        "district": 111,
+        "overlap_pct": 100.0
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 20,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Tioga": {
+    "house_districts": [
+      {
+        "district": 68,
+        "overlap_pct": 100.0
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 23,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Union": {
+    "house_districts": [
+      {
+        "district": 76,
+        "overlap_pct": 72.3
+      },
+      {
+        "district": 83,
+        "overlap_pct": 19.4
+      },
+      {
+        "district": 85,
+        "overlap_pct": 8.3
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 23,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Venango": {
+    "house_districts": [
+      {
+        "district": 64,
+        "overlap_pct": 100.0
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 21,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Warren": {
+    "house_districts": [
+      {
+        "district": 65,
+        "overlap_pct": 100.0
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 21,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Washington": {
+    "house_districts": [
+      {
+        "district": 48,
+        "overlap_pct": 36.2
+      },
+      {
+        "district": 15,
+        "overlap_pct": 33.7
+      },
+      {
+        "district": 50,
+        "overlap_pct": 14.2
+      },
+      {
+        "district": 46,
+        "overlap_pct": 10.9
+      },
+      {
+        "district": 39,
+        "overlap_pct": 2.7
+      },
+      {
+        "district": 40,
+        "overlap_pct": 2.3
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 46,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "Wayne": {
+    "house_districts": [
+      {
+        "district": 111,
+        "overlap_pct": 71.1
+      },
+      {
+        "district": 139,
+        "overlap_pct": 28.9
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 20,
+        "overlap_pct": 72.2
+      },
+      {
+        "district": 40,
+        "overlap_pct": 27.8
+      }
+    ]
+  },
+  "Westmoreland": {
+    "house_districts": [
+      {
+        "district": 59,
+        "overlap_pct": 44.1
+      },
+      {
+        "district": 55,
+        "overlap_pct": 21.5
+      },
+      {
+        "district": 58,
+        "overlap_pct": 16.1
+      },
+      {
+        "district": 57,
+        "overlap_pct": 8.6
+      },
+      {
+        "district": 56,
+        "overlap_pct": 5.6
+      },
+      {
+        "district": 60,
+        "overlap_pct": 4.1
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 39,
+        "overlap_pct": 58.5
+      },
+      {
+        "district": 41,
+        "overlap_pct": 41.4
+      }
+    ]
+  },
+  "Wyoming": {
+    "house_districts": [
+      {
+        "district": 110,
+        "overlap_pct": 100.0
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 20,
+        "overlap_pct": 100.0
+      }
+    ]
+  },
+  "York": {
+    "house_districts": [
+      {
+        "district": 92,
+        "overlap_pct": 22.4
+      },
+      {
+        "district": 94,
+        "overlap_pct": 19.8
+      },
+      {
+        "district": 93,
+        "overlap_pct": 17.2
+      },
+      {
+        "district": 196,
+        "overlap_pct": 14.3
+      },
+      {
+        "district": 169,
+        "overlap_pct": 13.8
+      },
+      {
+        "district": 47,
+        "overlap_pct": 10.9
+      },
+      {
+        "district": 95,
+        "overlap_pct": 1.4
+      }
+    ],
+    "senate_districts": [
+      {
+        "district": 28,
+        "overlap_pct": 66.3
+      },
+      {
+        "district": 31,
+        "overlap_pct": 33.7
+      }
+    ]
+  }
+}

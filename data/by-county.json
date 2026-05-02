@@ -3,264 +3,1197 @@
     "county": "Crawford",
     "projects": 6,
     "mw_capacity": 131.7,
-    "senator": "Michele Brooks",
-    "senator_party": "R",
-    "senate_district": 50
+    "senators": [
+      {
+        "district": 50,
+        "name": "Michele Brooks",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 6,
+        "name": "Brad Roae",
+        "overlap_pct": 57.8,
+        "party": "R"
+      },
+      {
+        "district": 65,
+        "name": "Kathy L. Rapp",
+        "overlap_pct": 29.2,
+        "party": "R"
+      },
+      {
+        "district": 64,
+        "name": "R. Lee James",
+        "overlap_pct": 13.0,
+        "party": "R"
+      }
+    ]
   },
   {
     "county": "York",
     "projects": 4,
     "mw_capacity": 122.5,
-    "senator": "Kristin Phillips-Hill",
-    "senator_party": "R",
-    "senate_district": 28
+    "senators": [
+      {
+        "district": 28,
+        "name": "Kristin Phillips-Hill",
+        "overlap_pct": 66.3,
+        "party": "R"
+      },
+      {
+        "district": 31,
+        "name": "Dawn W. Keefer",
+        "overlap_pct": 33.7,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 92,
+        "name": "Marc S. Anderson",
+        "overlap_pct": 22.4,
+        "party": "R"
+      },
+      {
+        "district": 94,
+        "name": "Wendy Fink",
+        "overlap_pct": 19.8,
+        "party": "R"
+      },
+      {
+        "district": 93,
+        "name": "Mike Jones",
+        "overlap_pct": 17.2,
+        "party": "R"
+      },
+      {
+        "district": 196,
+        "name": "Vacant",
+        "overlap_pct": 14.3,
+        "party": null
+      },
+      {
+        "district": 169,
+        "name": "Kate A. Klunk",
+        "overlap_pct": 13.8,
+        "party": "R"
+      },
+      {
+        "district": 47,
+        "name": "Joseph D'Orsie",
+        "overlap_pct": 10.9,
+        "party": "R"
+      },
+      {
+        "district": 95,
+        "name": "Carol Hill-Evans",
+        "overlap_pct": 1.4,
+        "party": "D"
+      }
+    ]
   },
   {
     "county": "McKean",
     "projects": 2,
     "mw_capacity": 122.2,
-    "senator": "Cris Dush",
-    "senator_party": "R",
-    "senate_district": 25
+    "senators": [
+      {
+        "district": 25,
+        "name": "Cris Dush",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 67,
+        "name": "Martin T. Causer",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ]
   },
   {
     "county": "Centre",
     "projects": 3,
     "mw_capacity": 109.0,
-    "senator": "Cris Dush",
-    "senator_party": "R",
-    "senate_district": 25
+    "senators": [
+      {
+        "district": 25,
+        "name": "Cris Dush",
+        "overlap_pct": 70.9,
+        "party": "R"
+      },
+      {
+        "district": 35,
+        "name": "Wayne Langerholc",
+        "overlap_pct": 29.1,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 82,
+        "name": "Paul Takac",
+        "overlap_pct": 41.6,
+        "party": "D"
+      },
+      {
+        "district": 77,
+        "name": "Scott Conklin",
+        "overlap_pct": 29.3,
+        "party": "D"
+      },
+      {
+        "district": 171,
+        "name": "Kerry A. Benninghoff",
+        "overlap_pct": 29.1,
+        "party": "R"
+      }
+    ]
   },
   {
     "county": "Bucks",
     "projects": 1,
     "mw_capacity": 100.0,
-    "senator": "Steve Santarsiero",
-    "senator_party": "D",
-    "senate_district": 10
+    "senators": [
+      {
+        "district": 16,
+        "name": "Jarrett Coleman",
+        "overlap_pct": 42.9,
+        "party": "R"
+      },
+      {
+        "district": 10,
+        "name": "Steven J. Santarsiero",
+        "overlap_pct": 36.7,
+        "party": "D"
+      },
+      {
+        "district": 6,
+        "name": "Frank A. Farry",
+        "overlap_pct": 20.4,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 145,
+        "name": "Craig T. Staats",
+        "overlap_pct": 27.8,
+        "party": "R"
+      },
+      {
+        "district": 143,
+        "name": "Shelby Labs",
+        "overlap_pct": 21.6,
+        "party": "R"
+      },
+      {
+        "district": 29,
+        "name": "Tim Brennan",
+        "overlap_pct": 13.2,
+        "party": "D"
+      },
+      {
+        "district": 31,
+        "name": "Perry S. Warren",
+        "overlap_pct": 8.6,
+        "party": "D"
+      },
+      {
+        "district": 178,
+        "name": "Kristin Marcell",
+        "overlap_pct": 8.1,
+        "party": "R"
+      },
+      {
+        "district": 140,
+        "name": "Jim Prokopiak",
+        "overlap_pct": 5.5,
+        "party": "D"
+      },
+      {
+        "district": 142,
+        "name": "Joe Hogan",
+        "overlap_pct": 4.4,
+        "party": "R"
+      },
+      {
+        "district": 144,
+        "name": "Brian Munroe",
+        "overlap_pct": 4.2,
+        "party": "D"
+      },
+      {
+        "district": 18,
+        "name": "Kathleen C. Tomlinson",
+        "overlap_pct": 3.4,
+        "party": "R"
+      },
+      {
+        "district": 141,
+        "name": "Tina M. Davis",
+        "overlap_pct": 3.1,
+        "party": "D"
+      }
+    ]
   },
   {
     "county": "Somerset",
     "projects": 4,
     "mw_capacity": 90.0,
-    "senator": "Pat Stefano",
-    "senator_party": "R",
-    "senate_district": 32
+    "senators": [
+      {
+        "district": 32,
+        "name": "Patrick J. Stefano",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 69,
+        "name": "Carl Walker Metzgar",
+        "overlap_pct": 93.6,
+        "party": "R"
+      },
+      {
+        "district": 71,
+        "name": "Jim Rigby",
+        "overlap_pct": 6.4,
+        "party": "R"
+      }
+    ]
   },
   {
     "county": "Erie",
     "projects": 2,
     "mw_capacity": 80.0,
-    "senator": "Dan Laughlin",
-    "senator_party": "R",
-    "senate_district": 49
+    "senators": [
+      {
+        "district": 49,
+        "name": "Daniel Laughlin",
+        "overlap_pct": 94.9,
+        "party": "R"
+      },
+      {
+        "district": 21,
+        "name": "Scott E. Hutchinson",
+        "overlap_pct": 5.1,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 1,
+        "name": "Patrick J. Harkins",
+        "overlap_pct": 49.3,
+        "party": "D"
+      },
+      {
+        "district": 4,
+        "name": "Jacob D. Banta",
+        "overlap_pct": 32.5,
+        "party": "R"
+      },
+      {
+        "district": 6,
+        "name": "Brad Roae",
+        "overlap_pct": 7.6,
+        "party": "R"
+      },
+      {
+        "district": 2,
+        "name": "Robert E. Merski",
+        "overlap_pct": 6.6,
+        "party": "D"
+      },
+      {
+        "district": 3,
+        "name": "Ryan A. Bizzarro",
+        "overlap_pct": 4.0,
+        "party": "D"
+      }
+    ]
   },
   {
     "county": "Adams",
     "projects": 4,
     "mw_capacity": 78.0,
-    "senator": "Doug Mastriano",
-    "senator_party": "R",
-    "senate_district": 33
+    "senators": [
+      {
+        "district": 33,
+        "name": "Doug Mastriano",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 91,
+        "name": "Dan Moul",
+        "overlap_pct": 62.3,
+        "party": "R"
+      },
+      {
+        "district": 193,
+        "name": "Catherine I Wallen",
+        "overlap_pct": 37.7,
+        "party": "R"
+      }
+    ]
   },
   {
     "county": "Mercer",
     "projects": 4,
     "mw_capacity": 67.5,
-    "senator": "Michele Brooks",
-    "senator_party": "R",
-    "senate_district": 50
+    "senators": [
+      {
+        "district": 50,
+        "name": "Michele Brooks",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 17,
+        "name": "Timothy R. Bonner",
+        "overlap_pct": 69.5,
+        "party": "R"
+      },
+      {
+        "district": 7,
+        "name": "Parke Wentling",
+        "overlap_pct": 30.5,
+        "party": "R"
+      }
+    ]
   },
   {
     "county": "Indiana",
     "projects": 1,
     "mw_capacity": 66.0,
-    "senator": "Joe Pittman",
-    "senator_party": "R",
-    "senate_district": 41
+    "senators": [
+      {
+        "district": 41,
+        "name": "Joe Pittman",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 62,
+        "name": "James B. Struzzi",
+        "overlap_pct": 59.8,
+        "party": "R"
+      },
+      {
+        "district": 66,
+        "name": "Brian Smith",
+        "overlap_pct": 40.2,
+        "party": "R"
+      }
+    ]
   },
   {
     "county": "Jefferson",
     "projects": 2,
     "mw_capacity": 59.2,
-    "senator": "Cris Dush",
-    "senator_party": "R",
-    "senate_district": 25
+    "senators": [
+      {
+        "district": 25,
+        "name": "Cris Dush",
+        "overlap_pct": 68.8,
+        "party": "R"
+      },
+      {
+        "district": 41,
+        "name": "Joe Pittman",
+        "overlap_pct": 31.2,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 66,
+        "name": "Brian Smith",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ]
   },
   {
     "county": "Columbia",
     "projects": 5,
     "mw_capacity": 55.3,
-    "senator": "Gene Yaw",
-    "senator_party": "R",
-    "senate_district": 23
+    "senators": [
+      {
+        "district": 27,
+        "name": "Lynda Schlegel Culver",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 109,
+        "name": "Robert Leadbeter",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ]
   },
   {
     "county": "Franklin",
     "projects": 1,
     "mw_capacity": 53.5,
-    "senator": "Doug Mastriano",
-    "senator_party": "R",
-    "senate_district": 33
+    "senators": [
+      {
+        "district": 33,
+        "name": "Doug Mastriano",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 90,
+        "name": "Chad G. Reichard",
+        "overlap_pct": 40.7,
+        "party": "R"
+      },
+      {
+        "district": 81,
+        "name": "Rich Irvin",
+        "overlap_pct": 39.7,
+        "party": "R"
+      },
+      {
+        "district": 89,
+        "name": "Rob W. Kauffman",
+        "overlap_pct": 19.5,
+        "party": "R"
+      }
+    ]
   },
   {
     "county": "Monroe",
     "projects": 1,
     "mw_capacity": 48.0,
-    "senator": "Rosemary Brown",
-    "senator_party": "R",
-    "senate_district": 40
+    "senators": [
+      {
+        "district": 40,
+        "name": "Rosemary M. Brown",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 176,
+        "name": "Jack Rader",
+        "overlap_pct": 44.7,
+        "party": "R"
+      },
+      {
+        "district": 115,
+        "name": "Maureen E. Madden",
+        "overlap_pct": 43.2,
+        "party": "D"
+      },
+      {
+        "district": 189,
+        "name": "Tarah Probst",
+        "overlap_pct": 12.1,
+        "party": "D"
+      }
+    ]
   },
   {
     "county": "Union",
     "projects": 4,
     "mw_capacity": 48.0,
-    "senator": "Lynda Schlegel Culver",
-    "senator_party": "R",
-    "senate_district": 27
+    "senators": [
+      {
+        "district": 23,
+        "name": "Gene Yaw",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 76,
+        "name": "Stephanie Borowicz",
+        "overlap_pct": 72.3,
+        "party": "R"
+      },
+      {
+        "district": 83,
+        "name": "Jamie L. Flick",
+        "overlap_pct": 19.4,
+        "party": "R"
+      },
+      {
+        "district": 85,
+        "name": "David H. Rowe",
+        "overlap_pct": 8.3,
+        "party": "R"
+      }
+    ]
   },
   {
     "county": "Carbon",
     "projects": 1,
     "mw_capacity": 39.5,
-    "senator": "David Argall",
-    "senator_party": "R",
-    "senate_district": 29
+    "senators": [
+      {
+        "district": 29,
+        "name": "David G. Argall",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 122,
+        "name": "Doyle Heffley",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ]
   },
   {
     "county": "Northumberland",
     "projects": 4,
     "mw_capacity": 37.2,
-    "senator": "Lynda Schlegel Culver",
-    "senator_party": "R",
-    "senate_district": 27
-  },
-  {
-    "county": "Huntingdon",
-    "projects": 3,
-    "mw_capacity": 36.0,
-    "senator": "Judy Ward",
-    "senator_party": "R",
-    "senate_district": 30
+    "senators": [
+      {
+        "district": 27,
+        "name": "Lynda Schlegel Culver",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 107,
+        "name": "Joanne Stehr",
+        "overlap_pct": 56.0,
+        "party": "R"
+      },
+      {
+        "district": 108,
+        "name": "Michael Stender",
+        "overlap_pct": 44.0,
+        "party": "R"
+      }
+    ]
   },
   {
     "county": "Snyder",
     "projects": 2,
     "mw_capacity": 36.0,
-    "senator": "Lynda Schlegel Culver",
-    "senator_party": "R",
-    "senate_district": 27
+    "senators": [
+      {
+        "district": 27,
+        "name": "Lynda Schlegel Culver",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 85,
+        "name": "David H. Rowe",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "county": "Huntingdon",
+    "projects": 3,
+    "mw_capacity": 36.0,
+    "senators": [
+      {
+        "district": 30,
+        "name": "Judy Ward",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 81,
+        "name": "Rich Irvin",
+        "overlap_pct": 93.1,
+        "party": "R"
+      },
+      {
+        "district": 80,
+        "name": "Scott Barger",
+        "overlap_pct": 6.9,
+        "party": "R"
+      }
+    ]
   },
   {
     "county": "Juniata",
     "projects": 1,
     "mw_capacity": 35.0,
-    "senator": "Cris Dush",
-    "senator_party": "R",
-    "senate_district": 25
+    "senators": [
+      {
+        "district": 30,
+        "name": "Judy Ward",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 86,
+        "name": "Perry A. Stambaugh",
+        "overlap_pct": 84.9,
+        "party": "R"
+      },
+      {
+        "district": 85,
+        "name": "David H. Rowe",
+        "overlap_pct": 15.1,
+        "party": "R"
+      }
+    ]
   },
   {
     "county": "Lawrence",
     "projects": 1,
     "mw_capacity": 25.2,
-    "senator": "Elder Vogel Jr.",
-    "senator_party": "R",
-    "senate_district": 47
+    "senators": [
+      {
+        "district": 50,
+        "name": "Michele Brooks",
+        "overlap_pct": 79.6,
+        "party": "R"
+      },
+      {
+        "district": 47,
+        "name": "Elder A. Vogel",
+        "overlap_pct": 20.4,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 9,
+        "name": "Marla Brown",
+        "overlap_pct": 56.4,
+        "party": "R"
+      },
+      {
+        "district": 8,
+        "name": "Aaron Bernstine",
+        "overlap_pct": 43.6,
+        "party": "R"
+      }
+    ]
   },
   {
     "county": "Luzerne",
     "projects": 2,
     "mw_capacity": 24.0,
-    "senator": "Lisa Baker",
-    "senator_party": "R",
-    "senate_district": 20
+    "senators": [
+      {
+        "district": 20,
+        "name": "Lisa Baker",
+        "overlap_pct": 38.0,
+        "party": "R"
+      },
+      {
+        "district": 27,
+        "name": "Lynda Schlegel Culver",
+        "overlap_pct": 29.4,
+        "party": "R"
+      },
+      {
+        "district": 29,
+        "name": "David G. Argall",
+        "overlap_pct": 24.7,
+        "party": "R"
+      },
+      {
+        "district": 22,
+        "name": "Marty Flynn",
+        "overlap_pct": 7.9,
+        "party": "D"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 117,
+        "name": "Jamie Walsh",
+        "overlap_pct": 55.8,
+        "party": "R"
+      },
+      {
+        "district": 121,
+        "name": "Eddie Day Pashinski",
+        "overlap_pct": 12.9,
+        "party": "D"
+      },
+      {
+        "district": 119,
+        "name": "Alec J. Ryncavage",
+        "overlap_pct": 11.0,
+        "party": "R"
+      },
+      {
+        "district": 120,
+        "name": "Brenda M. Pugh",
+        "overlap_pct": 10.0,
+        "party": "R"
+      },
+      {
+        "district": 116,
+        "name": "Dane Watro",
+        "overlap_pct": 5.8,
+        "party": "R"
+      },
+      {
+        "district": 118,
+        "name": "Jim Haddock",
+        "overlap_pct": 4.5,
+        "party": "D"
+      }
+    ]
   },
   {
     "county": "Clearfield",
     "projects": 1,
     "mw_capacity": 20.5,
-    "senator": "Wayne Langerholc",
-    "senator_party": "R",
-    "senate_district": 35
-  },
-  {
-    "county": "Blair",
-    "projects": 1,
-    "mw_capacity": 12.0,
-    "senator": "Judy Ward",
-    "senator_party": "R",
-    "senate_district": 30
-  },
-  {
-    "county": "Bradford",
-    "projects": 1,
-    "mw_capacity": 12.0,
-    "senator": "Gene Yaw",
-    "senator_party": "R",
-    "senate_district": 23
+    "senators": [
+      {
+        "district": 35,
+        "name": "Wayne Langerholc",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 73,
+        "name": "Dallas Kephart",
+        "overlap_pct": 66.5,
+        "party": "R"
+      },
+      {
+        "district": 75,
+        "name": "Mike Armanini",
+        "overlap_pct": 33.5,
+        "party": "R"
+      }
+    ]
   },
   {
     "county": "Westmoreland",
     "projects": 1,
     "mw_capacity": 12.0,
-    "senator": "Kim Ward",
-    "senator_party": "R",
-    "senate_district": 39
+    "senators": [
+      {
+        "district": 39,
+        "name": "Kim L. Ward",
+        "overlap_pct": 58.5,
+        "party": "R"
+      },
+      {
+        "district": 41,
+        "name": "Joe Pittman",
+        "overlap_pct": 41.4,
+        "party": "R"
+      },
+      {
+        "district": 32,
+        "name": "Patrick J. Stefano",
+        "overlap_pct": 0.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 59,
+        "name": "Leslie Rossi",
+        "overlap_pct": 44.1,
+        "party": "R"
+      },
+      {
+        "district": 55,
+        "name": "Jill N. Cooper",
+        "overlap_pct": 21.5,
+        "party": "R"
+      },
+      {
+        "district": 58,
+        "name": "Eric Davanzo",
+        "overlap_pct": 16.1,
+        "party": "R"
+      },
+      {
+        "district": 57,
+        "name": "Eric R. Nelson",
+        "overlap_pct": 8.6,
+        "party": "R"
+      },
+      {
+        "district": 56,
+        "name": "Brian C. Rasel",
+        "overlap_pct": 5.6,
+        "party": "R"
+      },
+      {
+        "district": 60,
+        "name": "Abby Major",
+        "overlap_pct": 4.1,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "county": "Bradford",
+    "projects": 1,
+    "mw_capacity": 12.0,
+    "senators": [
+      {
+        "district": 23,
+        "name": "Gene Yaw",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 68,
+        "name": "Clint Owlett",
+        "overlap_pct": 50.2,
+        "party": "R"
+      },
+      {
+        "district": 110,
+        "name": "Tina Pickett",
+        "overlap_pct": 49.8,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "county": "Blair",
+    "projects": 1,
+    "mw_capacity": 12.0,
+    "senators": [
+      {
+        "district": 30,
+        "name": "Judy Ward",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 80,
+        "name": "Scott Barger",
+        "overlap_pct": 83.6,
+        "party": "R"
+      },
+      {
+        "district": 79,
+        "name": "Andrea C. Verobish",
+        "overlap_pct": 16.4,
+        "party": "R"
+      }
+    ]
   },
   {
     "county": "Dauphin",
     "projects": 2,
     "mw_capacity": 11.2,
-    "senator": "Patty Kim",
-    "senator_party": "D",
-    "senate_district": 15
+    "senators": [
+      {
+        "district": 15,
+        "name": "Patty Kim",
+        "overlap_pct": 53.4,
+        "party": "D"
+      },
+      {
+        "district": 34,
+        "name": "Greg Rothman",
+        "overlap_pct": 46.6,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 125,
+        "name": "Joe Kerwin",
+        "overlap_pct": 64.0,
+        "party": "R"
+      },
+      {
+        "district": 106,
+        "name": "Thomas L. Mehaffie",
+        "overlap_pct": 24.3,
+        "party": "R"
+      },
+      {
+        "district": 105,
+        "name": "Justin C. Fleming",
+        "overlap_pct": 5.2,
+        "party": "D"
+      },
+      {
+        "district": 104,
+        "name": "Dave Madsen",
+        "overlap_pct": 4.8,
+        "party": "D"
+      },
+      {
+        "district": 103,
+        "name": "Nathan Davidson",
+        "overlap_pct": 1.6,
+        "party": "D"
+      }
+    ]
   },
   {
     "county": "Cumberland",
     "projects": 1,
     "mw_capacity": 10.9,
-    "senator": "Mike Regan",
-    "senator_party": "R",
-    "senate_district": 31
+    "senators": [
+      {
+        "district": 34,
+        "name": "Greg Rothman",
+        "overlap_pct": 94.6,
+        "party": "R"
+      },
+      {
+        "district": 31,
+        "name": "Dawn W. Keefer",
+        "overlap_pct": 5.4,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 199,
+        "name": "Barbara Gleim",
+        "overlap_pct": 41.9,
+        "party": "R"
+      },
+      {
+        "district": 193,
+        "name": "Catherine I Wallen",
+        "overlap_pct": 29.5,
+        "party": "R"
+      },
+      {
+        "district": 87,
+        "name": "Thomas H. Kutz",
+        "overlap_pct": 20.6,
+        "party": "R"
+      },
+      {
+        "district": 88,
+        "name": "Sheryl M. Delozier",
+        "overlap_pct": 5.1,
+        "party": "R"
+      },
+      {
+        "district": 103,
+        "name": "Nathan Davidson",
+        "overlap_pct": 2.8,
+        "party": "D"
+      }
+    ]
   },
   {
     "county": "Fulton",
     "projects": 1,
     "mw_capacity": 9.4,
-    "senator": "Doug Mastriano",
-    "senator_party": "R",
-    "senate_district": 33
+    "senators": [
+      {
+        "district": 30,
+        "name": "Judy Ward",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 78,
+        "name": "Jesse Topper",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ]
   },
   {
     "county": "Montour",
     "projects": 1,
     "mw_capacity": 8.4,
-    "senator": "Gene Yaw",
-    "senator_party": "R",
-    "senate_district": 23
-  },
-  {
-    "county": "Berks",
-    "projects": 1,
-    "mw_capacity": 8.0,
-    "senator": "Judy Schwank",
-    "senator_party": "D",
-    "senate_district": 11
+    "senators": [
+      {
+        "district": 27,
+        "name": "Lynda Schlegel Culver",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 108,
+        "name": "Michael Stender",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ]
   },
   {
     "county": "Fayette",
     "projects": 1,
     "mw_capacity": 8.0,
-    "senator": "Pat Stefano",
-    "senator_party": "R",
-    "senate_district": 32
+    "senators": [
+      {
+        "district": 32,
+        "name": "Patrick J. Stefano",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 52,
+        "name": "Ryan Warner",
+        "overlap_pct": 54.2,
+        "party": "R"
+      },
+      {
+        "district": 51,
+        "name": "Charity Grimm Krupa",
+        "overlap_pct": 45.8,
+        "party": "R"
+      }
+    ]
+  },
+  {
+    "county": "Berks",
+    "projects": 1,
+    "mw_capacity": 8.0,
+    "senators": [
+      {
+        "district": 48,
+        "name": "Chris Gebhard",
+        "overlap_pct": 48.3,
+        "party": "R"
+      },
+      {
+        "district": 11,
+        "name": "Judith L. Schwank",
+        "overlap_pct": 23.7,
+        "party": "D"
+      },
+      {
+        "district": 24,
+        "name": "Tracy Pennycuick",
+        "overlap_pct": 17.4,
+        "party": "R"
+      },
+      {
+        "district": 13,
+        "name": "Scott Martin",
+        "overlap_pct": 7.7,
+        "party": "R"
+      },
+      {
+        "district": 44,
+        "name": "Katie J. Muth",
+        "overlap_pct": 2.9,
+        "party": "D"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 5,
+        "name": "Eric J. Weaknecht",
+        "overlap_pct": 29.0,
+        "party": "R"
+      },
+      {
+        "district": 130,
+        "name": "David M. Maloney",
+        "overlap_pct": 24.2,
+        "party": "R"
+      },
+      {
+        "district": 124,
+        "name": "Jamie Barton",
+        "overlap_pct": 21.3,
+        "party": "R"
+      },
+      {
+        "district": 128,
+        "name": "Mark M. Gillen",
+        "overlap_pct": 16.1,
+        "party": "R"
+      },
+      {
+        "district": 99,
+        "name": "David H. Zimmerman",
+        "overlap_pct": 4.1,
+        "party": "R"
+      },
+      {
+        "district": 126,
+        "name": "Jacklyn Rusnock",
+        "overlap_pct": 3.0,
+        "party": "D"
+      },
+      {
+        "district": 129,
+        "name": "Johanny Cepeda-Freytiz",
+        "overlap_pct": 1.5,
+        "party": "D"
+      },
+      {
+        "district": 127,
+        "name": "Manuel Guzman",
+        "overlap_pct": 0.8,
+        "party": "D"
+      }
+    ]
   },
   {
     "county": "Bedford",
     "projects": 1,
     "mw_capacity": 7.2,
-    "senator": "Judy Ward",
-    "senator_party": "R",
-    "senate_district": 30
+    "senators": [
+      {
+        "district": 32,
+        "name": "Patrick J. Stefano",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ],
+    "house_reps": [
+      {
+        "district": 78,
+        "name": "Jesse Topper",
+        "overlap_pct": 100.0,
+        "party": "R"
+      }
+    ]
   }
 ]

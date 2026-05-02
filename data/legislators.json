@@ -1,0 +1,2128 @@
+{
+  "senate": [
+    {
+      "district": 1,
+      "party": "D",
+      "name": "Nikil Saval",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 2,
+      "party": "D",
+      "name": "Christine M. Tartaglione",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 3,
+      "party": "D",
+      "name": "Sharif Street",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 4,
+      "party": "D",
+      "name": "Art Haywood",
+      "counties": [
+        "Montgomery",
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 5,
+      "party": "R",
+      "name": "Joe Picozzi",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 6,
+      "party": "R",
+      "name": "Frank A. Farry",
+      "counties": [
+        "Bucks"
+      ]
+    },
+    {
+      "district": 7,
+      "party": "D",
+      "name": "Vincent J. Hughes",
+      "counties": [
+        "Montgomery",
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 8,
+      "party": "D",
+      "name": "Anthony H. Williams",
+      "counties": [
+        "Delaware",
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 9,
+      "party": "D",
+      "name": "John I. Kane",
+      "counties": [
+        "Chester",
+        "Delaware"
+      ]
+    },
+    {
+      "district": 10,
+      "party": "D",
+      "name": "Steven J. Santarsiero",
+      "counties": [
+        "Bucks"
+      ]
+    },
+    {
+      "district": 11,
+      "party": "D",
+      "name": "Judith L. Schwank",
+      "counties": [
+        "Berks"
+      ]
+    },
+    {
+      "district": 12,
+      "party": "D",
+      "name": "Maria Collett",
+      "counties": [
+        "Montgomery"
+      ]
+    },
+    {
+      "district": 13,
+      "party": "R",
+      "name": "Scott Martin",
+      "counties": [
+        "Berks",
+        "Lancaster"
+      ]
+    },
+    {
+      "district": 14,
+      "party": "D",
+      "name": "Nick Miller",
+      "counties": [
+        "Lehigh",
+        "Northampton"
+      ]
+    },
+    {
+      "district": 15,
+      "party": "D",
+      "name": "Patty Kim",
+      "counties": [
+        "Dauphin"
+      ]
+    },
+    {
+      "district": 16,
+      "party": "R",
+      "name": "Jarrett Coleman",
+      "counties": [
+        "Bucks",
+        "Lehigh"
+      ]
+    },
+    {
+      "district": 17,
+      "party": "D",
+      "name": "Amanda M. Cappelletti",
+      "counties": [
+        "Delaware",
+        "Montgomery"
+      ]
+    },
+    {
+      "district": 18,
+      "party": "D",
+      "name": "Lisa M. Boscola",
+      "counties": [
+        "Lehigh",
+        "Northampton"
+      ]
+    },
+    {
+      "district": 19,
+      "party": "D",
+      "name": "Carolyn T. Comitta",
+      "counties": [
+        "Chester"
+      ]
+    },
+    {
+      "district": 20,
+      "party": "R",
+      "name": "Lisa Baker",
+      "counties": [
+        "Luzerne",
+        "Pike",
+        "Susquehanna",
+        "Wayne",
+        "Wyoming"
+      ]
+    },
+    {
+      "district": 21,
+      "party": "R",
+      "name": "Scott E. Hutchinson",
+      "counties": [
+        "Butler",
+        "Clarion",
+        "Erie",
+        "Forest",
+        "Venango",
+        "Warren"
+      ]
+    },
+    {
+      "district": 22,
+      "party": "D",
+      "name": "Marty Flynn",
+      "counties": [
+        "Lackawanna",
+        "Luzerne"
+      ]
+    },
+    {
+      "district": 23,
+      "party": "R",
+      "name": "Gene Yaw",
+      "counties": [
+        "Bradford",
+        "Lycoming",
+        "Sullivan",
+        "Tioga",
+        "Union"
+      ]
+    },
+    {
+      "district": 24,
+      "party": "R",
+      "name": "Tracy Pennycuick",
+      "counties": [
+        "Berks",
+        "Montgomery"
+      ]
+    },
+    {
+      "district": 25,
+      "party": "R",
+      "name": "Cris Dush",
+      "counties": [
+        "Cameron",
+        "Centre",
+        "Clinton",
+        "Elk",
+        "Jefferson",
+        "Mckean",
+        "Potter"
+      ]
+    },
+    {
+      "district": 26,
+      "party": "D",
+      "name": "Timothy P. Kearney",
+      "counties": [
+        "Delaware"
+      ]
+    },
+    {
+      "district": 27,
+      "party": "R",
+      "name": "Lynda Schlegel Culver",
+      "counties": [
+        "Columbia",
+        "Luzerne",
+        "Montour",
+        "Northumberland",
+        "Snyder"
+      ]
+    },
+    {
+      "district": 28,
+      "party": "R",
+      "name": "Kristin Phillips-Hill",
+      "counties": [
+        "York"
+      ]
+    },
+    {
+      "district": 29,
+      "party": "R",
+      "name": "David G. Argall",
+      "counties": [
+        "Carbon",
+        "Luzerne",
+        "Schuylkill"
+      ]
+    },
+    {
+      "district": 30,
+      "party": "R",
+      "name": "Judy Ward",
+      "counties": [
+        "Blair",
+        "Fulton",
+        "Huntingdon",
+        "Juniata",
+        "Mifflin"
+      ]
+    },
+    {
+      "district": 31,
+      "party": "R",
+      "name": "Dawn W. Keefer",
+      "counties": [
+        "Cumberland",
+        "York"
+      ]
+    },
+    {
+      "district": 32,
+      "party": "R",
+      "name": "Patrick J. Stefano",
+      "counties": [
+        "Bedford",
+        "Fayette",
+        "Somerset",
+        "Westmoreland"
+      ]
+    },
+    {
+      "district": 33,
+      "party": "R",
+      "name": "Doug Mastriano",
+      "counties": [
+        "Adams",
+        "Franklin"
+      ]
+    },
+    {
+      "district": 34,
+      "party": "R",
+      "name": "Greg Rothman",
+      "counties": [
+        "Cumberland",
+        "Dauphin",
+        "Perry"
+      ]
+    },
+    {
+      "district": 35,
+      "party": "R",
+      "name": "Wayne Langerholc",
+      "counties": [
+        "Cambria",
+        "Centre",
+        "Clearfield"
+      ]
+    },
+    {
+      "district": 36,
+      "party": "D",
+      "name": "James Andrew Malone",
+      "counties": [
+        "Lancaster"
+      ]
+    },
+    {
+      "district": 37,
+      "party": "R",
+      "name": "Devlin J. Robinson",
+      "counties": [
+        "Allegheny"
+      ]
+    },
+    {
+      "district": 38,
+      "party": "D",
+      "name": "Lindsey M. Williams",
+      "counties": [
+        "Allegheny"
+      ]
+    },
+    {
+      "district": 39,
+      "party": "R",
+      "name": "Kim L. Ward",
+      "counties": [
+        "Westmoreland"
+      ]
+    },
+    {
+      "district": 40,
+      "party": "R",
+      "name": "Rosemary M. Brown",
+      "counties": [
+        "Lackawanna",
+        "Monroe",
+        "Wayne"
+      ]
+    },
+    {
+      "district": 41,
+      "party": "R",
+      "name": "Joe Pittman",
+      "counties": [
+        "Armstrong",
+        "Indiana",
+        "Jefferson",
+        "Westmoreland"
+      ]
+    },
+    {
+      "district": 42,
+      "party": "D",
+      "name": "Wayne D. Fontana",
+      "counties": [
+        "Allegheny"
+      ]
+    },
+    {
+      "district": 43,
+      "party": "D",
+      "name": "Jay Costa",
+      "counties": [
+        "Allegheny"
+      ]
+    },
+    {
+      "district": 44,
+      "party": "D",
+      "name": "Katie J. Muth",
+      "counties": [
+        "Berks",
+        "Chester",
+        "Montgomery"
+      ]
+    },
+    {
+      "district": 45,
+      "party": "D",
+      "name": "Nick Pisciottano",
+      "counties": [
+        "Allegheny"
+      ]
+    },
+    {
+      "district": 46,
+      "party": "R",
+      "name": "Camera Bartolotta",
+      "counties": [
+        "Beaver",
+        "Greene",
+        "Washington"
+      ]
+    },
+    {
+      "district": 47,
+      "party": "R",
+      "name": "Elder A. Vogel",
+      "counties": [
+        "Beaver",
+        "Butler",
+        "Lawrence"
+      ]
+    },
+    {
+      "district": 48,
+      "party": "R",
+      "name": "Chris Gebhard",
+      "counties": [
+        "Berks",
+        "Lancaster",
+        "Lebanon"
+      ]
+    },
+    {
+      "district": 49,
+      "party": "R",
+      "name": "Daniel Laughlin",
+      "counties": [
+        "Erie"
+      ]
+    },
+    {
+      "district": 50,
+      "party": "R",
+      "name": "Michele Brooks",
+      "counties": [
+        "Crawford",
+        "Lawrence",
+        "Mercer"
+      ]
+    }
+  ],
+  "house": [
+    {
+      "district": 1,
+      "party": "D",
+      "name": "Patrick J. Harkins",
+      "counties": [
+        "Erie"
+      ]
+    },
+    {
+      "district": 2,
+      "party": "D",
+      "name": "Robert E. Merski",
+      "counties": [
+        "Erie"
+      ]
+    },
+    {
+      "district": 3,
+      "party": "D",
+      "name": "Ryan A. Bizzarro",
+      "counties": [
+        "Erie"
+      ]
+    },
+    {
+      "district": 4,
+      "party": "R",
+      "name": "Jacob D. Banta",
+      "counties": [
+        "Erie"
+      ]
+    },
+    {
+      "district": 5,
+      "party": "R",
+      "name": "Eric J. Weaknecht",
+      "counties": [
+        "Berks"
+      ]
+    },
+    {
+      "district": 6,
+      "party": "R",
+      "name": "Brad Roae",
+      "counties": [
+        "Crawford",
+        "Erie"
+      ]
+    },
+    {
+      "district": 7,
+      "party": "R",
+      "name": "Parke Wentling",
+      "counties": [
+        "Mercer"
+      ]
+    },
+    {
+      "district": 8,
+      "party": "R",
+      "name": "Aaron Bernstine",
+      "counties": [
+        "Butler",
+        "Lawrence"
+      ]
+    },
+    {
+      "district": 9,
+      "party": "R",
+      "name": "Marla Brown",
+      "counties": [
+        "Lawrence"
+      ]
+    },
+    {
+      "district": 10,
+      "party": "D",
+      "name": "Amen Brown",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 11,
+      "party": "R",
+      "name": "Marci Mustello",
+      "counties": [
+        "Butler"
+      ]
+    },
+    {
+      "district": 13,
+      "party": "R",
+      "name": "John A. Lawrence",
+      "counties": [
+        "Chester"
+      ]
+    },
+    {
+      "district": 14,
+      "party": "R",
+      "name": "Roman Kozak",
+      "counties": [
+        "Beaver"
+      ]
+    },
+    {
+      "district": 15,
+      "party": "R",
+      "name": "Joshua D. Kail",
+      "counties": [
+        "Beaver",
+        "Washington"
+      ]
+    },
+    {
+      "district": 16,
+      "party": "D",
+      "name": "Robert F. Matzie",
+      "counties": [
+        "Beaver"
+      ]
+    },
+    {
+      "district": 17,
+      "party": "R",
+      "name": "Timothy R. Bonner",
+      "counties": [
+        "Butler",
+        "Mercer"
+      ]
+    },
+    {
+      "district": 18,
+      "party": "R",
+      "name": "Kathleen C. Tomlinson",
+      "counties": [
+        "Bucks"
+      ]
+    },
+    {
+      "district": 19,
+      "party": "D",
+      "name": "Aerion Abney",
+      "counties": [
+        "Allegheny"
+      ]
+    },
+    {
+      "district": 20,
+      "party": "D",
+      "name": "Emily Kinkead",
+      "counties": [
+        "Allegheny"
+      ]
+    },
+    {
+      "district": 21,
+      "party": "D",
+      "name": "Lindsay Powell",
+      "counties": [
+        "Allegheny"
+      ]
+    },
+    {
+      "district": 22,
+      "party": "D",
+      "name": "Ana Tiburcio",
+      "counties": [
+        "Lehigh"
+      ]
+    },
+    {
+      "district": 23,
+      "party": "D",
+      "name": "Dan Frankel",
+      "counties": [
+        "Allegheny"
+      ]
+    },
+    {
+      "district": 24,
+      "party": "D",
+      "name": "La'Tasha D. Mayes",
+      "counties": [
+        "Allegheny"
+      ]
+    },
+    {
+      "district": 25,
+      "party": "D",
+      "name": "Brandon J. Markosek",
+      "counties": [
+        "Allegheny"
+      ]
+    },
+    {
+      "district": 26,
+      "party": "D",
+      "name": "Paul Friel",
+      "counties": [
+        "Chester"
+      ]
+    },
+    {
+      "district": 27,
+      "party": "D",
+      "name": "Daniel J. Deasy",
+      "counties": [
+        "Allegheny"
+      ]
+    },
+    {
+      "district": 28,
+      "party": "R",
+      "name": "Jeremy Shaffer",
+      "counties": [
+        "Allegheny"
+      ]
+    },
+    {
+      "district": 29,
+      "party": "D",
+      "name": "Tim Brennan",
+      "counties": [
+        "Bucks"
+      ]
+    },
+    {
+      "district": 30,
+      "party": "D",
+      "name": "Arvind Venkat",
+      "counties": [
+        "Allegheny"
+      ]
+    },
+    {
+      "district": 31,
+      "party": "D",
+      "name": "Perry S. Warren",
+      "counties": [
+        "Bucks"
+      ]
+    },
+    {
+      "district": 32,
+      "party": "D",
+      "name": "Joe McAndrew",
+      "counties": [
+        "Allegheny"
+      ]
+    },
+    {
+      "district": 33,
+      "party": "D",
+      "name": "Mandy Steele",
+      "counties": [
+        "Allegheny"
+      ]
+    },
+    {
+      "district": 34,
+      "party": "D",
+      "name": "Abigail Salisbury",
+      "counties": [
+        "Allegheny"
+      ]
+    },
+    {
+      "district": 35,
+      "party": "D",
+      "name": "Dan Goughnour",
+      "counties": [
+        "Allegheny"
+      ]
+    },
+    {
+      "district": 36,
+      "party": "D",
+      "name": "Jessica Benham",
+      "counties": [
+        "Allegheny"
+      ]
+    },
+    {
+      "district": 37,
+      "party": "R",
+      "name": "Mindy Fee",
+      "counties": [
+        "Lancaster"
+      ]
+    },
+    {
+      "district": 38,
+      "party": "D",
+      "name": "John C. Inglis III",
+      "counties": [
+        "Allegheny"
+      ]
+    },
+    {
+      "district": 39,
+      "party": "R",
+      "name": "Andrew Kuzma",
+      "counties": [
+        "Allegheny",
+        "Washington"
+      ]
+    },
+    {
+      "district": 40,
+      "party": "R",
+      "name": "Natalie Mihalek",
+      "counties": [
+        "Allegheny",
+        "Washington"
+      ]
+    },
+    {
+      "district": 41,
+      "party": "R",
+      "name": "Brett R. Miller",
+      "counties": [
+        "Lancaster"
+      ]
+    },
+    {
+      "district": 42,
+      "party": "D",
+      "name": "Jen Mazzocco",
+      "counties": [
+        "Allegheny"
+      ]
+    },
+    {
+      "district": 43,
+      "party": "R",
+      "name": "Keith J. Greiner",
+      "counties": [
+        "Lancaster"
+      ]
+    },
+    {
+      "district": 44,
+      "party": "R",
+      "name": "Valerie S. Gaydos",
+      "counties": [
+        "Allegheny"
+      ]
+    },
+    {
+      "district": 45,
+      "party": "D",
+      "name": "Anita Astorino Kulik",
+      "counties": [
+        "Allegheny"
+      ]
+    },
+    {
+      "district": 46,
+      "party": "R",
+      "name": "Jason Ortitay",
+      "counties": [
+        "Allegheny",
+        "Washington"
+      ]
+    },
+    {
+      "district": 47,
+      "party": "R",
+      "name": "Joseph D'Orsie",
+      "counties": [
+        "York"
+      ]
+    },
+    {
+      "district": 48,
+      "party": "R",
+      "name": "Timothy J. O'Neal",
+      "counties": [
+        "Washington"
+      ]
+    },
+    {
+      "district": 49,
+      "party": "D",
+      "name": "Ismail Smith-Wade-El",
+      "counties": [
+        "Lancaster"
+      ]
+    },
+    {
+      "district": 50,
+      "party": "R",
+      "name": "Bud Cook",
+      "counties": [
+        "Greene",
+        "Washington"
+      ]
+    },
+    {
+      "district": 51,
+      "party": "R",
+      "name": "Charity Grimm Krupa",
+      "counties": [
+        "Fayette"
+      ]
+    },
+    {
+      "district": 52,
+      "party": "R",
+      "name": "Ryan Warner",
+      "counties": [
+        "Fayette"
+      ]
+    },
+    {
+      "district": 53,
+      "party": "D",
+      "name": "Steven R. Malagari",
+      "counties": [
+        "Montgomery"
+      ]
+    },
+    {
+      "district": 54,
+      "party": "D",
+      "name": "Greg Scott",
+      "counties": [
+        "Montgomery"
+      ]
+    },
+    {
+      "district": 55,
+      "party": "R",
+      "name": "Jill N. Cooper",
+      "counties": [
+        "Westmoreland"
+      ]
+    },
+    {
+      "district": 56,
+      "party": "R",
+      "name": "Brian C. Rasel",
+      "counties": [
+        "Westmoreland"
+      ]
+    },
+    {
+      "district": 57,
+      "party": "R",
+      "name": "Eric R. Nelson",
+      "counties": [
+        "Westmoreland"
+      ]
+    },
+    {
+      "district": 58,
+      "party": "R",
+      "name": "Eric Davanzo",
+      "counties": [
+        "Westmoreland"
+      ]
+    },
+    {
+      "district": 59,
+      "party": "R",
+      "name": "Leslie Rossi",
+      "counties": [
+        "Westmoreland"
+      ]
+    },
+    {
+      "district": 60,
+      "party": "R",
+      "name": "Abby Major",
+      "counties": [
+        "Armstrong",
+        "Westmoreland"
+      ]
+    },
+    {
+      "district": 61,
+      "party": "D",
+      "name": "Liz Hanbidge",
+      "counties": [
+        "Montgomery"
+      ]
+    },
+    {
+      "district": 62,
+      "party": "R",
+      "name": "James B. Struzzi",
+      "counties": [
+        "Indiana"
+      ]
+    },
+    {
+      "district": 63,
+      "party": "R",
+      "name": "Josh Bashline",
+      "counties": [
+        "Armstrong",
+        "Clarion"
+      ]
+    },
+    {
+      "district": 64,
+      "party": "R",
+      "name": "R. Lee James",
+      "counties": [
+        "Crawford",
+        "Venango"
+      ]
+    },
+    {
+      "district": 65,
+      "party": "R",
+      "name": "Kathy L. Rapp",
+      "counties": [
+        "Crawford",
+        "Forest",
+        "Warren"
+      ]
+    },
+    {
+      "district": 66,
+      "party": "R",
+      "name": "Brian Smith",
+      "counties": [
+        "Indiana",
+        "Jefferson"
+      ]
+    },
+    {
+      "district": 67,
+      "party": "R",
+      "name": "Martin T. Causer",
+      "counties": [
+        "Cameron",
+        "Mckean",
+        "Potter"
+      ]
+    },
+    {
+      "district": 68,
+      "party": "R",
+      "name": "Clint Owlett",
+      "counties": [
+        "Bradford",
+        "Tioga"
+      ]
+    },
+    {
+      "district": 69,
+      "party": "R",
+      "name": "Carl Walker Metzgar",
+      "counties": [
+        "Somerset"
+      ]
+    },
+    {
+      "district": 70,
+      "party": "D",
+      "name": "Matthew D. Bradford",
+      "counties": [
+        "Montgomery"
+      ]
+    },
+    {
+      "district": 71,
+      "party": "R",
+      "name": "Jim Rigby",
+      "counties": [
+        "Cambria",
+        "Somerset"
+      ]
+    },
+    {
+      "district": 72,
+      "party": "D",
+      "name": "Frank Burns",
+      "counties": [
+        "Cambria"
+      ]
+    },
+    {
+      "district": 73,
+      "party": "R",
+      "name": "Dallas Kephart",
+      "counties": [
+        "Cambria",
+        "Clearfield"
+      ]
+    },
+    {
+      "district": 74,
+      "party": "D",
+      "name": "Dan K. Williams",
+      "counties": [
+        "Chester"
+      ]
+    },
+    {
+      "district": 75,
+      "party": "R",
+      "name": "Mike Armanini",
+      "counties": [
+        "Clearfield",
+        "Elk"
+      ]
+    },
+    {
+      "district": 76,
+      "party": "R",
+      "name": "Stephanie Borowicz",
+      "counties": [
+        "Clinton",
+        "Union"
+      ]
+    },
+    {
+      "district": 77,
+      "party": "D",
+      "name": "Scott Conklin",
+      "counties": [
+        "Centre"
+      ]
+    },
+    {
+      "district": 78,
+      "party": "R",
+      "name": "Jesse Topper",
+      "counties": [
+        "Bedford",
+        "Fulton"
+      ]
+    },
+    {
+      "district": 79,
+      "party": "R",
+      "name": "Andrea C. Verobish",
+      "counties": [
+        "Blair"
+      ]
+    },
+    {
+      "district": 80,
+      "party": "R",
+      "name": "Scott Barger",
+      "counties": [
+        "Blair",
+        "Huntingdon"
+      ]
+    },
+    {
+      "district": 81,
+      "party": "R",
+      "name": "Rich Irvin",
+      "counties": [
+        "Franklin",
+        "Huntingdon"
+      ]
+    },
+    {
+      "district": 82,
+      "party": "D",
+      "name": "Paul Takac",
+      "counties": [
+        "Centre"
+      ]
+    },
+    {
+      "district": 83,
+      "party": "R",
+      "name": "Jamie L. Flick",
+      "counties": [
+        "Lycoming",
+        "Union"
+      ]
+    },
+    {
+      "district": 84,
+      "party": "R",
+      "name": "Joe Hamm",
+      "counties": [
+        "Lycoming",
+        "Sullivan"
+      ]
+    },
+    {
+      "district": 85,
+      "party": "R",
+      "name": "David H. Rowe",
+      "counties": [
+        "Juniata",
+        "Mifflin",
+        "Snyder",
+        "Union"
+      ]
+    },
+    {
+      "district": 86,
+      "party": "R",
+      "name": "Perry A. Stambaugh",
+      "counties": [
+        "Juniata",
+        "Perry"
+      ]
+    },
+    {
+      "district": 87,
+      "party": "R",
+      "name": "Thomas H. Kutz",
+      "counties": [
+        "Cumberland"
+      ]
+    },
+    {
+      "district": 88,
+      "party": "R",
+      "name": "Sheryl M. Delozier",
+      "counties": [
+        "Cumberland"
+      ]
+    },
+    {
+      "district": 89,
+      "party": "R",
+      "name": "Rob W. Kauffman",
+      "counties": [
+        "Franklin"
+      ]
+    },
+    {
+      "district": 90,
+      "party": "R",
+      "name": "Chad G. Reichard",
+      "counties": [
+        "Franklin"
+      ]
+    },
+    {
+      "district": 91,
+      "party": "R",
+      "name": "Dan Moul",
+      "counties": [
+        "Adams"
+      ]
+    },
+    {
+      "district": 92,
+      "party": "R",
+      "name": "Marc S. Anderson",
+      "counties": [
+        "York"
+      ]
+    },
+    {
+      "district": 93,
+      "party": "R",
+      "name": "Mike Jones",
+      "counties": [
+        "York"
+      ]
+    },
+    {
+      "district": 94,
+      "party": "R",
+      "name": "Wendy Fink",
+      "counties": [
+        "York"
+      ]
+    },
+    {
+      "district": 95,
+      "party": "D",
+      "name": "Carol Hill-Evans",
+      "counties": [
+        "York"
+      ]
+    },
+    {
+      "district": 96,
+      "party": "D",
+      "name": "Nikki Rivera",
+      "counties": [
+        "Lancaster"
+      ]
+    },
+    {
+      "district": 97,
+      "party": "R",
+      "name": "Steven C. Mentzer",
+      "counties": [
+        "Lancaster"
+      ]
+    },
+    {
+      "district": 98,
+      "party": "R",
+      "name": "Tom Jones",
+      "counties": [
+        "Lancaster",
+        "Lebanon"
+      ]
+    },
+    {
+      "district": 99,
+      "party": "R",
+      "name": "David H. Zimmerman",
+      "counties": [
+        "Berks",
+        "Lancaster"
+      ]
+    },
+    {
+      "district": 100,
+      "party": "R",
+      "name": "Bryan Cutler",
+      "counties": [
+        "Lancaster"
+      ]
+    },
+    {
+      "district": 101,
+      "party": "R",
+      "name": "John A. Schlegel",
+      "counties": [
+        "Lebanon"
+      ]
+    },
+    {
+      "district": 102,
+      "party": "R",
+      "name": "Russ Diamond",
+      "counties": [
+        "Lebanon"
+      ]
+    },
+    {
+      "district": 103,
+      "party": "D",
+      "name": "Nathan Davidson",
+      "counties": [
+        "Cumberland",
+        "Dauphin"
+      ]
+    },
+    {
+      "district": 104,
+      "party": "D",
+      "name": "Dave Madsen",
+      "counties": [
+        "Dauphin"
+      ]
+    },
+    {
+      "district": 105,
+      "party": "D",
+      "name": "Justin C. Fleming",
+      "counties": [
+        "Dauphin"
+      ]
+    },
+    {
+      "district": 106,
+      "party": "R",
+      "name": "Thomas L. Mehaffie",
+      "counties": [
+        "Dauphin"
+      ]
+    },
+    {
+      "district": 107,
+      "party": "R",
+      "name": "Joanne Stehr",
+      "counties": [
+        "Northumberland",
+        "Schuylkill"
+      ]
+    },
+    {
+      "district": 108,
+      "party": "R",
+      "name": "Michael Stender",
+      "counties": [
+        "Montour",
+        "Northumberland"
+      ]
+    },
+    {
+      "district": 109,
+      "party": "R",
+      "name": "Robert Leadbeter",
+      "counties": [
+        "Columbia"
+      ]
+    },
+    {
+      "district": 110,
+      "party": "R",
+      "name": "Tina Pickett",
+      "counties": [
+        "Bradford",
+        "Wyoming"
+      ]
+    },
+    {
+      "district": 111,
+      "party": "R",
+      "name": "Jonathan Fritz",
+      "counties": [
+        "Susquehanna",
+        "Wayne"
+      ]
+    },
+    {
+      "district": 112,
+      "party": "D",
+      "name": "Kyle J. Mullins",
+      "counties": [
+        "Lackawanna"
+      ]
+    },
+    {
+      "district": 113,
+      "party": "D",
+      "name": "Kyle Donahue",
+      "counties": [
+        "Lackawanna"
+      ]
+    },
+    {
+      "district": 114,
+      "party": "D",
+      "name": "Bridget M. Kosierowski",
+      "counties": [
+        "Lackawanna"
+      ]
+    },
+    {
+      "district": 115,
+      "party": "D",
+      "name": "Maureen E. Madden",
+      "counties": [
+        "Monroe"
+      ]
+    },
+    {
+      "district": 116,
+      "party": "R",
+      "name": "Dane Watro",
+      "counties": [
+        "Luzerne",
+        "Schuylkill"
+      ]
+    },
+    {
+      "district": 117,
+      "party": "R",
+      "name": "Jamie Walsh",
+      "counties": [
+        "Luzerne"
+      ]
+    },
+    {
+      "district": 118,
+      "party": "D",
+      "name": "Jim Haddock",
+      "counties": [
+        "Lackawanna",
+        "Luzerne"
+      ]
+    },
+    {
+      "district": 119,
+      "party": "R",
+      "name": "Alec J. Ryncavage",
+      "counties": [
+        "Luzerne"
+      ]
+    },
+    {
+      "district": 120,
+      "party": "R",
+      "name": "Brenda M. Pugh",
+      "counties": [
+        "Luzerne"
+      ]
+    },
+    {
+      "district": 121,
+      "party": "D",
+      "name": "Eddie Day Pashinski",
+      "counties": [
+        "Luzerne"
+      ]
+    },
+    {
+      "district": 122,
+      "party": "R",
+      "name": "Doyle Heffley",
+      "counties": [
+        "Carbon"
+      ]
+    },
+    {
+      "district": 123,
+      "party": "R",
+      "name": "Tim Twardzik",
+      "counties": [
+        "Schuylkill"
+      ]
+    },
+    {
+      "district": 124,
+      "party": "R",
+      "name": "Jamie Barton",
+      "counties": [
+        "Berks",
+        "Schuylkill"
+      ]
+    },
+    {
+      "district": 125,
+      "party": "R",
+      "name": "Joe Kerwin",
+      "counties": [
+        "Dauphin"
+      ]
+    },
+    {
+      "district": 126,
+      "party": "D",
+      "name": "Jacklyn Rusnock",
+      "counties": [
+        "Berks"
+      ]
+    },
+    {
+      "district": 127,
+      "party": "D",
+      "name": "Manuel Guzman",
+      "counties": [
+        "Berks"
+      ]
+    },
+    {
+      "district": 128,
+      "party": "R",
+      "name": "Mark M. Gillen",
+      "counties": [
+        "Berks"
+      ]
+    },
+    {
+      "district": 129,
+      "party": "D",
+      "name": "Johanny Cepeda-Freytiz",
+      "counties": [
+        "Berks"
+      ]
+    },
+    {
+      "district": 130,
+      "party": "R",
+      "name": "David M. Maloney",
+      "counties": [
+        "Berks"
+      ]
+    },
+    {
+      "district": 131,
+      "party": "R",
+      "name": "Milou Mackenzie",
+      "counties": [
+        "Lehigh",
+        "Montgomery",
+        "Northampton"
+      ]
+    },
+    {
+      "district": 132,
+      "party": "D",
+      "name": "Michael H. Schlossberg",
+      "counties": [
+        "Lehigh"
+      ]
+    },
+    {
+      "district": 133,
+      "party": "D",
+      "name": "Jeanne McNeill",
+      "counties": [
+        "Lehigh"
+      ]
+    },
+    {
+      "district": 134,
+      "party": "D",
+      "name": "Peter Schweyer",
+      "counties": [
+        "Lehigh"
+      ]
+    },
+    {
+      "district": 135,
+      "party": "D",
+      "name": "Steve Samuelson",
+      "counties": [
+        "Northampton"
+      ]
+    },
+    {
+      "district": 136,
+      "party": "D",
+      "name": "Robert Freeman",
+      "counties": [
+        "Northampton"
+      ]
+    },
+    {
+      "district": 137,
+      "party": "R",
+      "name": "Joe Emrick",
+      "counties": [
+        "Northampton"
+      ]
+    },
+    {
+      "district": 138,
+      "party": "R",
+      "name": "Ann Flood",
+      "counties": [
+        "Northampton"
+      ]
+    },
+    {
+      "district": 139,
+      "party": "R",
+      "name": "Jeff Olsommer",
+      "counties": [
+        "Pike",
+        "Wayne"
+      ]
+    },
+    {
+      "district": 140,
+      "party": "D",
+      "name": "Jim Prokopiak",
+      "counties": [
+        "Bucks"
+      ]
+    },
+    {
+      "district": 141,
+      "party": "D",
+      "name": "Tina M. Davis",
+      "counties": [
+        "Bucks"
+      ]
+    },
+    {
+      "district": 142,
+      "party": "R",
+      "name": "Joe Hogan",
+      "counties": [
+        "Bucks"
+      ]
+    },
+    {
+      "district": 143,
+      "party": "R",
+      "name": "Shelby Labs",
+      "counties": [
+        "Bucks"
+      ]
+    },
+    {
+      "district": 144,
+      "party": "D",
+      "name": "Brian Munroe",
+      "counties": [
+        "Bucks"
+      ]
+    },
+    {
+      "district": 145,
+      "party": "R",
+      "name": "Craig T. Staats",
+      "counties": [
+        "Bucks"
+      ]
+    },
+    {
+      "district": 146,
+      "party": "D",
+      "name": "Joe Ciresi",
+      "counties": [
+        "Montgomery"
+      ]
+    },
+    {
+      "district": 147,
+      "party": "R",
+      "name": "Donna Scheuren",
+      "counties": [
+        "Montgomery"
+      ]
+    },
+    {
+      "district": 148,
+      "party": "D",
+      "name": "Mary Jo Daley",
+      "counties": [
+        "Montgomery"
+      ]
+    },
+    {
+      "district": 149,
+      "party": "D",
+      "name": "Tim Briggs",
+      "counties": [
+        "Montgomery"
+      ]
+    },
+    {
+      "district": 150,
+      "party": "D",
+      "name": "Joe Webster",
+      "counties": [
+        "Montgomery"
+      ]
+    },
+    {
+      "district": 151,
+      "party": "D",
+      "name": "Melissa Cerrato",
+      "counties": [
+        "Montgomery"
+      ]
+    },
+    {
+      "district": 152,
+      "party": "D",
+      "name": "Nancy Guenst",
+      "counties": [
+        "Montgomery"
+      ]
+    },
+    {
+      "district": 153,
+      "party": "D",
+      "name": "Benjamin V. Sanchez",
+      "counties": [
+        "Montgomery"
+      ]
+    },
+    {
+      "district": 154,
+      "party": "D",
+      "name": "Napoleon J. Nelson",
+      "counties": [
+        "Montgomery"
+      ]
+    },
+    {
+      "district": 155,
+      "party": "D",
+      "name": "Danielle Friel Otten",
+      "counties": [
+        "Chester"
+      ]
+    },
+    {
+      "district": 156,
+      "party": "D",
+      "name": "Chris Pielli",
+      "counties": [
+        "Chester"
+      ]
+    },
+    {
+      "district": 157,
+      "party": "D",
+      "name": "Melissa L. Shusterman",
+      "counties": [
+        "Chester"
+      ]
+    },
+    {
+      "district": 158,
+      "party": "D",
+      "name": "Christina D. Sappey",
+      "counties": [
+        "Chester"
+      ]
+    },
+    {
+      "district": 159,
+      "party": "D",
+      "name": "Carol Kazeem",
+      "counties": [
+        "Delaware"
+      ]
+    },
+    {
+      "district": 160,
+      "party": "R",
+      "name": "Craig Williams",
+      "counties": [
+        "Chester",
+        "Delaware"
+      ]
+    },
+    {
+      "district": 161,
+      "party": "D",
+      "name": "Leanne Krueger",
+      "counties": [
+        "Delaware"
+      ]
+    },
+    {
+      "district": 162,
+      "party": "D",
+      "name": "David M. Delloso",
+      "counties": [
+        "Delaware"
+      ]
+    },
+    {
+      "district": 163,
+      "party": "D",
+      "name": "Heather Boyd",
+      "counties": [
+        "Delaware"
+      ]
+    },
+    {
+      "district": 164,
+      "party": "D",
+      "name": "Gina H. Curry",
+      "counties": [
+        "Delaware"
+      ]
+    },
+    {
+      "district": 165,
+      "party": "D",
+      "name": "Jennifer O'Mara",
+      "counties": [
+        "Delaware"
+      ]
+    },
+    {
+      "district": 166,
+      "party": "D",
+      "name": "Greg Vitali",
+      "counties": [
+        "Delaware"
+      ]
+    },
+    {
+      "district": 167,
+      "party": "D",
+      "name": "Kristine C. Howard",
+      "counties": [
+        "Chester"
+      ]
+    },
+    {
+      "district": 168,
+      "party": "D",
+      "name": "Lisa A. Borowski",
+      "counties": [
+        "Delaware"
+      ]
+    },
+    {
+      "district": 169,
+      "party": "R",
+      "name": "Kate A. Klunk",
+      "counties": [
+        "York"
+      ]
+    },
+    {
+      "district": 170,
+      "party": "R",
+      "name": "Martina A. White",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 171,
+      "party": "R",
+      "name": "Kerry A. Benninghoff",
+      "counties": [
+        "Centre",
+        "Mifflin"
+      ]
+    },
+    {
+      "district": 172,
+      "party": "D",
+      "name": "Sean Dougherty",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 173,
+      "party": "D",
+      "name": "Pat Gallagher",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 174,
+      "party": "D",
+      "name": "Ed Neilson",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 175,
+      "party": "D",
+      "name": "MaryLouise Isaacson",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 176,
+      "party": "R",
+      "name": "Jack Rader",
+      "counties": [
+        "Monroe"
+      ]
+    },
+    {
+      "district": 177,
+      "party": "D",
+      "name": "Joseph C. Hohenstein",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 178,
+      "party": "R",
+      "name": "Kristin Marcell",
+      "counties": [
+        "Bucks"
+      ]
+    },
+    {
+      "district": 179,
+      "party": "D",
+      "name": "Jason Dawkins",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 180,
+      "party": "D",
+      "name": "Jose Giral",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 181,
+      "party": "D",
+      "name": "Malcolm Kenyatta",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 182,
+      "party": "D",
+      "name": "Ben Waxman",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 183,
+      "party": "R",
+      "name": "Zachary Mako",
+      "counties": [
+        "Lehigh",
+        "Northampton"
+      ]
+    },
+    {
+      "district": 184,
+      "party": "D",
+      "name": "Elizabeth Fiedler",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 185,
+      "party": "D",
+      "name": "Regina G. Young",
+      "counties": [
+        "Delaware",
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 186,
+      "party": "D",
+      "name": "Jordan A. Harris",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 187,
+      "party": "R",
+      "name": "Gary W. Day",
+      "counties": [
+        "Lehigh"
+      ]
+    },
+    {
+      "district": 188,
+      "party": "D",
+      "name": "Rick Krajewski",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 189,
+      "party": "D",
+      "name": "Tarah Probst",
+      "counties": [
+        "Monroe",
+        "Pike"
+      ]
+    },
+    {
+      "district": 190,
+      "party": "D",
+      "name": "G. Roni Green",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 191,
+      "party": "D",
+      "name": "Joanna E. McClinton",
+      "counties": [
+        "Delaware",
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 192,
+      "party": "D",
+      "name": "Morgan Cephas",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 193,
+      "party": "R",
+      "name": "Catherine I Wallen",
+      "counties": [
+        "Adams",
+        "Cumberland"
+      ]
+    },
+    {
+      "district": 194,
+      "party": "D",
+      "name": "Tarik Khan",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 195,
+      "party": "D",
+      "name": "Keith S. Harris",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 197,
+      "party": "D",
+      "name": "Danilo Burgos",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 198,
+      "party": "D",
+      "name": "Darisha K. Parker",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 199,
+      "party": "R",
+      "name": "Barbara Gleim",
+      "counties": [
+        "Cumberland"
+      ]
+    },
+    {
+      "district": 200,
+      "party": "D",
+      "name": "Christopher M. Rabb",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 201,
+      "party": "D",
+      "name": "Andre D. Carroll",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 202,
+      "party": "D",
+      "name": "Jared G. Solomon",
+      "counties": [
+        "Philadelphia"
+      ]
+    },
+    {
+      "district": 203,
+      "party": "D",
+      "name": "Anthony A. Bellmon",
+      "counties": [
+        "Philadelphia"
+      ]
+    }
+  ]
+}

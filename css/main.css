@@ -376,6 +376,50 @@ input[type=range]::-moz-range-thumb {
 }
 .party-R { background: #b23a2f; }
 .party-D { background: #1e5f9c; }
+.party-V { background: #888; }
+
+.districts-block {
+  margin-top: 14px;
+  padding: 14px 14px 10px;
+  background: var(--bpn-bg);
+  border-radius: 4px;
+  border: 1px solid var(--bpn-border);
+}
+.districts-label {
+  font-family: var(--font-head);
+  font-size: 0.78rem; letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--bpn-green); margin-bottom: 4px;
+}
+.districts-sub {
+  font-size: 0.78rem; color: var(--bpn-muted);
+  margin-bottom: 12px; line-height: 1.4;
+}
+.districts-section { margin-bottom: 10px; }
+.districts-section:last-child { margin-bottom: 0; }
+.districts-section-h {
+  font-size: 0.7rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.08em;
+  color: var(--bpn-muted); margin-bottom: 6px;
+}
+.dist-list { list-style: none; padding: 0; margin: 0; }
+.dist-item {
+  display: grid;
+  grid-template-columns: 18px 1fr auto auto;
+  gap: 8px; align-items: center;
+  padding: 4px 0;
+  font-size: 0.85rem;
+  border-bottom: 1px solid var(--bpn-border);
+}
+.dist-item:last-child { border-bottom: none; }
+.dist-name { color: var(--bpn-dark); }
+.dist-num { color: var(--bpn-muted); font-size: 0.78rem; font-family: var(--font-head); letter-spacing: 0.04em; }
+.dist-pct {
+  font-size: 0.74rem; color: var(--bpn-muted); font-weight: 600;
+  background: white; padding: 1px 6px; border-radius: 3px;
+  border: 1px solid var(--bpn-border);
+  min-width: 38px; text-align: right;
+}
 
 .proj-card .proj-doc-link {
   display: inline-block; margin-top: 12px;
